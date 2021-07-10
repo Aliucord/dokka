@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -128,14 +128,10 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static java.util.Map&lt;java.lang.String,<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#corePlugins">corePlugins</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../com/aliucord/Logger.html" title="class in com.aliucord">Logger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#logger">logger</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static java.util.Map&lt;java.lang.String,<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#plugins">plugins</a></span></code>&nbsp;</td>
 </tr>
@@ -193,26 +189,18 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#loadCorePlugins-android.content.Context-">loadCorePlugins</a></span>(android.content.Context&nbsp;context)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#loadPlugin-android.content.Context-java.io.File-">loadPlugin</a></span>(android.content.Context&nbsp;context,
           java.io.File&nbsp;f)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#startCorePlugins-android.content.Context-">startCorePlugins</a></span>(android.content.Context&nbsp;context)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#startPlugin-java.lang.String-">startPlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#stopPlugin-java.lang.String-">stopPlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#togglePlugin-java.lang.String-">togglePlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
@@ -245,15 +233,6 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>plugins</h4>
 <pre>public static final&nbsp;java.util.Map&lt;java.lang.String,<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt; plugins</pre>
-</li>
-</ul>
-<a name="corePlugins">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>corePlugins</h4>
-<pre>public static final&nbsp;java.util.Map&lt;java.lang.String,<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt; corePlugins</pre>
 </li>
 </ul>
 <a name="logger">
@@ -343,24 +322,6 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>stopPlugin</h4>
 <pre>public static&nbsp;void&nbsp;stopPlugin(java.lang.String&nbsp;name)</pre>
-</li>
-</ul>
-<a name="loadCorePlugins-android.content.Context-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>loadCorePlugins</h4>
-<pre>public static&nbsp;void&nbsp;loadCorePlugins(android.content.Context&nbsp;context)</pre>
-</li>
-</ul>
-<a name="startCorePlugins-android.content.Context-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>startCorePlugins</h4>
-<pre>public static&nbsp;void&nbsp;startCorePlugins(android.content.Context&nbsp;context)</pre>
 </li>
 </ul>
 <a name="getPluginPrefKey-java.lang.String-">
