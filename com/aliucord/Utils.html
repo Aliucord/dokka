@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":41,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":41,"i25":9,"i26":9,"i27":9,"i28":9};
+var methods = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":41,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":41,"i26":9,"i27":9,"i28":9,"i29":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Utils</span>
 extends java.lang.Object</pre>
+<div class="block">Utility class that holds miscellaneous Utilities</div>
 </li>
 </ul>
 </div>
@@ -137,11 +138,15 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static com.google.gson.Gson</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#gson">gson</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#gson">gson</a></span></code>
+<div class="block"><a href="https://github.com/google/gson">Gson</a> instance</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static com.google.gson.Gson</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#gsonPretty">gsonPretty</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#gsonPretty">gsonPretty</a></span></code>
+<div class="block">Pretty <a href="https://github.com/google/gson">Gson</a> instance</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static android.os.Handler</code></td>
@@ -189,19 +194,23 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static com.discord.api.user.User</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#buildClyde--">buildClyde</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#buildClyde--">buildClyde</a></span>()</code>
+<div class="block">Builds Clyde User</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static com.discord.api.user.User</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#buildClyde-java.lang.String-java.lang.String-">buildClyde</a></span>(java.lang.String&nbsp;name,
           java.lang.String&nbsp;avatarUrl)</code>
-<div class="block">Clyde builder</div>
+<div class="block">Builds a Pseudo Clyde User</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#createActionSubscriber-rx.functions.Action1-">createActionSubscriber</a></span>(rx.functions.Action1&lt;? super T&gt;&nbsp;onNext)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../com/aliucord/utils/RxUtils.html#createActionSubscriber-rx.functions.Action1-"><code>RxUtils.createActionSubscriber(Action1)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -209,7 +218,9 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#createActionSubscriber-rx.functions.Action1-rx.functions.Action1-rx.functions.Action0-">createActionSubscriber</a></span>(rx.functions.Action1&lt;? super T&gt;&nbsp;onNext,
                       rx.functions.Action1&lt;java.lang.Throwable&gt;&nbsp;onError,
                       rx.functions.Action0&nbsp;onCompleted)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../com/aliucord/utils/RxUtils.html#createActionSubscriber-rx.functions.Action1-rx.functions.Action1-rx.functions.Action0-"><code>RxUtils.createActionSubscriber(Action1, Action1, Action0)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -224,7 +235,9 @@ extends java.lang.Object</pre>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static com.discord.api.commands.CommandChoice</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#createCommandChoice-java.lang.String-java.lang.String-">createCommandChoice</a></span>(java.lang.String&nbsp;name,
-                   java.lang.String&nbsp;value)</code>&nbsp;</td>
+                   java.lang.String&nbsp;value)</code>
+<div class="block">Creates a CommandChoice that can be used inside Command args</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static int</code></td>
@@ -240,31 +253,44 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#fromJson-java.lang.String-java.lang.reflect.Type-">fromJson</a></span>(java.lang.String&nbsp;json,
-        java.lang.reflect.Type&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#fromJson-java.lang.String-java.lang.Class-">fromJson</a></span>(java.lang.String&nbsp;json,
+        java.lang.Class&lt;T&gt;&nbsp;clazz)</code>
+<div class="block">Deserializes a JSON string into the specified class</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#fromJson-java.lang.String-java.lang.reflect.Type-">fromJson</a></span>(java.lang.String&nbsp;json,
+        java.lang.reflect.Type&nbsp;type)</code>
+<div class="block">Deserializes a JSON string into the specified object</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static android.content.Context</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getAppContext--">getAppContext</a></span>()</code>
 <div class="block">Retrieves <code>Application</code> <code>Context</code></div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getDefaultCardRadius--">getDefaultCardRadius</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getDefaultCardRadius--">getDefaultCardRadius</a></span>()</code>
+<div class="block">Gets the default radius for cards.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getDefaultPadding--">getDefaultPadding</a></span>()</code>
 <div class="block">Gets the default padding for the items.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static &lt;K,V&gt;&nbsp;K</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getMapKey-java.util.Map-V-">getMapKey</a></span>(java.util.Map&lt;K,V&gt;&nbsp;map,
-         V&nbsp;val)</code>&nbsp;</td>
+         V&nbsp;val)</code>
+<div class="block">Finds the mapping key for Object val where Objects.equals(val, entry.value)</div>
+</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getPrivateField-java.lang.Class-java.lang.Object-java.lang.String-">getPrivateField</a></span>(java.lang.Class&lt;?&gt;&nbsp;clazz,
                java.lang.Object&nbsp;instance,
@@ -274,62 +300,66 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#getResId-java.lang.String-java.lang.String-">getResId</a></span>(java.lang.String&nbsp;name,
         java.lang.String&nbsp;type)</code>
 <div class="block">Get resource id from discord package.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#log-java.lang.String-">log</a></span>(java.lang.String&nbsp;msg)</code>
-<div class="block">Logs a message.</div>
+<div class="block">Logs a message on debug level.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#openPage-android.content.Context-java.lang.Class-">openPage</a></span>(android.content.Context&nbsp;context,
         java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#openPage-android.content.Context-java.lang.Class-android.content.Intent-">openPage</a></span>(android.content.Context&nbsp;context,
         java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz,
         android.content.Intent&nbsp;intent)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#openPageWithProxy-android.content.Context-androidx.fragment.app.Fragment-">openPageWithProxy</a></span>(android.content.Context&nbsp;context,
                  androidx.fragment.app.Fragment&nbsp;fragment)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#pluralise-int-java.lang.String-">pluralise</a></span>(int&nbsp;amount,
          java.lang.String&nbsp;noun)</code>
 <div class="block">Converts the singular term of the <code>noun</code> into plural.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>static byte[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#readBytes-java.io.InputStream-">readBytes</a></span>(java.io.InputStream&nbsp;stream)</code>&nbsp;</td>
-</tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>static java.lang.CharSequence</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#renderMD-java.lang.CharSequence-">renderMD</a></span>(java.lang.CharSequence&nbsp;source)</code>&nbsp;</td>
+<td class="colFirst"><code>static byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#readBytes-java.io.InputStream-">readBytes</a></span>(java.io.InputStream&nbsp;stream)</code>
+<div class="block">Reads the InputStream into a byte[]</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
+<td class="colFirst"><code>static java.lang.CharSequence</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#renderMD-java.lang.CharSequence-">renderMD</a></span>(java.lang.CharSequence&nbsp;source)</code>
+<div class="block">Renders discord spice markdown</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#setAppContext--">setAppContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#setClipboard-java.lang.CharSequence-java.lang.CharSequence-">setClipboard</a></span>(java.lang.CharSequence&nbsp;label,
             java.lang.CharSequence&nbsp;text)</code>
 <div class="block">Sets the clipboard content</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#setPrivateField-java.lang.Class-java.lang.Object-java.lang.String-java.lang.Object-">setPrivateField</a></span>(java.lang.Class&lt;?&gt;&nbsp;clazz,
                java.lang.Object&nbsp;instance,
@@ -340,14 +370,14 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#showToast-android.content.Context-java.lang.String-">showToast</a></span>(android.content.Context&nbsp;ctx,
          java.lang.String&nbsp;message)</code>
 <div class="block">Send a toast from any <code>Thread</code></div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#showToast-android.content.Context-java.lang.String-boolean-">showToast</a></span>(android.content.Context&nbsp;ctx,
          java.lang.String&nbsp;message,
@@ -355,13 +385,17 @@ extends java.lang.Object</pre>
 <div class="block">Send a toast from any <code>Thread</code></div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#toJson-java.lang.Object-">toJson</a></span>(java.lang.Object&nbsp;obj)</code>&nbsp;</td>
-</tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#toJsonPretty-java.lang.Object-">toJsonPretty</a></span>(java.lang.Object&nbsp;obj)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#toJson-java.lang.Object-">toJson</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Serializes an Object to JSON</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Utils.html#toJsonPretty-java.lang.Object-">toJsonPretty</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Serializes an Object to pretty printed JSON</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -431,6 +465,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>gson</h4>
 <pre>public static final&nbsp;com.google.gson.Gson gson</pre>
+<div class="block"><a href="https://github.com/google/gson">Gson</a> instance</div>
 </li>
 </ul>
 <a name="gsonPretty">
@@ -440,6 +475,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>gsonPretty</h4>
 <pre>public static final&nbsp;com.google.gson.Gson gsonPretty</pre>
+<div class="block">Pretty <a href="https://github.com/google/gson">Gson</a> instance</div>
 </li>
 </ul>
 </li>
@@ -619,7 +655,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getDefaultPadding</h4>
 <pre>public static&nbsp;int&nbsp;getDefaultPadding()</pre>
-<div class="block">Gets the default padding for the items.</div>
+<div class="block">Gets the default padding for the items. (16 DP)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>default padding</dd>
@@ -636,6 +672,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getDefaultCardRadius</h4>
 <pre>public static&nbsp;int&nbsp;getDefaultCardRadius()</pre>
+<div class="block">Gets the default radius for cards. (8 DP)</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>default padding</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../com/aliucord/Utils.html#dpToPx-int-"><code>dpToPx(int)</code></a>, 
+<a href="../../com/aliucord/Utils.html#dpToPx-float-"><code>dpToPx(float)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getMapKey-java.util.Map-java.lang.Object-">
@@ -646,18 +690,19 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMapKey</h4>
-<pre>public static&nbsp;&lt;K,V&gt;&nbsp;K&nbsp;getMapKey(java.util.Map&lt;K,V&gt;&nbsp;map,
-                                V&nbsp;val)</pre>
-</li>
-</ul>
-<a name="openPage-android.content.Context-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>openPage</h4>
-<pre>public static&nbsp;void&nbsp;openPage(android.content.Context&nbsp;context,
-                            java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz)</pre>
+<pre>@Nullable
+public static&nbsp;&lt;K,V&gt;&nbsp;K&nbsp;getMapKey(@NonNull
+                                          java.util.Map&lt;K,V&gt;&nbsp;map,
+                                          @Nullable
+                                          V&nbsp;val)</pre>
+<div class="block">Finds the mapping key for Object val where Objects.equals(val, entry.value)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>map</code> - The map to find the Object in</dd>
+<dd><code>val</code> - The object to find the key of</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Key of mapping or null if no such mapping exists</dd>
+</dl>
 </li>
 </ul>
 <a name="openPage-android.content.Context-java.lang.Class-android.content.Intent-">
@@ -669,6 +714,16 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;void&nbsp;openPage(android.content.Context&nbsp;context,
                             java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz,
                             android.content.Intent&nbsp;intent)</pre>
+</li>
+</ul>
+<a name="openPage-android.content.Context-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>openPage</h4>
+<pre>public static&nbsp;void&nbsp;openPage(android.content.Context&nbsp;context,
+                            java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz)</pre>
 </li>
 </ul>
 <a name="openPageWithProxy-android.content.Context-androidx.fragment.app.Fragment-">
@@ -689,6 +744,14 @@ extends java.lang.Object</pre>
 <h4>createCommandChoice</h4>
 <pre>public static&nbsp;com.discord.api.commands.CommandChoice&nbsp;createCommandChoice(java.lang.String&nbsp;name,
                                                                          java.lang.String&nbsp;value)</pre>
+<div class="block">Creates a CommandChoice that can be used inside Command args</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - The name of the choice</dd>
+<dd><code>value</code> - The value representing this choice</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>CommandChoice</dd>
+</dl>
 </li>
 </ul>
 <a name="buildClyde--">
@@ -697,7 +760,13 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>buildClyde</h4>
-<pre>public static&nbsp;com.discord.api.user.User&nbsp;buildClyde()</pre>
+<pre>@NonNull
+public static&nbsp;com.discord.api.user.User&nbsp;buildClyde()</pre>
+<div class="block">Builds Clyde User</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Built Clyde</dd>
+</dl>
 </li>
 </ul>
 <a name="buildClyde-java.lang.String-java.lang.String-">
@@ -706,17 +775,18 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>buildClyde</h4>
-<pre>public static&nbsp;com.discord.api.user.User&nbsp;buildClyde(@Nullable
-                                                   java.lang.String&nbsp;name,
-                                                   @Nullable
-                                                   java.lang.String&nbsp;avatarUrl)</pre>
-<div class="block">Clyde builder</div>
+<pre>@NonNull
+public static&nbsp;com.discord.api.user.User&nbsp;buildClyde(@Nullable
+                                                            java.lang.String&nbsp;name,
+                                                            @Nullable
+                                                            java.lang.String&nbsp;avatarUrl)</pre>
+<div class="block">Builds a Pseudo Clyde User</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - Name of Clyde</dd>
-<dd><code>avatarUrl</code> - Avatar URL of Clyde</dd>
+<dd><code>name</code> - Name of user</dd>
+<dd><code>avatarUrl</code> - Avatar URL of user</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Customized Clyde</dd>
+<dd>Built user</dd>
 </dl>
 </li>
 </ul>
@@ -787,9 +857,32 @@ public static&nbsp;void&nbsp;setPrivateField(java.lang.Class&lt;?&gt;&nbsp;clazz
 <h4>readBytes</h4>
 <pre>public static&nbsp;byte[]&nbsp;readBytes(java.io.InputStream&nbsp;stream)
                         throws java.lang.Throwable</pre>
+<div class="block">Reads the InputStream into a byte[]</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>stream</code> - The stream to read</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The read bytes</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if an I/O error occurs</dd>
+</dl>
+</li>
+</ul>
+<a name="fromJson-java.lang.String-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromJson</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fromJson(java.lang.String&nbsp;json,
+                             java.lang.Class&lt;T&gt;&nbsp;clazz)</pre>
+<div class="block">Deserializes a JSON string into the specified class</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>json</code> - The JSON string to deserialize</dd>
+<dd><code>clazz</code> - The class to deserialize the JSON into</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Deserialized JSON</dd>
 </dl>
 </li>
 </ul>
@@ -801,6 +894,14 @@ public static&nbsp;void&nbsp;setPrivateField(java.lang.Class&lt;?&gt;&nbsp;clazz
 <h4>fromJson</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fromJson(java.lang.String&nbsp;json,
                              java.lang.reflect.Type&nbsp;type)</pre>
+<div class="block">Deserializes a JSON string into the specified object</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>json</code> - The JSON string to deserialize</dd>
+<dd><code>type</code> - The type of the object to deserialize the JSON into</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Deserialized JSON</dd>
+</dl>
 </li>
 </ul>
 <a name="toJson-java.lang.Object-">
@@ -810,6 +911,13 @@ public static&nbsp;void&nbsp;setPrivateField(java.lang.Class&lt;?&gt;&nbsp;clazz
 <li class="blockList">
 <h4>toJson</h4>
 <pre>public static&nbsp;java.lang.String&nbsp;toJson(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Serializes an Object to JSON</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - The object to serialize</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Serialized JSON</dd>
+</dl>
 </li>
 </ul>
 <a name="toJsonPretty-java.lang.Object-">
@@ -819,6 +927,13 @@ public static&nbsp;void&nbsp;setPrivateField(java.lang.Class&lt;?&gt;&nbsp;clazz
 <li class="blockList">
 <h4>toJsonPretty</h4>
 <pre>public static&nbsp;java.lang.String&nbsp;toJsonPretty(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Serializes an Object to pretty printed JSON</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - The object to serialize</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Serialized JSON</dd>
+</dl>
 </li>
 </ul>
 <a name="renderMD-java.lang.CharSequence-">
@@ -828,6 +943,13 @@ public static&nbsp;void&nbsp;setPrivateField(java.lang.Class&lt;?&gt;&nbsp;clazz
 <li class="blockList">
 <h4>renderMD</h4>
 <pre>public static&nbsp;java.lang.CharSequence&nbsp;renderMD(java.lang.CharSequence&nbsp;source)</pre>
+<div class="block">Renders discord spice markdown</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>source</code> - The markdown to render</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Rendered markdown</dd>
+</dl>
 </li>
 </ul>
 <a name="createActionSubscriber-rx.functions.Action1-">
@@ -838,7 +960,7 @@ public static&nbsp;void&nbsp;setPrivateField(java.lang.Class&lt;?&gt;&nbsp;clazz
 <h4>createActionSubscriber</h4>
 <pre>@Deprecated
 public static&nbsp;&lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;&nbsp;createActionSubscriber(rx.functions.Action1&lt;? super T&gt;&nbsp;onNext)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../com/aliucord/utils/RxUtils.html#createActionSubscriber-rx.functions.Action1-"><code>RxUtils.createActionSubscriber(Action1)</code></a></span></div>
 </li>
 </ul>
 <a name="createActionSubscriber-rx.functions.Action1-rx.functions.Action1-rx.functions.Action0-">
@@ -851,7 +973,7 @@ public static&nbsp;&lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;&nbsp;createActionSubscr
 public static&nbsp;&lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;&nbsp;createActionSubscriber(rx.functions.Action1&lt;? super T&gt;&nbsp;onNext,
                                                                       rx.functions.Action1&lt;java.lang.Throwable&gt;&nbsp;onError,
                                                                       rx.functions.Action0&nbsp;onCompleted)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../com/aliucord/utils/RxUtils.html#createActionSubscriber-rx.functions.Action1-rx.functions.Action1-rx.functions.Action0-"><code>RxUtils.createActionSubscriber(Action1, Action1, Action0)</code></a></span></div>
 </li>
 </ul>
 <a name="log-java.lang.String-">
@@ -861,7 +983,7 @@ public static&nbsp;&lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;&nbsp;createActionSubscr
 <li class="blockList">
 <h4>log</h4>
 <pre>public static&nbsp;void&nbsp;log(java.lang.String&nbsp;msg)</pre>
-<div class="block">Logs a message.</div>
+<div class="block">Logs a message on debug level.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>msg</code> - Message to log.</dd>

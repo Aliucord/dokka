@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">PluginManager</span>
 extends java.lang.Object</pre>
+<div class="block">Aliucord's Plugin Manager</div>
 </li>
 </ul>
 </div>
@@ -133,7 +134,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static java.util.Map&lt;java.lang.String,<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#plugins">plugins</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#plugins">plugins</a></span></code>
+<div class="block">Map containing all loaded plugins</div>
+</td>
 </tr>
 </table>
 </li>
@@ -169,40 +172,58 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#disablePlugin-java.lang.String-">disablePlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#disablePlugin-java.lang.String-">disablePlugin</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Disables a loaded plugin if it isn't already disables</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#enablePlugin-java.lang.String-">enablePlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#enablePlugin-java.lang.String-">enablePlugin</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Enables a loaded plugin if it isn't already enabled</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#getPluginPrefKey-java.lang.String-">getPluginPrefKey</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#getPluginPrefKey-java.lang.String-">getPluginPrefKey</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Gets the preferences key for a plugin.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#isPluginEnabled-com.aliucord.entities.Plugin-">isPluginEnabled</a></span>(<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&nbsp;p)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#isPluginEnabled-com.aliucord.entities.Plugin-">isPluginEnabled</a></span>(<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&nbsp;plugin)</code>
+<div class="block">Checks whether a plugin is enabled</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#isPluginEnabled-java.lang.String-">isPluginEnabled</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#isPluginEnabled-java.lang.String-">isPluginEnabled</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Checks whether a plugin is enabled</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#loadPlugin-android.content.Context-java.io.File-">loadPlugin</a></span>(android.content.Context&nbsp;context,
-          java.io.File&nbsp;f)</code>&nbsp;</td>
+          java.io.File&nbsp;file)</code>
+<div class="block">Loads a plugin</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#startPlugin-java.lang.String-">startPlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#startPlugin-java.lang.String-">startPlugin</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Starts a plugin</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#stopPlugin-java.lang.String-">stopPlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#stopPlugin-java.lang.String-">stopPlugin</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Stops a plugin</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#togglePlugin-java.lang.String-">togglePlugin</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/PluginManager.html#togglePlugin-java.lang.String-">togglePlugin</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Toggles a plugin.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -233,6 +254,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>plugins</h4>
 <pre>public static final&nbsp;java.util.Map&lt;java.lang.String,<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt; plugins</pre>
+<div class="block">Map containing all loaded plugins</div>
 </li>
 </ul>
 <a name="logger">
@@ -276,7 +298,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>loadPlugin</h4>
 <pre>public static&nbsp;void&nbsp;loadPlugin(android.content.Context&nbsp;context,
-                              java.io.File&nbsp;f)</pre>
+                              java.io.File&nbsp;file)</pre>
+<div class="block">Loads a plugin</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - Context</dd>
+<dd><code>file</code> - Plugin file</dd>
+</dl>
 </li>
 </ul>
 <a name="enablePlugin-java.lang.String-">
@@ -286,6 +314,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>enablePlugin</h4>
 <pre>public static&nbsp;void&nbsp;enablePlugin(java.lang.String&nbsp;name)</pre>
+<div class="block">Enables a loaded plugin if it isn't already enabled</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin to enable</dd>
+</dl>
 </li>
 </ul>
 <a name="disablePlugin-java.lang.String-">
@@ -295,6 +328,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>disablePlugin</h4>
 <pre>public static&nbsp;void&nbsp;disablePlugin(java.lang.String&nbsp;name)</pre>
+<div class="block">Disables a loaded plugin if it isn't already disables</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin to disable</dd>
+</dl>
 </li>
 </ul>
 <a name="togglePlugin-java.lang.String-">
@@ -304,6 +342,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>togglePlugin</h4>
 <pre>public static&nbsp;void&nbsp;togglePlugin(java.lang.String&nbsp;name)</pre>
+<div class="block">Toggles a plugin. If it is enabled, it will be disabled and vice versa.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin to toggle</dd>
+</dl>
 </li>
 </ul>
 <a name="startPlugin-java.lang.String-">
@@ -313,6 +356,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>startPlugin</h4>
 <pre>public static&nbsp;void&nbsp;startPlugin(java.lang.String&nbsp;name)</pre>
+<div class="block">Starts a plugin</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin to start</dd>
+</dl>
 </li>
 </ul>
 <a name="stopPlugin-java.lang.String-">
@@ -322,6 +370,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>stopPlugin</h4>
 <pre>public static&nbsp;void&nbsp;stopPlugin(java.lang.String&nbsp;name)</pre>
+<div class="block">Stops a plugin</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin to stop</dd>
+</dl>
 </li>
 </ul>
 <a name="getPluginPrefKey-java.lang.String-">
@@ -331,6 +384,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getPluginPrefKey</h4>
 <pre>public static&nbsp;java.lang.String&nbsp;getPluginPrefKey(java.lang.String&nbsp;name)</pre>
+<div class="block">Gets the preferences key for a plugin. This is used as key for plugin settings.
+ Format: AC_PM_{PLUGIN_NAME}</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin</dd>
+</dl>
 </li>
 </ul>
 <a name="isPluginEnabled-java.lang.String-">
@@ -340,6 +399,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>isPluginEnabled</h4>
 <pre>public static&nbsp;boolean&nbsp;isPluginEnabled(java.lang.String&nbsp;name)</pre>
+<div class="block">Checks whether a plugin is enabled</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the plugin</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Whether the plugin is enabled</dd>
+</dl>
 </li>
 </ul>
 <a name="isPluginEnabled-com.aliucord.entities.Plugin-">
@@ -348,7 +414,14 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isPluginEnabled</h4>
-<pre>public static&nbsp;boolean&nbsp;isPluginEnabled(<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&nbsp;p)</pre>
+<pre>public static&nbsp;boolean&nbsp;isPluginEnabled(<a href="../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&nbsp;plugin)</pre>
+<div class="block">Checks whether a plugin is enabled</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>plugin</code> - Plugin</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Whether the plugin is enabled</dd>
+</dl>
 </li>
 </ul>
 </li>

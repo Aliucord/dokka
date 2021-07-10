@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">CommandContext</span>
 extends java.lang.Object</pre>
+<div class="block">Context passed to command executors</div>
 </li>
 </ul>
 </div>
@@ -148,112 +149,164 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#addAttachment-com.lytefast.flexinput.model.Attachment-">addAttachment</a></span>(com.lytefast.flexinput.model.Attachment&lt;?&gt;&nbsp;attachment)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#addAttachment-com.lytefast.flexinput.model.Attachment-">addAttachment</a></span>(com.lytefast.flexinput.model.Attachment&lt;?&gt;&nbsp;attachment)</code>
+<div class="block">Adds an attachment</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#addAttachment-com.discord.api.message.LocalAttachment-">addAttachment</a></span>(com.discord.api.message.LocalAttachment&nbsp;attachment)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#addAttachment-com.discord.api.message.LocalAttachment-">addAttachment</a></span>(com.discord.api.message.LocalAttachment&nbsp;attachment)</code>
+<div class="block">Adds an attachment</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#addAttachment-java.lang.String-java.lang.String-">addAttachment</a></span>(java.lang.String&nbsp;uri,
-             java.lang.String&nbsp;displayName)</code>&nbsp;</td>
+             java.lang.String&nbsp;displayName)</code>
+<div class="block">Adds an attachment</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#containsArg-java.lang.String-">containsArg</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#containsArg-java.lang.String-">containsArg</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Check if the arguments contain the specified key</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#get-java.lang.String-">get</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#get-java.lang.String-">get</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the raw argument with the specified key</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getAttachments--">getAttachments</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getAttachments--">getAttachments</a></span>()</code>
+<div class="block">Returns the attachments of the message that invoked this command</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getBool-java.lang.String-">getBool</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getBool-java.lang.String-">getBool</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the Boolean argument with the specified key</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getBoolOrDefault-java.lang.String-boolean-">getBoolOrDefault</a></span>(java.lang.String&nbsp;key,
-                boolean&nbsp;defaultValue)</code>&nbsp;</td>
+                boolean&nbsp;defaultValue)</code>
+<div class="block">Gets the Boolean argument with the specified key or the defaultValue if no such argument is present</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../com/aliucord/wrappers/ChannelWrapper.html" title="class in com.aliucord.wrappers">ChannelWrapper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getChannel--">getChannel</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getChannel--">getChannel</a></span>()</code>
+<div class="block">Returns the current channel</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getChannelId--">getChannelId</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getChannelId--">getChannelId</a></span>()</code>
+<div class="block">Returns the current channel id</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>android.content.Context</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getContext--">getContext</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getContext--">getContext</a></span>()</code>
+<div class="block">Returns the AppContext</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getInt-java.lang.String-">getInt</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getInt-java.lang.String-">getInt</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the Integer argument with the specified key</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getIntOrDefault-java.lang.String-int-">getIntOrDefault</a></span>(java.lang.String&nbsp;key,
-               int&nbsp;defaultValue)</code>&nbsp;</td>
+               int&nbsp;defaultValue)</code>
+<div class="block">Gets the Integer argument with the specified key or the defaultValue if no such argument is present</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.Long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getLong-java.lang.String-">getLong</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getLong-java.lang.String-">getLong</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the Long argument with the specified key</div>
+</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getLongOrDefault-java.lang.String-long-">getLongOrDefault</a></span>(java.lang.String&nbsp;key,
-                long&nbsp;defaultValue)</code>&nbsp;</td>
+                long&nbsp;defaultValue)</code>
+<div class="block">Gets the Long argument with the specified key or the defaultValue if no such argument is present</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMaxFileSizeMB--">getMaxFileSizeMB</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMaxFileSizeMB--">getMaxFileSizeMB</a></span>()</code>
+<div class="block">Returns the maximum size attachments may be</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>com.discord.models.user.MeUser</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMe--">getMe</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMe--">getMe</a></span>()</code>
+<div class="block">Returns the current user</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;com.discord.models.user.User&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMentionedUsers--">getMentionedUsers</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMentionedUsers--">getMentionedUsers</a></span>()</code>
+<div class="block">Returns the mentioned users</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>com.discord.api.message.MessageReference</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMessageReference--">getMessageReference</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getMessageReference--">getMessageReference</a></span>()</code>
+<div class="block">Returns the MessageReference</div>
+</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getOrDefault-java.lang.String-java.lang.Object-">getOrDefault</a></span>(java.lang.String&nbsp;key,
-            java.lang.Object&nbsp;defaultValue)</code>&nbsp;</td>
+            java.lang.Object&nbsp;defaultValue)</code>
+<div class="block">Gets the raw argument with the specified key or the defaultValue if no such argument is present</div>
+</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRawArgs--">getRawArgs</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRawArgs--">getRawArgs</a></span>()</code>
+<div class="block">Returns the raw args</div>
+</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRawContent--">getRawContent</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRawContent--">getRawContent</a></span>()</code>
+<div class="block">Returns the raw content of the message that invoked this command</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>com.discord.models.message.Message</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessage--">getReferencedMessage</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessage--">getReferencedMessage</a></span>()</code>
+<div class="block">Returns the referenced message</div>
+</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>com.discord.models.user.User</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessageAuthor--">getReferencedMessageAuthor</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessageAuthor--">getReferencedMessageAuthor</a></span>()</code>
+<div class="block">Returns the Author of the referenced message</div>
+</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>com.discord.models.member.GuildMember</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessageAuthorGuildMember--">getReferencedMessageAuthorGuildMember</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessageAuthorGuildMember--">getReferencedMessageAuthorGuildMember</a></span>()</code>
+<div class="block">Returns the Author of the referenced message as member of the current guild</div>
+</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessageLink--">getReferencedMessageLink</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getReferencedMessageLink--">getReferencedMessageLink</a></span>()</code>
+<div class="block">Returns the link of the referenced message</div>
+</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>com.discord.widgets.chat.input.ChatInputViewModel.ViewState.Loaded.PendingReplyState.Replying</code></td>
@@ -261,57 +314,83 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequired-java.lang.String-">getRequired</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequired-java.lang.String-">getRequired</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the <strong>required</strong> raw argument with the specified key</div>
+</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredBool-java.lang.String-">getRequiredBool</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredBool-java.lang.String-">getRequiredBool</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the <strong>required</strong> Boolean argument with the specified key</div>
+</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredInt-java.lang.String-">getRequiredInt</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredInt-java.lang.String-">getRequiredInt</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the <strong>required</strong> Integer argument with the specified key</div>
+</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredLong-java.lang.String-">getRequiredLong</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredLong-java.lang.String-">getRequiredLong</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the <strong>required</strong> Long argument with the specified key</div>
+</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredString-java.lang.String-">getRequiredString</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredString-java.lang.String-">getRequiredString</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the <strong>required</strong> String argument with the specified key</div>
+</td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>com.discord.models.user.User</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredUser-java.lang.String-">getRequiredUser</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getRequiredUser-java.lang.String-">getRequiredUser</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the <strong>required</strong> User argument with the specified key</div>
+</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getString-java.lang.String-">getString</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getString-java.lang.String-">getString</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the String argument with the specified key</div>
+</td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getStringOrDefault-java.lang.String-java.lang.String-">getStringOrDefault</a></span>(java.lang.String&nbsp;key,
-                  java.lang.String&nbsp;defaultValue)</code>&nbsp;</td>
+                  java.lang.String&nbsp;defaultValue)</code>
+<div class="block">Gets the String argument with the specified key or the defaultValue if no such argument is present</div>
+</td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getSubCommandArgs-java.lang.String-">getSubCommandArgs</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getSubCommandArgs-java.lang.String-">getSubCommandArgs</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the arguments object for the specified subcommand</div>
+</td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>com.discord.models.user.User</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getUser-java.lang.String-">getUser</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getUser-java.lang.String-">getUser</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Gets the User argument with the specified key</div>
+</td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>com.discord.models.user.User</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getUserOrDefault-java.lang.String-com.discord.models.user.User-">getUserOrDefault</a></span>(java.lang.String&nbsp;key,
-                com.discord.models.user.User&nbsp;defaultValue)</code>&nbsp;</td>
+                com.discord.models.user.User&nbsp;defaultValue)</code>
+<div class="block">Gets the User argument with the specified key or the defaultValue if no such argument is present</div>
+</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>com.discord.widgets.chat.input.ChatInputViewModel.ViewState.Loaded</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getViewState--">getViewState</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#getViewState--">getViewState</a></span>()</code>
+<div class="block">Returns the ViewState associated with this Context</div>
+</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#setChannelId-long-">setChannelId</a></span>(long&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/entities/CommandContext.html#setChannelId-long-">setChannelId</a></span>(long&nbsp;id)</code>
+<div class="block">Sets the current channel id</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -362,6 +441,7 @@ extends java.lang.Object</pre>
 <h4>getViewState</h4>
 <pre>@NonNull
 public&nbsp;com.discord.widgets.chat.input.ChatInputViewModel.ViewState.Loaded&nbsp;getViewState()</pre>
+<div class="block">Returns the ViewState associated with this Context</div>
 </li>
 </ul>
 <a name="getContext--">
@@ -371,6 +451,7 @@ public&nbsp;com.discord.widgets.chat.input.ChatInputViewModel.ViewState.Loaded&n
 <li class="blockList">
 <h4>getContext</h4>
 <pre>public&nbsp;android.content.Context&nbsp;getContext()</pre>
+<div class="block">Returns the AppContext</div>
 </li>
 </ul>
 <a name="getMaxFileSizeMB--">
@@ -380,6 +461,7 @@ public&nbsp;com.discord.widgets.chat.input.ChatInputViewModel.ViewState.Loaded&n
 <li class="blockList">
 <h4>getMaxFileSizeMB</h4>
 <pre>public&nbsp;int&nbsp;getMaxFileSizeMB()</pre>
+<div class="block">Returns the maximum size attachments may be</div>
 </li>
 </ul>
 <a name="getReplyingState--">
@@ -400,6 +482,7 @@ public&nbsp;com.discord.widgets.chat.input.ChatInputViewModel.ViewState.Loaded.P
 <h4>getMessageReference</h4>
 <pre>@Nullable
 public&nbsp;com.discord.api.message.MessageReference&nbsp;getMessageReference()</pre>
+<div class="block">Returns the MessageReference</div>
 </li>
 </ul>
 <a name="getReferencedMessageAuthor--">
@@ -410,6 +493,7 @@ public&nbsp;com.discord.api.message.MessageReference&nbsp;getMessageReference()<
 <h4>getReferencedMessageAuthor</h4>
 <pre>@Nullable
 public&nbsp;com.discord.models.user.User&nbsp;getReferencedMessageAuthor()</pre>
+<div class="block">Returns the Author of the referenced message</div>
 </li>
 </ul>
 <a name="getReferencedMessageAuthorGuildMember--">
@@ -420,6 +504,7 @@ public&nbsp;com.discord.models.user.User&nbsp;getReferencedMessageAuthor()</pre>
 <h4>getReferencedMessageAuthorGuildMember</h4>
 <pre>@Nullable
 public&nbsp;com.discord.models.member.GuildMember&nbsp;getReferencedMessageAuthorGuildMember()</pre>
+<div class="block">Returns the Author of the referenced message as member of the current guild</div>
 </li>
 </ul>
 <a name="getReferencedMessage--">
@@ -430,6 +515,7 @@ public&nbsp;com.discord.models.member.GuildMember&nbsp;getReferencedMessageAutho
 <h4>getReferencedMessage</h4>
 <pre>@Nullable
 public&nbsp;com.discord.models.message.Message&nbsp;getReferencedMessage()</pre>
+<div class="block">Returns the referenced message</div>
 </li>
 </ul>
 <a name="getReferencedMessageLink--">
@@ -440,6 +526,7 @@ public&nbsp;com.discord.models.message.Message&nbsp;getReferencedMessage()</pre>
 <h4>getReferencedMessageLink</h4>
 <pre>@Nullable
 public&nbsp;java.lang.String&nbsp;getReferencedMessageLink()</pre>
+<div class="block">Returns the link of the referenced message</div>
 </li>
 </ul>
 <a name="getChannelId--">
@@ -449,6 +536,7 @@ public&nbsp;java.lang.String&nbsp;getReferencedMessageLink()</pre>
 <li class="blockList">
 <h4>getChannelId</h4>
 <pre>public&nbsp;long&nbsp;getChannelId()</pre>
+<div class="block">Returns the current channel id</div>
 </li>
 </ul>
 <a name="setChannelId-long-">
@@ -458,6 +546,7 @@ public&nbsp;java.lang.String&nbsp;getReferencedMessageLink()</pre>
 <li class="blockList">
 <h4>setChannelId</h4>
 <pre>public&nbsp;void&nbsp;setChannelId(long&nbsp;id)</pre>
+<div class="block">Sets the current channel id</div>
 </li>
 </ul>
 <a name="getChannel--">
@@ -468,6 +557,7 @@ public&nbsp;java.lang.String&nbsp;getReferencedMessageLink()</pre>
 <h4>getChannel</h4>
 <pre>@NonNull
 public&nbsp;<a href="../../../com/aliucord/wrappers/ChannelWrapper.html" title="class in com.aliucord.wrappers">ChannelWrapper</a>&nbsp;getChannel()</pre>
+<div class="block">Returns the current channel</div>
 </li>
 </ul>
 <a name="getRawContent--">
@@ -477,6 +567,7 @@ public&nbsp;<a href="../../../com/aliucord/wrappers/ChannelWrapper.html" title="
 <li class="blockList">
 <h4>getRawContent</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getRawContent()</pre>
+<div class="block">Returns the raw content of the message that invoked this command</div>
 </li>
 </ul>
 <a name="getAttachments--">
@@ -487,6 +578,7 @@ public&nbsp;<a href="../../../com/aliucord/wrappers/ChannelWrapper.html" title="
 <h4>getAttachments</h4>
 <pre>@NonNull
 public&nbsp;java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&gt;&nbsp;getAttachments()</pre>
+<div class="block">Returns the attachments of the message that invoked this command</div>
 </li>
 </ul>
 <a name="addAttachment-java.lang.String-java.lang.String-">
@@ -497,6 +589,12 @@ public&nbsp;java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&g
 <h4>addAttachment</h4>
 <pre>public&nbsp;void&nbsp;addAttachment(java.lang.String&nbsp;uri,
                           java.lang.String&nbsp;displayName)</pre>
+<div class="block">Adds an attachment</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - Uri of the attachment</dd>
+<dd><code>displayName</code> - file name</dd>
+</dl>
 </li>
 </ul>
 <a name="addAttachment-com.discord.api.message.LocalAttachment-">
@@ -506,6 +604,11 @@ public&nbsp;java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&g
 <li class="blockList">
 <h4>addAttachment</h4>
 <pre>public&nbsp;void&nbsp;addAttachment(com.discord.api.message.LocalAttachment&nbsp;attachment)</pre>
+<div class="block">Adds an attachment</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>attachment</code> - Attachment</dd>
+</dl>
 </li>
 </ul>
 <a name="addAttachment-com.lytefast.flexinput.model.Attachment-">
@@ -515,6 +618,11 @@ public&nbsp;java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&g
 <li class="blockList">
 <h4>addAttachment</h4>
 <pre>public&nbsp;void&nbsp;addAttachment(com.lytefast.flexinput.model.Attachment&lt;?&gt;&nbsp;attachment)</pre>
+<div class="block">Adds an attachment</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>attachment</code> - Attachment</dd>
+</dl>
 </li>
 </ul>
 <a name="getMentionedUsers--">
@@ -524,6 +632,7 @@ public&nbsp;java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&g
 <li class="blockList">
 <h4>getMentionedUsers</h4>
 <pre>public&nbsp;java.util.List&lt;com.discord.models.user.User&gt;&nbsp;getMentionedUsers()</pre>
+<div class="block">Returns the mentioned users</div>
 </li>
 </ul>
 <a name="getMe--">
@@ -534,6 +643,7 @@ public&nbsp;java.util.List&lt;com.lytefast.flexinput.model.Attachment&lt;?&gt;&g
 <h4>getMe</h4>
 <pre>@NonNull
 public&nbsp;com.discord.models.user.MeUser&nbsp;getMe()</pre>
+<div class="block">Returns the current user</div>
 </li>
 </ul>
 <a name="getRawArgs--">
@@ -544,6 +654,7 @@ public&nbsp;com.discord.models.user.MeUser&nbsp;getMe()</pre>
 <h4>getRawArgs</h4>
 <pre>@NonNull
 public&nbsp;java.util.Map&lt;java.lang.String,?&gt;&nbsp;getRawArgs()</pre>
+<div class="block">Returns the raw args</div>
 </li>
 </ul>
 <a name="containsArg-java.lang.String-">
@@ -553,6 +664,11 @@ public&nbsp;java.util.Map&lt;java.lang.String,?&gt;&nbsp;getRawArgs()</pre>
 <li class="blockList">
 <h4>containsArg</h4>
 <pre>public&nbsp;boolean&nbsp;containsArg(java.lang.String&nbsp;key)</pre>
+<div class="block">Check if the arguments contain the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key to check</dd>
+</dl>
 </li>
 </ul>
 <a name="getSubCommandArgs-java.lang.String-">
@@ -563,6 +679,11 @@ public&nbsp;java.util.Map&lt;java.lang.String,?&gt;&nbsp;getRawArgs()</pre>
 <h4>getSubCommandArgs</h4>
 <pre>@Nullable
 public&nbsp;java.util.Map&lt;java.lang.String,?&gt;&nbsp;getSubCommandArgs(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the arguments object for the specified subcommand</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the subcommand</dd>
+</dl>
 </li>
 </ul>
 <a name="get-java.lang.String-">
@@ -573,6 +694,11 @@ public&nbsp;java.util.Map&lt;java.lang.String,?&gt;&nbsp;getSubCommandArgs(java.
 <h4>get</h4>
 <pre>@Nullable
 public&nbsp;java.lang.Object&nbsp;get(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the raw argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getRequired-java.lang.String-">
@@ -583,6 +709,11 @@ public&nbsp;java.lang.Object&nbsp;get(java.lang.String&nbsp;key)</pre>
 <h4>getRequired</h4>
 <pre>@NonNull
 public&nbsp;java.lang.Object&nbsp;getRequired(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the <strong>required</strong> raw argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getOrDefault-java.lang.String-java.lang.Object-">
@@ -594,6 +725,12 @@ public&nbsp;java.lang.Object&nbsp;getRequired(java.lang.String&nbsp;key)</pre>
 <pre>@NonNull
 public&nbsp;java.lang.Object&nbsp;getOrDefault(java.lang.String&nbsp;key,
                                               java.lang.Object&nbsp;defaultValue)</pre>
+<div class="block">Gets the raw argument with the specified key or the defaultValue if no such argument is present</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+<dd><code>defaultValue</code> - The default value</dd>
+</dl>
 </li>
 </ul>
 <a name="getString-java.lang.String-">
@@ -604,6 +741,11 @@ public&nbsp;java.lang.Object&nbsp;getOrDefault(java.lang.String&nbsp;key,
 <h4>getString</h4>
 <pre>@Nullable
 public&nbsp;java.lang.String&nbsp;getString(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the String argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getRequiredString-java.lang.String-">
@@ -614,6 +756,11 @@ public&nbsp;java.lang.String&nbsp;getString(java.lang.String&nbsp;key)</pre>
 <h4>getRequiredString</h4>
 <pre>@NonNull
 public&nbsp;java.lang.String&nbsp;getRequiredString(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the <strong>required</strong> String argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getStringOrDefault-java.lang.String-java.lang.String-">
@@ -626,6 +773,11 @@ public&nbsp;java.lang.String&nbsp;getRequiredString(java.lang.String&nbsp;key)</
 public&nbsp;java.lang.String&nbsp;getStringOrDefault(java.lang.String&nbsp;key,
                                                     @NonNull
                                                     java.lang.String&nbsp;defaultValue)</pre>
+<div class="block">Gets the String argument with the specified key or the defaultValue if no such argument is present</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getInt-java.lang.String-">
@@ -636,6 +788,11 @@ public&nbsp;java.lang.String&nbsp;getStringOrDefault(java.lang.String&nbsp;key,
 <h4>getInt</h4>
 <pre>@Nullable
 public&nbsp;java.lang.Integer&nbsp;getInt(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the Integer argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getRequiredInt-java.lang.String-">
@@ -645,6 +802,11 @@ public&nbsp;java.lang.Integer&nbsp;getInt(java.lang.String&nbsp;key)</pre>
 <li class="blockList">
 <h4>getRequiredInt</h4>
 <pre>public&nbsp;int&nbsp;getRequiredInt(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the <strong>required</strong> Integer argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getIntOrDefault-java.lang.String-int-">
@@ -655,6 +817,11 @@ public&nbsp;java.lang.Integer&nbsp;getInt(java.lang.String&nbsp;key)</pre>
 <h4>getIntOrDefault</h4>
 <pre>public&nbsp;int&nbsp;getIntOrDefault(java.lang.String&nbsp;key,
                            int&nbsp;defaultValue)</pre>
+<div class="block">Gets the Integer argument with the specified key or the defaultValue if no such argument is present</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getLong-java.lang.String-">
@@ -665,6 +832,11 @@ public&nbsp;java.lang.Integer&nbsp;getInt(java.lang.String&nbsp;key)</pre>
 <h4>getLong</h4>
 <pre>@Nullable
 public&nbsp;java.lang.Long&nbsp;getLong(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the Long argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getRequiredLong-java.lang.String-">
@@ -674,6 +846,11 @@ public&nbsp;java.lang.Long&nbsp;getLong(java.lang.String&nbsp;key)</pre>
 <li class="blockList">
 <h4>getRequiredLong</h4>
 <pre>public&nbsp;long&nbsp;getRequiredLong(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the <strong>required</strong> Long argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getLongOrDefault-java.lang.String-long-">
@@ -684,6 +861,11 @@ public&nbsp;java.lang.Long&nbsp;getLong(java.lang.String&nbsp;key)</pre>
 <h4>getLongOrDefault</h4>
 <pre>public&nbsp;long&nbsp;getLongOrDefault(java.lang.String&nbsp;key,
                              long&nbsp;defaultValue)</pre>
+<div class="block">Gets the Long argument with the specified key or the defaultValue if no such argument is present</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getBool-java.lang.String-">
@@ -694,6 +876,11 @@ public&nbsp;java.lang.Long&nbsp;getLong(java.lang.String&nbsp;key)</pre>
 <h4>getBool</h4>
 <pre>@Nullable
 public&nbsp;java.lang.Boolean&nbsp;getBool(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the Boolean argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getRequiredBool-java.lang.String-">
@@ -703,6 +890,11 @@ public&nbsp;java.lang.Boolean&nbsp;getBool(java.lang.String&nbsp;key)</pre>
 <li class="blockList">
 <h4>getRequiredBool</h4>
 <pre>public&nbsp;boolean&nbsp;getRequiredBool(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the <strong>required</strong> Boolean argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getBoolOrDefault-java.lang.String-boolean-">
@@ -713,6 +905,11 @@ public&nbsp;java.lang.Boolean&nbsp;getBool(java.lang.String&nbsp;key)</pre>
 <h4>getBoolOrDefault</h4>
 <pre>public&nbsp;boolean&nbsp;getBoolOrDefault(java.lang.String&nbsp;key,
                                 boolean&nbsp;defaultValue)</pre>
+<div class="block">Gets the Boolean argument with the specified key or the defaultValue if no such argument is present</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getUser-java.lang.String-">
@@ -723,6 +920,11 @@ public&nbsp;java.lang.Boolean&nbsp;getBool(java.lang.String&nbsp;key)</pre>
 <h4>getUser</h4>
 <pre>@Nullable
 public&nbsp;com.discord.models.user.User&nbsp;getUser(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the User argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getRequiredUser-java.lang.String-">
@@ -733,6 +935,11 @@ public&nbsp;com.discord.models.user.User&nbsp;getUser(java.lang.String&nbsp;key)
 <h4>getRequiredUser</h4>
 <pre>@NonNull
 public&nbsp;com.discord.models.user.User&nbsp;getRequiredUser(java.lang.String&nbsp;key)</pre>
+<div class="block">Gets the <strong>required</strong> User argument with the specified key</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 <a name="getUserOrDefault-java.lang.String-com.discord.models.user.User-">
@@ -744,6 +951,11 @@ public&nbsp;com.discord.models.user.User&nbsp;getRequiredUser(java.lang.String&n
 <pre>@NonNull
 public&nbsp;com.discord.models.user.User&nbsp;getUserOrDefault(java.lang.String&nbsp;key,
                                                               com.discord.models.user.User&nbsp;defaultValue)</pre>
+<div class="block">Gets the User argument with the specified key or the defaultValue if no such argument is present</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - The key of the argument</dd>
+</dl>
 </li>
 </ul>
 </li>

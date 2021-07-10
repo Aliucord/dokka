@@ -153,14 +153,20 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Request.html#Request-com.aliucord.Http.QueryBuilder-">Request</a></span>(<a href="../../com/aliucord/Http.QueryBuilder.html" title="class in com.aliucord">Http.QueryBuilder</a>&nbsp;builder)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Request.html#Request-com.aliucord.Http.QueryBuilder-">Request</a></span>(<a href="../../com/aliucord/Http.QueryBuilder.html" title="class in com.aliucord">Http.QueryBuilder</a>&nbsp;builder)</code>
+<div class="block">Builds a GET request with the specified QueryBuilder</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Request.html#Request-java.lang.String-">Request</a></span>(java.lang.String&nbsp;url)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Request.html#Request-java.lang.String-">Request</a></span>(java.lang.String&nbsp;url)</code>
+<div class="block">Builds a GET request with the specified url</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Request.html#Request-java.lang.String-java.lang.String-">Request</a></span>(java.lang.String&nbsp;url,
-       java.lang.String&nbsp;method)</code>&nbsp;</td>
+       java.lang.String&nbsp;method)</code>
+<div class="block">Builds a request with the specified url and method</div>
+</td>
 </tr>
 </table>
 </li>
@@ -262,9 +268,12 @@ extends java.lang.Object</pre>
 <h4>Request</h4>
 <pre>public&nbsp;Request(<a href="../../com/aliucord/Http.QueryBuilder.html" title="class in com.aliucord">Http.QueryBuilder</a>&nbsp;builder)
         throws java.io.IOException</pre>
+<div class="block">Builds a GET request with the specified QueryBuilder</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>builder</code> - QueryBuilder</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - If an I/O exception occurs</dd>
 </dl>
 </li>
 </ul>
@@ -276,9 +285,12 @@ extends java.lang.Object</pre>
 <h4>Request</h4>
 <pre>public&nbsp;Request(java.lang.String&nbsp;url)
         throws java.io.IOException</pre>
+<div class="block">Builds a GET request with the specified url</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - Url</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - If an I/O exception occurs</dd>
 </dl>
 </li>
 </ul>
@@ -291,9 +303,13 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;Request(java.lang.String&nbsp;url,
                java.lang.String&nbsp;method)
         throws java.io.IOException</pre>
+<div class="block">Builds a request with the specified url and method</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - Url</dd>
+<dd><code>method</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP method</a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - If an I/O exception occurs</dd>
 </dl>
 </li>
 </ul>

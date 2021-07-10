@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Http</span>
 extends java.lang.Object</pre>
+<div class="block">Http Utilities</div>
 </li>
 </ul>
 </div>
@@ -189,12 +190,27 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simpleJsonGet-java.lang.String-java.lang.Class-">simpleJsonGet</a></span>(java.lang.String&nbsp;url,
+             java.lang.Class&lt;T&gt;&nbsp;schema)</code>
+<div class="block">Send a simple GET request</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simpleJsonGet-java.lang.String-java.lang.reflect.Type-">simpleJsonGet</a></span>(java.lang.String&nbsp;url,
              java.lang.reflect.Type&nbsp;schema)</code>
 <div class="block">Send a simple GET request</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simpleJsonPost-java.lang.String-java.lang.Object-java.lang.Class-">simpleJsonPost</a></span>(java.lang.String&nbsp;url,
+              java.lang.Object&nbsp;body,
+              java.lang.Class&lt;T&gt;&nbsp;schema)</code>
+<div class="block">Send a simple POST request with JSON body</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simpleJsonPost-java.lang.String-java.lang.Object-java.lang.reflect.Type-">simpleJsonPost</a></span>(java.lang.String&nbsp;url,
               java.lang.Object&nbsp;body,
@@ -202,7 +218,15 @@ extends java.lang.Object</pre>
 <div class="block">Send a simple POST request with JSON body</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simpleJsonPost-java.lang.String-java.lang.String-java.lang.Class-">simpleJsonPost</a></span>(java.lang.String&nbsp;url,
+              java.lang.String&nbsp;body,
+              java.lang.Class&lt;T&gt;&nbsp;schema)</code>
+<div class="block">Send a simple POST request and parse the JSON response</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simpleJsonPost-java.lang.String-java.lang.String-java.lang.reflect.Type-">simpleJsonPost</a></span>(java.lang.String&nbsp;url,
               java.lang.String&nbsp;body,
@@ -210,7 +234,7 @@ extends java.lang.Object</pre>
 <div class="block">Send a simple POST request and parse the JSON response</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.html#simplePost-java.lang.String-java.lang.String-">simplePost</a></span>(java.lang.String&nbsp;url,
           java.lang.String&nbsp;body)</code>
@@ -296,6 +320,27 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a name="simpleJsonGet-java.lang.String-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>simpleJsonGet</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;simpleJsonGet(java.lang.String&nbsp;url,
+                                  java.lang.Class&lt;T&gt;&nbsp;schema)
+                           throws java.io.IOException</pre>
+<div class="block">Send a simple GET request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - The url to fetch</dd>
+<dd><code>schema</code> - Class to <a href="https://en.wikipedia.org/wiki/Serialization">deserialize</a> the response into</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Response Object</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
 <a name="simplePost-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
@@ -340,7 +385,53 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a name="simpleJsonPost-java.lang.String-java.lang.String-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>simpleJsonPost</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;simpleJsonPost(java.lang.String&nbsp;url,
+                                   java.lang.String&nbsp;body,
+                                   java.lang.Class&lt;T&gt;&nbsp;schema)
+                            throws java.io.IOException</pre>
+<div class="block">Send a simple POST request and parse the JSON response</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - The url to fetch</dd>
+<dd><code>body</code> - The request body</dd>
+<dd><code>schema</code> - Class to <a href="https://en.wikipedia.org/wiki/Serialization">deserialize</a> the response into</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Response deserialized into the provided Class</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
 <a name="simpleJsonPost-java.lang.String-java.lang.Object-java.lang.reflect.Type-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>simpleJsonPost</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;simpleJsonPost(java.lang.String&nbsp;url,
+                                   java.lang.Object&nbsp;body,
+                                   java.lang.reflect.Type&nbsp;schema)
+                            throws java.io.IOException</pre>
+<div class="block">Send a simple POST request with JSON body</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - The url to fetch</dd>
+<dd><code>body</code> - The request body</dd>
+<dd><code>schema</code> - Class to <a href="https://en.wikipedia.org/wiki/Serialization">deserialize</a> the response into</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Response deserialized into the provided Class</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a name="simpleJsonPost-java.lang.String-java.lang.Object-java.lang.Class-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -348,7 +439,7 @@ extends java.lang.Object</pre>
 <h4>simpleJsonPost</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;simpleJsonPost(java.lang.String&nbsp;url,
                                    java.lang.Object&nbsp;body,
-                                   java.lang.reflect.Type&nbsp;schema)
+                                   java.lang.Class&lt;T&gt;&nbsp;schema)
                             throws java.io.IOException</pre>
 <div class="block">Send a simple POST request with JSON body</div>
 <dl>

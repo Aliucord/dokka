@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -159,7 +159,9 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Response.html#Response-com.aliucord.Http.Request-">Response</a></span>(<a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a>&nbsp;req)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Response.html#Response-com.aliucord.Http.Request-">Response</a></span>(<a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a>&nbsp;req)</code>
+<div class="block">Construct a Response</div>
+</td>
 </tr>
 </table>
 </li>
@@ -201,12 +203,18 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Response.html#saveToFile-java.io.File-">saveToFile</a></span>(java.io.File&nbsp;file)</code>
+<div class="block">Saves the received data to the specified file</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.io.InputStream</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Response.html#stream--">stream</a></span>()</code>
 <div class="block">Get the raw response stream of this connection</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.Response.html#text--">text</a></span>()</code>
 <div class="block">Get the raw response</div>
@@ -270,9 +278,12 @@ extends java.lang.Object</pre>
 <h4>Response</h4>
 <pre>public&nbsp;Response(<a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a>&nbsp;req)
          throws java.io.IOException</pre>
+<div class="block">Construct a Response</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>req</code> - The http request to execute</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - If an error occurred connecting to the server</dd>
 </dl>
 </li>
 </ul>
@@ -363,7 +374,7 @@ extends java.lang.Object</pre>
 <a name="pipe-java.io.OutputStream-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>pipe</h4>
 <pre>public&nbsp;void&nbsp;pipe(java.io.OutputStream&nbsp;os)
@@ -374,6 +385,23 @@ extends java.lang.Object</pre>
 <dd><code>os</code> - The OutputStream to pipe into</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a name="saveToFile-java.io.File-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>saveToFile</h4>
+<pre>public&nbsp;void&nbsp;saveToFile(java.io.File&nbsp;file)
+                throws java.io.IOException</pre>
+<div class="block">Saves the received data to the specified file</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - The file to save the data to</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - If an I/O error occurred: No such file / file is directory / etc</dd>
 </dl>
 </li>
 </ul>

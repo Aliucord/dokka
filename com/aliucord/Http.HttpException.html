@@ -67,13 +67,13 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#methods.inherited.from.class.java.lang.Throwable">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li>Method</li>
 </ul>
@@ -136,6 +136,57 @@ extends java.io.IOException</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#method">method</a></span></code>
+<div class="block">The HTTP method of this request</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#req">req</a></span></code>
+<div class="block">The raw Request object</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#res">res</a></span></code>
+<div class="block">The raw Response object</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#statusCode">statusCode</a></span></code>
+<div class="block">The status code of the response</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#statusMessage">statusMessage</a></span></code>
+<div class="block">The status message of the response</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.net.URL</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#url">url</a></span></code>
+<div class="block">The url of this request</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -148,7 +199,10 @@ extends java.io.IOException</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#HttpException-java.lang.String-">HttpException</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Http.HttpException.html#HttpException-com.aliucord.Http.Request-com.aliucord.Http.Response-">HttpException</a></span>(<a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a>&nbsp;req,
+             <a href="../../com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a>&nbsp;res)</code>
+<div class="block">Creates a new HttpException for the specified Request and Response</div>
+</td>
 </tr>
 </table>
 </li>
@@ -181,19 +235,89 @@ extends java.io.IOException</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="url">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>url</h4>
+<pre>public final&nbsp;java.net.URL url</pre>
+<div class="block">The url of this request</div>
+</li>
+</ul>
+<a name="method">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>public final&nbsp;java.lang.String method</pre>
+<div class="block">The HTTP method of this request</div>
+</li>
+</ul>
+<a name="statusCode">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>statusCode</h4>
+<pre>public final&nbsp;int statusCode</pre>
+<div class="block">The status code of the response</div>
+</li>
+</ul>
+<a name="statusMessage">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>statusMessage</h4>
+<pre>public final&nbsp;java.lang.String statusMessage</pre>
+<div class="block">The status message of the response</div>
+</li>
+</ul>
+<a name="req">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>req</h4>
+<pre>public final&nbsp;<a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a> req</pre>
+<div class="block">The raw Request object</div>
+</li>
+</ul>
+<a name="res">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>res</h4>
+<pre>public final&nbsp;<a href="../../com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a> res</pre>
+<div class="block">The raw Response object</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="HttpException-java.lang.String-">
+<a name="HttpException-com.aliucord.Http.Request-com.aliucord.Http.Response-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>HttpException</h4>
-<pre>public&nbsp;HttpException(java.lang.String&nbsp;message)</pre>
+<pre>public&nbsp;HttpException(<a href="../../com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a>&nbsp;req,
+                     <a href="../../com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a>&nbsp;res)</pre>
+<div class="block">Creates a new HttpException for the specified Request and Response</div>
 </li>
 </ul>
 </li>
@@ -249,13 +373,13 @@ extends java.io.IOException</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#methods.inherited.from.class.java.lang.Throwable">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li>Method</li>
 </ul>

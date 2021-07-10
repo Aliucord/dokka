@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">SettingsUtils</span>
 extends java.lang.Object</pre>
+<div class="block">Utility class to store and retrieve preferences</div>
 </li>
 </ul>
 </div>
@@ -147,43 +148,66 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getBool-java.lang.String-boolean-">getBool</a></span>(java.lang.String&nbsp;key,
-       boolean&nbsp;defValue)</code>&nbsp;</td>
+       boolean&nbsp;defValue)</code>
+<div class="block">Get a boolean value from the preferences</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getInt-java.lang.String-int-">getInt</a></span>(java.lang.String&nbsp;key,
-      int&nbsp;defValue)</code>&nbsp;</td>
+      int&nbsp;defValue)</code>
+<div class="block">Get an int value from the preferences</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getObject-java.lang.String-T-java.lang.reflect.Type-">getObject</a></span>(java.lang.String&nbsp;key,
-         T&nbsp;defValue,
-         java.lang.reflect.Type&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getObject-java.lang.String-T-">getObject</a></span>(java.lang.String&nbsp;key,
+         T&nbsp;defValue)</code>
+<div class="block">Get an Object value from the preferences</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getString-java.lang.String-java.lang.String-">getString</a></span>(java.lang.String&nbsp;key,
-         java.lang.String&nbsp;defValue)</code>&nbsp;</td>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getObject-java.lang.String-T-java.lang.reflect.Type-">getObject</a></span>(java.lang.String&nbsp;key,
+         T&nbsp;defValue,
+         java.lang.reflect.Type&nbsp;type)</code>
+<div class="block">Get an Object value from the preferences</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setBool-java.lang.String-boolean-">setBool</a></span>(java.lang.String&nbsp;key,
-       boolean&nbsp;v)</code>&nbsp;</td>
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#getString-java.lang.String-java.lang.String-">getString</a></span>(java.lang.String&nbsp;key,
+         java.lang.String&nbsp;defValue)</code>
+<div class="block">Get a String value from the preferences</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setInt-java.lang.String-int-">setInt</a></span>(java.lang.String&nbsp;key,
-      int&nbsp;v)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setBool-java.lang.String-boolean-">setBool</a></span>(java.lang.String&nbsp;key,
+       boolean&nbsp;val)</code>
+<div class="block">Set a boolean item</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setObject-java.lang.String-java.lang.Object-">setObject</a></span>(java.lang.String&nbsp;key,
-         java.lang.Object&nbsp;v)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setInt-java.lang.String-int-">setInt</a></span>(java.lang.String&nbsp;key,
+      int&nbsp;val)</code>
+<div class="block">Set an int item</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setObject-java.lang.String-java.lang.Object-">setObject</a></span>(java.lang.String&nbsp;key,
+         java.lang.Object&nbsp;val)</code>
+<div class="block">Set an Object item</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/SettingsUtils.html#setString-java.lang.String-java.lang.String-">setString</a></span>(java.lang.String&nbsp;key,
-         java.lang.String&nbsp;v)</code>&nbsp;</td>
+         java.lang.String&nbsp;val)</code>
+<div class="block">Set a String item</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -232,6 +256,14 @@ extends java.lang.Object</pre>
 <h4>getBool</h4>
 <pre>public static&nbsp;boolean&nbsp;getBool(java.lang.String&nbsp;key,
                               boolean&nbsp;defValue)</pre>
+<div class="block">Get a boolean value from the preferences</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the value</dd>
+<dd><code>defValue</code> - Default value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Value if found, else the defValue</dd>
+</dl>
 </li>
 </ul>
 <a name="setBool-java.lang.String-boolean-">
@@ -241,7 +273,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setBool</h4>
 <pre>public static&nbsp;void&nbsp;setBool(java.lang.String&nbsp;key,
-                           boolean&nbsp;v)</pre>
+                           boolean&nbsp;val)</pre>
+<div class="block">Set a boolean item</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the item</dd>
+<dd><code>val</code> - Value</dd>
+</dl>
 </li>
 </ul>
 <a name="getInt-java.lang.String-int-">
@@ -252,6 +290,14 @@ extends java.lang.Object</pre>
 <h4>getInt</h4>
 <pre>public static&nbsp;int&nbsp;getInt(java.lang.String&nbsp;key,
                          int&nbsp;defValue)</pre>
+<div class="block">Get an int value from the preferences</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the value</dd>
+<dd><code>defValue</code> - Default value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Value if found, else the defValue</dd>
+</dl>
 </li>
 </ul>
 <a name="setInt-java.lang.String-int-">
@@ -261,7 +307,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setInt</h4>
 <pre>public static&nbsp;void&nbsp;setInt(java.lang.String&nbsp;key,
-                          int&nbsp;v)</pre>
+                          int&nbsp;val)</pre>
+<div class="block">Set an int item</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the item</dd>
+<dd><code>val</code> - Value</dd>
+</dl>
 </li>
 </ul>
 <a name="getString-java.lang.String-java.lang.String-">
@@ -272,6 +324,14 @@ extends java.lang.Object</pre>
 <h4>getString</h4>
 <pre>public static&nbsp;java.lang.String&nbsp;getString(java.lang.String&nbsp;key,
                                          java.lang.String&nbsp;defValue)</pre>
+<div class="block">Get a String value from the preferences</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the value</dd>
+<dd><code>defValue</code> - Default value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Value if found, else the defValue</dd>
+</dl>
 </li>
 </ul>
 <a name="setString-java.lang.String-java.lang.String-">
@@ -281,7 +341,33 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setString</h4>
 <pre>public static&nbsp;void&nbsp;setString(java.lang.String&nbsp;key,
-                             java.lang.String&nbsp;v)</pre>
+                             java.lang.String&nbsp;val)</pre>
+<div class="block">Set a String item</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the item</dd>
+<dd><code>val</code> - Value</dd>
+</dl>
+</li>
+</ul>
+<a name="getObject-java.lang.String-java.lang.Object-">
+<!--   -->
+</a><a name="getObject-java.lang.String-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getObject</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;getObject(java.lang.String&nbsp;key,
+                              T&nbsp;defValue)</pre>
+<div class="block">Get an Object value from the preferences</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the value</dd>
+<dd><code>defValue</code> - Default value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Value if found, else the defValue</dd>
+</dl>
 </li>
 </ul>
 <a name="getObject-java.lang.String-java.lang.Object-java.lang.reflect.Type-">
@@ -295,6 +381,15 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;getObject(java.lang.String&nbsp;key,
                               T&nbsp;defValue,
                               java.lang.reflect.Type&nbsp;type)</pre>
+<div class="block">Get an Object value from the preferences</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the value</dd>
+<dd><code>defValue</code> - Default value</dd>
+<dd><code>type</code> - Type of the object</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Value if found, else the defValue</dd>
+</dl>
 </li>
 </ul>
 <a name="setObject-java.lang.String-java.lang.Object-">
@@ -304,7 +399,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setObject</h4>
 <pre>public static&nbsp;void&nbsp;setObject(java.lang.String&nbsp;key,
-                             java.lang.Object&nbsp;v)</pre>
+                             java.lang.Object&nbsp;val)</pre>
+<div class="block">Set an Object item</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - Key of the item</dd>
+<dd><code>val</code> - Value</dd>
+</dl>
 </li>
 </ul>
 </li>

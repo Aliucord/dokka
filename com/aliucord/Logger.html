@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Logger</span>
 extends java.lang.Object</pre>
+<div class="block">Logger that will log to both logcat and Discord's debug log</div>
 </li>
 </ul>
 </div>
@@ -129,7 +130,9 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#tag">tag</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#tag">tag</a></span></code>
+<div class="block">Tag of the logger</div>
+</td>
 </tr>
 </table>
 </li>
@@ -146,10 +149,14 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#Logger--">Logger</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#Logger--">Logger</a></span>()</code>
+<div class="block">Creates a logger not associated with any module.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#Logger-java.lang.String-">Logger</a></span>(java.lang.String&nbsp;module)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#Logger-java.lang.String-">Logger</a></span>(java.lang.String&nbsp;module)</code>
+<div class="block">Creates a logger for the specified module.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -168,59 +175,83 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#debug-java.lang.String-">debug</a></span>(java.lang.String&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#debug-java.lang.String-">debug</a></span>(java.lang.String&nbsp;msg)</code>
+<div class="block">Logs a <code>Log.DEBUG</code> message</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#error-android.content.Context-java.lang.String-">error</a></span>(android.content.Context&nbsp;ctx,
-     java.lang.String&nbsp;msg)</code>&nbsp;</td>
+     java.lang.String&nbsp;msg)</code>
+<div class="block">Logs a <code>Log.ERROR</code> message, and shows it to the user as a toast</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#error-android.content.Context-java.lang.String-java.lang.Throwable-">error</a></span>(android.content.Context&nbsp;ctx,
      java.lang.String&nbsp;msg,
-     java.lang.Throwable&nbsp;e)</code>&nbsp;</td>
+     java.lang.Throwable&nbsp;e)</code>
+<div class="block">Logs a <code>Log.ERROR</code> message, shows it to the user as a toast and prints the stacktrace of the exception</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#error-android.content.Context-java.lang.Throwable-">error</a></span>(android.content.Context&nbsp;ctx,
-     java.lang.Throwable&nbsp;e)</code>&nbsp;</td>
+     java.lang.Throwable&nbsp;throwable)</code>
+<div class="block">Logs an exception and shows the user a toast saying "Sorry, something went wrong.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#error-java.lang.String-java.lang.Throwable-">error</a></span>(java.lang.String&nbsp;msg,
-     java.lang.Throwable&nbsp;e)</code>&nbsp;</td>
+     java.lang.Throwable&nbsp;throwable)</code>
+<div class="block">Logs a <code>Log.ERROR</code> message and prints the stacktrace of the exception</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#error-java.lang.Throwable-">error</a></span>(java.lang.Throwable&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#error-java.lang.Throwable-">error</a></span>(java.lang.Throwable&nbsp;throwable)</code>
+<div class="block">Logs an exception</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#info-android.content.Context-java.lang.String-">info</a></span>(android.content.Context&nbsp;ctx,
-    java.lang.String&nbsp;msg)</code>&nbsp;</td>
+    java.lang.String&nbsp;msg)</code>
+<div class="block">Logs a <code>Log.INFO</code> message, and shows it to the user as a toast</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#info-java.lang.String-">info</a></span>(java.lang.String&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#info-java.lang.String-">info</a></span>(java.lang.String&nbsp;msg)</code>
+<div class="block">Logs a <code>Log.INFO</code> message</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#info-java.lang.String-java.lang.Throwable-">info</a></span>(java.lang.String&nbsp;msg,
-    java.lang.Throwable&nbsp;e)</code>&nbsp;</td>
+    java.lang.Throwable&nbsp;throwable)</code>
+<div class="block">Logs a <code>Log.INFO</code> message and prints the stacktrace of the exception</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#verbose-java.lang.String-">verbose</a></span>(java.lang.String&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#verbose-java.lang.String-">verbose</a></span>(java.lang.String&nbsp;msg)</code>
+<div class="block">Logs a <code>Log.VERBOSE</code> message</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#warn-java.lang.String-">warn</a></span>(java.lang.String&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#warn-java.lang.String-">warn</a></span>(java.lang.String&nbsp;msg)</code>
+<div class="block">Logs a <code>Log.WARN</code> message</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../com/aliucord/Logger.html#warn-java.lang.String-java.lang.Throwable-">warn</a></span>(java.lang.String&nbsp;msg,
-    java.lang.Throwable&nbsp;e)</code>&nbsp;</td>
+    java.lang.Throwable&nbsp;throwable)</code>
+<div class="block">Logs a <code>Log.WARN</code> message and prints the stacktrace of the exception</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -251,6 +282,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>tag</h4>
 <pre>public&nbsp;java.lang.String tag</pre>
+<div class="block">Tag of the logger</div>
 </li>
 </ul>
 </li>
@@ -268,6 +300,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>Logger</h4>
 <pre>public&nbsp;Logger()</pre>
+<div class="block">Creates a logger not associated with any module. Its tag will be simply [Aliucord]</div>
 </li>
 </ul>
 <a name="Logger-java.lang.String-">
@@ -277,6 +310,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>Logger</h4>
 <pre>public&nbsp;Logger(java.lang.String&nbsp;module)</pre>
+<div class="block">Creates a logger for the specified module. Its tag will be [Aliucord] [MODULE]</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>module</code> - Name of the module</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -287,6 +325,20 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="verbose-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>verbose</h4>
+<pre>public&nbsp;void&nbsp;verbose(java.lang.String&nbsp;msg)</pre>
+<div class="block">Logs a <code>Log.VERBOSE</code> message</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
+</li>
+</ul>
 <a name="debug-java.lang.String-">
 <!--   -->
 </a>
@@ -294,56 +346,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>debug</h4>
 <pre>public&nbsp;void&nbsp;debug(java.lang.String&nbsp;msg)</pre>
-</li>
-</ul>
-<a name="error-java.lang.Throwable-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>error</h4>
-<pre>public&nbsp;void&nbsp;error(java.lang.Throwable&nbsp;e)</pre>
-</li>
-</ul>
-<a name="error-java.lang.String-java.lang.Throwable-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>error</h4>
-<pre>public&nbsp;void&nbsp;error(java.lang.String&nbsp;msg,
-                  java.lang.Throwable&nbsp;e)</pre>
-</li>
-</ul>
-<a name="error-android.content.Context-java.lang.Throwable-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>error</h4>
-<pre>public&nbsp;void&nbsp;error(android.content.Context&nbsp;ctx,
-                  java.lang.Throwable&nbsp;e)</pre>
-</li>
-</ul>
-<a name="error-android.content.Context-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>error</h4>
-<pre>public&nbsp;void&nbsp;error(android.content.Context&nbsp;ctx,
-                  java.lang.String&nbsp;msg)</pre>
-</li>
-</ul>
-<a name="error-android.content.Context-java.lang.String-java.lang.Throwable-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>error</h4>
-<pre>public&nbsp;void&nbsp;error(android.content.Context&nbsp;ctx,
-                  java.lang.String&nbsp;msg,
-                  java.lang.Throwable&nbsp;e)</pre>
+<div class="block">Logs a <code>Log.DEBUG</code> message</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
 </li>
 </ul>
 <a name="info-java.lang.String-">
@@ -353,6 +360,11 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>info</h4>
 <pre>public&nbsp;void&nbsp;info(java.lang.String&nbsp;msg)</pre>
+<div class="block">Logs a <code>Log.INFO</code> message</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
 </li>
 </ul>
 <a name="info-java.lang.String-java.lang.Throwable-">
@@ -362,7 +374,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>info</h4>
 <pre>public&nbsp;void&nbsp;info(java.lang.String&nbsp;msg,
-                 java.lang.Throwable&nbsp;e)</pre>
+                 java.lang.Throwable&nbsp;throwable)</pre>
+<div class="block">Logs a <code>Log.INFO</code> message and prints the stacktrace of the exception</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+<dd><code>throwable</code> - Exception to log</dd>
+</dl>
 </li>
 </ul>
 <a name="info-android.content.Context-java.lang.String-">
@@ -373,15 +391,12 @@ extends java.lang.Object</pre>
 <h4>info</h4>
 <pre>public&nbsp;void&nbsp;info(android.content.Context&nbsp;ctx,
                  java.lang.String&nbsp;msg)</pre>
-</li>
-</ul>
-<a name="verbose-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>verbose</h4>
-<pre>public&nbsp;void&nbsp;verbose(java.lang.String&nbsp;msg)</pre>
+<div class="block">Logs a <code>Log.INFO</code> message, and shows it to the user as a toast</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - Context</dd>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
 </li>
 </ul>
 <a name="warn-java.lang.String-">
@@ -391,16 +406,106 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>warn</h4>
 <pre>public&nbsp;void&nbsp;warn(java.lang.String&nbsp;msg)</pre>
+<div class="block">Logs a <code>Log.WARN</code> message</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
 </li>
 </ul>
 <a name="warn-java.lang.String-java.lang.Throwable-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>warn</h4>
 <pre>public&nbsp;void&nbsp;warn(java.lang.String&nbsp;msg,
-                 java.lang.Throwable&nbsp;e)</pre>
+                 java.lang.Throwable&nbsp;throwable)</pre>
+<div class="block">Logs a <code>Log.WARN</code> message and prints the stacktrace of the exception</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+<dd><code>throwable</code> - Exception to log</dd>
+</dl>
+</li>
+</ul>
+<a name="error-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>error</h4>
+<pre>public&nbsp;void&nbsp;error(java.lang.Throwable&nbsp;throwable)</pre>
+<div class="block">Logs an exception</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>throwable</code> - Exception to log</dd>
+</dl>
+</li>
+</ul>
+<a name="error-java.lang.String-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>error</h4>
+<pre>public&nbsp;void&nbsp;error(java.lang.String&nbsp;msg,
+                  java.lang.Throwable&nbsp;throwable)</pre>
+<div class="block">Logs a <code>Log.ERROR</code> message and prints the stacktrace of the exception</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - Message to log</dd>
+<dd><code>throwable</code> - Exception to log</dd>
+</dl>
+</li>
+</ul>
+<a name="error-android.content.Context-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>error</h4>
+<pre>public&nbsp;void&nbsp;error(android.content.Context&nbsp;ctx,
+                  java.lang.Throwable&nbsp;throwable)</pre>
+<div class="block">Logs an exception and shows the user a toast saying "Sorry, something went wrong. Please try again."</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - Context</dd>
+<dd><code>throwable</code> - Exception to log</dd>
+</dl>
+</li>
+</ul>
+<a name="error-android.content.Context-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>error</h4>
+<pre>public&nbsp;void&nbsp;error(android.content.Context&nbsp;ctx,
+                  java.lang.String&nbsp;msg)</pre>
+<div class="block">Logs a <code>Log.ERROR</code> message, and shows it to the user as a toast</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - Context</dd>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
+</li>
+</ul>
+<a name="error-android.content.Context-java.lang.String-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>error</h4>
+<pre>public&nbsp;void&nbsp;error(android.content.Context&nbsp;ctx,
+                  java.lang.String&nbsp;msg,
+                  java.lang.Throwable&nbsp;e)</pre>
+<div class="block">Logs a <code>Log.ERROR</code> message, shows it to the user as a toast and prints the stacktrace of the exception</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - Context</dd>
+<dd><code>msg</code> - Message to log</dd>
+</dl>
 </li>
 </ul>
 </li>
