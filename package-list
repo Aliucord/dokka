@@ -1,0 +1,14 @@
+com.aliucord
+com.aliucord.api
+com.aliucord.coreplugins
+com.aliucord.entities
+com.aliucord.fragments
+com.aliucord.patcher
+com.aliucord.settings
+com.aliucord.updater
+com.aliucord.utils
+com.aliucord.views
+com.aliucord.widgets
+com.aliucord.wrappers
+com.aliucord.wrappers.embeds
+com.aliucord.wrappers.messages
