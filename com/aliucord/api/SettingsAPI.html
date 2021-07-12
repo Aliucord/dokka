@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -170,92 +170,57 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getBool-java.lang.String-boolean-">getBool</a></span>(java.lang.String&nbsp;key,
-       boolean&nbsp;defValue)</code>
+       boolean&nbsp;d)</code>
 <div class="block">Reads a <code>boolean</code> from the settings.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getFloat-java.lang.String-float-">getFloat</a></span>(java.lang.String&nbsp;key,
-        float&nbsp;defValue)</code>
-<div class="block">Gets a <code>float</code> stored in the settings.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getInt-java.lang.String-int-">getInt</a></span>(java.lang.String&nbsp;key,
-      int&nbsp;defValue)</code>
+      int&nbsp;d)</code>
 <div class="block">Gets an <code>int</code> stored in the settings.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getLong-java.lang.String-long-">getLong</a></span>(java.lang.String&nbsp;key,
-       long&nbsp;defValue)</code>
-<div class="block">Gets a <code>long</code> stored in the settings.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getObject-java.lang.String-T-">getObject</a></span>(java.lang.String&nbsp;key,
-         T&nbsp;defValue)</code>
-<div class="block">Gets an <code>Object</code> stored in the settings.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getObject-java.lang.String-T-java.lang.reflect.Type-">getObject</a></span>(java.lang.String&nbsp;key,
-         T&nbsp;defValue,
+         T&nbsp;d,
          java.lang.reflect.Type&nbsp;type)</code>
 <div class="block">Gets an <code>Object</code> stored in the settings.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#getString-java.lang.String-java.lang.String-">getString</a></span>(java.lang.String&nbsp;key,
-         java.lang.String&nbsp;defValue)</code>
+         java.lang.String&nbsp;d)</code>
 <div class="block">Gets a <code>String</code> stored in the settings.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setBool-java.lang.String-boolean-">setBool</a></span>(java.lang.String&nbsp;key,
+       boolean&nbsp;v)</code>
+<div class="block">Writes a <code>boolean</code> to the settings.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setInt-java.lang.String-int-">setInt</a></span>(java.lang.String&nbsp;key,
+      int&nbsp;v)</code>
+<div class="block">Writes an <code>int</code> to the settings.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setObject-java.lang.String-java.lang.Object-">setObject</a></span>(java.lang.String&nbsp;key,
+         java.lang.Object&nbsp;v)</code>
+<div class="block">Writes an <code>Object</code> to the settings.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setBool-java.lang.String-boolean-">setBool</a></span>(java.lang.String&nbsp;key,
-       boolean&nbsp;val)</code>
-<div class="block">Writes a <code>boolean</code> to the settings.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setFloat-java.lang.String-float-">setFloat</a></span>(java.lang.String&nbsp;key,
-        float&nbsp;val)</code>
-<div class="block">Writes a <code>float</code> to the settings.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setInt-java.lang.String-int-">setInt</a></span>(java.lang.String&nbsp;key,
-      int&nbsp;val)</code>
-<div class="block">Writes an <code>int</code> to the settings.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setLong-java.lang.String-long-">setLong</a></span>(java.lang.String&nbsp;key,
-       long&nbsp;val)</code>
-<div class="block">Writes a <code>long</code> to the settings.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setObject-java.lang.String-java.lang.Object-">setObject</a></span>(java.lang.String&nbsp;key,
-         java.lang.Object&nbsp;val)</code>
-<div class="block">Writes an <code>Object</code> to the settings.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/api/SettingsAPI.html#setString-java.lang.String-java.lang.String-">setString</a></span>(java.lang.String&nbsp;key,
-         java.lang.String&nbsp;val)</code>
+         java.lang.String&nbsp;v)</code>
 <div class="block">Writes a <code>String</code> to the settings.</div>
 </td>
 </tr>
@@ -324,12 +289,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getBool</h4>
 <pre>public&nbsp;boolean&nbsp;getBool(java.lang.String&nbsp;key,
-                       boolean&nbsp;defValue)</pre>
+                       boolean&nbsp;d)</pre>
 <div class="block">Reads a <code>boolean</code> from the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
+<dd><code>d</code> - Default value of the setting.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Stored value, or default value if it doesn't exist.</dd>
 </dl>
@@ -342,12 +307,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setBool</h4>
 <pre>public&nbsp;void&nbsp;setBool(java.lang.String&nbsp;key,
-                    boolean&nbsp;val)</pre>
+                    boolean&nbsp;v)</pre>
 <div class="block">Writes a <code>boolean</code> to the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>val</code> - Value of the setting.</dd>
+<dd><code>v</code> - Value of the setting.</dd>
 </dl>
 </li>
 </ul>
@@ -358,12 +323,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getInt</h4>
 <pre>public&nbsp;int&nbsp;getInt(java.lang.String&nbsp;key,
-                  int&nbsp;defValue)</pre>
+                  int&nbsp;d)</pre>
 <div class="block">Gets an <code>int</code> stored in the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
+<dd><code>d</code> - Default value of the setting.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Stored value, or default value if it doesn't exist.</dd>
 </dl>
@@ -376,80 +341,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setInt</h4>
 <pre>public&nbsp;void&nbsp;setInt(java.lang.String&nbsp;key,
-                   int&nbsp;val)</pre>
+                   int&nbsp;v)</pre>
 <div class="block">Writes an <code>int</code> to the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>val</code> - Value of the setting.</dd>
-</dl>
-</li>
-</ul>
-<a name="getFloat-java.lang.String-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getFloat</h4>
-<pre>public&nbsp;float&nbsp;getFloat(java.lang.String&nbsp;key,
-                      float&nbsp;defValue)</pre>
-<div class="block">Gets a <code>float</code> stored in the settings.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Stored value, or default value if it doesn't exist.</dd>
-</dl>
-</li>
-</ul>
-<a name="setFloat-java.lang.String-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setFloat</h4>
-<pre>public&nbsp;void&nbsp;setFloat(java.lang.String&nbsp;key,
-                     float&nbsp;val)</pre>
-<div class="block">Writes a <code>float</code> to the settings.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - Key of the setting.</dd>
-<dd><code>val</code> - Value of the setting.</dd>
-</dl>
-</li>
-</ul>
-<a name="getLong-java.lang.String-long-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getLong</h4>
-<pre>public&nbsp;long&nbsp;getLong(java.lang.String&nbsp;key,
-                    long&nbsp;defValue)</pre>
-<div class="block">Gets a <code>long</code> stored in the settings.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Stored value, or default value if it doesn't exist.</dd>
-</dl>
-</li>
-</ul>
-<a name="setLong-java.lang.String-long-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setLong</h4>
-<pre>public&nbsp;void&nbsp;setLong(java.lang.String&nbsp;key,
-                    long&nbsp;val)</pre>
-<div class="block">Writes a <code>long</code> to the settings.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - Key of the setting.</dd>
-<dd><code>val</code> - Value of the setting.</dd>
+<dd><code>v</code> - Value of the setting.</dd>
 </dl>
 </li>
 </ul>
@@ -460,12 +357,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getString</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getString(java.lang.String&nbsp;key,
-                                  java.lang.String&nbsp;defValue)</pre>
+                                  java.lang.String&nbsp;d)</pre>
 <div class="block">Gets a <code>String</code> stored in the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
+<dd><code>d</code> - Default value of the setting.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Stored value, or default value if it doesn't exist.</dd>
 </dl>
@@ -478,32 +375,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setString</h4>
 <pre>public&nbsp;void&nbsp;setString(java.lang.String&nbsp;key,
-                      java.lang.String&nbsp;val)</pre>
+                      java.lang.String&nbsp;v)</pre>
 <div class="block">Writes a <code>String</code> to the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>val</code> - Value of the setting.</dd>
-</dl>
-</li>
-</ul>
-<a name="getObject-java.lang.String-java.lang.Object-">
-<!--   -->
-</a><a name="getObject-java.lang.String-T-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getObject</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;T&nbsp;getObject(java.lang.String&nbsp;key,
-                       T&nbsp;defValue)</pre>
-<div class="block">Gets an <code>Object</code> stored in the settings.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Stored value, or default value if it doesn't exist.</dd>
+<dd><code>v</code> - Value of the setting.</dd>
 </dl>
 </li>
 </ul>
@@ -516,13 +393,13 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getObject</h4>
 <pre>public&nbsp;&lt;T&gt;&nbsp;T&nbsp;getObject(java.lang.String&nbsp;key,
-                       T&nbsp;defValue,
+                       T&nbsp;d,
                        java.lang.reflect.Type&nbsp;type)</pre>
 <div class="block">Gets an <code>Object</code> stored in the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>defValue</code> - Default value of the setting.</dd>
+<dd><code>d</code> - Default value of the setting.</dd>
 <dd><code>type</code> - <code>Object</code> representing the data type.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Stored value, or default value if it doesn't exist.</dd>
@@ -536,12 +413,12 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setObject</h4>
 <pre>public&nbsp;void&nbsp;setObject(java.lang.String&nbsp;key,
-                      java.lang.Object&nbsp;val)</pre>
+                      java.lang.Object&nbsp;v)</pre>
 <div class="block">Writes an <code>Object</code> to the settings.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - Key of the setting.</dd>
-<dd><code>val</code> - Value of the setting.</dd>
+<dd><code>v</code> - Value of the setting.</dd>
 </dl>
 </li>
 </ul>
