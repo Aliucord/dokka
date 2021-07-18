@@ -72,9 +72,7 @@
 </a>
 <h2 class="title">A</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#Adapter-androidx.recyclerview.widget.RecyclerView-java.util.List-">Adapter(RecyclerView, List&lt;PluginCard&gt;)</a></span> - Constructor for class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#Adapter-androidx.recyclerview.widget.RecyclerView-java.util.List-java.util.List-">Adapter(RecyclerView, List&lt;PluginCard&gt;, List&lt;PluginCard&gt;)</a></span> - Constructor for class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#Adapter-com.discord.app.AppFragment-java.util.Collection-">Adapter(AppFragment, Collection&lt;Plugin&gt;)</a></span> - Constructor for class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/entities/CommandContext.html#addAttachment-java.lang.String-java.lang.String-">addAttachment(String, String)</a></span> - Method in class com.aliucord.entities.<a href="com/aliucord/entities/CommandContext.html" title="class in com.aliucord.entities">CommandContext</a></dt>
 <dd>
@@ -262,6 +260,8 @@
 <dd>
 <div class="block">Creates a Discord styled button.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#buttonLayout">buttonLayout</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:C">
 <!--   -->
@@ -271,6 +271,8 @@
 <dt><span class="memberNameLink"><a href="com/aliucord/updater/PluginUpdater.html#cache">cache</a></span> - Static variable in class com.aliucord.updater.<a href="com/aliucord/updater/PluginUpdater.html" title="class in com.aliucord.updater">PluginUpdater</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/updater/PluginUpdater.CachedData.html#CachedData-java.util.Map-">CachedData(Map&lt;String, PluginUpdater.UpdateInfo&gt;)</a></span> - Constructor for class com.aliucord.updater.<a href="com/aliucord/updater/PluginUpdater.CachedData.html" title="class in com.aliucord.updater">PluginUpdater.CachedData</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#card">card</a></span> - Variable in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/aliucord/utils/ChannelUtils.html" title="class in com.aliucord.utils"><span class="typeNameLink">ChannelUtils</span></a> - Class in <a href="com/aliucord/utils/package-summary.html">com.aliucord.utils</a></dt>
 <dd>&nbsp;</dd>
@@ -482,6 +484,8 @@
 <dd>
 <div class="block">A short description of this plugin</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#descriptionView">descriptionView</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/PluginManager.html#disablePlugin-java.lang.String-">disablePlugin(String)</a></span> - Static method in class com.aliucord.<a href="com/aliucord/PluginManager.html" title="class in com.aliucord">PluginManager</a></dt>
 <dd>
 <div class="block">Disables a loaded plugin if it isn't already disables</div>
@@ -1890,7 +1894,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/utils/RxUtils.html#onBackpressureBuffer-rx.Observable-">onBackpressureBuffer(Observable&lt;T&gt;)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/RxUtils.html" title="class in com.aliucord.utils">RxUtils</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#onBindViewHolder-androidx.recyclerview.widget.RecyclerView.ViewHolder-int-">onBindViewHolder(RecyclerView.ViewHolder, int)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#onBindViewHolder-com.aliucord.settings.Plugins.Adapter.ViewHolder-int-">onBindViewHolder(Plugins.Adapter.ViewHolder, int)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onConfigurationChanged-android.content.res.Configuration-">onConfigurationChanged(Configuration)</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
@@ -1917,6 +1921,10 @@
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onDestroyView--">onDestroyView()</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onDetach--">onDetach()</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#onGithubClick-int-">onGithubClick(int)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onGithubClick-android.view.View-">onGithubClick(View)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onHiddenChanged-boolean-">onHiddenChanged(boolean)</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
@@ -1946,9 +1954,21 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onSaveInstanceState-android.os.Bundle-">onSaveInstanceState(Bundle)</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#onSettingsClick-int-">onSettingsClick(int)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onSettingsClick-android.view.View-">onSettingsClick(View)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onStart--">onStart()</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#onStop--">onStop()</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#onToggleClick-com.aliucord.settings.Plugins.Adapter.ViewHolder-boolean-int-">onToggleClick(Plugins.Adapter.ViewHolder, boolean, int)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onToggleClick-boolean-">onToggleClick(boolean)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.html#onUninstallClick-int-">onUninstallClick(int)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onUninstallClick-android.view.View-">onUninstallClick(View)</a></span> - Method in class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/entities/Plugin.SettingsTab.SettingsPage.html#onViewBound-android.view.View-">onViewBound(View)</a></span> - Method in interface com.aliucord.entities.<a href="com/aliucord/entities/Plugin.SettingsTab.SettingsPage.html" title="interface in com.aliucord.entities">Plugin.SettingsTab.SettingsPage</a></dt>
 <dd>&nbsp;</dd>
@@ -2085,7 +2105,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets"><span class="typeNameLink">PluginCard</span></a> - Class in <a href="com/aliucord/widgets/package-summary.html">com.aliucord.widgets</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#PluginCard-android.content.Context-java.lang.String-com.aliucord.entities.Plugin-androidx.fragment.app.FragmentManager-androidx.fragment.app.Fragment-">PluginCard(Context, String, Plugin, FragmentManager, Fragment)</a></span> - Constructor for class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#PluginCard-android.content.Context-">PluginCard(Context)</a></span> - Constructor for class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/api/CommandsAPI.html#pluginCommands">pluginCommands</a></span> - Variable in class com.aliucord.api.<a href="com/aliucord/api/CommandsAPI.html" title="class in com.aliucord.api">CommandsAPI</a></dt>
 <dd>
@@ -2101,8 +2121,6 @@
 <dd>
 <div class="block">Name of the plugin associated with this CommandsAPI</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#pluginName">pluginName</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/PluginManager.html#plugins">plugins</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/PluginManager.html" title="class in com.aliucord">PluginManager</a></dt>
 <dd>
 <div class="block">Map containing all loaded plugins</div>
@@ -2274,6 +2292,8 @@
 <dd>
 <div class="block">Renders discord spice markdown</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#repoButton">repoButton</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Http.HttpException.html#req">req</a></span> - Variable in exception com.aliucord.<a href="com/aliucord/Http.HttpException.html" title="class in com.aliucord">Http.HttpException</a></dt>
 <dd>
 <div class="block">The raw Request object</div>
@@ -2319,6 +2339,8 @@
 <div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 &nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Constants.Fonts.html#roboto_medium_numbers">roboto_medium_numbers</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/Constants.Fonts.html" title="class in com.aliucord">Constants.Fonts</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#root">root</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/aliucord/utils/RxUtils.html" title="class in com.aliucord.utils"><span class="typeNameLink">RxUtils</span></a> - Class in <a href="com/aliucord/utils/package-summary.html">com.aliucord.utils</a></dt>
 <dd>
@@ -2512,6 +2534,10 @@
 <dd>
 <div class="block">Set an <code>int</code> item</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/fragments/ConfirmDialog.html#setIsDangerous-boolean-">setIsDangerous(boolean)</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a></dt>
+<dd>
+<div class="block">Indicates that this confirm dialog is for a dangerous action by making the OK button Red</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/api/SettingsAPI.html#setLong-java.lang.String-long-">setLong(String, long)</a></span> - Method in class com.aliucord.api.<a href="com/aliucord/api/SettingsAPI.html" title="class in com.aliucord.api">SettingsAPI</a></dt>
 <dd>
 <div class="block">Writes a <code>long</code> to the settings.</div>
@@ -2642,6 +2668,8 @@
 <dd>
 <div class="block">Creates a SettingsAPI for the specified plugin</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#settingsButton">settingsButton</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/aliucord/fragments/SettingsPage.html" title="class in com.aliucord.fragments"><span class="typeNameLink">SettingsPage</span></a> - Class in <a href="com/aliucord/fragments/package-summary.html">com.aliucord.fragments</a></dt>
 <dd>
 <div class="block">Settings Page Fragment</div>
@@ -2826,6 +2854,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Constants.html#SUPPORT_CHANNEL_ID">SUPPORT_CHANNEL_ID</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/Constants.html" title="class in com.aliucord">Constants</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#switchHeader">switchHeader</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
 <!--   -->
@@ -2887,8 +2917,6 @@
 <dd>
 <div class="block">Build the finished Url</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#toString--">toString()</a></span> - Method in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/entities/Plugin.SettingsTab.html#type">type</a></span> - Variable in class com.aliucord.entities.<a href="com/aliucord/entities/Plugin.SettingsTab.html" title="class in com.aliucord.entities">Plugin.SettingsTab</a></dt>
 <dd>
 <div class="block">The <a href="com/aliucord/entities/Plugin.SettingsTab.Type.html" title="enum in com.aliucord.entities"><code>Plugin.SettingsTab.Type</code></a> of this SettingsTab</div>
@@ -2899,6 +2927,8 @@
 </a>
 <h2 class="title">U</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/aliucord/widgets/PluginCard.html#uninstallButton">uninstallButton</a></span> - Variable in class com.aliucord.widgets.<a href="com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/entities/Plugin.html#unload-android.content.Context-">unload(Context)</a></span> - Method in class com.aliucord.entities.<a href="com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a></dt>
 <dd>
 <div class="block">Called when your Plugin is unloaded</div>
@@ -2995,7 +3025,7 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/wrappers/embeds/VideoWrapper.html#VideoWrapper-com.discord.api.message.embed.EmbedVideo-">VideoWrapper(EmbedVideo)</a></span> - Constructor for class com.aliucord.wrappers.embeds.<a href="com/aliucord/wrappers/embeds/VideoWrapper.html" title="class in com.aliucord.wrappers.embeds">VideoWrapper</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#ViewHolder-android.view.View-">ViewHolder(View)</a></span> - Constructor for class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
+<dt><span class="memberNameLink"><a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html#ViewHolder-com.aliucord.settings.Plugins.Adapter-com.aliucord.widgets.PluginCard-">ViewHolder(Plugins.Adapter, PluginCard)</a></span> - Constructor for class com.aliucord.settings.<a href="com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:W">

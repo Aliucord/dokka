@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -237,17 +237,23 @@ extends com.discord.app.AppDialog</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/fragments/ConfirmDialog.html#setIsDangerous-boolean-">setIsDangerous</a></span>(boolean&nbsp;isDangerous)</code>
+<div class="block">Indicates that this confirm dialog is for a dangerous action by making the OK button Red</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/fragments/ConfirmDialog.html#setOnCancelListener-android.view.View.OnClickListener-">setOnCancelListener</a></span>(android.view.View.OnClickListener&nbsp;listener)</code>
 <div class="block">Sets the <code>View.OnClickListener</code> that will be called when the cancel button is pressed (By default simply closes this dialog)</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/fragments/ConfirmDialog.html#setOnOkListener-android.view.View.OnClickListener-">setOnOkListener</a></span>(android.view.View.OnClickListener&nbsp;listener)</code>
 <div class="block">Sets the <code>View.OnClickListener</code> that will be called when the OK button is pressed (By default simply closes this dialog)</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/fragments/ConfirmDialog.html#setTitle-java.lang.CharSequence-">setTitle</a></span>(java.lang.CharSequence&nbsp;title)</code>
 <div class="block">Sets the title of this dialog</div>
@@ -448,7 +454,7 @@ extends com.discord.app.AppDialog</pre>
 <a name="setOnCancelListener-android.view.View.OnClickListener-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setOnCancelListener</h4>
 <pre>public&nbsp;<a href="../../../com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a>&nbsp;setOnCancelListener(android.view.View.OnClickListener&nbsp;listener)</pre>
@@ -456,6 +462,22 @@ extends com.discord.app.AppDialog</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>listener</code> - The listener</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Builder for chaining</dd>
+</dl>
+</li>
+</ul>
+<a name="setIsDangerous-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setIsDangerous</h4>
+<pre>public&nbsp;<a href="../../../com/aliucord/fragments/ConfirmDialog.html" title="class in com.aliucord.fragments">ConfirmDialog</a>&nbsp;setIsDangerous(boolean&nbsp;isDangerous)</pre>
+<div class="block">Indicates that this confirm dialog is for a dangerous action by making the OK button Red</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>isDangerous</code> - Whether this action is dangerous</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Builder for chaining</dd>
 </dl>

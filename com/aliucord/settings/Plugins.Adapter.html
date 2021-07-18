@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>androidx.recyclerview.widget.RecyclerView.Adapter&lt;androidx.recyclerview.widget.RecyclerView.ViewHolder&gt;</li>
+<li>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>com.aliucord.settings.Plugins.Adapter</li>
@@ -121,7 +121,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public static class <span class="typeNameLabel">Plugins.Adapter</span>
-extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;androidx.recyclerview.widget.RecyclerView.ViewHolder&gt;
+extends androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&gt;
 implements android.widget.Filterable</pre>
 </li>
 </ul>
@@ -160,13 +160,8 @@ implements android.widget.Filterable</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#Adapter-androidx.recyclerview.widget.RecyclerView-java.util.List-">Adapter</a></span>(androidx.recyclerview.widget.RecyclerView&nbsp;rv,
-       java.util.List&lt;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&gt;&nbsp;items)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#Adapter-androidx.recyclerview.widget.RecyclerView-java.util.List-java.util.List-">Adapter</a></span>(androidx.recyclerview.widget.RecyclerView&nbsp;rv,
-       java.util.List&lt;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&gt;&nbsp;items,
-       java.util.List&lt;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&gt;&nbsp;filtered)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#Adapter-com.discord.app.AppFragment-java.util.Collection-">Adapter</a></span>(com.discord.app.AppFragment&nbsp;fragment,
+       java.util.Collection&lt;<a href="../../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt;&nbsp;plugins)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -193,13 +188,31 @@ implements android.widget.Filterable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onBindViewHolder-androidx.recyclerview.widget.RecyclerView.ViewHolder-int-">onBindViewHolder</a></span>(androidx.recyclerview.widget.RecyclerView.ViewHolder&nbsp;holder,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onBindViewHolder-com.aliucord.settings.Plugins.Adapter.ViewHolder-int-">onBindViewHolder</a></span>(<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&nbsp;holder,
                 int&nbsp;position)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>androidx.recyclerview.widget.RecyclerView.ViewHolder</code></td>
+<td class="colFirst"><code><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onCreateViewHolder-android.view.ViewGroup-int-">onCreateViewHolder</a></span>(android.view.ViewGroup&nbsp;parent,
                   int&nbsp;viewType)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onGithubClick-int-">onGithubClick</a></span>(int&nbsp;position)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onSettingsClick-int-">onSettingsClick</a></span>(int&nbsp;position)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onToggleClick-com.aliucord.settings.Plugins.Adapter.ViewHolder-boolean-int-">onToggleClick</a></span>(<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&nbsp;holder,
+             boolean&nbsp;state,
+             int&nbsp;position)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.html#onUninstallClick-int-">onUninstallClick</a></span>(int&nbsp;position)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -230,25 +243,14 @@ implements android.widget.Filterable</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Adapter-androidx.recyclerview.widget.RecyclerView-java.util.List-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Adapter</h4>
-<pre>public&nbsp;Adapter(androidx.recyclerview.widget.RecyclerView&nbsp;rv,
-               java.util.List&lt;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&gt;&nbsp;items)</pre>
-</li>
-</ul>
-<a name="Adapter-androidx.recyclerview.widget.RecyclerView-java.util.List-java.util.List-">
+<a name="Adapter-com.discord.app.AppFragment-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Adapter</h4>
-<pre>public&nbsp;Adapter(androidx.recyclerview.widget.RecyclerView&nbsp;rv,
-               java.util.List&lt;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&gt;&nbsp;items,
-               java.util.List&lt;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&gt;&nbsp;filtered)</pre>
+<pre>public&nbsp;Adapter(com.discord.app.AppFragment&nbsp;fragment,
+               java.util.Collection&lt;<a href="../../../com/aliucord/entities/Plugin.html" title="class in com.aliucord.entities">Plugin</a>&gt;&nbsp;plugins)</pre>
 </li>
 </ul>
 </li>
@@ -259,37 +261,6 @@ implements android.widget.Filterable</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="onCreateViewHolder-android.view.ViewGroup-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onCreateViewHolder</h4>
-<pre>@NonNull
-public&nbsp;androidx.recyclerview.widget.RecyclerView.ViewHolder&nbsp;onCreateViewHolder(@NonNull
-                                                                                        android.view.ViewGroup&nbsp;parent,
-                                                                                        int&nbsp;viewType)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>onCreateViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;androidx.recyclerview.widget.RecyclerView.ViewHolder&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="onBindViewHolder-androidx.recyclerview.widget.RecyclerView.ViewHolder-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>onBindViewHolder</h4>
-<pre>public&nbsp;void&nbsp;onBindViewHolder(@NonNull
-                             androidx.recyclerview.widget.RecyclerView.ViewHolder&nbsp;holder,
-                             int&nbsp;position)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>onBindViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;androidx.recyclerview.widget.RecyclerView.ViewHolder&gt;</code></dd>
-</dl>
-</li>
-</ul>
 <a name="getItemCount--">
 <!--   -->
 </a>
@@ -299,14 +270,45 @@ public&nbsp;androidx.recyclerview.widget.RecyclerView.ViewHolder&nbsp;onCreateVi
 <pre>public&nbsp;int&nbsp;getItemCount()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>getItemCount</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;androidx.recyclerview.widget.RecyclerView.ViewHolder&gt;</code></dd>
+<dd><code>getItemCount</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onCreateViewHolder-android.view.ViewGroup-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCreateViewHolder</h4>
+<pre>@NonNull
+public&nbsp;<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&nbsp;onCreateViewHolder(@NonNull
+                                                              android.view.ViewGroup&nbsp;parent,
+                                                              int&nbsp;viewType)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>onCreateViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onBindViewHolder-com.aliucord.settings.Plugins.Adapter.ViewHolder-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onBindViewHolder</h4>
+<pre>public&nbsp;void&nbsp;onBindViewHolder(@NonNull
+                             <a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&nbsp;holder,
+                             int&nbsp;position)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>onBindViewHolder</code>&nbsp;in class&nbsp;<code>androidx.recyclerview.widget.RecyclerView.Adapter&lt;<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
 <a name="getFilter--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getFilter</h4>
 <pre>public&nbsp;android.widget.Filter&nbsp;getFilter()</pre>
@@ -314,6 +316,49 @@ public&nbsp;androidx.recyclerview.widget.RecyclerView.ViewHolder&nbsp;onCreateVi
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getFilter</code>&nbsp;in interface&nbsp;<code>android.widget.Filterable</code></dd>
 </dl>
+</li>
+</ul>
+<a name="onGithubClick-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onGithubClick</h4>
+<pre>public&nbsp;void&nbsp;onGithubClick(int&nbsp;position)</pre>
+</li>
+</ul>
+<a name="onSettingsClick-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSettingsClick</h4>
+<pre>public&nbsp;void&nbsp;onSettingsClick(int&nbsp;position)
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="onToggleClick-com.aliucord.settings.Plugins.Adapter.ViewHolder-boolean-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onToggleClick</h4>
+<pre>public&nbsp;void&nbsp;onToggleClick(<a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html" title="class in com.aliucord.settings">Plugins.Adapter.ViewHolder</a>&nbsp;holder,
+                          boolean&nbsp;state,
+                          int&nbsp;position)</pre>
+</li>
+</ul>
+<a name="onUninstallClick-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onUninstallClick</h4>
+<pre>public&nbsp;void&nbsp;onUninstallClick(int&nbsp;position)</pre>
 </li>
 </ul>
 </li>

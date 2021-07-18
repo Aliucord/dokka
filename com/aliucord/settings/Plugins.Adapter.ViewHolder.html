@@ -17,6 +17,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -67,15 +73,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.androidx.recyclerview.widget.RecyclerView.ViewHolder">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.androidx.recyclerview.widget.RecyclerView.ViewHolder">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -110,7 +116,7 @@
 </dl>
 <hr>
 <br>
-<pre>public static class <span class="typeNameLabel">Plugins.Adapter.ViewHolder</span>
+<pre>public static final class <span class="typeNameLabel">Plugins.Adapter.ViewHolder</span>
 extends androidx.recyclerview.widget.RecyclerView.ViewHolder</pre>
 </li>
 </ul>
@@ -124,6 +130,17 @@ extends androidx.recyclerview.widget.RecyclerView.ViewHolder</pre>
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#card">card</a></span></code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.androidx.recyclerview.widget.RecyclerView.ViewHolder">
 <!--   -->
@@ -145,7 +162,8 @@ extends androidx.recyclerview.widget.RecyclerView.ViewHolder</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#ViewHolder-android.view.View-">ViewHolder</a></span>(android.view.View&nbsp;itemView)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#ViewHolder-com.aliucord.settings.Plugins.Adapter-com.aliucord.widgets.PluginCard-">ViewHolder</a></span>(<a href="../../../com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a>&nbsp;adapter,
+          <a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&nbsp;card)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -156,6 +174,29 @@ extends androidx.recyclerview.widget.RecyclerView.ViewHolder</pre>
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onGithubClick-android.view.View-">onGithubClick</a></span>(android.view.View&nbsp;view)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onSettingsClick-android.view.View-">onSettingsClick</a></span>(android.view.View&nbsp;view)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onToggleClick-boolean-">onToggleClick</a></span>(boolean&nbsp;checked)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/aliucord/settings/Plugins.Adapter.ViewHolder.html#onUninstallClick-android.view.View-">onUninstallClick</a></span>(android.view.View&nbsp;view)</code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.androidx.recyclerview.widget.RecyclerView.ViewHolder">
 <!--   -->
@@ -178,20 +219,81 @@ extends androidx.recyclerview.widget.RecyclerView.ViewHolder</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="card">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>card</h4>
+<pre>public final&nbsp;<a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a> card</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ViewHolder-android.view.View-">
+<a name="ViewHolder-com.aliucord.settings.Plugins.Adapter-com.aliucord.widgets.PluginCard-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ViewHolder</h4>
-<pre>public&nbsp;ViewHolder(@NonNull
-                  android.view.View&nbsp;itemView)</pre>
+<pre>public&nbsp;ViewHolder(<a href="../../../com/aliucord/settings/Plugins.Adapter.html" title="class in com.aliucord.settings">Plugins.Adapter</a>&nbsp;adapter,
+                  <a href="../../../com/aliucord/widgets/PluginCard.html" title="class in com.aliucord.widgets">PluginCard</a>&nbsp;card)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="onGithubClick-android.view.View-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onGithubClick</h4>
+<pre>public&nbsp;void&nbsp;onGithubClick(android.view.View&nbsp;view)</pre>
+</li>
+</ul>
+<a name="onSettingsClick-android.view.View-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSettingsClick</h4>
+<pre>public&nbsp;void&nbsp;onSettingsClick(android.view.View&nbsp;view)</pre>
+</li>
+</ul>
+<a name="onToggleClick-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onToggleClick</h4>
+<pre>public&nbsp;void&nbsp;onToggleClick(boolean&nbsp;checked)</pre>
+</li>
+</ul>
+<a name="onUninstallClick-android.view.View-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onUninstallClick</h4>
+<pre>public&nbsp;void&nbsp;onUninstallClick(android.view.View&nbsp;view)</pre>
 </li>
 </ul>
 </li>
@@ -247,15 +349,15 @@ extends androidx.recyclerview.widget.RecyclerView.ViewHolder</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.androidx.recyclerview.widget.RecyclerView.ViewHolder">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.androidx.recyclerview.widget.RecyclerView.ViewHolder">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
