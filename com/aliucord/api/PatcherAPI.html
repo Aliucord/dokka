@@ -418,7 +418,7 @@ public static&nbsp;java.lang.Runnable&nbsp;addPrePatch&#8203;(java.lang.String&n
 <dd><code>paramTypes</code> - Parameters of the <code>fn</code>. Useful for patching individual overloads.</dd>
 <dd><code>hook</code> - Callback for the patch.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <code>Runnable</code> object.</dd>
+<dd>Method that will remove the patch when invoked</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../patcher/PinePatchFn.html" title="class in com.aliucord.patcher"><code>PinePatchFn</code></a>, 
 <a href="../patcher/PinePrePatchFn.html" title="class in com.aliucord.patcher"><code>PinePrePatchFn</code></a></dd>
@@ -441,7 +441,7 @@ public static&nbsp;java.lang.Runnable&nbsp;addPrePatch&#8203;(java.lang.String&n
 <dd><code>m</code> - Method or constructor to patch. see <code>Member</code>.</dd>
 <dd><code>hook</code> - Callback for the patch.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <code>Runnable</code> object.</dd>
+<dd>Method that will remove the patch when invoked</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="#patch(java.lang.String,java.lang.String,java.lang.Class%5B%5D,top.canyie.pine.callback.MethodHook)"><code>patch(String, String, Class[], MethodHook)</code></a>, 
 <a href="#patch(java.lang.Class,java.lang.String,java.lang.Class%5B%5D,top.canyie.pine.callback.MethodHook)"><code>patch(Class, String, Class[], MethodHook)</code></a>, 

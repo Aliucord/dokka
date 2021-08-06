@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -130,12 +130,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code>java.io.Closeable</code>, <code>java.lang.AutoCloseable</code></dd>
+</dl>
+<dl>
 <dt>Enclosing class:</dt>
 <dd><a href="Http.html" title="class in com.aliucord">Http</a></dd>
 </dl>
 <hr>
 <pre>public static class <span class="typeNameLabel">Http.Request</span>
-extends java.lang.Object</pre>
+extends java.lang.Object
+implements java.io.Closeable</pre>
 <div class="block">Request Builder</div>
 </li>
 </ul>
@@ -219,34 +224,49 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close()">close</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Closes this request</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Http.Response.html" title="class in com.aliucord">Http.Response</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#execute()">execute</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute the request</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="Http.Response.html" title="class in com.aliucord">Http.Response</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeWithBody(java.lang.String)">executeWithBody</a></span>&#8203;(java.lang.String&nbsp;body)</code></th>
 <td class="colLast">
 <div class="block">Execute the request with the specified body.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="Http.Response.html" title="class in com.aliucord">Http.Response</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeWithJson(java.lang.Object)">executeWithJson</a></span>&#8203;(java.lang.Object&nbsp;body)</code></th>
 <td class="colLast">
 <div class="block">Execute the request with the specified object as json.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="Http.Response.html" title="class in com.aliucord">Http.Response</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executeWithUrlEncodedForm(java.util.Map)">executeWithUrlEncodedForm</a></span>&#8203;(java.util.Map&lt;java.lang.String,&#8203;java.lang.Object&gt;&nbsp;params)</code></th>
+<td class="colLast">
+<div class="block">Execute the request with the specified object as
+ <a href="https://url.spec.whatwg.org/#application/x-www-form-urlencoded">url encoded form data</a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="Http.Request.html" title="class in com.aliucord">Http.Request</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFollowRedirects(boolean)">setFollowRedirects</a></span>&#8203;(boolean&nbsp;follow)</code></th>
 <td class="colLast">
 <div class="block">Sets whether redirects should be followed</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="Http.Request.html" title="class in com.aliucord">Http.Request</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHeader(java.lang.String,java.lang.String)">setHeader</a></span>&#8203;(java.lang.String&nbsp;key,
          java.lang.String&nbsp;value)</code></th>
@@ -254,7 +274,7 @@ extends java.lang.Object</pre>
 <div class="block">Add a header</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="Http.Request.html" title="class in com.aliucord">Http.Request</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRequestTimeout(int)">setRequestTimeout</a></span>&#8203;(int&nbsp;timeout)</code></th>
 <td class="colLast">
@@ -448,7 +468,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - The request body</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>self</dd>
+<dd>Response</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>
@@ -457,7 +477,7 @@ extends java.lang.Object</pre>
 <a id="executeWithJson(java.lang.Object)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>executeWithJson</h4>
 <pre class="methodSignature">public&nbsp;<a href="Http.Response.html" title="class in com.aliucord">Http.Response</a>&nbsp;executeWithJson&#8203;(java.lang.Object&nbsp;body)
@@ -467,9 +487,46 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - The request body</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>self</dd>
+<dd>Response</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="executeWithUrlEncodedForm(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>executeWithUrlEncodedForm</h4>
+<pre class="methodSignature">public&nbsp;<a href="Http.Response.html" title="class in com.aliucord">Http.Response</a>&nbsp;executeWithUrlEncodedForm&#8203;(java.util.Map&lt;java.lang.String,&#8203;java.lang.Object&gt;&nbsp;params)
+                                        throws java.io.IOException</pre>
+<div class="block">Execute the request with the specified object as
+ <a href="https://url.spec.whatwg.org/#application/x-www-form-urlencoded">url encoded form data</a>.
+ May not be used in GET requests.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>params</code> - the form data</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Response</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if an I/O exception occurred</dd>
+</dl>
+</li>
+</ul>
+<a id="close()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>close</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;close()</pre>
+<div class="block">Closes this request</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.io.Closeable</code></dd>
 </dl>
 </li>
 </ul>

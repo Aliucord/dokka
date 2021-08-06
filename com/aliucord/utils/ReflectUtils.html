@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":9,"i1":9,"i2":41,"i3":9,"i4":41,"i5":9,"i6":9,"i7":9,"i8":9,"i9":41,"i10":9,"i11":41};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -168,7 +168,7 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -184,24 +184,56 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static java.lang.Object</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getField(java.lang.Class,java.lang.Object,java.lang.String,boolean)">getField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getField(java.lang.Class,java.lang.Object,java.lang.String)">getField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
         java.lang.Object&nbsp;instance,
-        java.lang.String&nbsp;fieldName,
-        boolean&nbsp;priv)</code></th>
+        java.lang.String&nbsp;fieldName)</code></th>
 <td class="colLast">
 <div class="block">Gets a field declared in the class.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.Object</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getField(java.lang.Object,java.lang.String,boolean)">getField</a></span>&#8203;(java.lang.Object&nbsp;instance,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getField(java.lang.Class,java.lang.Object,java.lang.String,boolean)">getField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+        java.lang.Object&nbsp;instance,
         java.lang.String&nbsp;fieldName,
-        boolean&nbsp;priv)</code></th>
+        boolean&nbsp;_priv)</code></th>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#getField(java.lang.Class,java.lang.Object,java.lang.String)"><code>getField(Class, Object, String)</code></a></div>
+</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static java.lang.Object</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getField(java.lang.Object,java.lang.String)">getField</a></span>&#8203;(java.lang.Object&nbsp;instance,
+        java.lang.String&nbsp;fieldName)</code></th>
 <td class="colLast">
 <div class="block">Gets a field declared in the class.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static java.lang.Object</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getField(java.lang.Object,java.lang.String,boolean)">getField</a></span>&#8203;(java.lang.Object&nbsp;instance,
+        java.lang.String&nbsp;fieldName,
+        boolean&nbsp;_priv)</code></th>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#getField(java.lang.Object,java.lang.String)"><code>getField(Object, String)</code></a></div>
+</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static java.lang.reflect.Method</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMethodByArgs(java.lang.Class,java.lang.String,java.lang.Object...)">getMethodByArgs</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+               java.lang.String&nbsp;methodName,
+               java.lang.Object...&nbsp;args)</code></th>
+<td class="colLast">
+<div class="block">Attempts to find and invoke the method matching the specified arguments
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Method</code> to improve performance drastically</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#invokeConstructorWithArgs(java.lang.Class,java.lang.Object...)">invokeConstructorWithArgs</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz,
                          java.lang.Object...&nbsp;args)</code></th>
@@ -209,25 +241,59 @@ extends java.lang.Object</pre>
 <div class="block">Attempts to find and invoke the constructor of class T matching the specified arguments</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static java.lang.Object</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#invokeMethodWithArgs(java.lang.Class,java.lang.String,java.lang.Object...)">invokeMethodWithArgs</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+                    java.lang.String&nbsp;methodName,
+                    java.lang.Object...&nbsp;args)</code></th>
+<td class="colLast">
+<div class="block">Attempts to find and invoke the method matching the specified arguments
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Method</code> to improve performance drastically</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)">setField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+        java.lang.Object&nbsp;instance,
+        java.lang.String&nbsp;fieldName,
+        java.lang.Object&nbsp;v)</code></th>
+<td class="colLast">
+<div class="block">Stores a value to the field declared in the class.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object,boolean)">setField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
         java.lang.Object&nbsp;instance,
         java.lang.String&nbsp;fieldName,
         java.lang.Object&nbsp;v,
-        boolean&nbsp;priv)</code></th>
+        boolean&nbsp;_priv)</code></th>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)"><code>setField(Class, Object, String, Object)</code></a></div>
+</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setField(java.lang.Object,java.lang.String,java.lang.Object)">setField</a></span>&#8203;(java.lang.Object&nbsp;instance,
+        java.lang.String&nbsp;fieldName,
+        java.lang.Object&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Stores a value to the field declared in the class.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setField(java.lang.Object,java.lang.String,java.lang.Object,boolean)">setField</a></span>&#8203;(java.lang.Object&nbsp;instance,
         java.lang.String&nbsp;fieldName,
         java.lang.Object&nbsp;v,
-        boolean&nbsp;priv)</code></th>
+        boolean&nbsp;_priv)</code></th>
 <td class="colLast">
-<div class="block">Stores a value to the field declared in the class.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#setField(java.lang.Object,java.lang.String,java.lang.Object)"><code>setField(Object, String, Object)</code></a></div>
+</div>
 </td>
 </tr>
 </table>
@@ -319,9 +385,88 @@ extends java.lang.Object</pre>
 <dd>The constructed Object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NoSuchMethodException</code> - No such constructor found</dd>
-<dd><code>java.lang.IllegalAccessException</code> - This constructor is private</dd>
+<dd><code>java.lang.IllegalAccessException</code> - This constructor is inaccessible</dd>
 <dd><code>java.lang.reflect.InvocationTargetException</code> - An exception occurred while invoking this constructor</dd>
 <dd><code>java.lang.InstantiationException</code> - This class cannot be constructed (is abstract, interface, etc)</dd>
+</dl>
+</li>
+</ul>
+<a id="getMethodByArgs(java.lang.Class,java.lang.String,java.lang.Object...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMethodByArgs</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.reflect.Method&nbsp;getMethodByArgs&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+                                                       java.lang.String&nbsp;methodName,
+                                                       java.lang.Object...&nbsp;args)
+                                                throws java.lang.NoSuchMethodException</pre>
+<div class="block">Attempts to find and invoke the method matching the specified arguments
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Method</code> to improve performance drastically</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clazz</code> - The class</dd>
+<dd><code>methodName</code> - The name of the method</dd>
+<dd><code>args</code> - The arguments to invoke the method with. arguments [ "hello", 12 ] would match someMethod(String s, int i)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The found method</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NoSuchMethodException</code> - No such constructor found</dd>
+</dl>
+</li>
+</ul>
+<a id="invokeMethodWithArgs(java.lang.Class,java.lang.String,java.lang.Object...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>invokeMethodWithArgs</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.Object&nbsp;invokeMethodWithArgs&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+                                                    java.lang.String&nbsp;methodName,
+                                                    java.lang.Object...&nbsp;args)
+                                             throws java.lang.NoSuchMethodException,
+                                                    java.lang.IllegalAccessException,
+                                                    java.lang.reflect.InvocationTargetException</pre>
+<div class="block">Attempts to find and invoke the method matching the specified arguments
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Method</code> to improve performance drastically</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clazz</code> - The class</dd>
+<dd><code>methodName</code> - The name of the method</dd>
+<dd><code>args</code> - The arguments to invoke the method with. arguments [ "hello", 12 ] would match someMethod(String s, int i)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The result of invoking the method</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NoSuchMethodException</code> - No such method found</dd>
+<dd><code>java.lang.IllegalAccessException</code> - This method is inaccessible</dd>
+<dd><code>java.lang.reflect.InvocationTargetException</code> - An exception occurred while invoking this method</dd>
+</dl>
+</li>
+</ul>
+<a id="getField(java.lang.Object,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getField</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.Object&nbsp;getField&#8203;(java.lang.Object&nbsp;instance,
+                                        java.lang.String&nbsp;fieldName)
+                                 throws java.lang.NoSuchFieldException,
+                                        java.lang.IllegalAccessException</pre>
+<div class="block">Gets a field declared in the class.
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Field</code> to improve performance drastically</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - Instance of the class where the field is located.</dd>
+<dd><code>fieldName</code> - Name of the field.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Data stored in the field.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NoSuchFieldException</code> - If the field doesn't exist.</dd>
+<dd><code>java.lang.IllegalAccessException</code> - If the field is inaccessible</dd>
 </dl>
 </li>
 </ul>
@@ -331,22 +476,46 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getField</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.Object&nbsp;getField&#8203;(java.lang.Object&nbsp;instance,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;java.lang.Object&nbsp;getField&#8203;(java.lang.Object&nbsp;instance,
                                         java.lang.String&nbsp;fieldName,
-                                        boolean&nbsp;priv)
+                                        boolean&nbsp;_priv)
                                  throws java.lang.NoSuchFieldException,
                                         java.lang.IllegalAccessException</pre>
-<div class="block">Gets a field declared in the class.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#getField(java.lang.Object,java.lang.String)"><code>getField(Object, String)</code></a></div>
+</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NoSuchFieldException</code></dd>
+<dd><code>java.lang.IllegalAccessException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getField(java.lang.Class,java.lang.Object,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getField</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.Object&nbsp;getField&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+                                        java.lang.Object&nbsp;instance,
+                                        java.lang.String&nbsp;fieldName)
+                                 throws java.lang.NoSuchFieldException,
+                                        java.lang.IllegalAccessException</pre>
+<div class="block">Gets a field declared in the class.
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Field</code> to improve performance drastically</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>instance</code> - Instance of the class where the field is located.</dd>
+<dd><code>clazz</code> - <code>Class</code> where the field is located.</dd>
+<dd><code>instance</code> - Instance of the <code>clazz</code>.</dd>
 <dd><code>fieldName</code> - Name of the field.</dd>
-<dd><code>priv</code> - Whether the field is private or not.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Data stored in the field.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NoSuchFieldException</code> - If the field doesn't exist.</dd>
-<dd><code>java.lang.IllegalAccessException</code> - If the field is private and <code>priv</code> is set to false.</dd>
+<dd><code>java.lang.IllegalAccessException</code> - If the field is inaccessible.</dd>
 </dl>
 </li>
 </ul>
@@ -356,24 +525,45 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getField</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.Object&nbsp;getField&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;java.lang.Object&nbsp;getField&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
                                         java.lang.Object&nbsp;instance,
                                         java.lang.String&nbsp;fieldName,
-                                        boolean&nbsp;priv)
+                                        boolean&nbsp;_priv)
                                  throws java.lang.NoSuchFieldException,
                                         java.lang.IllegalAccessException</pre>
-<div class="block">Gets a field declared in the class.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#getField(java.lang.Class,java.lang.Object,java.lang.String)"><code>getField(Class, Object, String)</code></a></div>
+</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NoSuchFieldException</code></dd>
+<dd><code>java.lang.IllegalAccessException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setField(java.lang.Object,java.lang.String,java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setField</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;setField&#8203;(java.lang.Object&nbsp;instance,
+                            java.lang.String&nbsp;fieldName,
+                            java.lang.Object&nbsp;v)
+                     throws java.lang.NoSuchFieldException,
+                            java.lang.IllegalAccessException</pre>
+<div class="block">Stores a value to the field declared in the class.
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Field</code> to improve performance drastically</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>clazz</code> - <code>Class</code> where the field is located.</dd>
-<dd><code>instance</code> - Instance of the <code>clazz</code>.</dd>
+<dd><code>instance</code> - Instance of the class where the field is located.</dd>
 <dd><code>fieldName</code> - Name of the field.</dd>
-<dd><code>priv</code> - Whether the field is private or not.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Data stored in the field.</dd>
+<dd><code>v</code> - Value to store.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NoSuchFieldException</code> - If the field doesn't exist.</dd>
-<dd><code>java.lang.IllegalAccessException</code> - If the field is private and <code>priv</code> is set to false.</dd>
+<dd><code>java.lang.IllegalAccessException</code> - If the field is inaccessible.</dd>
 </dl>
 </li>
 </ul>
@@ -383,22 +573,47 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setField</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;setField&#8203;(java.lang.Object&nbsp;instance,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;void&nbsp;setField&#8203;(java.lang.Object&nbsp;instance,
                             java.lang.String&nbsp;fieldName,
                             java.lang.Object&nbsp;v,
-                            boolean&nbsp;priv)
+                            boolean&nbsp;_priv)
                      throws java.lang.NoSuchFieldException,
                             java.lang.IllegalAccessException</pre>
-<div class="block">Stores a value to the field declared in the class.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#setField(java.lang.Object,java.lang.String,java.lang.Object)"><code>setField(Object, String, Object)</code></a></div>
+</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NoSuchFieldException</code></dd>
+<dd><code>java.lang.IllegalAccessException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setField</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;setField&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+                            java.lang.Object&nbsp;instance,
+                            java.lang.String&nbsp;fieldName,
+                            java.lang.Object&nbsp;v)
+                     throws java.lang.NoSuchFieldException,
+                            java.lang.IllegalAccessException</pre>
+<div class="block">Stores a value to the field declared in the class.
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Field</code> to improve performance drastically</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>instance</code> - Instance of the class where the field is located.</dd>
+<dd><code>clazz</code> - <code>Class</code> where the field is located.</dd>
+<dd><code>instance</code> - Instance of the <code>clazz</code>.</dd>
 <dd><code>fieldName</code> - Name of the field.</dd>
 <dd><code>v</code> - Value to store.</dd>
-<dd><code>priv</code> - Whether the field is private or not.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NoSuchFieldException</code> - If the field doesn't exist.</dd>
-<dd><code>java.lang.IllegalAccessException</code> - If the field is private and <code>priv</code> is set to false.</dd>
+<dd><code>java.lang.IllegalAccessException</code> - If the field is inaccessible.</dd>
 </dl>
 </li>
 </ul>
@@ -408,24 +623,21 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setField</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;setField&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;void&nbsp;setField&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
                             java.lang.Object&nbsp;instance,
                             java.lang.String&nbsp;fieldName,
                             java.lang.Object&nbsp;v,
-                            boolean&nbsp;priv)
+                            boolean&nbsp;_priv)
                      throws java.lang.NoSuchFieldException,
                             java.lang.IllegalAccessException</pre>
-<div class="block">Stores a value to the field declared in the class.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)"><code>setField(Class, Object, String, Object)</code></a></div>
+</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>clazz</code> - <code>Class</code> where the field is located.</dd>
-<dd><code>instance</code> - Instance of the <code>clazz</code>.</dd>
-<dd><code>fieldName</code> - Name of the field.</dd>
-<dd><code>v</code> - Value to store.</dd>
-<dd><code>priv</code> - Whether the field is private or not.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NoSuchFieldException</code> - If the field doesn't exist.</dd>
-<dd><code>java.lang.IllegalAccessException</code> - If the field is private and <code>priv</code> is set to false.</dd>
+<dd><code>java.lang.NoSuchFieldException</code></dd>
+<dd><code>java.lang.IllegalAccessException</code></dd>
 </dl>
 </li>
 </ul>

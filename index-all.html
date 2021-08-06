@@ -344,6 +344,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Closes this SettingsPage by simulating a back press</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/Http.Request.html#close()">close()</a></span> - Method in class com.aliucord.<a href="com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a></dt>
+<dd>
+<div class="block">Closes this request</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Constants.Icons.html#CLYDE">CLYDE</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/Constants.Icons.html" title="class in com.aliucord">Constants.Icons</a></dt>
 <dd>
 <div class="block">Clyde avatar</div>
@@ -613,6 +617,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Execute the request with the specified object as json.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/Http.Request.html#executeWithUrlEncodedForm(java.util.Map)">executeWithUrlEncodedForm(Map&lt;String, Object&gt;)</a></span> - Method in class com.aliucord.<a href="com/aliucord/Http.Request.html" title="class in com.aliucord">Http.Request</a></dt>
+<dd>
+<div class="block">Execute the request with the specified object as
+ <a href="https://url.spec.whatwg.org/#application/x-www-form-urlencoded">url encoded form data</a>.</div>
+</dd>
 </dl>
 <a id="I:F">
 <!--   -->
@@ -879,13 +888,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/wrappers/GuildWrapper.html#getFeatures(com.discord.api.guild.Guild)">getFeatures(Guild)</a></span> - Static method in class com.aliucord.wrappers.<a href="com/aliucord/wrappers/GuildWrapper.html" title="class in com.aliucord.wrappers">GuildWrapper</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Class,java.lang.Object,java.lang.String)">getField(Class&lt;?&gt;, Object, String)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
+<dd>
+<div class="block">Gets a field declared in the class.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Class,java.lang.Object,java.lang.String,boolean)">getField(Class&lt;?&gt;, Object, String, boolean)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Class,java.lang.Object,java.lang.String)"><code>ReflectUtils.getField(Class, Object, String)</code></a></div>
+</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Object,java.lang.String)">getField(Object, String)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
 <dd>
 <div class="block">Gets a field declared in the class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Object,java.lang.String,boolean)">getField(Object, String, boolean)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
 <dd>
-<div class="block">Gets a field declared in the class.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Object,java.lang.String)"><code>ReflectUtils.getField(Object, String)</code></a></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/wrappers/embeds/MessageEmbedWrapper.html#getFields()">getFields()</a></span> - Method in class com.aliucord.wrappers.embeds.<a href="com/aliucord/wrappers/embeds/MessageEmbedWrapper.html" title="class in com.aliucord.wrappers.embeds">MessageEmbedWrapper</a></dt>
 <dd>&nbsp;</dd>
@@ -1104,6 +1125,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/aliucord/entities/CommandContext.html#getMessageReference()">getMessageReference()</a></span> - Method in class com.aliucord.entities.<a href="com/aliucord/entities/CommandContext.html" title="class in com.aliucord.entities">CommandContext</a></dt>
 <dd>
 <div class="block">Returns the MessageReference</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#getMethodByArgs(java.lang.Class,java.lang.String,java.lang.Object...)">getMethodByArgs(Class&lt;?&gt;, String, Object...)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
+<dd>
+<div class="block">Attempts to find and invoke the method matching the specified arguments
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Method</code> to improve performance drastically</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/wrappers/GuildWrapper.html#getMfaLevel()">getMfaLevel()</a></span> - Method in class com.aliucord.wrappers.<a href="com/aliucord/wrappers/GuildWrapper.html" title="class in com.aliucord.wrappers">GuildWrapper</a></dt>
 <dd>&nbsp;</dd>
@@ -1719,9 +1746,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/aliucord/patcher/Patcher.html#init()">init()</a></span> - Static method in class com.aliucord.patcher.<a href="com/aliucord/patcher/Patcher.html" title="class in com.aliucord.patcher">Patcher</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Main.html#init(com.discord.app.AppActivity)">init(AppActivity)</a></span> - Static method in class com.aliucord.<a href="com/aliucord/Main.html" title="class in com.aliucord">Main</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Aliucord's init hook.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Main.html#initialized">initialized</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/Main.html" title="class in com.aliucord">Main</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Whether Aliucord has been initialized</div>
+</dd>
 <dt><a href="com/aliucord/fragments/InputDialog.html" title="class in com.aliucord.fragments"><span class="typeNameLink">InputDialog</span></a> - Class in <a href="com/aliucord/fragments/package-summary.html">com.aliucord.fragments</a></dt>
 <dd>
 <div class="block">Creates a Input Dialog similar to the <strong>Kick User</strong> dialog.</div>
@@ -1735,6 +1766,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#invokeConstructorWithArgs(java.lang.Class,java.lang.Object...)">invokeConstructorWithArgs(Class&lt;T&gt;, Object...)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
 <dd>
 <div class="block">Attempts to find and invoke the constructor of class T matching the specified arguments</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#invokeMethodWithArgs(java.lang.Class,java.lang.String,java.lang.Object...)">invokeMethodWithArgs(Class&lt;?&gt;, String, Object...)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
+<dd>
+<div class="block">Attempts to find and invoke the method matching the specified arguments
+ Please note that this does not cache the lookup result, so if you need to call this many times
+ you should do it manually and cache the <code>Method</code> to improve performance drastically</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/wrappers/GuildEmojiWrapper.html#isAnimated()">isAnimated()</a></span> - Method in class com.aliucord.wrappers.<a href="com/aliucord/wrappers/GuildEmojiWrapper.html" title="class in com.aliucord.wrappers">GuildEmojiWrapper</a></dt>
 <dd>&nbsp;</dd>
@@ -1792,6 +1829,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">J</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/aliucord/Http.Response.html#json(java.lang.Class)">json(Class&lt;T&gt;)</a></span> - Method in class com.aliucord.<a href="com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a></dt>
+<dd>
+<div class="block">Deserializes json response</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Http.Response.html#json(java.lang.reflect.Type)">json(Type)</a></span> - Method in class com.aliucord.<a href="com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a></dt>
 <dd>
 <div class="block">Deserializes json response</div>
@@ -1812,6 +1853,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">L</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/aliucord/Utils.html#launchUrl(android.net.Uri)">launchUrl(Uri)</a></span> - Static method in class com.aliucord.<a href="com/aliucord/Utils.html" title="class in com.aliucord">Utils</a></dt>
+<dd>
+<div class="block">Launches an URL in the user's preferred Browser</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/Utils.html#launchUrl(java.lang.String)">launchUrl(String)</a></span> - Static method in class com.aliucord.<a href="com/aliucord/Utils.html" title="class in com.aliucord">Utils</a></dt>
+<dd>
+<div class="block">Launches an URL in the user's preferred Browser</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/BuildConfig.html#LIBRARY_PACKAGE_NAME">LIBRARY_PACKAGE_NAME</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/BuildConfig.html" title="class in com.aliucord">BuildConfig</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/aliucord/widgets/LinearLayout.html" title="class in com.aliucord.widgets"><span class="typeNameLink">LinearLayout</span></a> - Class in <a href="com/aliucord/widgets/package-summary.html">com.aliucord.widgets</a></dt>
@@ -2138,6 +2187,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Calls <code>Pine.CallFrame</code> patch block <strong>before</strong> the method has been invoked.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/Utils.html#pipe(java.io.InputStream,java.io.OutputStream)">pipe(InputStream, OutputStream)</a></span> - Static method in class com.aliucord.<a href="com/aliucord/Utils.html" title="class in com.aliucord">Utils</a></dt>
+<dd>
+<div class="block">Pipe an <code>InputStream</code> into an <code>OutputStream</code></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Http.Response.html#pipe(java.io.OutputStream)">pipe(OutputStream)</a></span> - Method in class com.aliucord.<a href="com/aliucord/Http.Response.html" title="class in com.aliucord">Http.Response</a></dt>
 <dd>
 <div class="block">Pipe response into OutputStream.</div>
@@ -2223,9 +2276,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#postponeEnterTransition()">postponeEnterTransition()</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Main.html#preInit(com.discord.app.AppActivity)">preInit(AppActivity)</a></span> - Static method in class com.aliucord.<a href="com/aliucord/Main.html" title="class in com.aliucord">Main</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Aliucord's preInit hook.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/Main.html#preInitialized">preInitialized</a></span> - Static variable in class com.aliucord.<a href="com/aliucord/Main.html" title="class in com.aliucord">Main</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Whether Aliucord has been preInitialized</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/api/PatcherAPI.html#prePatch(java.lang.String,java.lang.String,com.aliucord.patcher.PrePatchFunction)">prePatch(String, String, PrePatchFunction)</a></span> - Method in class com.aliucord.api.<a href="com/aliucord/api/PatcherAPI.html" title="class in com.aliucord.api">PatcherAPI</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
@@ -2521,13 +2578,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/fragments/FragmentProxy.html#setExitTransition(java.lang.Object)">setExitTransition(Object)</a></span> - Method in class com.aliucord.fragments.<a href="com/aliucord/fragments/FragmentProxy.html" title="class in com.aliucord.fragments">FragmentProxy</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)">setField(Class&lt;?&gt;, Object, String, Object)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
+<dd>
+<div class="block">Stores a value to the field declared in the class.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object,boolean)">setField(Class&lt;?&gt;, Object, String, Object, boolean)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)"><code>ReflectUtils.setField(Class, Object, String, Object)</code></a></div>
+</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Object,java.lang.String,java.lang.Object)">setField(Object, String, Object)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
 <dd>
 <div class="block">Stores a value to the field declared in the class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Object,java.lang.String,java.lang.Object,boolean)">setField(Object, String, Object, boolean)</a></span> - Static method in class com.aliucord.utils.<a href="com/aliucord/utils/ReflectUtils.html" title="class in com.aliucord.utils">ReflectUtils</a></dt>
 <dd>
-<div class="block">Stores a value to the field declared in the class.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Object,java.lang.String,java.lang.Object)"><code>ReflectUtils.setField(Object, String, Object)</code></a></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/aliucord/entities/MessageEmbedBuilder.html#setFields(java.util.List)">setFields(List&lt;EmbedField&gt;)</a></span> - Method in class com.aliucord.entities.<a href="com/aliucord/entities/MessageEmbedBuilder.html" title="class in com.aliucord.entities">MessageEmbedBuilder</a></dt>
 <dd>

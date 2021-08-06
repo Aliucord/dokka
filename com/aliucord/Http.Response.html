@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -221,40 +221,47 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#json(java.lang.reflect.Type)">json</a></span>&#8203;(java.lang.reflect.Type&nbsp;type)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#json(java.lang.Class)">json</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;type)</code></th>
 <td class="colLast">
 <div class="block">Deserializes json response</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#json(java.lang.reflect.Type)">json</a></span>&#8203;(java.lang.reflect.Type&nbsp;type)</code></th>
+<td class="colLast">
+<div class="block">Deserializes json response</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ok()">ok</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Whether the request was successful (status code 2xx)</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pipe(java.io.OutputStream)">pipe</a></span>&#8203;(java.io.OutputStream&nbsp;os)</code></th>
 <td class="colLast">
 <div class="block">Pipe response into OutputStream.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveToFile(java.io.File)">saveToFile</a></span>&#8203;(java.io.File&nbsp;file)</code></th>
 <td class="colLast">
 <div class="block">Saves the received data to the specified file</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.io.InputStream</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the raw response stream of this connection</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#text()">text</a></span>()</code></th>
 <td class="colLast">
@@ -389,6 +396,25 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>json</h4>
 <pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;json&#8203;(java.lang.reflect.Type&nbsp;type)
+           throws java.io.IOException</pre>
+<div class="block">Deserializes json response</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - Type to deserialize into</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Response Object</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="json(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>json</h4>
+<pre class="methodSignature">public&nbsp;&lt;T&gt;&nbsp;T&nbsp;json&#8203;(java.lang.Class&lt;T&gt;&nbsp;type)
            throws java.io.IOException</pre>
 <div class="block">Deserializes json response</div>
 <dl>

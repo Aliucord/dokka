@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":41,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":41,"i26":9,"i27":9,"i28":9,"i29":9};
+var data = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":41,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":41,"i29":9,"i30":9,"i31":9,"i32":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -363,31 +363,53 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#launchUrl(android.net.Uri)">launchUrl</a></span>&#8203;(android.net.Uri&nbsp;url)</code></th>
+<td class="colLast">
+<div class="block">Launches an URL in the user's preferred Browser</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#launchUrl(java.lang.String)">launchUrl</a></span>&#8203;(java.lang.String&nbsp;url)</code></th>
+<td class="colLast">
+<div class="block">Launches an URL in the user's preferred Browser</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#log(java.lang.String)">log</a></span>&#8203;(java.lang.String&nbsp;msg)</code></th>
 <td class="colLast">
 <div class="block">Logs a message on debug level.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPage(android.content.Context,java.lang.Class)">openPage</a></span>&#8203;(android.content.Context&nbsp;context,
         java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPage(android.content.Context,java.lang.Class,android.content.Intent)">openPage</a></span>&#8203;(android.content.Context&nbsp;context,
         java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz,
         android.content.Intent&nbsp;intent)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPageWithProxy(android.content.Context,androidx.fragment.app.Fragment)">openPageWithProxy</a></span>&#8203;(android.content.Context&nbsp;context,
                  androidx.fragment.app.Fragment&nbsp;fragment)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pipe(java.io.InputStream,java.io.OutputStream)">pipe</a></span>&#8203;(java.io.InputStream&nbsp;is,
+    java.io.OutputStream&nbsp;os)</code></th>
+<td class="colLast">
+<div class="block">Pipe an <code>InputStream</code> into an <code>OutputStream</code></div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pluralise(int,java.lang.String)">pluralise</a></span>&#8203;(int&nbsp;amount,
          java.lang.String&nbsp;noun)</code></th>
@@ -395,26 +417,26 @@ extends java.lang.Object</pre>
 <div class="block">Converts the singular term of the <code>noun</code> into plural.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readBytes(java.io.InputStream)">readBytes</a></span>&#8203;(java.io.InputStream&nbsp;stream)</code></th>
 <td class="colLast">
 <div class="block">Reads the InputStream into a byte[]</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static java.lang.CharSequence</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderMD(java.lang.CharSequence)">renderMD</a></span>&#8203;(java.lang.CharSequence&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Renders discord spice markdown</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAppContext()">setAppContext</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClipboard(java.lang.CharSequence,java.lang.CharSequence)">setClipboard</a></span>&#8203;(java.lang.CharSequence&nbsp;label,
             java.lang.CharSequence&nbsp;text)</code></th>
@@ -422,7 +444,7 @@ extends java.lang.Object</pre>
 <div class="block">Sets the clipboard content</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPrivateField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)">setPrivateField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
                java.lang.Object&nbsp;instance,
@@ -434,7 +456,7 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showToast(android.content.Context,java.lang.String)">showToast</a></span>&#8203;(android.content.Context&nbsp;ctx,
          java.lang.String&nbsp;message)</code></th>
@@ -442,7 +464,7 @@ extends java.lang.Object</pre>
 <div class="block">Send a toast from any <code>Thread</code></div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showToast(android.content.Context,java.lang.String,boolean)">showToast</a></span>&#8203;(android.content.Context&nbsp;ctx,
          java.lang.String&nbsp;message,
@@ -451,14 +473,14 @@ extends java.lang.Object</pre>
 <div class="block">Send a toast from any <code>Thread</code></div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJson(java.lang.Object)">toJson</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Serializes an Object to JSON</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJsonPretty(java.lang.Object)">toJsonPretty</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
@@ -577,6 +599,34 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="launchUrl(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>launchUrl</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;launchUrl&#8203;(java.lang.String&nbsp;url)</pre>
+<div class="block">Launches an URL in the user's preferred Browser</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - The url to launch</dd>
+</dl>
+</li>
+</ul>
+<a id="launchUrl(android.net.Uri)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>launchUrl</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;launchUrl&#8203;(android.net.Uri&nbsp;url)</pre>
+<div class="block">Launches an URL in the user's preferred Browser</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - The url to launch</dd>
+</dl>
+</li>
+</ul>
 <a id="setClipboard(java.lang.CharSequence,java.lang.CharSequence)">
 <!--   -->
 </a>
@@ -943,6 +993,25 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <dd>The read bytes</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if an I/O error occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="pipe(java.io.InputStream,java.io.OutputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pipe</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;pipe&#8203;(java.io.InputStream&nbsp;is,
+                        java.io.OutputStream&nbsp;os)
+                 throws java.io.IOException</pre>
+<div class="block">Pipe an <code>InputStream</code> into an <code>OutputStream</code></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>is</code> - InputStream</dd>
+<dd><code>os</code> - OutputStream</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if an I/O error occurs</dd>
 </dl>
 </li>
 </ul>
