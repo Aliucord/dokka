@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":41,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":41,"i29":9,"i30":9,"i31":9,"i32":9};
+var data = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":41,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":41,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -474,13 +474,20 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
+<td class="colFirst"><code>static android.graphics.drawable.Drawable</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tintToTheme(android.graphics.drawable.Drawable)">tintToTheme</a></span>&#8203;(android.graphics.drawable.Drawable&nbsp;drawable)</code></th>
+<td class="colLast">
+<div class="block">Tints a <code>Drawable</code> to <code>Color.BLACK</code> if a user has set light theme.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJson(java.lang.Object)">toJson</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Serializes an Object to JSON</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJsonPretty(java.lang.Object)">toJsonPretty</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
@@ -1012,6 +1019,22 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <dd><code>os</code> - OutputStream</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code> - if an I/O error occurs</dd>
+</dl>
+</li>
+</ul>
+<a id="tintToTheme(android.graphics.drawable.Drawable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tintToTheme</h4>
+<pre class="methodSignature">public static&nbsp;android.graphics.drawable.Drawable&nbsp;tintToTheme&#8203;(android.graphics.drawable.Drawable&nbsp;drawable)</pre>
+<div class="block">Tints a <code>Drawable</code> to <code>Color.BLACK</code> if a user has set light theme.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>drawable</code> - Drawable</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Drawable for chaining</dd>
 </dl>
 </li>
 </ul>
