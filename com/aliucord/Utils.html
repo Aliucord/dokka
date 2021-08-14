@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":41,"i3":41,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":41,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":41,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":41,"i4":41,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":41,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":41,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -231,13 +231,20 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allocateInstance(java.lang.Class)">allocateInstance</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz)</code></th>
+<td class="colLast">
+<div class="block">Creates new class instance without using a constructor</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static com.discord.api.user.User</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buildClyde()">buildClyde</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Builds Clyde User</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static com.discord.api.user.User</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buildClyde(java.lang.String,java.lang.String)">buildClyde</a></span>&#8203;(java.lang.String&nbsp;name,
           java.lang.String&nbsp;avatarUrl)</code></th>
@@ -245,7 +252,7 @@ extends java.lang.Object</pre>
 <div class="block">Builds a Pseudo Clyde User</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createActionSubscriber(rx.functions.Action1)">createActionSubscriber</a></span>&#8203;(rx.functions.Action1&lt;? super T&gt;&nbsp;onNext)</code></th>
 <td class="colLast">
@@ -254,7 +261,7 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;rx.Subscriber&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createActionSubscriber(rx.functions.Action1,rx.functions.Action1,rx.functions.Action0)">createActionSubscriber</a></span>&#8203;(rx.functions.Action1&lt;? super T&gt;&nbsp;onNext,
                       rx.functions.Action1&lt;java.lang.Throwable&gt;&nbsp;onError,
@@ -265,7 +272,7 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static com.discord.views.CheckedSetting</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createCheckedSetting(android.content.Context,com.discord.views.CheckedSetting.ViewType,java.lang.CharSequence,java.lang.CharSequence)">createCheckedSetting</a></span>&#8203;(android.content.Context&nbsp;context,
                     com.discord.views.CheckedSetting.ViewType&nbsp;type,
@@ -275,7 +282,7 @@ extends java.lang.Object</pre>
 <div class="block">Creates a checkable <code>View</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static com.discord.api.commands.CommandChoice</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createCommandChoice(java.lang.String,java.lang.String)">createCommandChoice</a></span>&#8203;(java.lang.String&nbsp;name,
                    java.lang.String&nbsp;value)</code></th>
@@ -283,21 +290,21 @@ extends java.lang.Object</pre>
 <div class="block">Creates a CommandChoice that can be used inside Command args</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dpToPx(float)">dpToPx</a></span>&#8203;(float&nbsp;dp)</code></th>
 <td class="colLast">
 <div class="block">Converts DP to PX.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dpToPx(int)">dpToPx</a></span>&#8203;(int&nbsp;dp)</code></th>
 <td class="colLast">
 <div class="block">Converts DP to PX.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromJson(java.lang.String,java.lang.Class)">fromJson</a></span>&#8203;(java.lang.String&nbsp;json,
         java.lang.Class&lt;T&gt;&nbsp;clazz)</code></th>
@@ -305,7 +312,7 @@ extends java.lang.Object</pre>
 <div class="block">Deserializes a JSON string into the specified class</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromJson(java.lang.String,java.lang.reflect.Type)">fromJson</a></span>&#8203;(java.lang.String&nbsp;json,
         java.lang.reflect.Type&nbsp;type)</code></th>
@@ -313,28 +320,28 @@ extends java.lang.Object</pre>
 <div class="block">Deserializes a JSON string into the specified object</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static android.content.Context</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAppContext()">getAppContext</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Retrieves <code>Application</code> <code>Context</code></div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultCardRadius()">getDefaultCardRadius</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the default radius for cards.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultPadding()">getDefaultPadding</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the default padding for the items.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static &lt;K,&#8203;V&gt;<br>K</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMapKey(java.util.Map,V)">getMapKey</a></span>&#8203;(java.util.Map&lt;K,&#8203;V&gt;&nbsp;map,
          V&nbsp;val)</code></th>
@@ -342,7 +349,7 @@ extends java.lang.Object</pre>
 <div class="block">Finds the mapping key for Object val where Objects.equals(val, entry.value)</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPrivateField(java.lang.Class,java.lang.Object,java.lang.String)">getPrivateField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
                java.lang.Object&nbsp;instance,
@@ -353,7 +360,7 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResId(java.lang.String,java.lang.String)">getResId</a></span>&#8203;(java.lang.String&nbsp;name,
         java.lang.String&nbsp;type)</code></th>
@@ -361,47 +368,47 @@ extends java.lang.Object</pre>
 <div class="block">Get resource id from discord package.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#launchUrl(android.net.Uri)">launchUrl</a></span>&#8203;(android.net.Uri&nbsp;url)</code></th>
 <td class="colLast">
 <div class="block">Launches an URL in the user's preferred Browser</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#launchUrl(java.lang.String)">launchUrl</a></span>&#8203;(java.lang.String&nbsp;url)</code></th>
 <td class="colLast">
 <div class="block">Launches an URL in the user's preferred Browser</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#log(java.lang.String)">log</a></span>&#8203;(java.lang.String&nbsp;msg)</code></th>
 <td class="colLast">
 <div class="block">Logs a message on debug level.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPage(android.content.Context,java.lang.Class)">openPage</a></span>&#8203;(android.content.Context&nbsp;context,
         java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPage(android.content.Context,java.lang.Class,android.content.Intent)">openPage</a></span>&#8203;(android.content.Context&nbsp;context,
         java.lang.Class&lt;? extends com.discord.app.AppComponent&gt;&nbsp;clazz,
         android.content.Intent&nbsp;intent)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openPageWithProxy(android.content.Context,androidx.fragment.app.Fragment)">openPageWithProxy</a></span>&#8203;(android.content.Context&nbsp;context,
                  androidx.fragment.app.Fragment&nbsp;fragment)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pipe(java.io.InputStream,java.io.OutputStream)">pipe</a></span>&#8203;(java.io.InputStream&nbsp;is,
     java.io.OutputStream&nbsp;os)</code></th>
@@ -409,7 +416,7 @@ extends java.lang.Object</pre>
 <div class="block">Pipe an <code>InputStream</code> into an <code>OutputStream</code></div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pluralise(int,java.lang.String)">pluralise</a></span>&#8203;(int&nbsp;amount,
          java.lang.String&nbsp;noun)</code></th>
@@ -417,26 +424,26 @@ extends java.lang.Object</pre>
 <div class="block">Converts the singular term of the <code>noun</code> into plural.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readBytes(java.io.InputStream)">readBytes</a></span>&#8203;(java.io.InputStream&nbsp;stream)</code></th>
 <td class="colLast">
 <div class="block">Reads the InputStream into a byte[]</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static java.lang.CharSequence</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderMD(java.lang.CharSequence)">renderMD</a></span>&#8203;(java.lang.CharSequence&nbsp;source)</code></th>
 <td class="colLast">
 <div class="block">Renders discord spice markdown</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAppContext()">setAppContext</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClipboard(java.lang.CharSequence,java.lang.CharSequence)">setClipboard</a></span>&#8203;(java.lang.CharSequence&nbsp;label,
             java.lang.CharSequence&nbsp;text)</code></th>
@@ -444,7 +451,7 @@ extends java.lang.Object</pre>
 <div class="block">Sets the clipboard content</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPrivateField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)">setPrivateField</a></span>&#8203;(java.lang.Class&lt;?&gt;&nbsp;clazz,
                java.lang.Object&nbsp;instance,
@@ -456,7 +463,7 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showToast(android.content.Context,java.lang.String)">showToast</a></span>&#8203;(android.content.Context&nbsp;ctx,
          java.lang.String&nbsp;message)</code></th>
@@ -464,7 +471,7 @@ extends java.lang.Object</pre>
 <div class="block">Send a toast from any <code>Thread</code></div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showToast(android.content.Context,java.lang.String,boolean)">showToast</a></span>&#8203;(android.content.Context&nbsp;ctx,
          java.lang.String&nbsp;message,
@@ -473,21 +480,21 @@ extends java.lang.Object</pre>
 <div class="block">Send a toast from any <code>Thread</code></div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static android.graphics.drawable.Drawable</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tintToTheme(android.graphics.drawable.Drawable)">tintToTheme</a></span>&#8203;(android.graphics.drawable.Drawable&nbsp;drawable)</code></th>
 <td class="colLast">
 <div class="block">Tints a <code>Drawable</code> to <code>Color.BLACK</code> if a user has set light theme.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJson(java.lang.Object)">toJson</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Serializes an Object to JSON</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJsonPretty(java.lang.Object)">toJsonPretty</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
@@ -1119,6 +1126,22 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <dd><code>source</code> - The markdown to render</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Rendered markdown</dd>
+</dl>
+</li>
+</ul>
+<a id="allocateInstance(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allocateInstance</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;allocateInstance&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz)</pre>
+<div class="block">Creates new class instance without using a constructor</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clazz</code> - Class</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Created instance</dd>
 </dl>
 </li>
 </ul>
