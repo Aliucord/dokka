@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":41,"i4":41,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":41,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":41,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9};
+var data = {"i0":41,"i1":9,"i2":9,"i3":41,"i4":41,"i5":9,"i6":9,"i7":41,"i8":41,"i9":41,"i10":41,"i11":9,"i12":41,"i13":41,"i14":41,"i15":41,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":41,"i24":9,"i25":41,"i26":41,"i27":9,"i28":9,"i29":41,"i30":9,"i31":9,"i32":9,"i33":41,"i34":41};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,14 +167,18 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static com.google.gson.Gson</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gson">gson</a></span></code></th>
 <td class="colLast">
-<div class="block"><a href="https://github.com/google/gson">Gson</a> instance</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#gson"><code>GsonUtils.gson</code></a></div>
+</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static com.google.gson.Gson</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gsonPretty">gsonPretty</a></span></code></th>
 <td class="colLast">
-<div class="block">Pretty <a href="https://github.com/google/gson">Gson</a> instance</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#gsonPretty"><code>GsonUtils.gsonPretty</code></a></div>
+</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -234,7 +238,9 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allocateInstance(java.lang.Class)">allocateInstance</a></span>&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz)</code></th>
 <td class="colLast">
-<div class="block">Creates new class instance without using a constructor</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/ReflectUtils.html#allocateInstance(java.lang.Class)"><code>ReflectUtils.allocateInstance(Class)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -294,14 +300,18 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dpToPx(float)">dpToPx</a></span>&#8203;(float&nbsp;dp)</code></th>
 <td class="colLast">
-<div class="block">Converts DP to PX.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#dpToPx(float)"><code>DimenUtils.dpToPx(float)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dpToPx(int)">dpToPx</a></span>&#8203;(int&nbsp;dp)</code></th>
 <td class="colLast">
-<div class="block">Converts DP to PX.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#dpToPx(int)"><code>DimenUtils.dpToPx(int)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -309,7 +319,9 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromJson(java.lang.String,java.lang.Class)">fromJson</a></span>&#8203;(java.lang.String&nbsp;json,
         java.lang.Class&lt;T&gt;&nbsp;clazz)</code></th>
 <td class="colLast">
-<div class="block">Deserializes a JSON string into the specified class</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#fromJson(java.lang.String,java.lang.Class)"><code>GsonUtils.fromJson(String, Class)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -317,7 +329,9 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromJson(java.lang.String,java.lang.reflect.Type)">fromJson</a></span>&#8203;(java.lang.String&nbsp;json,
         java.lang.reflect.Type&nbsp;type)</code></th>
 <td class="colLast">
-<div class="block">Deserializes a JSON string into the specified object</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#fromJson(java.lang.String,java.lang.reflect.Type)"><code>GsonUtils.fromJson(String, Type)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -331,14 +345,18 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultCardRadius()">getDefaultCardRadius</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the default radius for cards.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#getDefaultCardRadius()"><code>DimenUtils.getDefaultCardRadius()</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultPadding()">getDefaultPadding</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the default padding for the items.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#getDefaultPadding()"><code>DimenUtils.getDefaultPadding()</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
@@ -346,7 +364,9 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMapKey(java.util.Map,V)">getMapKey</a></span>&#8203;(java.util.Map&lt;K,&#8203;V&gt;&nbsp;map,
          V&nbsp;val)</code></th>
 <td class="colLast">
-<div class="block">Finds the mapping key for Object val where Objects.equals(val, entry.value)</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/MapUtils.html#getMapKey(java.util.Map,V)"><code>MapUtils.getMapKey(Map, Object)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -413,7 +433,9 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pipe(java.io.InputStream,java.io.OutputStream)">pipe</a></span>&#8203;(java.io.InputStream&nbsp;is,
     java.io.OutputStream&nbsp;os)</code></th>
 <td class="colLast">
-<div class="block">Pipe an <code>InputStream</code> into an <code>OutputStream</code></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/IOUtils.html#pipe(java.io.InputStream,java.io.OutputStream)"><code>IOUtils.pipe(InputStream, OutputStream)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
@@ -428,14 +450,18 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readBytes(java.io.InputStream)">readBytes</a></span>&#8203;(java.io.InputStream&nbsp;stream)</code></th>
 <td class="colLast">
-<div class="block">Reads the InputStream into a byte[]</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/IOUtils.html#readBytes(java.io.InputStream)"><code>IOUtils.readBytes(InputStream)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>static java.lang.CharSequence</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderMD(java.lang.CharSequence)">renderMD</a></span>&#8203;(java.lang.CharSequence&nbsp;source)</code></th>
 <td class="colLast">
-<div class="block">Renders discord spice markdown</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/MDUtils.html#render(java.lang.CharSequence)"><code>MDUtils.render(CharSequence)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i27" class="rowColor">
@@ -491,14 +517,18 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJson(java.lang.Object)">toJson</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
-<div class="block">Serializes an Object to JSON</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#toJson(java.lang.Object)"><code>GsonUtils.toJson(Object)</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toJsonPretty(java.lang.Object)">toJsonPretty</a></span>&#8203;(java.lang.Object&nbsp;obj)</code></th>
 <td class="colLast">
-<div class="block">Serializes an Object to pretty printed JSON</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#toJsonPretty(java.lang.Object)"><code>GsonUtils.toJsonPretty(Object)</code></a></div>
+</div>
 </td>
 </tr>
 </table>
@@ -570,7 +600,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>gson</h4>
-<pre>public static final&nbsp;com.google.gson.Gson gson</pre>
+<pre>@Deprecated
+public static final&nbsp;com.google.gson.Gson gson</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#gson"><code>GsonUtils.gson</code></a></div>
+</div>
 <div class="block"><a href="https://github.com/google/gson">Gson</a> instance</div>
 </li>
 </ul>
@@ -580,7 +614,11 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>gsonPretty</h4>
-<pre>public static final&nbsp;com.google.gson.Gson gsonPretty</pre>
+<pre>@Deprecated
+public static final&nbsp;com.google.gson.Gson gsonPretty</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#gsonPretty"><code>GsonUtils.gsonPretty</code></a></div>
+</div>
 <div class="block">Pretty <a href="https://github.com/google/gson">Gson</a> instance</div>
 </li>
 </ul>
@@ -756,15 +794,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>dpToPx</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;dpToPx&#8203;(int&nbsp;dp)</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;int&nbsp;dpToPx&#8203;(int&nbsp;dp)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#dpToPx(int)"><code>DimenUtils.dpToPx(int)</code></a></div>
+</div>
 <div class="block">Converts DP to PX.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dp</code> - DP value.</dd>
+<dd><code>dp</code> - DP value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>dp</code> converted to PX.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#dpToPx(float)"><code>dpToPx(float)</code></a></dd>
+<dd><code>DP</code> converted to PX</dd>
 </dl>
 </li>
 </ul>
@@ -774,15 +814,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>dpToPx</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;dpToPx&#8203;(float&nbsp;dp)</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;int&nbsp;dpToPx&#8203;(float&nbsp;dp)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#dpToPx(float)"><code>DimenUtils.dpToPx(float)</code></a></div>
+</div>
 <div class="block">Converts DP to PX.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>dp</code> - DP value.</dd>
+<dd><code>dp</code> - DP value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>dp</code> converted to PX.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#dpToPx(int)"><code>dpToPx(int)</code></a></dd>
+<dd><code>DP</code> converted to PX</dd>
 </dl>
 </li>
 </ul>
@@ -792,14 +834,18 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultPadding</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;getDefaultPadding()</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;int&nbsp;getDefaultPadding()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#getDefaultPadding()"><code>DimenUtils.getDefaultPadding()</code></a></div>
+</div>
 <div class="block">Gets the default padding for the items. (16 DP)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>default padding</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#dpToPx(int)"><code>dpToPx(int)</code></a>, 
-<a href="#dpToPx(float)"><code>dpToPx(float)</code></a></dd>
+<dd><a href="utils/DimenUtils.html#dpToPx(int)"><code>DimenUtils.dpToPx(int)</code></a>, 
+<a href="utils/DimenUtils.html#dpToPx(float)"><code>DimenUtils.dpToPx(float)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -809,14 +855,18 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultCardRadius</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;getDefaultCardRadius()</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;int&nbsp;getDefaultCardRadius()</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/DimenUtils.html#getDefaultCardRadius()"><code>DimenUtils.getDefaultCardRadius()</code></a></div>
+</div>
 <div class="block">Gets the default radius for cards. (8 DP)</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>default padding</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="#dpToPx(int)"><code>dpToPx(int)</code></a>, 
-<a href="#dpToPx(float)"><code>dpToPx(float)</code></a></dd>
+<dd><a href="utils/DimenUtils.html#dpToPx(int)"><code>DimenUtils.dpToPx(int)</code></a>, 
+<a href="utils/DimenUtils.html#dpToPx(float)"><code>DimenUtils.dpToPx(float)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -829,10 +879,14 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getMapKey</h4>
 <pre class="methodSignature">@Nullable
+@Deprecated
 public static&nbsp;&lt;K,&#8203;V&gt;&nbsp;K&nbsp;getMapKey&#8203;(@NonNull
                                       java.util.Map&lt;K,&#8203;V&gt;&nbsp;map,
                                       @Nullable
                                       V&nbsp;val)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/MapUtils.html#getMapKey(java.util.Map,V)"><code>MapUtils.getMapKey(Map, Object)</code></a></div>
+</div>
 <div class="block">Finds the mapping key for Object val where Objects.equals(val, entry.value)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -997,8 +1051,12 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>readBytes</h4>
-<pre class="methodSignature">public static&nbsp;byte[]&nbsp;readBytes&#8203;(java.io.InputStream&nbsp;stream)
+<pre class="methodSignature">@Deprecated
+public static&nbsp;byte[]&nbsp;readBytes&#8203;(java.io.InputStream&nbsp;stream)
                         throws java.lang.Throwable</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/IOUtils.html#readBytes(java.io.InputStream)"><code>IOUtils.readBytes(InputStream)</code></a></div>
+</div>
 <div class="block">Reads the InputStream into a byte[]</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1016,9 +1074,13 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>pipe</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;pipe&#8203;(java.io.InputStream&nbsp;is,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;void&nbsp;pipe&#8203;(java.io.InputStream&nbsp;is,
                         java.io.OutputStream&nbsp;os)
                  throws java.io.IOException</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/IOUtils.html#pipe(java.io.InputStream,java.io.OutputStream)"><code>IOUtils.pipe(InputStream, OutputStream)</code></a></div>
+</div>
 <div class="block">Pipe an <code>InputStream</code> into an <code>OutputStream</code></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1051,8 +1113,12 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>fromJson</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fromJson&#8203;(java.lang.String&nbsp;json,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fromJson&#8203;(java.lang.String&nbsp;json,
                              java.lang.Class&lt;T&gt;&nbsp;clazz)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#fromJson(java.lang.String,java.lang.Class)"><code>GsonUtils.fromJson(String, Class)</code></a></div>
+</div>
 <div class="block">Deserializes a JSON string into the specified class</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1069,8 +1135,12 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>fromJson</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fromJson&#8203;(java.lang.String&nbsp;json,
+<pre class="methodSignature">@Deprecated
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;fromJson&#8203;(java.lang.String&nbsp;json,
                              java.lang.reflect.Type&nbsp;type)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#fromJson(java.lang.String,java.lang.reflect.Type)"><code>GsonUtils.fromJson(String, Type)</code></a></div>
+</div>
 <div class="block">Deserializes a JSON string into the specified object</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1087,7 +1157,11 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>toJson</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;toJson&#8203;(java.lang.Object&nbsp;obj)</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;java.lang.String&nbsp;toJson&#8203;(java.lang.Object&nbsp;obj)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#toJson(java.lang.Object)"><code>GsonUtils.toJson(Object)</code></a></div>
+</div>
 <div class="block">Serializes an Object to JSON</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1103,7 +1177,11 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>toJsonPretty</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;toJsonPretty&#8203;(java.lang.Object&nbsp;obj)</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;java.lang.String&nbsp;toJsonPretty&#8203;(java.lang.Object&nbsp;obj)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/GsonUtils.html#toJsonPretty(java.lang.Object)"><code>GsonUtils.toJsonPretty(Object)</code></a></div>
+</div>
 <div class="block">Serializes an Object to pretty printed JSON</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1119,7 +1197,11 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>renderMD</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.CharSequence&nbsp;renderMD&#8203;(java.lang.CharSequence&nbsp;source)</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;java.lang.CharSequence&nbsp;renderMD&#8203;(java.lang.CharSequence&nbsp;source)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/MDUtils.html#render(java.lang.CharSequence)"><code>MDUtils.render(CharSequence)</code></a></div>
+</div>
 <div class="block">Renders discord spice markdown</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1135,7 +1217,12 @@ public static&nbsp;void&nbsp;setPrivateField&#8203;(java.lang.Class&lt;?&gt;&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>allocateInstance</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;allocateInstance&#8203;(java.lang.Class&lt;T&gt;&nbsp;clazz)</pre>
+<pre class="methodSignature">@Deprecated
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;allocateInstance&#8203;(@NonNull
+                                     java.lang.Class&lt;T&gt;&nbsp;clazz)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Use <a href="utils/ReflectUtils.html#allocateInstance(java.lang.Class)"><code>ReflectUtils.allocateInstance(Class)</code></a></div>
+</div>
 <div class="block">Creates new class instance without using a constructor</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

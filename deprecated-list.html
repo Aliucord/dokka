@@ -97,6 +97,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li><a href="#interface">Interfaces</a></li>
 <li><a href="#class">Classes</a></li>
+<li><a href="#field">Fields</a></li>
 <li><a href="#method">Methods</a></li>
 <li><a href="#constructor">Constructors</a></li>
 </ul>
@@ -140,6 +141,34 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="altColor">
 <th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/patcher/PrePatchRes.html" title="class in com.aliucord.patcher">com.aliucord.patcher.PrePatchRes</a></th>
 <td class="colLast"></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a id="field">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<table class="deprecatedSummary">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#gson">com.aliucord.Utils.gson</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/GsonUtils.html#gson"><code>GsonUtils.gson</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#gsonPretty">com.aliucord.Utils.gsonPretty</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/GsonUtils.html#gsonPretty"><code>GsonUtils.gsonPretty</code></a></div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -194,15 +223,63 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#allocateInstance(java.lang.Class)">com.aliucord.Utils.allocateInstance&#8203;(Class&lt;T&gt;)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#allocateInstance(java.lang.Class)"><code>ReflectUtils.allocateInstance(Class)</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#createActionSubscriber(rx.functions.Action1)">com.aliucord.Utils.createActionSubscriber&#8203;(Action1&lt;? super T&gt;)</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="com/aliucord/utils/RxUtils.html#createActionSubscriber(rx.functions.Action1)"><code>RxUtils.createActionSubscriber(Action1)</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#dpToPx(int)">com.aliucord.Utils.dpToPx&#8203;(int)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/DimenUtils.html#dpToPx(int)"><code>DimenUtils.dpToPx(int)</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#fromJson(java.lang.String,java.lang.Class)">com.aliucord.Utils.fromJson&#8203;(String, Class&lt;T&gt;)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/GsonUtils.html#fromJson(java.lang.String,java.lang.Class)"><code>GsonUtils.fromJson(String, Class)</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#getDefaultCardRadius()">com.aliucord.Utils.getDefaultCardRadius()</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/DimenUtils.html#getDefaultCardRadius()"><code>DimenUtils.getDefaultCardRadius()</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#getDefaultPadding()">com.aliucord.Utils.getDefaultPadding()</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/DimenUtils.html#getDefaultPadding()"><code>DimenUtils.getDefaultPadding()</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#getMapKey(java.util.Map,V)">com.aliucord.Utils.getMapKey&#8203;(Map&lt;K, V&gt;, V)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/MapUtils.html#getMapKey(java.util.Map,V)"><code>MapUtils.getMapKey(Map, Object)</code></a></div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#getPrivateField(java.lang.Class,java.lang.Object,java.lang.String)">com.aliucord.Utils.getPrivateField&#8203;(Class&lt;?&gt;, Object, String)</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Object,java.lang.String,boolean)"><code>ReflectUtils.getField(Object, String, boolean)</code></a> or <a href="com/aliucord/utils/ReflectUtils.html#getField(java.lang.Class,java.lang.Object,java.lang.String,boolean)"><code>ReflectUtils.getField(Class, Object, String, boolean)</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#pipe(java.io.InputStream,java.io.OutputStream)">com.aliucord.Utils.pipe&#8203;(InputStream, OutputStream)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/IOUtils.html#pipe(java.io.InputStream,java.io.OutputStream)"><code>IOUtils.pipe(InputStream, OutputStream)</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#readBytes(java.io.InputStream)">com.aliucord.Utils.readBytes&#8203;(InputStream)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/IOUtils.html#readBytes(java.io.InputStream)"><code>IOUtils.readBytes(InputStream)</code></a></div>
 </td>
 </tr>
 <tr class="altColor">
@@ -218,9 +295,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#renderMD(java.lang.CharSequence)">com.aliucord.Utils.renderMD&#8203;(CharSequence)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/MDUtils.html#render(java.lang.CharSequence)"><code>MDUtils.render(CharSequence)</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#setPrivateField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object)">com.aliucord.Utils.setPrivateField&#8203;(Class&lt;?&gt;, Object, String, Object)</a></th>
 <td class="colLast">
 <div class="deprecationComment">Use <a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Object,java.lang.String,java.lang.Object,boolean)"><code>ReflectUtils.setField(Object, String, Object, boolean)</code></a> or <a href="com/aliucord/utils/ReflectUtils.html#setField(java.lang.Class,java.lang.Object,java.lang.String,java.lang.Object,boolean)"><code>ReflectUtils.setField(Class, Object, String, Object, boolean)</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#toJson(java.lang.Object)">com.aliucord.Utils.toJson&#8203;(Object)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/GsonUtils.html#toJson(java.lang.Object)"><code>GsonUtils.toJson(Object)</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colDeprecatedItemName" scope="row"><a href="com/aliucord/Utils.html#toJsonPretty(java.lang.Object)">com.aliucord.Utils.toJsonPretty&#8203;(Object)</a></th>
+<td class="colLast">
+<div class="deprecationComment">Use <a href="com/aliucord/utils/GsonUtils.html#toJsonPretty(java.lang.Object)"><code>GsonUtils.toJsonPretty(Object)</code></a></div>
 </td>
 </tr>
 </tbody>
