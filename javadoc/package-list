@@ -1,0 +1,37 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.aliucord.api/CommandsAPI.CommandResult///PointingToDeclaration/com/aliucord/api/CommandsAPI.CommandResult.html
+$dokka.location:com.aliucord.entities/Plugin.Manifest.Author///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.Author.html
+$dokka.location:com.aliucord.entities/Plugin.Manifest///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.html
+$dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.SettingsPage.html
+$dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.Type.html
+$dokka.location:com.aliucord.entities/Plugin.SettingsTab///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.html
+$dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.ViewHolder.html
+$dokka.location:com.aliucord.settings/Plugins.Adapter///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.html
+$dokka.location:com.aliucord.settings/Updater.UpdaterSettings///PointingToDeclaration/com/aliucord/settings/Updater.UpdaterSettings.html
+$dokka.location:com.aliucord.updater/PluginUpdater.CachedData///PointingToDeclaration/com/aliucord/updater/PluginUpdater.CachedData.html
+$dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo///PointingToDeclaration/com/aliucord/updater/PluginUpdater.UpdateInfo.html
+$dokka.location:com.aliucord.utils/MDUtils.RenderContext///PointingToDeclaration/com/aliucord/utils/MDUtils.RenderContext.html
+$dokka.location:com.aliucord.wrappers/GuildWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildWrapper.Companion.html
+$dokka.location:com.aliucord/Constants.Fonts///PointingToDeclaration/com/aliucord/Constants.Fonts.html
+$dokka.location:com.aliucord/Constants.Icons///PointingToDeclaration/com/aliucord/Constants.Icons.html
+$dokka.location:com.aliucord/Http.HttpException///PointingToDeclaration/com/aliucord/Http.HttpException.html
+$dokka.location:com.aliucord/Http.QueryBuilder///PointingToDeclaration/com/aliucord/Http.QueryBuilder.html
+$dokka.location:com.aliucord/Http.Request///PointingToDeclaration/com/aliucord/Http.Request.html
+$dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord/Http.Response.html
+com.aliucord
+com.aliucord.api
+com.aliucord.coreplugins
+com.aliucord.entities
+com.aliucord.fragments
+com.aliucord.patcher
+com.aliucord.settings
+com.aliucord.updater
+com.aliucord.utils
+com.aliucord.views
+com.aliucord.widgets
+com.aliucord.wrappers
+com.aliucord.wrappers.embeds
+com.aliucord.wrappers.messages
+com.aliucord.wrappers.stickers
+
