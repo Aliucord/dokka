@@ -186,6 +186,14 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                             <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
                                         </tr>
                                         
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#timer(long,TimeUnit)>timer</a>(long delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit) </code>
+                                            </th>
+                                            <td class="colLast">Returns an Observable that emits <code>{@code 0L}</code> after a specified delay, and then completes.</td>
+                                        </tr>
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -301,7 +309,7 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>createActionSubscriber</h4>
@@ -321,6 +329,34 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                             
                                             
                                             <dd><code>onCompleted</code> - An Observable calls this method after it has called <code>onNext</code> for the final time, if it has not encountered any errors.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="timer(long,TimeUnit)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>timer</h4>
+                                        <pre class="methodSignature"> static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt; <a href=RxUtils.html#timer(long,TimeUnit)>timer</a>(long delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit)</pre>
+                                        <div class="block"><p>Returns an Observable that emits <code>{@code 0L}</code> after a specified delay, and then completes.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>delay</code> - the initial delay before emitting a single <code>{@code 0L}</code></dd>
+                                            
+                                            
+                                            
+                                            <dd><code>unit</code> - time units to use for <code>{@code delay}</code></dd>
                                             
                                             
                                         </dl>

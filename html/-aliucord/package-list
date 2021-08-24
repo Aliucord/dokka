@@ -456,6 +456,7 @@ $dokka.location:com.aliucord.utils/RxUtils/createActionSubscriber/#rx.functions.
 $dokka.location:com.aliucord.utils/RxUtils/getResultBlocking/#rx.Observable<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/get-result-blocking.html
 $dokka.location:com.aliucord.utils/RxUtils/onBackpressureBuffer/#rx.Observable<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/on-backpressure-buffer.html
 $dokka.location:com.aliucord.utils/RxUtils/subscribe/#rx.Observable<T>#rx.Subscriber<? super T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/subscribe.html
+$dokka.location:com.aliucord.utils/RxUtils/timer/#long#java.util.concurrent.TimeUnit/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/timer.html
 $dokka.location:com.aliucord.views////PointingToDeclaration/-aliucord/com.aliucord.views/index.html
 $dokka.location:com.aliucord.views/Button///PointingToDeclaration/-aliucord/com.aliucord.views/-button/index.html
 $dokka.location:com.aliucord.views/Button/Button/#android.content.Context#boolean/PointingToDeclaration/-aliucord/com.aliucord.views/-button/-button.html
