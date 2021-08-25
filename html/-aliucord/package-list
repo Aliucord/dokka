@@ -335,11 +335,14 @@ $dokka.location:com.aliucord.patcher/Patcher/addPrePatch/#java.lang.String#java.
 $dokka.location:com.aliucord.patcher/Patcher/logger/#/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/logger.html
 $dokka.location:com.aliucord.patcher/Patcher/patchToMethodHook/#com.aliucord.patcher.PatchFunction/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/patch-to-method-hook.html
 $dokka.location:com.aliucord.patcher/Patcher/prePatchToMethodHook/#com.aliucord.patcher.PrePatchFunction/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/pre-patch-to-method-hook.html
+$dokka.location:com.aliucord.patcher/PineInsteadFn///PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-instead-fn/index.html
+$dokka.location:com.aliucord.patcher/PineInsteadFn/PineInsteadFn/#kotlin.Function1[top.canyie.pine.Pine.CallFrame,kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-instead-fn/-pine-instead-fn.html
+$dokka.location:com.aliucord.patcher/PineInsteadFn/beforeCall/#top.canyie.pine.Pine.CallFrame/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-instead-fn/before-call.html
 $dokka.location:com.aliucord.patcher/PinePatchFn///PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-patch-fn/index.html
-$dokka.location:com.aliucord.patcher/PinePatchFn/PinePatchFn/#rx.functions.Action1<top.canyie.pine.Pine.CallFrame>/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-patch-fn/-pine-patch-fn.html
+$dokka.location:com.aliucord.patcher/PinePatchFn/PinePatchFn/#rx.functions.Action1[top.canyie.pine.Pine.CallFrame]/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-patch-fn/-pine-patch-fn.html
 $dokka.location:com.aliucord.patcher/PinePatchFn/afterCall/#top.canyie.pine.Pine.CallFrame/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-patch-fn/after-call.html
 $dokka.location:com.aliucord.patcher/PinePrePatchFn///PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn/index.html
-$dokka.location:com.aliucord.patcher/PinePrePatchFn/PinePrePatchFn/#rx.functions.Action1<top.canyie.pine.Pine.CallFrame>/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn/-pine-pre-patch-fn.html
+$dokka.location:com.aliucord.patcher/PinePrePatchFn/PinePrePatchFn/#rx.functions.Action1[top.canyie.pine.Pine.CallFrame]/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn/-pine-pre-patch-fn.html
 $dokka.location:com.aliucord.patcher/PinePrePatchFn/beforeCall/#top.canyie.pine.Pine.CallFrame/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pine-pre-patch-fn/before-call.html
 $dokka.location:com.aliucord.patcher/PrePatchFunction///PointingToDeclaration/-aliucord/com.aliucord.patcher/-pre-patch-function/index.html
 $dokka.location:com.aliucord.patcher/PrePatchRes///PointingToDeclaration/-aliucord/com.aliucord.patcher/-pre-patch-res/index.html
