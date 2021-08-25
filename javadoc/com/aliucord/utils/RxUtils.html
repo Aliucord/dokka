@@ -110,7 +110,7 @@ var pathtoroot = "../../../";
 public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
 
                     </pre>
-                    <div class="block"><p>Utility class to deal with Observables</p></div>
+                    <div class="block"></div>
                 </li>
             </ul>
         </div>
@@ -147,51 +147,59 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt;</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;T&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#onBackpressureBuffer(Observable)>onBackpressureBuffer</a>(Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; observable) </code>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#onBackpressureBuffer(Observable)>onBackpressureBuffer</a>(Observable&lt;T&gt; $self) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Instructs an Observable that is emitting items faster than its observer can consume them to buffer these items indefinitely until they can be emitted.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; Subscription</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscription</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#subscribe(Observable,Subscriber)>subscribe</a>(Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; observable, Subscriber&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; subscriber) </code>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#subscribe(Observable,Subscriber)>subscribe</a>(Observable&lt;T&gt; $self, Subscriber&lt;in T&gt; subscriber) </code>
                                             </th>
                                             <td class="colLast">Subscribe to the Observable</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a>&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt;</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a>&lt;T, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#getResultBlocking(Observable)>getResultBlocking</a>(Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; observable) </code>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#getResultBlocking(Observable)>getResultBlocking</a>(Observable&lt;T&gt; $self) </code>
                                             </th>
-                                            <td class="colLast">Blocks the current thread and waits for the observable to complete, then returns a Pair containing the result, and the error (if any) This must not be called from the Main thread (and will throw an IllegalStateException if done so) as that would freeze the UI</td>
+                                            <td class="colLast">Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; Subscriber&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt;</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;T&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1)>createActionSubscriber</a>(Action1&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; onNext) </code>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in T&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError, Action0 onCompleted) </code>
                                             </th>
                                             <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; Subscriber&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt;</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;T&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError, Action0 onCompleted) </code>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in T&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError) </code>
                                             </th>
                                             <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
-                                            <td class="colFirst"><code>static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt;</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;T&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#timer(long,TimeUnit)>timer</a>(long delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit) </code>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in T&gt; onNext) </code>
                                             </th>
-                                            <td class="colLast">Returns an Observable that emits <code>{@code 0L}</code> after a specified delay, and then completes.</td>
+                                            <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#timer(Long,TimeUnit)>timer</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit) </code>
+                                            </th>
+                                            <td class="colLast">Returns an Observable that emits <code>0L</code> after a specified delay, and then completes.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -235,8 +243,8 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                           >
                                     <li class="blockList">
                                         <h4>onBackpressureBuffer</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; <a href=RxUtils.html#onBackpressureBuffer(Observable)>onBackpressureBuffer</a>(Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; observable)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;T&gt; <a href=RxUtils.html#onBackpressureBuffer(Observable)>onBackpressureBuffer</a>(Observable&lt;T&gt; $self)</pre>
+                                        <div class="block"><p>Instructs an Observable that is emitting items faster than its observer can consume them to buffer these items indefinitely until they can be emitted.</p><p><a href=https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/bp.obp.buffer.png.html>preview image</a></p><p><code>Backpressure</code>:</p><p>The operator honors backpressure from downstream and consumes the source Observable in an unbounded manner (i.e., not applying backpressure to it).</p><p><code>Scheduler</code>:</p><p>onBackpressureBuffer does not operate by default on a particular Scheduler.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -250,8 +258,19 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                           >
                                     <li class="blockList">
                                         <h4>subscribe</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; Subscription <a href=RxUtils.html#subscribe(Observable,Subscriber)>subscribe</a>(Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; observable, Subscriber&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; subscriber)</pre>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscription <a href=RxUtils.html#subscribe(Observable,Subscriber)>subscribe</a>(Observable&lt;T&gt; $self, Subscriber&lt;in T&gt; subscriber)</pre>
                                         <div class="block"><p>Subscribe to the Observable</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>subscriber</code> - the Subscriber that will handle emissions and notifications from the Observable</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -265,14 +284,65 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                           >
                                     <li class="blockList">
                                         <h4>getResultBlocking</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a>&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; <a href=RxUtils.html#getResultBlocking(Observable)>getResultBlocking</a>(Observable&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; observable)</pre>
-                                        <div class="block"><p>Blocks the current thread and waits for the observable to complete, then returns a Pair containing the result, and the error (if any) This must not be called from the Main thread (and will throw an IllegalStateException if done so) as that would freeze the UI</p></div>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a>&lt;T, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; <a href=RxUtils.html#getResultBlocking(Observable)>getResultBlocking</a>(Observable&lt;T&gt; $self)</pre>
+                                        <div class="block"><p>Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="createActionSubscriber(Action1,Action1,Action0)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>createActionSubscriber</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;T&gt; <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in T&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError, Action0 onCompleted)</pre>
+                                        <div class="block"><p>Creates a subscriber that forwards the onXXX method calls to callbacks.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>observable</code> - The observable to wait for</dd>
+                                            <dd><code>onNext</code> - An Observable calls this method whenever the Observable emits an item.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>onError</code> - An Observable calls this method to indicate that it has failed to generate the expected data or has encountered some other error.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>onCompleted</code> - An Observable calls this method after it has called onNext for the final time, if it has not encountered any errors.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="createActionSubscriber(Action1,Action1)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>createActionSubscriber</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;T&gt; <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in T&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError)</pre>
+                                        <div class="block"><p>Creates a subscriber that forwards the onXXX method calls to callbacks.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>onNext</code> - An Observable calls this method whenever the Observable emits an item.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>onError</code> - An Observable calls this method to indicate that it has failed to generate the expected data or has encountered some other error.</dd>
                                             
                                             
                                         </dl>
@@ -289,7 +359,7 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                           >
                                     <li class="blockList">
                                         <h4>createActionSubscriber</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; Subscriber&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; <a href=RxUtils.html#createActionSubscriber(Action1)>createActionSubscriber</a>(Action1&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; onNext)</pre>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;T&gt; <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in T&gt; onNext)</pre>
                                         <div class="block"><p>Creates a subscriber that forwards the onXXX method calls to callbacks.</p></div>
                                         
                                         <dl>
@@ -305,39 +375,7 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                     </li>
                                 </ul>
                                 
-                                <a id="createActionSubscriber(Action1,Action1,Action0)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>createActionSubscriber</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; Subscriber&lt;<a href=../Http.html#simpleJsonPost(String,Object,Class)>T</a>&gt; <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError, Action0 onCompleted)</pre>
-                                        <div class="block"><p>Creates a subscriber that forwards the onXXX method calls to callbacks.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>onNext</code> - An Observable calls this method whenever the Observable emits an item.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>onError</code> - An Observable calls this method to indicate that it has failed to generate the expected data or has encountered some other error.</dd>
-                                            
-                                            
-                                            
-                                            <dd><code>onCompleted</code> - An Observable calls this method after it has called <code>onNext</code> for the final time, if it has not encountered any errors.</dd>
-                                            
-                                            
-                                        </dl>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
-                                <a id="timer(long,TimeUnit)">
+                                <a id="timer(Long,TimeUnit)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -345,18 +383,18 @@ public final class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a><
                                           >
                                     <li class="blockList">
                                         <h4>timer</h4>
-                                        <pre class="methodSignature"> static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt; <a href=RxUtils.html#timer(long,TimeUnit)>timer</a>(long delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit)</pre>
-                                        <div class="block"><p>Returns an Observable that emits <code>{@code 0L}</code> after a specified delay, and then completes.</p></div>
+                                        <pre class="methodSignature"> final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt; <a href=RxUtils.html#timer(Long,TimeUnit)>timer</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit)</pre>
+                                        <div class="block"><p>Returns an Observable that emits <code>0L</code> after a specified delay, and then completes.</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>delay</code> - the initial delay before emitting a single <code>{@code 0L}</code></dd>
+                                            <dd><code>delay</code> - the initial delay before emitting a single <code>0L</code></dd>
                                             
                                             
                                             
-                                            <dd><code>unit</code> - time units to use for <code>{@code delay}</code></dd>
+                                            <dd><code>unit</code> - time units to use for delay</dd>
                                             
                                             
                                         </dl>
