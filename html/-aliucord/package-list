@@ -406,6 +406,16 @@ $dokka.location:com.aliucord.updater/Updater/isUpdaterDisabled/#/PointingToDecla
 $dokka.location:com.aliucord.updater/Updater/updateAliucord/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/update-aliucord.html
 $dokka.location:com.aliucord.updater/Updater/usingDexFromStorage/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/using-dex-from-storage.html
 $dokka.location:com.aliucord.utils////PointingToDeclaration/-aliucord/com.aliucord.utils/index.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction.Companion///PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/-companion/index.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction.Companion/CREATOR/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/-companion/-c-r-e-a-t-o-r.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction///PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/index.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/FooterAction/#kotlin.Int#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/-footer-action.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/describeContents/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/describe-contents.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/drawableResourceId/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/drawable-resource-id.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/url/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/url.html
+$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/writeToParcel/#android.os.Parcel#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/write-to-parcel.html
+$dokka.location:com.aliucord.utils/ChangelogUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/index.html
+$dokka.location:com.aliucord.utils/ChangelogUtils/show/#android.content.Context#kotlin.String#kotlin.String?#kotlin.String#kotlin.Array[com.aliucord.utils.ChangelogUtils.FooterAction]/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/show.html
 $dokka.location:com.aliucord.utils/ChannelUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/index.html
 $dokka.location:com.aliucord.utils/ChannelUtils/getDMRecipient/#com.discord.api.channel.Channel/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/get-d-m-recipient.html
 $dokka.location:com.aliucord.utils/ChannelUtils/getDisplayName/#com.discord.api.channel.Channel/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/get-display-name.html
