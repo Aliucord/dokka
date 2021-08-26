@@ -22,7 +22,9 @@ $dokka.location:com.aliucord.wrappers.embeds/ThumbnailWrapper.Companion///Pointi
 $dokka.location:com.aliucord.wrappers.embeds/VideoWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/embeds/VideoWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers.messages/AttachmentWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/messages/AttachmentWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/stickers/BaseStickerWrapper.Companion.html
+$dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/ChannelWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildEmojiWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildEmojiWrapper.Companion.html
+$dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildMemberWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/PermissionOverwriteWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/PermissionOverwriteWrapper.Companion.html
 $dokka.location:com.aliucord/Constants.Fonts///PointingToDeclaration/com/aliucord/Constants.Fonts.html
