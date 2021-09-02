@@ -1,5 +1,7 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:com.aliucord.annotations////PointingToDeclaration/-aliucord/com.aliucord.annotations/index.html
+$dokka.location:com.aliucord.annotations/AliucordPlugin///PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/index.html
 $dokka.location:com.aliucord.api////PointingToDeclaration/-aliucord/com.aliucord.api/index.html
 $dokka.location:com.aliucord.api/CommandsAPI.CommandResult///PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/-command-result/index.html
 $dokka.location:com.aliucord.api/CommandsAPI.CommandResult/CommandResult/#/PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/-command-result/-command-result.html
@@ -167,6 +169,8 @@ $dokka.location:com.aliucord.entities/Plugin.Manifest/authors/#/PointingToDeclar
 $dokka.location:com.aliucord.entities/Plugin.Manifest/changelog/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/changelog.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/changelogMedia/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/changelog-media.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/description/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/description.html
+$dokka.location:com.aliucord.entities/Plugin.Manifest/name/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/name.html
+$dokka.location:com.aliucord.entities/Plugin.Manifest/pluginClassName/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/plugin-class-name.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/updateUrl/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/update-url.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/version/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/version.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-settings-page/index.html
@@ -186,8 +190,9 @@ $dokka.location:com.aliucord.entities/Plugin.SettingsTab/type/#/PointingToDeclar
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab/withArgs/#java.lang.Object.../PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/with-args.html
 $dokka.location:com.aliucord.entities/Plugin///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/index.html
 $dokka.location:com.aliucord.entities/Plugin/__filename/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/__filename.html
-$dokka.location:com.aliucord.entities/Plugin/getManifest/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/get-manifest.html
+$dokka.location:com.aliucord.entities/Plugin/initialize/#com.aliucord.entities.Plugin.Manifest/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/initialize.html
 $dokka.location:com.aliucord.entities/Plugin/load/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/load.html
+$dokka.location:com.aliucord.entities/Plugin/manifest/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/manifest.html
 $dokka.location:com.aliucord.entities/Plugin/name/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/name.html
 $dokka.location:com.aliucord.entities/Plugin/needsResources/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/needs-resources.html
 $dokka.location:com.aliucord.entities/Plugin/resources/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/resources.html
@@ -962,6 +967,7 @@ $dokka.location:com.aliucord/Main/logger/#/PointingToDeclaration/-aliucord/com.
 $dokka.location:com.aliucord/Main/preInit/#com.discord.app.AppActivity/PointingToDeclaration/-aliucord/com.aliucord/-main/pre-init.html
 $dokka.location:com.aliucord/Main/preInitialized/#/PointingToDeclaration/-aliucord/com.aliucord/-main/pre-initialized.html
 $dokka.location:com.aliucord/PluginManager///PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/index.html
+$dokka.location:com.aliucord/PluginManager/classLoaders/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/class-loaders.html
 $dokka.location:com.aliucord/PluginManager/disablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/disable-plugin.html
 $dokka.location:com.aliucord/PluginManager/enablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/enable-plugin.html
 $dokka.location:com.aliucord/PluginManager/getPluginPrefKey/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/get-plugin-pref-key.html
@@ -1028,6 +1034,7 @@ $dokka.location:com.aliucord/Utils/tintToTheme/#android.graphics.drawable.Drawab
 $dokka.location:com.aliucord/Utils/toJson/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord/-utils/to-json.html
 $dokka.location:com.aliucord/Utils/toJsonPretty/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord/-utils/to-json-pretty.html
 com.aliucord
+com.aliucord.annotations
 com.aliucord.api
 com.aliucord.coreplugins
 com.aliucord.entities

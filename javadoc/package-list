@@ -36,6 +36,7 @@ $dokka.location:com.aliucord/Http.QueryBuilder///PointingToDeclaration/com/aliu
 $dokka.location:com.aliucord/Http.Request///PointingToDeclaration/com/aliucord/Http.Request.html
 $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord/Http.Response.html
 com.aliucord
+com.aliucord.annotations
 com.aliucord.api
 com.aliucord.coreplugins
 com.aliucord.entities
