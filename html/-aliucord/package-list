@@ -926,6 +926,7 @@ $dokka.location:com.aliucord/Http.Request/setRequestTimeout/#int/PointingToDecla
 $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/-aliucord/com.aliucord/-http/-response/index.html
 $dokka.location:com.aliucord/Http.Response/Response/#com.aliucord.Http.Request/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/-response.html
 $dokka.location:com.aliucord/Http.Response/assertOk/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/assert-ok.html
+$dokka.location:com.aliucord/Http.Response/close/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/close.html
 $dokka.location:com.aliucord/Http.Response/json/#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/json/#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/ok/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/ok.html
@@ -936,6 +937,7 @@ $dokka.location:com.aliucord/Http.Response/statusMessage/#/PointingToDeclaration
 $dokka.location:com.aliucord/Http.Response/stream/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/stream.html
 $dokka.location:com.aliucord/Http.Response/text/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/text.html
 $dokka.location:com.aliucord/Http///PointingToDeclaration/-aliucord/com.aliucord/-http/index.html
+$dokka.location:com.aliucord/Http/simpleDownload/#java.lang.String#java.io.File/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-download.html
 $dokka.location:com.aliucord/Http/simpleGet/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-get.html
 $dokka.location:com.aliucord/Http/simpleJsonGet/#java.lang.String#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-json-get.html
 $dokka.location:com.aliucord/Http/simpleJsonGet/#java.lang.String#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-json-get.html
