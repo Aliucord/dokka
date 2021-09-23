@@ -354,7 +354,12 @@ $dokka.location:com.aliucord.patcher/PrePatchRes///PointingToDeclaration/-aliuc
 $dokka.location:com.aliucord.patcher/PrePatchRes/PrePatchRes/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pre-patch-res/-pre-patch-res.html
 $dokka.location:com.aliucord.patcher/PrePatchRes/ret/#/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pre-patch-res/ret.html
 $dokka.location:com.aliucord.settings////PointingToDeclaration/-aliucord/com.aliucord.settings/index.html
+$dokka.location:com.aliucord.settings//autoDisableKey/#/PointingToDeclaration/-aliucord/com.aliucord.settings/auto-disable-key.html
+$dokka.location:com.aliucord.settings/CrashSettings///PointingToDeclaration/-aliucord/com.aliucord.settings/-crash-settings/index.html
+$dokka.location:com.aliucord.settings/CrashSettings/CrashSettings/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-crash-settings/-crash-settings.html
+$dokka.location:com.aliucord.settings/CrashSettings/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/-aliucord/com.aliucord.settings/-crash-settings/on-view-created.html
 $dokka.location:com.aliucord.settings/Crashes///PointingToDeclaration/-aliucord/com.aliucord.settings/-crashes/index.html
+$dokka.location:com.aliucord.settings/Crashes/Crashes/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-crashes/-crashes.html
 $dokka.location:com.aliucord.settings/Crashes/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-crashes/on-view-bound.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/-view-holder/index.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder/ViewHolder/#com.aliucord.settings.Plugins.Adapter#com.aliucord.widgets.PluginCard/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/-view-holder/-view-holder.html
@@ -472,6 +477,8 @@ $dokka.location:com.aliucord.utils/RxUtils///PointingToDeclaration/-aliucord/co
 $dokka.location:com.aliucord.utils/RxUtils/createActionSubscriber/#rx.functions.Action1[TypeParam(bounds=[kotlin.Any?])]#rx.functions.Action1[kotlin.Throwable]#rx.functions.Action0/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/create-action-subscriber.html
 $dokka.location:com.aliucord.utils/RxUtils/getResultBlocking/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/get-result-blocking.html
 $dokka.location:com.aliucord.utils/RxUtils/onBackpressureBuffer/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/on-backpressure-buffer.html
+$dokka.location:com.aliucord.utils/RxUtils/schedule/#kotlin.Long#java.util.concurrent.TimeUnit?#kotlin.Function1[kotlin.Long,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/schedule.html
+$dokka.location:com.aliucord.utils/RxUtils/subscribe/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/subscribe.html
 $dokka.location:com.aliucord.utils/RxUtils/subscribe/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#rx.Subscriber[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/subscribe.html
 $dokka.location:com.aliucord.utils/RxUtils/timer/#kotlin.Long#java.util.concurrent.TimeUnit?/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/timer.html
 $dokka.location:com.aliucord.views////PointingToDeclaration/-aliucord/com.aliucord.views/index.html
