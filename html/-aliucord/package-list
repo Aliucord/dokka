@@ -399,6 +399,7 @@ $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/build/#/PointingTo
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/changelog/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/changelog.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/changelogMedia/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/changelog-media.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/minimumDiscordVersion/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/minimum-discord-version.html
+$dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/sha1sum/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/sha1sum.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/version/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/version.html
 $dokka.location:com.aliucord.updater/PluginUpdater///PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/index.html
 $dokka.location:com.aliucord.updater/PluginUpdater/cache/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/cache.html
@@ -448,6 +449,7 @@ $dokka.location:com.aliucord.utils/GsonUtils/toJson/#java.lang.Object/PointingTo
 $dokka.location:com.aliucord.utils/GsonUtils/toJsonPretty/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/to-json-pretty.html
 $dokka.location:com.aliucord.utils/IOUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/index.html
 $dokka.location:com.aliucord.utils/IOUtils/pipe/#java.io.InputStream#java.io.OutputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/pipe.html
+$dokka.location:com.aliucord.utils/IOUtils/readAsText/#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/read-as-text.html
 $dokka.location:com.aliucord.utils/IOUtils/readBytes/#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/read-bytes.html
 $dokka.location:com.aliucord.utils/MDUtils.RenderContext///PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/-render-context/index.html
 $dokka.location:com.aliucord.utils/MDUtils.RenderContext/RenderContext/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/-render-context/-render-context.html
@@ -907,6 +909,7 @@ $dokka.location:com.aliucord/Constants/SUPPORT_CHANNEL_ID/#/PointingToDeclaratio
 $dokka.location:com.aliucord/Constants/THEMES_CHANNEL_ID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-t-h-e-m-e-s_-c-h-a-n-n-e-l_-i-d.html
 $dokka.location:com.aliucord/Http.HttpException///PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/index.html
 $dokka.location:com.aliucord/Http.HttpException/HttpException/#com.aliucord.Http.Request#com.aliucord.Http.Response/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/-http-exception.html
+$dokka.location:com.aliucord/Http.HttpException/message/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/message.html
 $dokka.location:com.aliucord/Http.HttpException/method/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/method.html
 $dokka.location:com.aliucord/Http.HttpException/req/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/req.html
 $dokka.location:com.aliucord/Http.HttpException/res/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/res.html
@@ -934,10 +937,12 @@ $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/-aliucord/co
 $dokka.location:com.aliucord/Http.Response/Response/#com.aliucord.Http.Request/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/-response.html
 $dokka.location:com.aliucord/Http.Response/assertOk/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/assert-ok.html
 $dokka.location:com.aliucord/Http.Response/close/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/close.html
+$dokka.location:com.aliucord/Http.Response/getBytes/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/get-bytes.html
 $dokka.location:com.aliucord/Http.Response/json/#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/json/#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/ok/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/ok.html
 $dokka.location:com.aliucord/Http.Response/pipe/#java.io.OutputStream/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/pipe.html
+$dokka.location:com.aliucord/Http.Response/saveToFile/#java.io.File#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/save-to-file.html
 $dokka.location:com.aliucord/Http.Response/saveToFile/#java.io.File/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/save-to-file.html
 $dokka.location:com.aliucord/Http.Response/statusCode/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/status-code.html
 $dokka.location:com.aliucord/Http.Response/statusMessage/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/status-message.html
