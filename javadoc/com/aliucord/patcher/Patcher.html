@@ -176,57 +176,49 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(String,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(String,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add a patch</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(Class,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(Class,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add a patch</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(Member,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(Member,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> member, MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add a patch</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code>static MethodHook</code>
+                                            <td class="colFirst"><code>static XC_MethodHook.Unhook</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#prePatchToMethodHook(PrePatchFunction)>prePatchToMethodHook</a>(<a href=PrePatchFunction.html>PrePatchFunction</a> patch) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(Member,XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> member, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add a patch</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>static MethodHook</code>
+                                            <td class="colFirst"><code>static XC_MethodHook.Unhook</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#patchToMethodHook(PatchFunction)>patchToMethodHook</a>(<a href=PatchFunction.html>PatchFunction</a> patch) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(Class,String,Array,XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add a patch</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
-                                            <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            <td class="colFirst"><code>static XC_MethodHook.Unhook</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPrePatch(String,String,PrePatchFunction)>addPrePatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=PrePatchFunction.html>PrePatchFunction</a> patch) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(String,String,Array,XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
-                                        <tr id="i6" class="altColor">
-                                            <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(String,String,PatchFunction)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=PatchFunction.html>PatchFunction</a> patch) </code>
-                                            </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Add a patch</td>
                                         </tr>
                                         
                                         </tbody>
@@ -270,8 +262,29 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>addPatch</h4>
-                                        <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(String,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(String,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook)</pre>
+                                        <div class="block"><p>Add a patch</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>forClass</code> - The full name of the class to patch (e.g.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>methodName</code> - The name of the method</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>paramTypes</code> - The types of the parameters (e.g.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - MethodHook</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -285,8 +298,29 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>addPatch</h4>
-                                        <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(Class,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(Class,String,Array,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, MethodHook hook)</pre>
+                                        <div class="block"><p>Add a patch</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>clazz</code> - Class to patch</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>methodName</code> - The name of the method</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>paramTypes</code> - The types of the parameters (e.g.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - MethodHook</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -300,59 +334,91 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>addPatch</h4>
-                                        <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(Member,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, MethodHook hook)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(Member,MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> member, MethodHook hook)</pre>
+                                        <div class="block"><p>Add a patch</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>member</code> - The member (method, constructor) to patch</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - MethodHook</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="prePatchToMethodHook(PrePatchFunction)">
+                                <a id="addPatch(Member,XC_MethodHook)">
                                     <!--   -->
                                 </a>
                                 <ul class=
                                               "blockList"
                                           >
                                     <li class="blockList">
-                                        <h4>prePatchToMethodHook</h4>
-                                        <pre class="methodSignature"> static MethodHook <a href=Patcher.html#prePatchToMethodHook(PrePatchFunction)>prePatchToMethodHook</a>(<a href=PrePatchFunction.html>PrePatchFunction</a> patch)</pre>
-                                        <div class="block"></div>
+                                        <h4>addPatch</h4>
+                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(Member,XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> member, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Add a patch</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>member</code> - The member (method, constructor) to patch</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - MethodHook</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="patchToMethodHook(PatchFunction)">
+                                <a id="addPatch(Class,String,Array,XC_MethodHook)">
                                     <!--   -->
                                 </a>
                                 <ul class=
                                               "blockList"
                                           >
                                     <li class="blockList">
-                                        <h4>patchToMethodHook</h4>
-                                        <pre class="methodSignature"> static MethodHook <a href=Patcher.html#patchToMethodHook(PatchFunction)>patchToMethodHook</a>(<a href=PatchFunction.html>PatchFunction</a> patch)</pre>
-                                        <div class="block"></div>
+                                        <h4>addPatch</h4>
+                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(Class,String,Array,XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Add a patch</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>clazz</code> - Class to patch</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>methodName</code> - The name of the method</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>paramTypes</code> - The types of the parameters (e.g.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - MethodHook</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="addPrePatch(String,String,PrePatchFunction)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>addPrePatch</h4>
-                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPrePatch(String,String,PrePatchFunction)>addPrePatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=PrePatchFunction.html>PrePatchFunction</a> patch)</pre>
-                                        <div class="block"></div>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
-                                <a id="addPatch(String,String,PatchFunction)">
+                                <a id="addPatch(String,String,Array,XC_MethodHook)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -360,8 +426,29 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>addPatch</h4>
-                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() static <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=Patcher.html#addPatch(String,String,PatchFunction)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=PatchFunction.html>PatchFunction</a> patch)</pre>
-                                        <div class="block"></div>
+                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(String,String,Array,XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Add a patch</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>forClass</code> - The full name of the class to patch (e.g.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>methodName</code> - The name of the method</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>paramTypes</code> - The types of the parameters (e.g.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - MethodHook</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>

@@ -320,12 +320,28 @@ public class <span class="typeNameLabel"><a href=CommandsAPI.html>CommandsAPI</a
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=CommandsAPI.html#registerCommand(String,String,ApplicationCommandOption,Function1)>registerCommand</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() ApplicationCommandOption option, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() Function1&lt;<a href=../entities/CommandContext.html>CommandContext</a>, <a href=CommandsAPI.CommandResult.html>CommandsAPI.CommandResult</a>&gt; execute) </code>
+                                            </th>
+                                            <td class="colLast">Registers a slash command.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=CommandsAPI.html#registerCommand(String,String,Function1)>registerCommand</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() Function1&lt;<a href=../entities/CommandContext.html>CommandContext</a>, <a href=CommandsAPI.CommandResult.html>CommandsAPI.CommandResult</a>&gt; execute) </code>
+                                            </th>
+                                            <td class="colLast">Registers a slash command.</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandsAPI.html#unregisterCommand(String)>unregisterCommand</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
                                             </th>
                                             <td class="colLast">Unregisters a command.</td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandsAPI.html#unregisterAll()>unregisterAll</a>() </code>
@@ -456,6 +472,74 @@ public class <span class="typeNameLabel"><a href=CommandsAPI.html>CommandsAPI</a
                                             
                                             
                                             <dd><code>options</code> - Arguments for the command.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>execute</code> - Callback for the command.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="registerCommand(String,String,ApplicationCommandOption,Function1)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>registerCommand</h4>
+                                        <pre class="methodSignature"> void <a href=CommandsAPI.html#registerCommand(String,String,ApplicationCommandOption,Function1)>registerCommand</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() ApplicationCommandOption option, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() Function1&lt;<a href=../entities/CommandContext.html>CommandContext</a>, <a href=CommandsAPI.CommandResult.html>CommandsAPI.CommandResult</a>&gt; execute)</pre>
+                                        <div class="block"><p>Registers a slash command.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>name</code> - Name of the command.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>description</code> - Description of the command.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>option</code> - Argument for the command.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>execute</code> - Callback for the command.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="registerCommand(String,String,Function1)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>registerCommand</h4>
+                                        <pre class="methodSignature"> void <a href=CommandsAPI.html#registerCommand(String,String,Function1)>registerCommand</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() Function1&lt;<a href=../entities/CommandContext.html>CommandContext</a>, <a href=CommandsAPI.CommandResult.html>CommandsAPI.CommandResult</a>&gt; execute)</pre>
+                                        <div class="block"><p>Registers a slash command.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>name</code> - Name of the command.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>description</code> - Description of the command.</dd>
                                             
                                             
                                             
