@@ -28,6 +28,7 @@ $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper.Companion///Po
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/ChannelWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildEmojiWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildEmojiWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildMemberWrapper.Companion.html
+$dokka.location:com.aliucord.wrappers/GuildRoleWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildRoleWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/PermissionOverwriteWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/PermissionOverwriteWrapper.Companion.html
 $dokka.location:com.aliucord/Constants.Fonts///PointingToDeclaration/com/aliucord/Constants.Fonts.html
