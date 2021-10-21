@@ -445,9 +445,10 @@ $dokka.location:com.aliucord.utils/ChannelUtils/isTextChannel/#com.discord.api.c
 $dokka.location:com.aliucord.utils/DimenUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/index.html
 $dokka.location:com.aliucord.utils/DimenUtils/defaultCardRadius/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/default-card-radius.html
 $dokka.location:com.aliucord.utils/DimenUtils/defaultPadding/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/default-padding.html
-$dokka.location:com.aliucord.utils/DimenUtils/dpToPx/#float/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/dp-to-px.html
-$dokka.location:com.aliucord.utils/DimenUtils/dpToPx/#int/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/dp-to-px.html
-$dokka.location:com.aliucord.utils/DimenUtils/pxToDp/#int/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/px-to-dp.html
+$dokka.location:com.aliucord.utils/DimenUtils/dp/kotlin.Int#/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/dp.html
+$dokka.location:com.aliucord.utils/DimenUtils/dpToPx/#kotlin.Float/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/dp-to-px.html
+$dokka.location:com.aliucord.utils/DimenUtils/dpToPx/#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/dp-to-px.html
+$dokka.location:com.aliucord.utils/DimenUtils/pxToDp/#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/px-to-dp.html
 $dokka.location:com.aliucord.utils/GsonUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/index.html
 $dokka.location:com.aliucord.utils/GsonUtils/fromJson/#java.lang.String#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/from-json.html
 $dokka.location:com.aliucord.utils/GsonUtils/fromJson/#java.lang.String#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/from-json.html
@@ -1017,9 +1018,11 @@ $dokka.location:com.aliucord/PluginManager/isPluginEnabled/#java.lang.String/Poi
 $dokka.location:com.aliucord/PluginManager/loadPlugin/#android.content.Context#java.io.File/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/load-plugin.html
 $dokka.location:com.aliucord/PluginManager/logger/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/logger.html
 $dokka.location:com.aliucord/PluginManager/plugins/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/plugins.html
+$dokka.location:com.aliucord/PluginManager/remountPlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/remount-plugin.html
 $dokka.location:com.aliucord/PluginManager/startPlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/start-plugin.html
 $dokka.location:com.aliucord/PluginManager/stopPlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/stop-plugin.html
 $dokka.location:com.aliucord/PluginManager/togglePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/toggle-plugin.html
+$dokka.location:com.aliucord/PluginManager/unloadPlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/unload-plugin.html
 $dokka.location:com.aliucord/SettingsUtils///PointingToDeclaration/-aliucord/com.aliucord/-settings-utils/index.html
 $dokka.location:com.aliucord/SettingsUtils/getBool/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils/get-bool.html
 $dokka.location:com.aliucord/SettingsUtils/getFloat/#java.lang.String#float/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils/get-float.html
@@ -1047,6 +1050,7 @@ $dokka.location:com.aliucord/Utils/launchUrl/#android.net.Uri/PointingToDeclarat
 $dokka.location:com.aliucord/Utils/launchUrl/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/launch-url.html
 $dokka.location:com.aliucord/Utils/log/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/log.html
 $dokka.location:com.aliucord/Utils/mainThread/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/main-thread.html
+$dokka.location:com.aliucord/Utils/openMediaViewer/#kotlin.String#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-media-viewer.html
 $dokka.location:com.aliucord/Utils/openPage/#android.content.Context#java.lang.Class[com.discord.app.AppComponent]#android.content.Intent?/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page.html
 $dokka.location:com.aliucord/Utils/openPage/#android.content.Context#java.lang.Class[com.discord.app.AppComponent]/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page.html
 $dokka.location:com.aliucord/Utils/openPageWithProxy/#android.content.Context#androidx.fragment.app.Fragment/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page-with-proxy.html

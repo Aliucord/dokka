@@ -40,7 +40,7 @@ var pathtoroot = "../../../";
     
     <li><a href="package-summary.html">Package</a></li>
     
-    <li class="navBarCell1Rev">Class</li>
+    <li>Class</li>
     
     <li><a href="package-tree.html">Tree</a></li>
     
@@ -89,7 +89,7 @@ var pathtoroot = "../../../";
 <main role="main">
     <div class="header">
         <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
-        <h2 title="Class DimenUtils" class="title">Class DimenUtils</h2>
+        <h2 title="Object DimenUtils" class="title">Object DimenUtils</h2>
     </div>
     <div class="contentContainer">
         <!-- <ul class="inheritance">
@@ -107,7 +107,7 @@ var pathtoroot = "../../../";
                     <hr>
                     <pre class="wrap-overflow">
 
-public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtils</a></span>
+public class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtils</a></span>
 
                     </pre>
                     <div class="block"></div>
@@ -137,14 +137,26 @@ public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtil
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>private  static int</code></td>
+                                            <td class="colFirst"><code>private final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=DimenUtils.html#defaultPadding>defaultPadding</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="rowColor">
-                                            <td class="colFirst"><code>private  static int</code></td>
+                                            <td class="colFirst"><code>private final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=DimenUtils.html#defaultCardRadius>defaultCardRadius</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#dp>dp</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public final static <a href=DimenUtils.html>DimenUtils</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#INSTANCE>INSTANCE</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
@@ -180,43 +192,51 @@ public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtil
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>static int</code>
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#getDefaultPadding()>getDefaultPadding</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#dpToPx(Integer)>dpToPx</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> dp) </code>
                                             </th>
-                                            <td class="colLast">Gets the default padding for the items.</td>
+                                            <td class="colLast">Converts DP to PX.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code>static int</code>
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#getDefaultCardRadius()>getDefaultCardRadius</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#dpToPx(Float)>dpToPx</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Float.html>Float</a> dp) </code>
                                             </th>
-                                            <td class="colLast">Gets the default radius for cards.</td>
+                                            <td class="colLast">Converts DP to PX.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>static int</code>
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#dpToPx(int)>dpToPx</a>(int dp) </code>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#pxToDp(Integer)>pxToDp</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> px) </code>
                                             </th>
-                                            <td class="colLast">Converts DP to PX.</td>
+                                            <td class="colLast">Converts PX to DP.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code>static int</code>
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#dpToPx(float)>dpToPx</a>(float dp) </code>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#getDefaultPadding()>getDefaultPadding</a>() </code>
                                             </th>
-                                            <td class="colLast">Converts DP to PX.</td>
+                                            <td class="colLast">The default padding for items (16 DP)</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>static int</code>
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#pxToDp(int)>pxToDp</a>(int px) </code>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#getDefaultCardRadius()>getDefaultCardRadius</a>() </code>
                                             </th>
-                                            <td class="colLast">Converts PX to DP.</td>
+                                            <td class="colLast">The default padding for cards (8 DP)</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=DimenUtils.html#getDp(Integer)>getDp</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> $self) </code>
+                                            </th>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -252,6 +272,78 @@ public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtil
                             </a>
                                 <h3>Method Detail</h3>
                                 
+                                <a id="dpToPx(Integer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>dpToPx</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=DimenUtils.html#dpToPx(Integer)>dpToPx</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> dp)</pre>
+                                        <div class="block"><p>Converts DP to PX.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>dp</code> - DP value</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="dpToPx(Float)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>dpToPx</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=DimenUtils.html#dpToPx(Float)>dpToPx</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Float.html>Float</a> dp)</pre>
+                                        <div class="block"><p>Converts DP to PX.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>dp</code> - DP value</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="pxToDp(Integer)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>pxToDp</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=DimenUtils.html#pxToDp(Integer)>pxToDp</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> px)</pre>
+                                        <div class="block"><p>Converts PX to DP.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>px</code> - PX value</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
                                 <a id="getDefaultPadding()">
                                     <!--   -->
                                 </a>
@@ -260,8 +352,8 @@ public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtil
                                           >
                                     <li class="blockList">
                                         <h4>getDefaultPadding</h4>
-                                        <pre class="methodSignature"> static int <a href=DimenUtils.html#getDefaultPadding()>getDefaultPadding</a>()</pre>
-                                        <div class="block"><p>Gets the default padding for the items. (16 DP)</p></div>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=DimenUtils.html#getDefaultPadding()>getDefaultPadding</a>()</pre>
+                                        <div class="block"><p>The default padding for items (16 DP)</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -275,80 +367,23 @@ public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtil
                                           >
                                     <li class="blockList">
                                         <h4>getDefaultCardRadius</h4>
-                                        <pre class="methodSignature"> static int <a href=DimenUtils.html#getDefaultCardRadius()>getDefaultCardRadius</a>()</pre>
-                                        <div class="block"><p>Gets the default radius for cards. (8 DP)</p></div>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=DimenUtils.html#getDefaultCardRadius()>getDefaultCardRadius</a>()</pre>
+                                        <div class="block"><p>The default padding for cards (8 DP)</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
                                 </ul>
                                 
-                                <a id="dpToPx(int)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>dpToPx</h4>
-                                        <pre class="methodSignature"> static int <a href=DimenUtils.html#dpToPx(int)>dpToPx</a>(int dp)</pre>
-                                        <div class="block"><p>Converts DP to PX.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>dp</code> - DP value</dd>
-                                            
-                                            
-                                        </dl>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
-                                <a id="dpToPx(float)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>dpToPx</h4>
-                                        <pre class="methodSignature"> static int <a href=DimenUtils.html#dpToPx(float)>dpToPx</a>(float dp)</pre>
-                                        <div class="block"><p>Converts DP to PX.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>dp</code> - DP value</dd>
-                                            
-                                            
-                                        </dl>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
-                                <a id="pxToDp(int)">
+                                <a id="getDp(Integer)">
                                     <!--   -->
                                 </a>
                                 <ul class=
                                               "blockListLast"
                                           >
                                     <li class="blockList">
-                                        <h4>pxToDp</h4>
-                                        <pre class="methodSignature"> static int <a href=DimenUtils.html#pxToDp(int)>pxToDp</a>(int px)</pre>
-                                        <div class="block"><p>Converts PX to DP.</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>px</code> - PX value</dd>
-                                            
-                                            
-                                        </dl>
+                                        <h4>getDp</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=DimenUtils.html#getDp(Integer)>getDp</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> $self)</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -379,7 +414,7 @@ public final class <span class="typeNameLabel"><a href=DimenUtils.html>DimenUtil
     
     <li><a href="package-summary.html">Package</a></li>
     
-    <li class="navBarCell1Rev">Class</li>
+    <li>Class</li>
     
     <li><a href="package-tree.html">Tree</a></li>
     

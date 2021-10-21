@@ -196,12 +196,20 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>static void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=PluginManager.html#unloadPlugin(String)>unloadPlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
+                                            </th>
+                                            <td class="colLast">Unloads a plugin</td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>static void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#enablePlugin(String)>enablePlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
                                             </th>
                                             <td class="colLast">Enables a loaded plugin if it isn't already enabled</td>
                                         </tr>
                                         
-                                        <tr id="i2" class="altColor">
+                                        <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>static void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#disablePlugin(String)>disablePlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
@@ -209,7 +217,7 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             <td class="colLast">Disables a loaded plugin if it isn't already disables</td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>static void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#togglePlugin(String)>togglePlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
@@ -217,7 +225,7 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             <td class="colLast">Toggles a plugin.</td>
                                         </tr>
                                         
-                                        <tr id="i4" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>static void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#startPlugin(String)>startPlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
@@ -225,7 +233,7 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             <td class="colLast">Starts a plugin</td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>static void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#stopPlugin(String)>stopPlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
@@ -233,7 +241,15 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             <td class="colLast">Stops a plugin</td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>static void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PluginManager.html#remountPlugin(String)>remountPlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
+                                            </th>
+                                            <td class="colLast">Remounts the plugin (stop -&gt; unload -&gt; load -&gt; start)</td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#getPluginPrefKey(String)>getPluginPrefKey</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
@@ -241,7 +257,7 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             <td class="colLast">Gets the preferences key for a plugin.</td>
                                         </tr>
                                         
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>static boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#isPluginEnabled(String)>isPluginEnabled</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name) </code>
@@ -249,7 +265,7 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             <td class="colLast">Checks whether a plugin is enabled</td>
                                         </tr>
                                         
-                                        <tr id="i8" class="altColor">
+                                        <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>static boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PluginManager.html#isPluginEnabled(Plugin)>isPluginEnabled</a>(<a href=entities/Plugin.html>Plugin</a> plugin) </code>
@@ -310,6 +326,30 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             
                                             
                                             <dd><code>file</code> - Plugin file</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="unloadPlugin(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>unloadPlugin</h4>
+                                        <pre class="methodSignature"> static void <a href=PluginManager.html#unloadPlugin(String)>unloadPlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name)</pre>
+                                        <div class="block"><p>Unloads a plugin</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>name</code> - Name of the plugin to unload</dd>
                                             
                                             
                                         </dl>
@@ -433,6 +473,21 @@ public class <span class="typeNameLabel"><a href=PluginManager.html>PluginManage
                                             
                                             
                                         </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="remountPlugin(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>remountPlugin</h4>
+                                        <pre class="methodSignature"> static void <a href=PluginManager.html#remountPlugin(String)>remountPlugin</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> name)</pre>
+                                        <div class="block"><p>Remounts the plugin (stop -&gt; unload -&gt; load -&gt; start)</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
