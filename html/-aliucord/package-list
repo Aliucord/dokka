@@ -77,8 +77,11 @@ $dokka.location:com.aliucord.entities/CommandContext/get/#java.lang.String/Point
 $dokka.location:com.aliucord.entities/CommandContext/getBool/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-bool.html
 $dokka.location:com.aliucord.entities/CommandContext/getBoolOrDefault/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-bool-or-default.html
 $dokka.location:com.aliucord.entities/CommandContext/getChannel/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-channel.html
+$dokka.location:com.aliucord.entities/CommandContext/getChannel/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-channel.html
 $dokka.location:com.aliucord.entities/CommandContext/getChannelId/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-channel-id.html
+$dokka.location:com.aliucord.entities/CommandContext/getChannelOrDefault/#java.lang.String#com.aliucord.wrappers.ChannelWrapper/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-channel-or-default.html
 $dokka.location:com.aliucord.entities/CommandContext/getContext/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-context.html
+$dokka.location:com.aliucord.entities/CommandContext/getCurrentChannel/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-current-channel.html
 $dokka.location:com.aliucord.entities/CommandContext/getInt/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-int.html
 $dokka.location:com.aliucord.entities/CommandContext/getIntOrDefault/#java.lang.String#int/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-int-or-default.html
 $dokka.location:com.aliucord.entities/CommandContext/getLong/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-long.html
@@ -97,10 +100,14 @@ $dokka.location:com.aliucord.entities/CommandContext/getReferencedMessageLink/#/
 $dokka.location:com.aliucord.entities/CommandContext/getReplyingState/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-replying-state.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequired/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredBool/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-bool.html
+$dokka.location:com.aliucord.entities/CommandContext/getRequiredChannel/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-channel.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredInt/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-int.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredLong/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-long.html
+$dokka.location:com.aliucord.entities/CommandContext/getRequiredRole/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-role.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredString/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-string.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredUser/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-user.html
+$dokka.location:com.aliucord.entities/CommandContext/getRole/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-role.html
+$dokka.location:com.aliucord.entities/CommandContext/getRoleOrDefault/#java.lang.String#com.aliucord.wrappers.GuildRoleWrapper/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-role-or-default.html
 $dokka.location:com.aliucord.entities/CommandContext/getString/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-string.html
 $dokka.location:com.aliucord.entities/CommandContext/getStringOrDefault/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-string-or-default.html
 $dokka.location:com.aliucord.entities/CommandContext/getSubCommandArgs/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-sub-command-args.html
