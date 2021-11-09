@@ -253,6 +253,30 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Runs the callback after the specified delay</td>
                                         </tr>
                                         
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>R</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#combineLatest(List,FuncN)>combineLatest</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;Observable&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>T</a>&gt;&gt; sources, FuncN&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>R</a>&gt; combineFunction) </code>
+                                            </th>
+                                            <td class="colLast">Combines a list of source Observables by emitting an item that aggregates the latest values of each of the source Observables each time an item is received from any of the source Observables, where this aggregation is defined by a specified function.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#map(Observable,Function1)>R</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#map(Observable,Function1)>map</a>(Observable&lt;<a href=RxUtils.html#map(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#map(Observable,Function1)>T</a>, <a href=RxUtils.html#map(Observable,Function1)>R</a>&gt; func) </code>
+                                            </th>
+                                            <td class="colLast">Returns an Observable that applies a specified function to each item emitted by the source Observable and emits the results of these function applications.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#switchMap(Observable,Function1)>switchMap</a>(Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>, Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt;&gt; func) </code>
+                                            </th>
+                                            <td class="colLast">Returns a new Observable by applying a function that you supply to each item emitted by the source Observable that returns an Observable, and then emitting the items emitted by the most recently emitted of these Observables.</td>
+                                        </tr>
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -499,7 +523,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>schedule</h4>
@@ -519,6 +543,86 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             
                                             
                                             <dd><code>callback</code> - the callback to run after the delay</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="combineLatest(List,FuncN)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>combineLatest</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>R</a>&gt; <a href=RxUtils.html#combineLatest(List,FuncN)>combineLatest</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;Observable&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>T</a>&gt;&gt; sources, FuncN&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>R</a>&gt; combineFunction)</pre>
+                                        <div class="block"><p>Combines a list of source Observables by emitting an item that aggregates the latest values of each of the source Observables each time an item is received from any of the source Observables, where this aggregation is defined by a specified function.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>sources</code> - the list of source Observables</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>combineFunction</code> - the aggregation function used to combine the items emitted by the source Observables</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="map(Observable,Function1)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>map</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#map(Observable,Function1)>R</a>&gt; <a href=RxUtils.html#map(Observable,Function1)>map</a>(Observable&lt;<a href=RxUtils.html#map(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#map(Observable,Function1)>T</a>, <a href=RxUtils.html#map(Observable,Function1)>R</a>&gt; func)</pre>
+                                        <div class="block"><p>Returns an Observable that applies a specified function to each item emitted by the source Observable and emits the results of these function applications.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>func</code> - a function to apply to each item emitted by the Observable</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="switchMap(Observable,Function1)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>switchMap</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt; <a href=RxUtils.html#switchMap(Observable,Function1)>switchMap</a>(Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>, Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt;&gt; func)</pre>
+                                        <div class="block"><p>Returns a new Observable by applying a function that you supply to each item emitted by the source Observable that returns an Observable, and then emitting the items emitted by the most recently emitted of these Observables.</p><p>The resulting Observable completes if both the upstream Observable and the last inner Observable, if any, complete. If the upstream Observable signals an onError, the inner Observable is unsubscribed and the error delivered in-sequence.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>func</code> - a function that, when applied to an item emitted by the source Observable, returns an Observable</dd>
                                             
                                             
                                         </dl>

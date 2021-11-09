@@ -492,12 +492,15 @@ $dokka.location:com.aliucord.utils/ReflectUtils/setField/#java.lang.Class<?>#jav
 $dokka.location:com.aliucord.utils/ReflectUtils/setField/#java.lang.Object#java.lang.String#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/set-field.html
 $dokka.location:com.aliucord.utils/RxUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/index.html
 $dokka.location:com.aliucord.utils/RxUtils/await/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/await.html
+$dokka.location:com.aliucord.utils/RxUtils/combineLatest/#kotlin.collections.List[rx.Observable[TypeParam(bounds=[kotlin.Any?])]]#rx.functions.FuncN[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/combine-latest.html
 $dokka.location:com.aliucord.utils/RxUtils/createActionSubscriber/#rx.functions.Action1[TypeParam(bounds=[kotlin.Any?])]#rx.functions.Action1[kotlin.Throwable]#rx.functions.Action0/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/create-action-subscriber.html
 $dokka.location:com.aliucord.utils/RxUtils/getResultBlocking/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/get-result-blocking.html
+$dokka.location:com.aliucord.utils/RxUtils/map/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/map.html
 $dokka.location:com.aliucord.utils/RxUtils/onBackpressureBuffer/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/on-backpressure-buffer.html
 $dokka.location:com.aliucord.utils/RxUtils/schedule/#kotlin.Long#java.util.concurrent.TimeUnit?#kotlin.Function1[kotlin.Long,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/schedule.html
 $dokka.location:com.aliucord.utils/RxUtils/subscribe/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/subscribe.html
 $dokka.location:com.aliucord.utils/RxUtils/subscribe/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#rx.Subscriber[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/subscribe.html
+$dokka.location:com.aliucord.utils/RxUtils/switchMap/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),rx.Observable[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/switch-map.html
 $dokka.location:com.aliucord.utils/RxUtils/timer/#kotlin.Long#java.util.concurrent.TimeUnit?/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/timer.html
 $dokka.location:com.aliucord.views////PointingToDeclaration/-aliucord/com.aliucord.views/index.html
 $dokka.location:com.aliucord.views/Button///PointingToDeclaration/-aliucord/com.aliucord.views/-button/index.html
