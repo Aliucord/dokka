@@ -119,6 +119,34 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                 <li class="blockList">
                 <!-- ======== NESTED CLASS SUMMARY ======== -->
                     
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="nested.class.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Nested Class Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Class</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="CommandContext.RequiredArgumentWasNullException.html">CommandContext.RequiredArgumentWasNullException</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Looks like Discord's required args are unreliable and are sometimes accepted even if empty. Or a plugin dev may just forget to mark an argument as required which leads to ugly NPEs. Thus, throw a custom exception and handle it in the command handler to present the user a simple message, not a scary stacktrace.</p></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
                     <!-- =========== FIELD SUMMARY =========== -->
                     
                     <section role="region">
@@ -388,12 +416,20 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                         <tr id="i22" class="altColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=CommandContext.html#getSubCommandArgs(String)>getSubCommandArgs</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
+                                            <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredSubCommandArgs(String)>getRequiredSubCommandArgs</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
                                             </th>
                                             <td class="colLast">Gets the arguments object for the specified subcommand</td>
                                         </tr>
                                         
                                         <tr id="i23" class="rowColor">
+                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=CommandContext.html#getSubCommandArgs(String)>getSubCommandArgs</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
+                                            </th>
+                                            <td class="colLast">Gets the arguments object for the specified subcommand</td>
+                                        </tr>
+                                        
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#get(String)>get</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -401,7 +437,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the raw argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i24" class="altColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequired(String)>getRequired</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -409,7 +445,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required raw argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i25" class="rowColor">
+                                        <tr id="i26" class="altColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getOrDefault(String,Object)>getOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> defaultValue) </code>
@@ -417,7 +453,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the raw argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i26" class="altColor">
+                                        <tr id="i27" class="rowColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getString(String)>getString</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -425,7 +461,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the String argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i27" class="rowColor">
+                                        <tr id="i28" class="altColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredString(String)>getRequiredString</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -433,7 +469,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required String argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i28" class="altColor">
+                                        <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getStringOrDefault(String,String)>getStringOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> defaultValue) </code>
@@ -441,7 +477,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the String argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i29" class="rowColor">
+                                        <tr id="i30" class="altColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getInt(String)>getInt</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -449,7 +485,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Integer argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i30" class="altColor">
+                                        <tr id="i31" class="rowColor">
                                             <td class="colFirst"><code>int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredInt(String)>getRequiredInt</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -457,7 +493,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required Integer argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i31" class="rowColor">
+                                        <tr id="i32" class="altColor">
                                             <td class="colFirst"><code>int</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getIntOrDefault(String,int)>getIntOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, int defaultValue) </code>
@@ -465,7 +501,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Integer argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i32" class="altColor">
+                                        <tr id="i33" class="rowColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getLong(String)>getLong</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -473,7 +509,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Long argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i33" class="rowColor">
+                                        <tr id="i34" class="altColor">
                                             <td class="colFirst"><code>long</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredLong(String)>getRequiredLong</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -481,7 +517,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required Long argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i34" class="altColor">
+                                        <tr id="i35" class="rowColor">
                                             <td class="colFirst"><code>long</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getLongOrDefault(String,long)>getLongOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, long defaultValue) </code>
@@ -489,7 +525,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Long argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i35" class="rowColor">
+                                        <tr id="i36" class="altColor">
                                             <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getBool(String)>getBool</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -497,7 +533,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Boolean argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i36" class="altColor">
+                                        <tr id="i37" class="rowColor">
                                             <td class="colFirst"><code>boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredBool(String)>getRequiredBool</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -505,7 +541,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required Boolean argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i37" class="rowColor">
+                                        <tr id="i38" class="altColor">
                                             <td class="colFirst"><code>boolean</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getBoolOrDefault(String,boolean)>getBoolOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, boolean defaultValue) </code>
@@ -513,7 +549,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Boolean argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i38" class="altColor">
+                                        <tr id="i39" class="rowColor">
                                             <td class="colFirst"><code>User</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getUser(String)>getUser</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -521,7 +557,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the User argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i39" class="rowColor">
+                                        <tr id="i40" class="altColor">
                                             <td class="colFirst"><code>User</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredUser(String)>getRequiredUser</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -529,7 +565,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required User argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i40" class="altColor">
+                                        <tr id="i41" class="rowColor">
                                             <td class="colFirst"><code>User</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getUserOrDefault(String,User)>getUserOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, User defaultValue) </code>
@@ -537,7 +573,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the User argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i41" class="rowColor">
+                                        <tr id="i42" class="altColor">
                                             <td class="colFirst"><code><a href=../wrappers/ChannelWrapper.html>ChannelWrapper</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getChannel(String)>getChannel</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -545,7 +581,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Channel argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i42" class="altColor">
+                                        <tr id="i43" class="rowColor">
                                             <td class="colFirst"><code><a href=../wrappers/ChannelWrapper.html>ChannelWrapper</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredChannel(String)>getRequiredChannel</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -553,7 +589,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required channel argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i43" class="rowColor">
+                                        <tr id="i44" class="altColor">
                                             <td class="colFirst"><code><a href=../wrappers/ChannelWrapper.html>ChannelWrapper</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getChannelOrDefault(String,ChannelWrapper)>getChannelOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=../wrappers/ChannelWrapper.html>ChannelWrapper</a> defaultValue) </code>
@@ -561,7 +597,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the channel argument with the specified key or the defaultValue if no such argument is present</td>
                                         </tr>
                                         
-                                        <tr id="i44" class="altColor">
+                                        <tr id="i45" class="rowColor">
                                             <td class="colFirst"><code><a href=../wrappers/GuildRoleWrapper.html>GuildRoleWrapper</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRole(String)>getRole</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -569,7 +605,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the Role argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i45" class="rowColor">
+                                        <tr id="i46" class="altColor">
                                             <td class="colFirst"><code><a href=../wrappers/GuildRoleWrapper.html>GuildRoleWrapper</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRequiredRole(String)>getRequiredRole</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key) </code>
@@ -577,7 +613,7 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             <td class="colLast">Gets the required Role argument with the specified key</td>
                                         </tr>
                                         
-                                        <tr id="i46" class="altColor">
+                                        <tr id="i47" class="rowColor">
                                             <td class="colFirst"><code><a href=../wrappers/GuildRoleWrapper.html>GuildRoleWrapper</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CommandContext.html#getRoleOrDefault(String,GuildRoleWrapper)>getRoleOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=../wrappers/GuildRoleWrapper.html>GuildRoleWrapper</a> defaultValue) </code>
@@ -1001,6 +1037,30 @@ public class <span class="typeNameLabel"><a href=CommandContext.html>CommandCont
                                             
                                             
                                             <dd><code>key</code> - Key to check</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getRequiredSubCommandArgs(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getRequiredSubCommandArgs</h4>
+                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; <a href=CommandContext.html#getRequiredSubCommandArgs(String)>getRequiredSubCommandArgs</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key)</pre>
+                                        <div class="block"><p>Gets the arguments object for the specified subcommand</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>key</code> - Key of the subcommand</dd>
                                             
                                             
                                         </dl>

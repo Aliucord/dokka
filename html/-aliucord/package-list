@@ -66,6 +66,8 @@ $dokka.location:com.aliucord.coreplugins/CorePlugins///PointingToDeclaration/-a
 $dokka.location:com.aliucord.coreplugins/CorePlugins/loadAll/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-core-plugins/load-all.html
 $dokka.location:com.aliucord.coreplugins/CorePlugins/startAll/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-core-plugins/start-all.html
 $dokka.location:com.aliucord.entities////PointingToDeclaration/-aliucord/com.aliucord.entities/index.html
+$dokka.location:com.aliucord.entities/CommandContext.RequiredArgumentWasNullException///PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/-required-argument-was-null-exception/index.html
+$dokka.location:com.aliucord.entities/CommandContext.RequiredArgumentWasNullException/RequiredArgumentWasNullException/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/-required-argument-was-null-exception/-required-argument-was-null-exception.html
 $dokka.location:com.aliucord.entities/CommandContext///PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/index.html
 $dokka.location:com.aliucord.entities/CommandContext/CommandContext/#java.util.Map<java.lang.String,?>#com.discord.widgets.chat.input.WidgetChatInput$configureSendListeners$2#java.lang.Object[]#com.discord.widgets.chat.MessageContent/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/-command-context.html
 $dokka.location:com.aliucord.entities/CommandContext/addAttachment/#com.discord.api.message.LocalAttachment/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/add-attachment.html
@@ -105,6 +107,7 @@ $dokka.location:com.aliucord.entities/CommandContext/getRequiredInt/#java.lang.S
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredLong/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-long.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredRole/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-role.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredString/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-string.html
+$dokka.location:com.aliucord.entities/CommandContext/getRequiredSubCommandArgs/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-sub-command-args.html
 $dokka.location:com.aliucord.entities/CommandContext/getRequiredUser/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-required-user.html
 $dokka.location:com.aliucord.entities/CommandContext/getRole/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-role.html
 $dokka.location:com.aliucord.entities/CommandContext/getRoleOrDefault/#java.lang.String#com.aliucord.wrappers.GuildRoleWrapper/PointingToDeclaration/-aliucord/com.aliucord.entities/-command-context/get-role-or-default.html

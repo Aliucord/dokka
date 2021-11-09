@@ -1,6 +1,7 @@
 $dokka.format:javadoc-v1
 $dokka.linkExtension:html
 $dokka.location:com.aliucord.api/CommandsAPI.CommandResult///PointingToDeclaration/com/aliucord/api/CommandsAPI.CommandResult.html
+$dokka.location:com.aliucord.entities/CommandContext.RequiredArgumentWasNullException///PointingToDeclaration/com/aliucord/entities/CommandContext.RequiredArgumentWasNullException.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest.Author///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.Author.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.SettingsPage.html
