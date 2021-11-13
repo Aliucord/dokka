@@ -42,6 +42,7 @@ $dokka.location:com.aliucord.api/PatcherAPI/patch/#java.lang.Class<?>#java.lang.
 $dokka.location:com.aliucord.api/PatcherAPI/patch/#java.lang.String#java.lang.String#java.lang.Class<?>[]#de.robv.android.xposed.XC_MethodHook/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/patch.html
 $dokka.location:com.aliucord.api/PatcherAPI/patch/#java.lang.String#java.lang.String#java.lang.Class<?>[]#top.canyie.pine.callback.MethodHook/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/patch.html
 $dokka.location:com.aliucord.api/PatcherAPI/patch/#java.lang.reflect.Member#de.robv.android.xposed.XC_MethodHook/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/patch.html
+$dokka.location:com.aliucord.api/PatcherAPI/patch/#java.lang.reflect.Member#rx.functions.Action1<de.robv.android.xposed.XC_MethodHook.MethodHookParam>/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/patch.html
 $dokka.location:com.aliucord.api/PatcherAPI/patch/#java.lang.reflect.Member#top.canyie.pine.callback.MethodHook/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/patch.html
 $dokka.location:com.aliucord.api/PatcherAPI/unpatchAll/#/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/unpatch-all.html
 $dokka.location:com.aliucord.api/PatcherAPI/unpatches/#/PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/unpatches.html
