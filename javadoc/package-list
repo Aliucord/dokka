@@ -7,6 +7,7 @@ $dokka.location:com.aliucord.entities/Plugin.Manifest///PointingToDeclaration/c
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.SettingsPage.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.Type.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.html
+$dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener///PointingToDeclaration/com/aliucord/fragments/InputDialog.onDialogShownListener.html
 $dokka.location:com.aliucord.patcher/InsteadHook.Companion///PointingToDeclaration/com/aliucord/patcher/InsteadHook.Companion.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.ViewHolder.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.html

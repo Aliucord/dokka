@@ -311,6 +311,8 @@ $dokka.location:com.aliucord.fragments/FragmentProxy/startActivityForResult/#and
 $dokka.location:com.aliucord.fragments/FragmentProxy/startIntentSenderForResult/#android.content.IntentSender#int#android.content.Intent#int#int#int#android.os.Bundle/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/start-intent-sender-for-result.html
 $dokka.location:com.aliucord.fragments/FragmentProxy/startPostponedEnterTransition/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/start-postponed-enter-transition.html
 $dokka.location:com.aliucord.fragments/FragmentProxy/unregisterForContextMenu/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/unregister-for-context-menu.html
+$dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener///PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-dialog-shown-listener/index.html
+$dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener/onDialogShown/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-dialog-shown-listener/on-dialog-shown.html
 $dokka.location:com.aliucord.fragments/InputDialog///PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/index.html
 $dokka.location:com.aliucord.fragments/InputDialog/InputDialog/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/-input-dialog.html
 $dokka.location:com.aliucord.fragments/InputDialog/description/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/description.html
@@ -323,6 +325,7 @@ $dokka.location:com.aliucord.fragments/InputDialog/getOKButton/#/PointingToDecla
 $dokka.location:com.aliucord.fragments/InputDialog/getRoot/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-root.html
 $dokka.location:com.aliucord.fragments/InputDialog/inputType/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/input-type.html
 $dokka.location:com.aliucord.fragments/InputDialog/onCancelListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-cancel-listener.html
+$dokka.location:com.aliucord.fragments/InputDialog/onDialogShownListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-dialog-shown-listener.html
 $dokka.location:com.aliucord.fragments/InputDialog/onOkListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-ok-listener.html
 $dokka.location:com.aliucord.fragments/InputDialog/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-view-bound.html
 $dokka.location:com.aliucord.fragments/InputDialog/setPlaceholderText/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-placeholder-text.html
