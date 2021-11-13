@@ -995,6 +995,9 @@ $dokka.location:com.aliucord/Http.Request/execute/#/PointingToDeclaration/-aliu
 $dokka.location:com.aliucord/Http.Request/executeWithBody/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-body.html
 $dokka.location:com.aliucord/Http.Request/executeWithJson/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-json.html
 $dokka.location:com.aliucord/Http.Request/executeWithUrlEncodedForm/#java.util.Map<java.lang.String,java.lang.Object>/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-url-encoded-form.html
+$dokka.location:com.aliucord/Http.Request/newDiscordRequest/#com.aliucord.Http.QueryBuilder/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html
+$dokka.location:com.aliucord/Http.Request/newDiscordRequest/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html
+$dokka.location:com.aliucord/Http.Request/newDiscordRequest/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html
 $dokka.location:com.aliucord/Http.Request/setFollowRedirects/#boolean/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/set-follow-redirects.html
 $dokka.location:com.aliucord/Http.Request/setHeader/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/set-header.html
 $dokka.location:com.aliucord/Http.Request/setRequestTimeout/#int/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/set-request-timeout.html
