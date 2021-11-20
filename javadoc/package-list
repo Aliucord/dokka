@@ -36,6 +36,7 @@ $dokka.location:com.aliucord.wrappers/PermissionOverwriteWrapper.Companion///Poi
 $dokka.location:com.aliucord/Constants.Fonts///PointingToDeclaration/com/aliucord/Constants.Fonts.html
 $dokka.location:com.aliucord/Constants.Icons///PointingToDeclaration/com/aliucord/Constants.Icons.html
 $dokka.location:com.aliucord/Http.HttpException///PointingToDeclaration/com/aliucord/Http.HttpException.html
+$dokka.location:com.aliucord/Http.MultiPartBuilder///PointingToDeclaration/com/aliucord/Http.MultiPartBuilder.html
 $dokka.location:com.aliucord/Http.QueryBuilder///PointingToDeclaration/com/aliucord/Http.QueryBuilder.html
 $dokka.location:com.aliucord/Http.Request///PointingToDeclaration/com/aliucord/Http.Request.html
 $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord/Http.Response.html
