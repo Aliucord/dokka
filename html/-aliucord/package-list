@@ -803,7 +803,6 @@ $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion///PointingToD
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/avatar/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/avatar.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/banner/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/banner.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/bio/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/bio.html
-$dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/communicationDisabledUntil/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/communication-disabled-until.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/guildId/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/guild-id.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/isPending/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/is-pending.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion/joinedAt/com.discord.api.guildmember.GuildMember#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-member-wrapper/-companion/joined-at.html
@@ -864,7 +863,6 @@ $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/channelUpdates/com.
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/channels/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/channels.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/defaultMessageNotifications/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/default-message-notifications.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/description/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/description.html
-$dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/embeddedActivities/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/embedded-activities.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/emojis/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/emojis.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/explicitContentFilter/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/explicit-content-filter.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/features/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/features.html
@@ -887,7 +885,6 @@ $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/roles/com.discord.a
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/rulesChannelId/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/rules-channel-id.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/scheduledEvents/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/scheduled-events.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/splash/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/splash.html
-$dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/stageInstance/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/stage-instance.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/stickers/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/stickers.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/systemChannelFlags/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/system-channel-flags.html
 $dokka.location:com.aliucord.wrappers/GuildWrapper.Companion/systemChannelId/com.discord.api.guild.Guild#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-guild-wrapper/-companion/system-channel-id.html
