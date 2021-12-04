@@ -92,13 +92,50 @@ var pathtoroot = "";
         <h2 title="Contents">Contents</h2>
         <ul>
         
-            <li><a href="#method">Methods</a></li>
-        
             <li><a href="#class">Classes</a></li>
+        
+            <li><a href="#method">Methods</a></li>
         
         </ul>
     </div>
     <div class="contentContainer">
+        
+            <a id="class"></a>
+            <ul class="blockList">
+                <li class="blockList">
+                    <div class="deprecatedSummary">
+                        <table>
+                            <caption><span>Classes</span><span class="tabEnd">&nbsp;</span></caption>
+                            <tr>
+                                <th class="colFirst" scope="col">Class</th>
+                                <th class="colLast" scope="col">Description</th>
+                            </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/patcher/PineInsteadFn.html">com.aliucord.patcher.PineInsteadFn</a>
+                                    </th>
+                                    <td class="colLast">Calls CallFrame patch block instead of this method.</td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/patcher/PinePatchFn.html">com.aliucord.patcher.PinePatchFn</a>
+                                    </th>
+                                    <td class="colLast">Calls CallFrame patch block after the method has been invoked.</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/patcher/PinePrePatchFn.html">com.aliucord.patcher.PinePrePatchFn</a>
+                                    </th>
+                                    <td class="colLast">Calls CallFrame patch block before the method has been invoked.</td>
+                                </tr>
+                            
+                        </table>
+                    </div>
+                </li>
+            </ul>
         
             <a id="method"></a>
             <ul class="blockList">
@@ -113,30 +150,86 @@ var pathtoroot = "";
                             
                                 <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/Utils.html#showToast(Context,String,Boolean)">com.aliucord.showToast(Context,String,Boolean)</a>
+                                        <a href="com/aliucord/utils/RxUtils.html#getResultBlocking(Observable)">com.aliucord.utils.getResultBlocking(Observable)</a>
                                     </th>
-                                    <td class="colLast">Send a toast from any <a href=https://developer.android.com/reference/kotlin/java/lang/Thread.html>Thread</a></td>
+                                    <td class="colLast">Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</td>
                                 </tr>
                             
                                 <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/Logger.html#info(Context,String)">com.aliucord.info(Context,String)</a>
+                                    </th>
+                                    <td class="colLast">Logs a <a href=https://developer.android.com/reference/kotlin/android/util/Log.html#INFO-->Log.INFO</a> message, and shows it to the user as a toast</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/Logger.html#error(Context,Throwable)">com.aliucord.error(Context,Throwable)</a>
+                                    </th>
+                                    <td class="colLast">Logs an exception and shows the user a toast saying "Sorry, something went wrong.</td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/Logger.html#errorToast(Context,String,Throwable)">com.aliucord.errorToast(Context,String,Throwable)</a>
+                                    </th>
+                                    <td class="colLast">Logs a <a href=https://developer.android.com/reference/kotlin/android/util/Log.html#ERROR-->Log.ERROR</a> message, shows it to the user as a toast and prints the stacktrace of the exception</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/Utils.html#showToast(Context,String,Boolean)">com.aliucord.showToast(Context,String,Boolean)</a>
+                                    </th>
+                                    <td class="colLast">Send a toast from any <a href=https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html>Thread</a></td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/entities/CommandContext.html#getChannel()">com.aliucord.entities.getChannel()</a>
+                                    </th>
+                                    <td class="colLast">Returns the current channel</td>
+                                </tr>
+                            
+                                <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/aliucord/api/PatcherAPI.html#patch(String,String,Array,MethodHook)">com.aliucord.api.patch(String,String,Array,MethodHook)</a>
                                     </th>
                                     <td class="colLast">Patches a method.</td>
                                 </tr>
                             
-                                <tr class="altColor">
+                                <tr class="rowColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/aliucord/api/PatcherAPI.html#patch(Class,String,Array,MethodHook)">com.aliucord.api.patch(Class,String,Array,MethodHook)</a>
                                     </th>
                                     <td class="colLast">Patches a method.</td>
                                 </tr>
                             
-                                <tr class="rowColor">
+                                <tr class="altColor">
                                     <th class="colDeprecatedItemName" scope="row">
                                         <a href="com/aliucord/api/PatcherAPI.html#patch(Member,MethodHook)">com.aliucord.api.patch(Member,MethodHook)</a>
                                     </th>
                                     <td class="colLast">Patches a method or constructor.</td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/patcher/Patcher.html#addPatch(String,String,Array,MethodHook)">com.aliucord.patcher.addPatch(String,String,Array,MethodHook)</a>
+                                    </th>
+                                    <td class="colLast">Add a patch</td>
+                                </tr>
+                            
+                                <tr class="altColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/patcher/Patcher.html#addPatch(Class,String,Array,MethodHook)">com.aliucord.patcher.addPatch(Class,String,Array,MethodHook)</a>
+                                    </th>
+                                    <td class="colLast">Add a patch</td>
+                                </tr>
+                            
+                                <tr class="rowColor">
+                                    <th class="colDeprecatedItemName" scope="row">
+                                        <a href="com/aliucord/patcher/Patcher.html#addPatch(Member,MethodHook)">com.aliucord.patcher.addPatch(Member,MethodHook)</a>
+                                    </th>
+                                    <td class="colLast">Add a patch</td>
                                 </tr>
                             
                                 <tr class="altColor">
@@ -424,78 +517,6 @@ var pathtoroot = "";
                                         <a href="com/aliucord/settings/Crashes.html#onActivityCreated(Bundle)">androidx.fragment.app.onActivityCreated(Bundle)</a>
                                     </th>
                                     <td class="colLast"></td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/patcher/Patcher.html#addPatch(String,String,Array,MethodHook)">com.aliucord.patcher.addPatch(String,String,Array,MethodHook)</a>
-                                    </th>
-                                    <td class="colLast">Add a patch</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/patcher/Patcher.html#addPatch(Class,String,Array,MethodHook)">com.aliucord.patcher.addPatch(Class,String,Array,MethodHook)</a>
-                                    </th>
-                                    <td class="colLast">Add a patch</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/patcher/Patcher.html#addPatch(Member,MethodHook)">com.aliucord.patcher.addPatch(Member,MethodHook)</a>
-                                    </th>
-                                    <td class="colLast">Add a patch</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/utils/RxUtils.html#getResultBlocking(Observable)">com.aliucord.utils.getResultBlocking(Observable)</a>
-                                    </th>
-                                    <td class="colLast">Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/entities/CommandContext.html#getChannel()">com.aliucord.entities.getChannel()</a>
-                                    </th>
-                                    <td class="colLast">Returns the current channel</td>
-                                </tr>
-                            
-                        </table>
-                    </div>
-                </li>
-            </ul>
-        
-            <a id="class"></a>
-            <ul class="blockList">
-                <li class="blockList">
-                    <div class="deprecatedSummary">
-                        <table>
-                            <caption><span>Classes</span><span class="tabEnd">&nbsp;</span></caption>
-                            <tr>
-                                <th class="colFirst" scope="col">Class</th>
-                                <th class="colLast" scope="col">Description</th>
-                            </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/patcher/PineInsteadFn.html">com.aliucord.patcher.PineInsteadFn</a>
-                                    </th>
-                                    <td class="colLast">Calls CallFrame patch block instead of this method.</td>
-                                </tr>
-                            
-                                <tr class="rowColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/patcher/PinePatchFn.html">com.aliucord.patcher.PinePatchFn</a>
-                                    </th>
-                                    <td class="colLast">Calls CallFrame patch block after the method has been invoked.</td>
-                                </tr>
-                            
-                                <tr class="altColor">
-                                    <th class="colDeprecatedItemName" scope="row">
-                                        <a href="com/aliucord/patcher/PinePrePatchFn.html">com.aliucord.patcher.PinePrePatchFn</a>
-                                    </th>
-                                    <td class="colLast">Calls CallFrame patch block before the method has been invoked.</td>
                                 </tr>
                             
                         </table>
