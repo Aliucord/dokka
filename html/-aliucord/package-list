@@ -344,6 +344,12 @@ $dokka.location:com.aliucord.fragments/InputDialog/onOkListener/#/PointingToDecl
 $dokka.location:com.aliucord.fragments/InputDialog/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-view-bound.html
 $dokka.location:com.aliucord.fragments/InputDialog/setPlaceholderText/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-placeholder-text.html
 $dokka.location:com.aliucord.fragments/InputDialog/title/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/title.html
+$dokka.location:com.aliucord.fragments/SelectDialog///PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/index.html
+$dokka.location:com.aliucord.fragments/SelectDialog/SelectDialog/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/-select-dialog.html
+$dokka.location:com.aliucord.fragments/SelectDialog/items/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/items.html
+$dokka.location:com.aliucord.fragments/SelectDialog/onResultListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/on-result-listener.html
+$dokka.location:com.aliucord.fragments/SelectDialog/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/on-view-bound.html
+$dokka.location:com.aliucord.fragments/SelectDialog/title/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/title.html
 $dokka.location:com.aliucord.fragments/SettingsPage///PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/index.html
 $dokka.location:com.aliucord.fragments/SettingsPage/SettingsPage/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/-settings-page.html
 $dokka.location:com.aliucord.fragments/SettingsPage/addHeaderButton/#com.aliucord.views.ToolbarButton/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-header-button.html
