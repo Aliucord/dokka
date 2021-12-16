@@ -187,6 +187,8 @@ $dokka.location:com.aliucord.entities/Plugin.Manifest.Author/id/#/PointingToDecl
 $dokka.location:com.aliucord.entities/Plugin.Manifest.Author/name/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/-author/name.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest.Author/toString/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/-author/to-string.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/index.html
+$dokka.location:com.aliucord.entities/Plugin.Manifest/Manifest/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/-manifest.html
+$dokka.location:com.aliucord.entities/Plugin.Manifest/Manifest/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/-manifest.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/authors/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/authors.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/changelog/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/changelog.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest/changelogMedia/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/changelog-media.html
@@ -211,13 +213,14 @@ $dokka.location:com.aliucord.entities/Plugin.SettingsTab/page/#/PointingToDeclar
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab/type/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/type.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab/withArgs/#java.lang.Object.../PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/with-args.html
 $dokka.location:com.aliucord.entities/Plugin///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/index.html
+$dokka.location:com.aliucord.entities/Plugin/Plugin/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-plugin.html
+$dokka.location:com.aliucord.entities/Plugin/Plugin/#com.aliucord.entities.Plugin.Manifest/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-plugin.html
 $dokka.location:com.aliucord.entities/Plugin/__filename/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/__filename.html
 $dokka.location:com.aliucord.entities/Plugin/getAnnotation/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/get-annotation.html
-$dokka.location:com.aliucord.entities/Plugin/initialize/#com.aliucord.entities.Plugin.Manifest/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/initialize.html
+$dokka.location:com.aliucord.entities/Plugin/getName/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/get-name.html
 $dokka.location:com.aliucord.entities/Plugin/load/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/load.html
 $dokka.location:com.aliucord.entities/Plugin/logger/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/logger.html
 $dokka.location:com.aliucord.entities/Plugin/manifest/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/manifest.html
-$dokka.location:com.aliucord.entities/Plugin/name/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/name.html
 $dokka.location:com.aliucord.entities/Plugin/needsResources/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/needs-resources.html
 $dokka.location:com.aliucord.entities/Plugin/requiresRestart/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/requires-restart.html
 $dokka.location:com.aliucord.entities/Plugin/resources/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/resources.html
@@ -494,6 +497,7 @@ $dokka.location:com.aliucord.utils/DimenUtils/dpToPx/#kotlin.Float/PointingToDec
 $dokka.location:com.aliucord.utils/DimenUtils/dpToPx/#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/dp-to-px.html
 $dokka.location:com.aliucord.utils/DimenUtils/pxToDp/#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.utils/-dimen-utils/px-to-dp.html
 $dokka.location:com.aliucord.utils/GsonUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/index.html
+$dokka.location:com.aliucord.utils/GsonUtils/fromJson/#java.io.Reader#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/from-json.html
 $dokka.location:com.aliucord.utils/GsonUtils/fromJson/#java.lang.String#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/from-json.html
 $dokka.location:com.aliucord.utils/GsonUtils/fromJson/#java.lang.String#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/from-json.html
 $dokka.location:com.aliucord.utils/GsonUtils/gson/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/gson.html
