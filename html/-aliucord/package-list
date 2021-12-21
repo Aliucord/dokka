@@ -999,6 +999,7 @@ $dokka.location:com.aliucord/Constants/DISCORD_VERSION/#/PointingToDeclaration/
 $dokka.location:com.aliucord/Constants/NAMESPACE_ANDROID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-n-a-m-e-s-p-a-c-e_-a-n-d-r-o-i-d.html
 $dokka.location:com.aliucord/Constants/NAMESPACE_APP/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-n-a-m-e-s-p-a-c-e_-a-p-p.html
 $dokka.location:com.aliucord/Constants/PLUGINS_PATH/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-p-l-u-g-i-n-s_-p-a-t-h.html
+$dokka.location:com.aliucord/Constants/PLUGIN_DEVELOPMENT_CHANNEL_ID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-p-l-u-g-i-n_-d-e-v-e-l-o-p-m-e-n-t_-c-h-a-n-n-e-l_-i-d.html
 $dokka.location:com.aliucord/Constants/PLUGIN_LINKS_CHANNEL_ID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-p-l-u-g-i-n_-l-i-n-k-s_-c-h-a-n-n-e-l_-i-d.html
 $dokka.location:com.aliucord/Constants/PLUGIN_LINKS_UPDATES_CHANNEL_ID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-p-l-u-g-i-n_-l-i-n-k-s_-u-p-d-a-t-e-s_-c-h-a-n-n-e-l_-i-d.html
 $dokka.location:com.aliucord/Constants/PLUGIN_REQUESTS_CHANNEL_ID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-p-l-u-g-i-n_-r-e-q-u-e-s-t-s_-c-h-a-n-n-e-l_-i-d.html
