@@ -206,14 +206,6 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a>&lt;<a href=RxUtils.html#getResultBlocking(Observable)>T</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt;</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#getResultBlocking(Observable)>getResultBlocking</a>(Observable&lt;<a href=RxUtils.html#getResultBlocking(Observable)>T</a>&gt; $self) </code>
-                                            </th>
-                                            <td class="colLast">Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</td>
-                                        </tr>
-                                        
-                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;<a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>T</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>T</a>&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError, Action0 onCompleted) </code>
@@ -221,7 +213,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;<a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>T</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>T</a>&gt; onNext, Action1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; onError) </code>
@@ -229,7 +221,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
                                         </tr>
                                         
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Subscriber&lt;<a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>T</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>createActionSubscriber</a>(Action1&lt;in <a href=RxUtils.html#createActionSubscriber(Action1,Action1,Action0)>T</a>&gt; onNext) </code>
@@ -237,7 +229,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Creates a subscriber that forwards the onXXX method calls to callbacks.</td>
                                         </tr>
                                         
-                                        <tr id="i8" class="altColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#timer(Long,TimeUnit)>timer</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit) </code>
@@ -245,7 +237,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Returns an Observable that emits <code>0L</code> after a specified delay, and then completes.</td>
                                         </tr>
                                         
-                                        <tr id="i9" class="rowColor">
+                                        <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>final static Subscription</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#schedule(Long,TimeUnit,Function1)>schedule</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> delay, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> unit, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; callback) </code>
@@ -253,7 +245,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Runs the callback after the specified delay</td>
                                         </tr>
                                         
-                                        <tr id="i10" class="altColor">
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>R</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#combineLatest(List,FuncN)>combineLatest</a>(<a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;Observable&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>T</a>&gt;&gt; sources, FuncN&lt;<a href=RxUtils.html#combineLatest(List,FuncN)>R</a>&gt; combineFunction) </code>
@@ -261,7 +253,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Combines a list of source Observables by emitting an item that aggregates the latest values of each of the source Observables each time an item is received from any of the source Observables, where this aggregation is defined by a specified function.</td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
+                                        <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#map(Observable,Function1)>R</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#map(Observable,Function1)>map</a>(Observable&lt;<a href=RxUtils.html#map(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#map(Observable,Function1)>T</a>, <a href=RxUtils.html#map(Observable,Function1)>R</a>&gt; func) </code>
@@ -269,7 +261,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <td class="colLast">Returns an Observable that applies a specified function to each item emitted by the source Observable and emits the results of these function applications.</td>
                                         </tr>
                                         
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>, R extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#switchMap(Observable,Function1)>switchMap</a>(Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>, Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt;&gt; func) </code>
@@ -386,21 +378,6 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                     <li class="blockList">
                                         <h4>await</h4>
                                         <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html>Pair</a>&lt;<a href=RxUtils.html#await(Observable)>T</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; <a href=RxUtils.html#await(Observable)>await</a>(Observable&lt;<a href=RxUtils.html#await(Observable)>T</a>&gt; $self)</pre>
-                                        <div class="block"><p>Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</p></div>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
-                                <a id="getResultBlocking(Observable)">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>getResultBlocking</h4>
-                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use RxUtils.await(), replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = await())) final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://developer.android.com/reference/kotlin/android/util/Pair.html>Pair</a>&lt;<a href=RxUtils.html#getResultBlocking(Observable)>T</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a>&gt; <a href=RxUtils.html#getResultBlocking(Observable)>getResultBlocking</a>(Observable&lt;<a href=RxUtils.html#getResultBlocking(Observable)>T</a>&gt; $self)</pre>
                                         <div class="block"><p>Blocks the current thread and waits for the Observable to complete, then returns a <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html>Pair</a> containing the result, and the error (if any) This must not be called from the Main thread (and will throw an <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html>IllegalStateException</a> if done so) as that would freeze the UI</p></div>
                                         
                                         <!-- TODO missing return annotation -->
