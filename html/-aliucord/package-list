@@ -356,6 +356,10 @@ $dokka.location:com.aliucord.fragments/SelectDialog/title/#/PointingToDeclaratio
 $dokka.location:com.aliucord.fragments/SettingsPage///PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/index.html
 $dokka.location:com.aliucord.fragments/SettingsPage/SettingsPage/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/-settings-page.html
 $dokka.location:com.aliucord.fragments/SettingsPage/addHeaderButton/#com.aliucord.views.ToolbarButton/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-header-button.html
+$dokka.location:com.aliucord.fragments/SettingsPage/addHeaderButton/#int#int#java.lang.String#android.graphics.drawable.Drawable#android.view.MenuItem.OnMenuItemClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-header-button.html
+$dokka.location:com.aliucord.fragments/SettingsPage/addHeaderButton/#int#java.lang.String#android.graphics.drawable.Drawable#android.view.MenuItem.OnMenuItemClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-header-button.html
+$dokka.location:com.aliucord.fragments/SettingsPage/addHeaderButton/#java.lang.String#android.graphics.drawable.Drawable#android.view.MenuItem.OnMenuItemClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-header-button.html
+$dokka.location:com.aliucord.fragments/SettingsPage/addHeaderButton/#java.lang.String#int#android.view.MenuItem.OnMenuItemClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-header-button.html
 $dokka.location:com.aliucord.fragments/SettingsPage/addView/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/add-view.html
 $dokka.location:com.aliucord.fragments/SettingsPage/clear/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/clear.html
 $dokka.location:com.aliucord.fragments/SettingsPage/close/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/close.html
@@ -365,6 +369,7 @@ $dokka.location:com.aliucord.fragments/SettingsPage/getLinearLayout/#/PointingTo
 $dokka.location:com.aliucord.fragments/SettingsPage/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/on-view-bound.html
 $dokka.location:com.aliucord.fragments/SettingsPage/reRender/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/re-render.html
 $dokka.location:com.aliucord.fragments/SettingsPage/removeHeaderButton/#com.aliucord.views.ToolbarButton/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-header-button.html
+$dokka.location:com.aliucord.fragments/SettingsPage/removeHeaderButton/#int/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-header-button.html
 $dokka.location:com.aliucord.fragments/SettingsPage/removeView/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-view.html
 $dokka.location:com.aliucord.fragments/SettingsPage/setPadding/#int/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/set-padding.html
 $dokka.location:com.aliucord.patcher////PointingToDeclaration/-aliucord/com.aliucord.patcher/index.html
@@ -412,6 +417,9 @@ $dokka.location:com.aliucord.settings/CrashSettings/onViewCreated/#android.view.
 $dokka.location:com.aliucord.settings/Crashes///PointingToDeclaration/-aliucord/com.aliucord.settings/-crashes/index.html
 $dokka.location:com.aliucord.settings/Crashes/Crashes/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-crashes/-crashes.html
 $dokka.location:com.aliucord.settings/Crashes/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-crashes/on-view-bound.html
+$dokka.location:com.aliucord.settings/FailedPluginsPage///PointingToDeclaration/-aliucord/com.aliucord.settings/-failed-plugins-page/index.html
+$dokka.location:com.aliucord.settings/FailedPluginsPage/FailedPluginsPage/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-failed-plugins-page/-failed-plugins-page.html
+$dokka.location:com.aliucord.settings/FailedPluginsPage/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-failed-plugins-page/on-view-bound.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/-view-holder/index.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder/ViewHolder/#com.aliucord.settings.Plugins.Adapter#com.aliucord.widgets.PluginCard/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/-view-holder/-view-holder.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder/card/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/-view-holder/card.html
@@ -577,6 +585,9 @@ $dokka.location:com.aliucord.widgets/BottomSheet/getLinearLayout/#/PointingToDec
 $dokka.location:com.aliucord.widgets/BottomSheet/onViewCreated/#android.view.View#android.os.Bundle/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/on-view-created.html
 $dokka.location:com.aliucord.widgets/BottomSheet/removeView/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/remove-view.html
 $dokka.location:com.aliucord.widgets/BottomSheet/setPadding/#int/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/set-padding.html
+$dokka.location:com.aliucord.widgets/FailedPluginWidget///PointingToDeclaration/-aliucord/com.aliucord.widgets/-failed-plugin-widget/index.html
+$dokka.location:com.aliucord.widgets/FailedPluginWidget/FailedPluginWidget/#android.content.Context#java.io.File#kotlin.Any#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.widgets/-failed-plugin-widget/-failed-plugin-widget.html
+$dokka.location:com.aliucord.widgets/FailedPluginWidget/onClick/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.widgets/-failed-plugin-widget/on-click.html
 $dokka.location:com.aliucord.widgets/LinearLayout///PointingToDeclaration/-aliucord/com.aliucord.widgets/-linear-layout/index.html
 $dokka.location:com.aliucord.widgets/LinearLayout/LinearLayout/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.widgets/-linear-layout/-linear-layout.html
 $dokka.location:com.aliucord.widgets/PluginCard///PointingToDeclaration/-aliucord/com.aliucord.widgets/-plugin-card/index.html
@@ -1097,6 +1108,7 @@ $dokka.location:com.aliucord/PluginManager///PointingToDeclaration/-aliucord/co
 $dokka.location:com.aliucord/PluginManager/classLoaders/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/class-loaders.html
 $dokka.location:com.aliucord/PluginManager/disablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/disable-plugin.html
 $dokka.location:com.aliucord/PluginManager/enablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/enable-plugin.html
+$dokka.location:com.aliucord/PluginManager/failedToLoad/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/failed-to-load.html
 $dokka.location:com.aliucord/PluginManager/getPluginPrefKey/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/get-plugin-pref-key.html
 $dokka.location:com.aliucord/PluginManager/isPluginEnabled/#com.aliucord.entities.Plugin/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/is-plugin-enabled.html
 $dokka.location:com.aliucord/PluginManager/isPluginEnabled/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/is-plugin-enabled.html
