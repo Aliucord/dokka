@@ -1169,7 +1169,7 @@ $dokka.location:com.aliucord/Utils/openPage/#android.content.Context#java.lang.C
 $dokka.location:com.aliucord/Utils/openPage/#android.content.Context#java.lang.Class[com.discord.app.AppComponent]/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page.html
 $dokka.location:com.aliucord/Utils/openPageWithProxy/#android.content.Context#androidx.fragment.app.Fragment/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page-with-proxy.html
 $dokka.location:com.aliucord/Utils/pluralise/#kotlin.Int#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/pluralise.html
-$dokka.location:com.aliucord/Utils/promptRestart/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/prompt-restart.html
+$dokka.location:com.aliucord/Utils/promptRestart/#kotlin.String#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord/-utils/prompt-restart.html
 $dokka.location:com.aliucord/Utils/setClipboard/#kotlin.CharSequence#kotlin.CharSequence/PointingToDeclaration/-aliucord/com.aliucord/-utils/set-clipboard.html
 $dokka.location:com.aliucord/Utils/showToast/#android.content.Context#kotlin.String#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord/-utils/show-toast.html
 $dokka.location:com.aliucord/Utils/showToast/#kotlin.String#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord/-utils/show-toast.html
