@@ -370,6 +370,7 @@ $dokka.location:com.aliucord.fragments/SettingsPage/onViewBound/#android.view.Vi
 $dokka.location:com.aliucord.fragments/SettingsPage/reRender/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/re-render.html
 $dokka.location:com.aliucord.fragments/SettingsPage/removeHeaderButton/#com.aliucord.views.ToolbarButton/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-header-button.html
 $dokka.location:com.aliucord.fragments/SettingsPage/removeHeaderButton/#int/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-header-button.html
+$dokka.location:com.aliucord.fragments/SettingsPage/removeScrollView/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-scroll-view.html
 $dokka.location:com.aliucord.fragments/SettingsPage/removeView/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-view.html
 $dokka.location:com.aliucord.fragments/SettingsPage/setPadding/#int/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/set-padding.html
 $dokka.location:com.aliucord.patcher////PointingToDeclaration/-aliucord/com.aliucord.patcher/index.html
