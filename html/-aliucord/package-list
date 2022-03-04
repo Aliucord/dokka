@@ -1120,6 +1120,7 @@ $dokka.location:com.aliucord/Main/initialized/#/PointingToDeclaration/-aliucord
 $dokka.location:com.aliucord/Main/logger/#/PointingToDeclaration/-aliucord/com.aliucord/-main/logger.html
 $dokka.location:com.aliucord/Main/preInit/#com.discord.app.AppActivity/PointingToDeclaration/-aliucord/com.aliucord/-main/pre-init.html
 $dokka.location:com.aliucord/Main/preInitialized/#/PointingToDeclaration/-aliucord/com.aliucord/-main/pre-initialized.html
+$dokka.location:com.aliucord/Main/settings/#/PointingToDeclaration/-aliucord/com.aliucord/-main/settings.html
 $dokka.location:com.aliucord/PluginManager///PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/index.html
 $dokka.location:com.aliucord/PluginManager/classLoaders/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/class-loaders.html
 $dokka.location:com.aliucord/PluginManager/disablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/disable-plugin.html
