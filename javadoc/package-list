@@ -12,7 +12,6 @@ $dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener///Point
 $dokka.location:com.aliucord.patcher/InsteadHook.Companion///PointingToDeclaration/com/aliucord/patcher/InsteadHook.Companion.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.ViewHolder.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.html
-$dokka.location:com.aliucord.settings/Updater.UpdaterSettings///PointingToDeclaration/com/aliucord/settings/Updater.UpdaterSettings.html
 $dokka.location:com.aliucord.updater/PluginUpdater.CachedData///PointingToDeclaration/com/aliucord/updater/PluginUpdater.CachedData.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo///PointingToDeclaration/com/aliucord/updater/PluginUpdater.UpdateInfo.html
 $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction.Companion///PointingToDeclaration/com/aliucord/utils/ChangelogUtils.FooterAction.Companion.html
