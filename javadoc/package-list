@@ -40,6 +40,7 @@ $dokka.location:com.aliucord/Http.MultiPartBuilder///PointingToDeclaration/com/
 $dokka.location:com.aliucord/Http.QueryBuilder///PointingToDeclaration/com/aliucord/Http.QueryBuilder.html
 $dokka.location:com.aliucord/Http.Request///PointingToDeclaration/com/aliucord/Http.Request.html
 $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord/Http.Response.html
+$dokka.location:com.aliucord/SettingsUtilsJSON.Companion///PointingToDeclaration/com/aliucord/SettingsUtilsJSON.Companion.html
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
