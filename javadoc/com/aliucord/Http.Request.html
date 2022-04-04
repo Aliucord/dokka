@@ -303,6 +303,14 @@ public class <span class="typeNameLabel"><a href=Http.Request.html>Http.Request<
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code><a href=Http.Response.html>Http.Response</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Http.Request.html#executeWithMultipartForm(Map,boolean)>executeWithMultipartForm</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; params, boolean doChunkedUploading) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Http.Request.html#close()>close</a>() </code>
@@ -310,7 +318,7 @@ public class <span class="typeNameLabel"><a href=Http.Request.html>Http.Request<
                                             <td class="colLast">Closes this request</td>
                                         </tr>
                                         
-                                        <tr id="i10" class="altColor">
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>static <a href=Http.Request.html>Http.Request</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Http.Request.html#newDiscordRequest(Http.QueryBuilder)>newDiscordRequest</a>(<a href=Http.QueryBuilder.html>Http.QueryBuilder</a> builder) </code>
@@ -318,7 +326,7 @@ public class <span class="typeNameLabel"><a href=Http.Request.html>Http.Request<
                                             <td class="colLast">Performs a GET request to a Discord route</td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
+                                        <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>static <a href=Http.Request.html>Http.Request</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Http.Request.html#newDiscordRequest(String)>newDiscordRequest</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> route) </code>
@@ -326,7 +334,7 @@ public class <span class="typeNameLabel"><a href=Http.Request.html>Http.Request<
                                             <td class="colLast">Performs a GET request to a Discord route</td>
                                         </tr>
                                         
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>static <a href=Http.Request.html>Http.Request</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Http.Request.html#newDiscordRequest(String,String)>newDiscordRequest</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> route, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> method) </code>
@@ -635,13 +643,39 @@ public class <span class="typeNameLabel"><a href=Http.Request.html>Http.Request<
                                     <li class="blockList">
                                         <h4>executeWithMultipartForm</h4>
                                         <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=Http.Response.html>Http.Response</a> <a href=Http.Request.html#executeWithMultipartForm(Map)>executeWithMultipartForm</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; params)</pre>
-                                        <div class="block"><p>Execute the request with the specified object as multipart form-data. May not be used in GET requests.</p></div>
+                                        <div class="block"><p>Execute the request with the specified object as multipart form-data. May not be used in GET requests. </p><p> Please note that this will set the <a href=https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding.html>Transfer-Encoding</a> to chunked. Some servers may not support this. To upload un-chunked (will lead to running out of memory when uploading large files), call <code>executeWithMultipartForm(params, false)</code></p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>params</code> - Map of params.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="executeWithMultipartForm(Map,boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>executeWithMultipartForm</h4>
+                                        <pre class="methodSignature"> <a href=Http.Response.html>Http.Response</a> <a href=Http.Request.html#executeWithMultipartForm(Map,boolean)>executeWithMultipartForm</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; params, boolean doChunkedUploading)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>doChunkedUploading</code> - Whether to upload in chunks.</dd>
                                             
                                             
                                         </dl>

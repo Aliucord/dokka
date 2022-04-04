@@ -1041,11 +1041,13 @@ $dokka.location:com.aliucord/Http.HttpException/statusCode/#/PointingToDeclarati
 $dokka.location:com.aliucord/Http.HttpException/statusMessage/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/status-message.html
 $dokka.location:com.aliucord/Http.HttpException/url/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http-exception/url.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder///PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/index.html
+$dokka.location:com.aliucord/Http.MultiPartBuilder/MultiPartBuilder/#java.lang.String#java.io.OutputStream/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/-multi-part-builder.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder/MultiPartBuilder/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/-multi-part-builder.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder/appendField/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/append-field.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder/appendFile/#java.lang.String#java.io.File/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/append-file.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder/appendStream/#java.lang.String#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/append-stream.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder/close/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/close.html
+$dokka.location:com.aliucord/Http.MultiPartBuilder/finish/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/finish.html
 $dokka.location:com.aliucord/Http.MultiPartBuilder/getBytes/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-multi-part-builder/get-bytes.html
 $dokka.location:com.aliucord/Http.QueryBuilder///PointingToDeclaration/-aliucord/com.aliucord/-http/-query-builder/index.html
 $dokka.location:com.aliucord/Http.QueryBuilder/QueryBuilder/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-query-builder/-query-builder.html
@@ -1061,6 +1063,7 @@ $dokka.location:com.aliucord/Http.Request/execute/#/PointingToDeclaration/-aliu
 $dokka.location:com.aliucord/Http.Request/executeWithBody/#byte[]/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-body.html
 $dokka.location:com.aliucord/Http.Request/executeWithBody/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-body.html
 $dokka.location:com.aliucord/Http.Request/executeWithJson/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-json.html
+$dokka.location:com.aliucord/Http.Request/executeWithMultipartForm/#java.util.Map<java.lang.String,java.lang.Object>#boolean/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-multipart-form.html
 $dokka.location:com.aliucord/Http.Request/executeWithMultipartForm/#java.util.Map<java.lang.String,java.lang.Object>/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-multipart-form.html
 $dokka.location:com.aliucord/Http.Request/executeWithUrlEncodedForm/#java.util.Map<java.lang.String,java.lang.Object>/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-url-encoded-form.html
 $dokka.location:com.aliucord/Http.Request/newDiscordRequest/#com.aliucord.Http.QueryBuilder/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html

@@ -125,7 +125,7 @@ var pathtoroot = "../../";
 public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http.MultiPartBuilder</a></span>
  implements <a href=https://developer.android.com/reference/kotlin/java/io/Closeable.html>Closeable</a>
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Utility to build MultiPart requests</p></div>
                 </li>
             </ul>
         </div>
@@ -158,6 +158,12 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
                                                         href="#Http.MultiPartBuilder(String)">Http.MultiPartBuilder</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> boundary)</code></th>
                                                 <td class="colLast"></td>
+                                            </tr>
+                                        
+                                            <tr class="rowColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#Http.MultiPartBuilder(String,OutputStream)">Http.MultiPartBuilder</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> boundary, <a href=https://developer.android.com/reference/kotlin/java/io/OutputStream.html>OutputStream</a> os)</code></th>
+                                                <td class="colLast">Construct a new MultiPartBuilder writing to the provided OutputStream</td>
                                             </tr>
                                         
 
@@ -226,6 +232,14 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>void</code>
                                             </td>
+                                            <th class="colSecond" scope="row"><code><a href=Http.MultiPartBuilder.html#finish()>finish</a>() </code>
+                                            </th>
+                                            <td class="colLast">Finishes this MultiPartForm.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
                                             <th class="colSecond" scope="row"><code><a href=Http.MultiPartBuilder.html#close()>close</a>() </code>
                                             </th>
                                             <td class="colLast"></td>
@@ -268,6 +282,29 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <h4>Http.MultiPartBuilder</h4>
                                         <pre>Http.MultiPartBuilder(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> boundary)</pre>
                                         <div class="block"></div>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="Http.MultiPartBuilder(String,OutputStream)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>Http.MultiPartBuilder</h4>
+                                        <pre>Http.MultiPartBuilder(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> boundary, <a href=https://developer.android.com/reference/kotlin/java/io/OutputStream.html>OutputStream</a> os)</pre>
+                                        <div class="block">Construct a new MultiPartBuilder writing to the provided OutputStream</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>boundary</code> - Boundary</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>os</code> - OutputStream to write to.</dd>
+                                            
+                                            
+                                        </dl>
                                         
                                     </li>
                                 </ul>
@@ -332,6 +369,8 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                             
                                             
                                             
+                                            <dd><code>is</code> - The parameter stream</dd>
+                                            
                                             
                                         </dl>
                                         
@@ -375,8 +414,23 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                           >
                                     <li class="blockList">
                                         <h4>getBytes</h4>
-                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;byte&gt; <a href=Http.MultiPartBuilder.html#getBytes()>getBytes</a>()</pre>
+                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>()@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;byte&gt; <a href=Http.MultiPartBuilder.html#getBytes()>getBytes</a>()</pre>
                                         <div class="block"><p>Build the finished byte array</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="finish()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>finish</h4>
+                                        <pre class="methodSignature"> void <a href=Http.MultiPartBuilder.html#finish()>finish</a>()</pre>
+                                        <div class="block"><p>Finishes this MultiPartForm. This should be called last. Calling any other methods on this Builder after calling this will lead to undefined behaviour.</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
