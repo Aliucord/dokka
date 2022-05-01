@@ -761,6 +761,7 @@ $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/appliedTags/com.d
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/availableTags/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/available-tags.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/bitrate/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/bitrate.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/defaultAutoArchiveDuration/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/default-auto-archive-duration.html
+$dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/flags/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/flags.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/guildHashes/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/guild-hashes.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/guildId/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/guild-id.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/icon/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/icon.html
@@ -794,6 +795,7 @@ $dokka.location:com.aliucord.wrappers/ChannelWrapper/appliedTags/#/PointingToDec
 $dokka.location:com.aliucord.wrappers/ChannelWrapper/availableTags/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/available-tags.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper/bitrate/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/bitrate.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper/defaultAutoArchiveDuration/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/default-auto-archive-duration.html
+$dokka.location:com.aliucord.wrappers/ChannelWrapper/flags/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/flags.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper/guildHashes/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/guild-hashes.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper/guildId/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/guild-id.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper/icon/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/icon.html
