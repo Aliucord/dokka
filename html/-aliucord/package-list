@@ -537,6 +537,12 @@ $dokka.location:com.aliucord.utils/MDUtils/render/#java.lang.CharSequence/Pointi
 $dokka.location:com.aliucord.utils/MDUtils/renderCodeBlock/#android.content.Context#android.text.SpannableStringBuilder#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/render-code-block.html
 $dokka.location:com.aliucord.utils/MapUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/index.html
 $dokka.location:com.aliucord.utils/MapUtils/getMapKey/#java.util.Map<K,V>#V/PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/get-map-key.html
+$dokka.location:com.aliucord.utils/RNSuperProperties///PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/index.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/superProperties/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/superPropertiesBase64/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties-base64.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/vendorId/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/vendor-id.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/versionCode/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/version-code.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/versionString/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/version-string.html
 $dokka.location:com.aliucord.utils/ReflectUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/index.html
 $dokka.location:com.aliucord.utils/ReflectUtils/allocateInstance/#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/allocate-instance.html
 $dokka.location:com.aliucord.utils/ReflectUtils/getConstructorByArgs/#java.lang.Class<T>#java.lang.Object.../PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/get-constructor-by-args.html
@@ -1080,6 +1086,9 @@ $dokka.location:com.aliucord/Http.Request/executeWithJson/#java.lang.Object/Poin
 $dokka.location:com.aliucord/Http.Request/executeWithMultipartForm/#java.util.Map<java.lang.String,java.lang.Object>#boolean/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-multipart-form.html
 $dokka.location:com.aliucord/Http.Request/executeWithMultipartForm/#java.util.Map<java.lang.String,java.lang.Object>/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-multipart-form.html
 $dokka.location:com.aliucord/Http.Request/executeWithUrlEncodedForm/#java.util.Map<java.lang.String,java.lang.Object>/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-url-encoded-form.html
+$dokka.location:com.aliucord/Http.Request/newDiscordRNRequest/#com.aliucord.Http.QueryBuilder/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-r-n-request.html
+$dokka.location:com.aliucord/Http.Request/newDiscordRNRequest/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-r-n-request.html
+$dokka.location:com.aliucord/Http.Request/newDiscordRNRequest/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-r-n-request.html
 $dokka.location:com.aliucord/Http.Request/newDiscordRequest/#com.aliucord.Http.QueryBuilder/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html
 $dokka.location:com.aliucord/Http.Request/newDiscordRequest/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html
 $dokka.location:com.aliucord/Http.Request/newDiscordRequest/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/new-discord-request.html
