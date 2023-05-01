@@ -44,7 +44,9 @@ $dokka.location:com.aliucord/SettingsUtilsJSON.Companion///PointingToDeclaration
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
+com.aliucord.api.rn.user
 com.aliucord.coreplugins
+com.aliucord.coreplugins.rn
 com.aliucord.entities
 com.aliucord.fragments
 com.aliucord.patcher

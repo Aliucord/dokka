@@ -4,6 +4,18 @@ $dokka.location:com.aliucord.annotations////PointingToDeclaration/-aliucord/com
 $dokka.location:com.aliucord.annotations/AliucordPlugin///PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/index.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin/AliucordPlugin/#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/-aliucord-plugin.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin/requiresRestart/#/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/requires-restart.html
+$dokka.location:com.aliucord.api.rn.user////PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/index.html
+$dokka.location:com.aliucord.api.rn.user/RNUserProfile///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/index.html
+$dokka.location:com.aliucord.api.rn.user/RNUserProfile/RNUserProfile/#com.aliucord.api.rn.user.UserProfileData?#com.aliucord.api.rn.user.UserProfileData/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/-r-n-user-profile.html
+$dokka.location:com.aliucord.api.rn.user/RNUserProfile/guildMemberProfile/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/guild-member-profile.html
+$dokka.location:com.aliucord.api.rn.user/RNUserProfile/userProfile/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/user-profile.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/index.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData/UserProfileData/#kotlin.Int?#kotlin.String?#kotlin.String?#kotlin.Long?#kotlin.IntArray?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/-user-profile-data.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData/accentColor/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/accent-color.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData/banner/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/banner.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData/bio/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/bio.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData/guildId/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/guild-id.html
+$dokka.location:com.aliucord.api.rn.user/UserProfileData/themeColors/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/theme-colors.html
 $dokka.location:com.aliucord.api////PointingToDeclaration/-aliucord/com.aliucord.api/index.html
 $dokka.location:com.aliucord.api/ButtonsAPI.ButtonData///PointingToDeclaration/-aliucord/com.aliucord.api/-buttons-a-p-i/-button-data/index.html
 $dokka.location:com.aliucord.api/ButtonsAPI.ButtonData/ButtonData/#kotlin.String#com.discord.api.botuikit.ButtonStyle#kotlin.Function2[com.discord.models.message.Message,androidx.fragment.app.FragmentActivity,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.api/-buttons-a-p-i/-button-data/-button-data.html
@@ -79,6 +91,16 @@ $dokka.location:com.aliucord.api/SettingsAPI/setObject/#java.lang.String#java.la
 $dokka.location:com.aliucord.api/SettingsAPI/setString/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-string.html
 $dokka.location:com.aliucord.api/SettingsAPI/setUnknown/#java.lang.String#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-unknown.html
 $dokka.location:com.aliucord.api/SettingsAPI/toggleBool/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/toggle-bool.html
+$dokka.location:com.aliucord.coreplugins.rn////PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/index.html
+$dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
+$dokka.location:com.aliucord.coreplugins.rn/RNAPI///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/index.html
+$dokka.location:com.aliucord.coreplugins.rn/RNAPI/RNAPI/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/-r-n-a-p-i.html
+$dokka.location:com.aliucord.coreplugins.rn/RNAPI/load/#android.content.Context?/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/load.html
+$dokka.location:com.aliucord.coreplugins.rn/RNAPI/start/#android.content.Context?/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/start.html
+$dokka.location:com.aliucord.coreplugins.rn/RNAPI/stop/#android.content.Context?/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/stop.html
+$dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/index.html
+$dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor/RNHeadersInterceptor/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/-r-n-headers-interceptor.html
+$dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor/intercept/#okhttp3.Interceptor.Chain/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/intercept.html
 $dokka.location:com.aliucord.coreplugins////PointingToDeclaration/-aliucord/com.aliucord.coreplugins/index.html
 $dokka.location:com.aliucord.coreplugins/CorePlugins///PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-core-plugins/index.html
 $dokka.location:com.aliucord.coreplugins/CorePlugins/loadAll/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-core-plugins/load-all.html
@@ -540,6 +562,7 @@ $dokka.location:com.aliucord.utils/MapUtils/getMapKey/#java.util.Map<K,V>#V/Poin
 $dokka.location:com.aliucord.utils/RNSuperProperties///PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/index.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/superProperties/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/superPropertiesBase64/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties-base64.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/userAgent/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/user-agent.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/vendorId/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/vendor-id.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/versionCode/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/version-code.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/versionString/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/version-string.html
@@ -1229,7 +1252,9 @@ $dokka.location:com.discord.widgets.user/WidgetKickUser$binding$2/invoke/#androi
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
+com.aliucord.api.rn.user
 com.aliucord.coreplugins
+com.aliucord.coreplugins.rn
 com.aliucord.entities
 com.aliucord.fragments
 com.aliucord.patcher
