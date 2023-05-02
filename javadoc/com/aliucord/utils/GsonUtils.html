@@ -40,7 +40,7 @@ var pathtoroot = "../../../";
     
     <li><a href="package-summary.html">Package</a></li>
     
-    <li class="navBarCell1Rev">Class</li>
+    <li>Class</li>
     
     <li><a href="package-tree.html">Tree</a></li>
     
@@ -89,7 +89,7 @@ var pathtoroot = "../../../";
 <main role="main">
     <div class="header">
         <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
-        <h2 title="Class GsonUtils" class="title">Class GsonUtils</h2>
+        <h2 title="Object GsonUtils" class="title">Object GsonUtils</h2>
     </div>
     <div class="contentContainer">
         <!-- <ul class="inheritance">
@@ -107,7 +107,7 @@ var pathtoroot = "../../../";
                     <hr>
                     <pre class="wrap-overflow">
 
-public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils</a></span>
+public class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils</a></span>
 
                     </pre>
                     <div class="block"></div>
@@ -137,14 +137,26 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>public final static Gson</code></td>
+                                            <td class="colFirst"><code>private final static Gson</code></td>
                                             <th class="colSecond" scope="row"><code><a href=GsonUtils.html#gson>gson</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="rowColor">
-                                            <td class="colFirst"><code>public final static Gson</code></td>
+                                            <td class="colFirst"><code>private final static Gson</code></td>
                                             <th class="colSecond" scope="row"><code><a href=GsonUtils.html#gsonPretty>gsonPretty</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final static Gson</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#gsonRestApi>gsonRestApi</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public final static <a href=GsonUtils.html>GsonUtils</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#INSTANCE>INSTANCE</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
@@ -180,43 +192,99 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; T</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Gson,String,Class)>T</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(String,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;T&gt; clazz) </code>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(Gson,String,Class)>fromJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(Gson,String,Class)>T</a>&gt; clazz) </code>
                                             </th>
                                             <td class="colLast">Deserializes a JSON string into the specified class</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; T</code>
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(String,Class)>T</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(Reader,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/io/Reader.html>Reader</a> reader, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;T&gt; clazz) </code>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(String,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(String,Class)>T</a>&gt; clazz) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Gson,Reader,Class)>T</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(Gson,Reader,Class)>fromJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/io/Reader.html>Reader</a> reader, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(Gson,Reader,Class)>T</a>&gt; clazz) </code>
                                             </th>
                                             <td class="colLast">Deserializes a JSON string into the specified class</td>
                                         </tr>
                                         
-                                        <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>static &lt;T&gt; T</code>
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Reader,Class)>T</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(String,Type)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type) </code>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(Reader,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/io/Reader.html>Reader</a> reader, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(Reader,Class)>T</a>&gt; clazz) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Gson,String,Type)>T</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(Gson,String,Type)>fromJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type) </code>
                                             </th>
                                             <td class="colLast">Deserializes a JSON string into the specified object</td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(String,Type)>T</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#toJson(Object)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj) </code>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#fromJson(String,Type)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#toJson(Gson,Object)>toJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj) </code>
                                             </th>
                                             <td class="colLast">Serializes an Object to JSON</td>
                                         </tr>
                                         
-                                        <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#toJson(Object)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=GsonUtils.html#toJsonPretty(Object)>toJsonPretty</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj) </code>
                                             </th>
                                             <td class="colLast">Serializes an Object to pretty printed JSON</td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>final static Gson</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#getGson()>getGson</a>() </code>
+                                            </th>
+                                            <td class="colLast"><a href=https://github.com/google/gson.html>Gson</a> instance</td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final static Gson</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#getGsonPretty()>getGsonPretty</a>() </code>
+                                            </th>
+                                            <td class="colLast"><a href=https://github.com/google/gson.html>Gson</a> instance with pretty print enabled</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>final static Gson</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GsonUtils.html#getGsonRestApi()>getGsonRestApi</a>() </code>
+                                            </th>
+                                            <td class="colLast"><a href=https://github.com/google/gson.html>Gson</a> instance with same config as Discord uses for com.discord.utilities.rest.RestAPI</td>
                                         </tr>
                                         
                                         </tbody>
@@ -252,6 +320,36 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                             </a>
                                 <h3>Method Detail</h3>
                                 
+                                <a id="fromJson(Gson,String,Class)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fromJson</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Gson,String,Class)>T</a> <a href=GsonUtils.html#fromJson(Gson,String,Class)>fromJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(Gson,String,Class)>T</a>&gt; clazz)</pre>
+                                        <div class="block"><p>Deserializes a JSON string into the specified class</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            
+                                            
+                                            <dd><code>json</code> - The JSON string to deserialize</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>clazz</code> - The class to deserialize the JSON into</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
                                 <a id="fromJson(String,Class)">
                                     <!--   -->
                                 </a>
@@ -260,14 +358,31 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                           >
                                     <li class="blockList">
                                         <h4>fromJson</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; T <a href=GsonUtils.html#fromJson(String,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;T&gt; clazz)</pre>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use kt extension for Gson, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = gson.fromJson(json, clazz))) final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(String,Class)>T</a> <a href=GsonUtils.html#fromJson(String,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(String,Class)>T</a>&gt; clazz)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fromJson(Gson,Reader,Class)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fromJson</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Gson,Reader,Class)>T</a> <a href=GsonUtils.html#fromJson(Gson,Reader,Class)>fromJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/io/Reader.html>Reader</a> reader, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(Gson,Reader,Class)>T</a>&gt; clazz)</pre>
                                         <div class="block"><p>Deserializes a JSON string into the specified class</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>json</code> - The JSON string to deserialize</dd>
+                                            
+                                            
+                                            <dd><code>reader</code> - The reader from which JSON will be deserialized</dd>
                                             
                                             
                                             
@@ -288,18 +403,35 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                           >
                                     <li class="blockList">
                                         <h4>fromJson</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; T <a href=GsonUtils.html#fromJson(Reader,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/io/Reader.html>Reader</a> reader, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;T&gt; clazz)</pre>
-                                        <div class="block"><p>Deserializes a JSON string into the specified class</p></div>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use kt extension for Gson, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = gson.fromJson(reader, clazz))) final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Reader,Class)>T</a> <a href=GsonUtils.html#fromJson(Reader,Class)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/io/Reader.html>Reader</a> reader, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=GsonUtils.html#fromJson(Reader,Class)>T</a>&gt; clazz)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="fromJson(Gson,String,Type)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>fromJson</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(Gson,String,Type)>T</a> <a href=GsonUtils.html#fromJson(Gson,String,Type)>fromJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type)</pre>
+                                        <div class="block"><p>Deserializes a JSON string into the specified object</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>reader</code> - The reader from which JSON will be deserialized</dd>
+                                            
+                                            
+                                            <dd><code>json</code> - The JSON string to deserialize</dd>
                                             
                                             
                                             
-                                            <dd><code>clazz</code> - The class to deserialize the JSON into</dd>
+                                            <dd><code>type</code> - The type of the object to deserialize the JSON into</dd>
                                             
                                             
                                         </dl>
@@ -316,18 +448,31 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                           >
                                     <li class="blockList">
                                         <h4>fromJson</h4>
-                                        <pre class="methodSignature"> static &lt;T&gt; T <a href=GsonUtils.html#fromJson(String,Type)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type)</pre>
-                                        <div class="block"><p>Deserializes a JSON string into the specified object</p></div>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use kt extension for Gson, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = gson.fromJson(json, type))) final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=GsonUtils.html#fromJson(String,Type)>T</a> <a href=GsonUtils.html#fromJson(String,Type)>fromJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> json, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="toJson(Gson,Object)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>toJson</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GsonUtils.html#toJson(Gson,Object)>toJson</a>(Gson $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj)</pre>
+                                        <div class="block"><p>Serializes an Object to JSON</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>json</code> - The JSON string to deserialize</dd>
                                             
                                             
-                                            
-                                            <dd><code>type</code> - The type of the object to deserialize the JSON into</dd>
+                                            <dd><code>obj</code> - The object to serialize</dd>
                                             
                                             
                                         </dl>
@@ -344,8 +489,23 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                           >
                                     <li class="blockList">
                                         <h4>toJson</h4>
-                                        <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GsonUtils.html#toJson(Object)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj)</pre>
-                                        <div class="block"><p>Serializes an Object to JSON</p></div>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use kt extension for Gson, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = gson.toJson(obj))) final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GsonUtils.html#toJson(Object)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="toJsonPretty(Object)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>toJsonPretty</h4>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use kt extension for Gson, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = gsonPretty.toJson(obj))) final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GsonUtils.html#toJsonPretty(Object)>toJsonPretty</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj)</pre>
+                                        <div class="block"><p>Serializes an Object to pretty printed JSON</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
@@ -360,25 +520,46 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
                                     </li>
                                 </ul>
                                 
-                                <a id="toJsonPretty(Object)">
+                                <a id="getGson()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getGson</h4>
+                                        <pre class="methodSignature"> final static Gson <a href=GsonUtils.html#getGson()>getGson</a>()</pre>
+                                        <div class="block"><p><a href=https://github.com/google/gson.html>Gson</a> instance</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getGsonPretty()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getGsonPretty</h4>
+                                        <pre class="methodSignature"> final static Gson <a href=GsonUtils.html#getGsonPretty()>getGsonPretty</a>()</pre>
+                                        <div class="block"><p><a href=https://github.com/google/gson.html>Gson</a> instance with pretty print enabled</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getGsonRestApi()">
                                     <!--   -->
                                 </a>
                                 <ul class=
                                               "blockListLast"
                                           >
                                     <li class="blockList">
-                                        <h4>toJsonPretty</h4>
-                                        <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GsonUtils.html#toJsonPretty(Object)>toJsonPretty</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> obj)</pre>
-                                        <div class="block"><p>Serializes an Object to pretty printed JSON</p></div>
-                                        
-                                        <dl>
-                                            <dt><span class="paramLabel">Parameters:</span></dt>
-                                            
-                                            
-                                            <dd><code>obj</code> - The object to serialize</dd>
-                                            
-                                            
-                                        </dl>
+                                        <h4>getGsonRestApi</h4>
+                                        <pre class="methodSignature"> final static Gson <a href=GsonUtils.html#getGsonRestApi()>getGsonRestApi</a>()</pre>
+                                        <div class="block"><p><a href=https://github.com/google/gson.html>Gson</a> instance with same config as Discord uses for com.discord.utilities.rest.RestAPI</p></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
@@ -409,7 +590,7 @@ public final class <span class="typeNameLabel"><a href=GsonUtils.html>GsonUtils<
     
     <li><a href="package-summary.html">Package</a></li>
     
-    <li class="navBarCell1Rev">Class</li>
+    <li>Class</li>
     
     <li><a href="package-tree.html">Tree</a></li>
     

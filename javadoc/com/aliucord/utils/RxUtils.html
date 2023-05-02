@@ -137,6 +137,12 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                         </tr>
                                         
                                         <tr class="altColor">
+                                            <td class="colFirst"><code>private final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#empty>empty</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
                                             <td class="colFirst"><code>public final static <a href=RxUtils.html>RxUtils</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#INSTANCE>INSTANCE</a></code></th>
                                             <td class="colLast"></td>
@@ -267,6 +273,14 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#switchMap(Observable,Function1)>switchMap</a>(Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>&gt; $self, Function1&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>T</a>, Observable&lt;<a href=RxUtils.html#switchMap(Observable,Function1)>R</a>&gt;&gt; func) </code>
                                             </th>
                                             <td class="colLast">Returns a new Observable by applying a function that you supply to each item emitted by the source Observable that returns an Observable, and then emitting the items emitted by the most recently emitted of these Observables.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#getEmpty()>getEmpty</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -586,7 +600,7 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>switchMap</h4>
@@ -603,6 +617,21 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             
                                             
                                         </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getEmpty()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getEmpty</h4>
+                                        <pre class="methodSignature"> final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; <a href=RxUtils.html#getEmpty()>getEmpty</a>()</pre>
+                                        <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->
                                     </li>
