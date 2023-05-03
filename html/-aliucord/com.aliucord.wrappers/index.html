@@ -1,141 +1,170 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>com.aliucord.wrappers</title>
-<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>Aliucord</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Aliucord:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="Aliucord::com.aliucord.wrappers////PointingToDeclaration//-1922595193">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">Aliucord</a>/<a href="index.html">com.aliucord.wrappers</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Aliucord::com.aliucord.wrappers////PointingToDeclaration//-1922595193">
+  <div class="breadcrumbs"><a href="../../index.html">Aliucord</a><span class="delimiter">/</span><span class="current">com.aliucord.wrappers</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-794226402%2FClasslikes%2F-1922595193" anchor-label="ChannelWrapper" id="-794226402%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-channel-wrapper/index.html"><span>Channel</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794226402%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-channel-wrapper/index.html">ChannelWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">channel<span class="token operator">: </span><span data-unresolved-link="com.discord.api.channel/Channel///PointingToDeclaration/">Channel</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wraps the obfuscated <span data-unresolved-link="com.discord.api.channel/Channel///PointingToDeclaration/">Channel</span> class to provide nice method names and require only one central update if method names change after an update</p></div></div></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Package com.</span><wbr></wbr><span>aliucord.</span><wbr></wbr><span>wrappers</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="-794226402%2FClasslikes%2F-1922595193" anchor-label="ChannelWrapper" id="-794226402%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-channel-wrapper/index.html">ChannelWrapper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794226402%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-channel-wrapper/index.html">ChannelWrapper</a>(channel: <span data-unresolved-link="com.discord.api.channel/Channel///PointingToDeclaration/">Channel</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-794226402%2FClasslikes%2F-1922595193" anchor-label="ChannelWrapper" id="-794226402%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-794226402%2FClasslikes%2F-1922595193" anchor-label="ChannelWrapper" id="-794226402%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Wraps the obfuscated <span data-unresolved-link="com.discord.api.channel/Channel///PointingToDeclaration/">Channel</span> class to provide nice method names and require only one central update if method names change after an update</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
 <a data-name="522505492%2FClasslikes%2F-1922595193" anchor-label="GuildEmojiWrapper" id="522505492%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-guild-emoji-wrapper/index.html">GuildEmojiWrapper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="522505492%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-guild-emoji-wrapper/index.html">GuildEmojiWrapper</a>(emoji: <span data-unresolved-link="com.discord.api.emoji/GuildEmoji///PointingToDeclaration/">GuildEmoji</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="522505492%2FClasslikes%2F-1922595193" anchor-label="GuildEmojiWrapper" id="522505492%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="522505492%2FClasslikes%2F-1922595193" anchor-label="GuildEmojiWrapper" id="522505492%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Wraps the obfuscated <span data-unresolved-link="com.discord.api.emoji/GuildEmoji///PointingToDeclaration/">GuildEmoji</span> class to provide nice method names and require only one central update if method names change after an update</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-guild-emoji-wrapper/index.html"><span>Guild</span><wbr></wbr><span>Emoji</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="522505492%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-guild-emoji-wrapper/index.html">GuildEmojiWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">emoji<span class="token operator">: </span><span data-unresolved-link="com.discord.api.emoji/GuildEmoji///PointingToDeclaration/">GuildEmoji</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wraps the obfuscated <span data-unresolved-link="com.discord.api.emoji/GuildEmoji///PointingToDeclaration/">GuildEmoji</span> class to provide nice method names and require only one central update if method names change after an update</p></div></div></div>
                 </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-902343160%2FClasslikes%2F-1922595193" anchor-label="GuildMemberWrapper" id="-902343160%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-guild-member-wrapper/index.html">GuildMemberWrapper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-902343160%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-guild-member-wrapper/index.html">GuildMemberWrapper</a>(guildMember: <span data-unresolved-link="com.discord.api.guildmember/GuildMember///PointingToDeclaration/">GuildMember</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-902343160%2FClasslikes%2F-1922595193" anchor-label="GuildMemberWrapper" id="-902343160%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-902343160%2FClasslikes%2F-1922595193" anchor-label="GuildMemberWrapper" id="-902343160%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Wraps the obfuscated <span data-unresolved-link="com.discord.api.guildmember/GuildMember///PointingToDeclaration/">GuildMember</span> class to provide nice method names and require only one central update if method names change after an update</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-guild-member-wrapper/index.html"><span>Guild</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-902343160%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-guild-member-wrapper/index.html">GuildMemberWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildMember<span class="token operator">: </span><span data-unresolved-link="com.discord.api.guildmember/GuildMember///PointingToDeclaration/">GuildMember</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wraps the obfuscated <span data-unresolved-link="com.discord.api.guildmember/GuildMember///PointingToDeclaration/">GuildMember</span> class to provide nice method names and require only one central update if method names change after an update</p></div></div></div>
                 </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-778031132%2FClasslikes%2F-1922595193" anchor-label="GuildRoleWrapper" id="-778031132%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-guild-role-wrapper/index.html">GuildRoleWrapper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-778031132%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-guild-role-wrapper/index.html">GuildRoleWrapper</a>(role: <span data-unresolved-link="com.discord.api.role/GuildRole///PointingToDeclaration/">GuildRole</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-778031132%2FClasslikes%2F-1922595193" anchor-label="GuildRoleWrapper" id="-778031132%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-778031132%2FClasslikes%2F-1922595193" anchor-label="GuildRoleWrapper" id="-778031132%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Wraps the obfuscated <span data-unresolved-link="com.discord.api.role/GuildRole///PointingToDeclaration/">GuildRole</span> class to provide nice method names and require only one central update if method names change after an update</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-guild-role-wrapper/index.html"><span>Guild</span><wbr></wbr><span>Role</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-778031132%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-guild-role-wrapper/index.html">GuildRoleWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">role<span class="token operator">: </span><span data-unresolved-link="com.discord.api.role/GuildRole///PointingToDeclaration/">GuildRole</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wraps the obfuscated <span data-unresolved-link="com.discord.api.role/GuildRole///PointingToDeclaration/">GuildRole</span> class to provide nice method names and require only one central update if method names change after an update</p></div></div></div>
                 </div>
+              </div>
+            </div>
+          </div>
 <a data-name="1033481038%2FClasslikes%2F-1922595193" anchor-label="GuildWrapper" id="1033481038%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-guild-wrapper/index.html">GuildWrapper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1033481038%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-guild-wrapper/index.html">GuildWrapper</a>(guild: <span data-unresolved-link="com.discord.api.guild/Guild///PointingToDeclaration/">Guild</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1033481038%2FClasslikes%2F-1922595193" anchor-label="GuildWrapper" id="1033481038%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="1033481038%2FClasslikes%2F-1922595193" anchor-label="GuildWrapper" id="1033481038%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Wraps the obfuscated <span data-unresolved-link="com.discord.api.guild/Guild///PointingToDeclaration/">Guild</span> class to provide nice method names and require only one central update if method names change after an update</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-guild-wrapper/index.html"><span>Guild</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1033481038%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-guild-wrapper/index.html">GuildWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guild<span class="token operator">: </span><span data-unresolved-link="com.discord.api.guild/Guild///PointingToDeclaration/">Guild</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wraps the obfuscated <span data-unresolved-link="com.discord.api.guild/Guild///PointingToDeclaration/">Guild</span> class to provide nice method names and require only one central update if method names change after an update</p></div></div></div>
                 </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-2048045289%2FClasslikes%2F-1922595193" anchor-label="PermissionOverwriteWrapper" id="-2048045289%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-permission-overwrite-wrapper/index.html">PermissionOverwriteWrapper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2048045289%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-permission-overwrite-wrapper/index.html">PermissionOverwriteWrapper</a>(overwrite: <span data-unresolved-link="com.discord.api.permission/PermissionOverwrite///PointingToDeclaration/">PermissionOverwrite</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-2048045289%2FClasslikes%2F-1922595193" anchor-label="PermissionOverwriteWrapper" id="-2048045289%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-2048045289%2FClasslikes%2F-1922595193" anchor-label="PermissionOverwriteWrapper" id="-2048045289%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Wraps the obfuscated <span data-unresolved-link="com.discord.api.permission/PermissionOverwrite///PointingToDeclaration/">PermissionOverwrite</span> class to provide nice method names and require only one central update if method names change after an update</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-permission-overwrite-wrapper/index.html"><span>Permission</span><wbr></wbr><span>Overwrite</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2048045289%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-permission-overwrite-wrapper/index.html">PermissionOverwriteWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overwrite<span class="token operator">: </span><span data-unresolved-link="com.discord.api.permission/PermissionOverwrite///PointingToDeclaration/">PermissionOverwrite</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Wraps the obfuscated <span data-unresolved-link="com.discord.api.permission/PermissionOverwrite///PointingToDeclaration/">PermissionOverwrite</span> class to provide nice method names and require only one central update if method names change after an update</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

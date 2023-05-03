@@ -1,382 +1,369 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>com.aliucord.patcher</title>
-<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>Aliucord</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Aliucord:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="Aliucord::com.aliucord.patcher////PointingToDeclaration//-1922595193">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">Aliucord</a>/<a href="index.html">com.aliucord.patcher</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Package com.</span><wbr></wbr><span>aliucord.</span><wbr></wbr><span>patcher</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="-561234872%2FClasslikes%2F-1922595193" anchor-label="Hook" id="-561234872%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-hook/index.html">Hook</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561234872%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-hook/index.html">Hook</a>(callback: <span data-unresolved-link="rx.functions/Action1///PointingToDeclaration/">Action1</span>&lt;<span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>&gt;) : <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook///PointingToDeclaration/">XC_MethodHook</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Aliucord::com.aliucord.patcher////PointingToDeclaration//-1922595193">
+  <div class="breadcrumbs"><a href="../../index.html">Aliucord</a><span class="delimiter">/</span><span class="current">com.aliucord.patcher</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
-<a data-name="-561234872%2FClasslikes%2F-1922595193" anchor-label="Hook" id="-561234872%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-561234872%2FClasslikes%2F-1922595193" anchor-label="Hook" id="-561234872%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Runs the specified <a href="-hook/callback.html">callback</a>after the hooked <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html">Member</a></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-470387918%2FClasslikes%2F-1922595193" anchor-label="InsteadHook" id="-470387918%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-instead-hook/index.html">InsteadHook</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-470387918%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-instead-hook/index.html">InsteadHook</a>(callback: (<span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?) : <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook///PointingToDeclaration/">XC_MethodHook</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-470387918%2FClasslikes%2F-1922595193" anchor-label="InsteadHook" id="-470387918%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-470387918%2FClasslikes%2F-1922595193" anchor-label="InsteadHook" id="-470387918%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Runs the specified <a href="-instead-hook/callback.html">callback</a>instead of the hooked <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html">Member</a></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1198127934%2FClasslikes%2F-1922595193" anchor-label="Patcher" id="-1198127934%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-patcher/index.html">Patcher</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1198127934%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">open class <a href="-patcher/index.html">Patcher</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="2087763569%2FClasslikes%2F-1922595193" anchor-label="PreHook" id="2087763569%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-pre-hook/index.html">PreHook</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2087763569%2FClasslikes%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">class <a href="-pre-hook/index.html">PreHook</a>(callback: <span data-unresolved-link="rx.functions/Action1///PointingToDeclaration/">Action1</span>&lt;<span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>&gt;) : <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook///PointingToDeclaration/">XC_MethodHook</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="2087763569%2FClasslikes%2F-1922595193" anchor-label="PreHook" id="2087763569%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="2087763569%2FClasslikes%2F-1922595193" anchor-label="PreHook" id="2087763569%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Runs the specified <a href="-pre-hook/callback.html">callback</a>before the hooked <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html">Member</a></div></div>
-</div>
-                    </div>
-                  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-561234872%2FClasslikes%2F-1922595193" anchor-label="Hook" id="-561234872%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hook/index.html"><span><span>Hook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561234872%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-hook/index.html">Hook</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>callback<span class="token operator">: </span><span data-unresolved-link="rx.functions/Action1///PointingToDeclaration/">Action1</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook///PointingToDeclaration/">XC_MethodHook</span></div><div class="brief "><p class="paragraph">Runs the specified <a href="-hook/callback.html">callback</a> <strong>after</strong> the hooked <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html">Member</a></p></div></div></div>
                 </div>
               </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="1617748235%2FFunctions%2F-1922595193" anchor-label="after" id="1617748235%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="after.html">after</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1617748235%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline fun &lt;<a href="after.html">T</a>&gt; <a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a>.<a href="after.html">after</a>(vararg paramTypes: <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;*&gt;, crossinline callback: <span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span>&lt;<a href="after.html">T</a>&gt;): <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="563272377%2FFunctions%2F-1922595193" anchor-label="after" id="563272377%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="563272377%2FFunctions%2F-1922595193" anchor-label="after" id="563272377%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Adds a <a href="-hook/index.html">Hook</a> to a constructor of a class.</div></div>
-<div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline fun &lt;<a href="after.html">T</a>&gt; <a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a>.<a href="after.html">after</a>(methodName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, vararg paramTypes: <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;*&gt;, crossinline callback: <span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span>&lt;<a href="after.html">T</a>&gt;): <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1472327966%2FFunctions%2F-1922595193" anchor-label="after" id="1472327966%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="1472327966%2FFunctions%2F-1922595193" anchor-label="after" id="1472327966%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Adds a <a href="-hook/index.html">Hook</a> to a method of a class.</div></div>
-</div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+<a data-name="-470387918%2FClasslikes%2F-1922595193" anchor-label="InsteadHook" id="-470387918%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-instead-hook/index.html"><span>Instead</span><wbr></wbr><span><span>Hook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-470387918%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-instead-hook/index.html">InsteadHook</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>callback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook///PointingToDeclaration/">XC_MethodHook</span></div><div class="brief "><p class="paragraph">Runs the specified <a href="-instead-hook/callback.html">callback</a> <strong>instead of</strong> the hooked <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html">Member</a></p></div></div></div>
                 </div>
-<a data-name="-825495119%2FFunctions%2F-1922595193" anchor-label="before" id="-825495119%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="before.html">before</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-825495119%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline fun &lt;<a href="before.html">T</a>&gt; <a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a>.<a href="before.html">before</a>(vararg paramTypes: <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;*&gt;, crossinline callback: <span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span>&lt;<a href="before.html">T</a>&gt;): <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1647466884%2FFunctions%2F-1922595193" anchor-label="before" id="1647466884%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="1647466884%2FFunctions%2F-1922595193" anchor-label="before" id="1647466884%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Adds a <a href="-pre-hook/index.html">PreHook</a> to a constructor of a class.</div></div>
-<div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline fun &lt;<a href="before.html">T</a>&gt; <a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a>.<a href="before.html">before</a>(methodName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, vararg paramTypes: <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;*&gt;, crossinline callback: <span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span>&lt;<a href="before.html">T</a>&gt;): <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-714461015%2FFunctions%2F-1922595193" anchor-label="before" id="-714461015%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-714461015%2FFunctions%2F-1922595193" anchor-label="before" id="-714461015%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Adds a <a href="-pre-hook/index.html">PreHook</a> to a method of a class.</div></div>
-</div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1198127934%2FClasslikes%2F-1922595193" anchor-label="Patcher" id="-1198127934%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-patcher/index.html"><span><span>Patcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1198127934%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-patcher/index.html">Patcher</a></div></div></div>
                 </div>
-<a data-name="1403095983%2FFunctions%2F-1922595193" anchor-label="component1" id="1403095983%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component1.html">component1</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1403095983%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component1.html">component1</a>(): <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="995260697%2FFunctions%2F-1922595193" anchor-label="component10" id="995260697%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component10.html">component10</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995260697%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component10.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component10.html">component10</a>(): <a href="component10.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1414777528%2FFunctions%2F-1922595193" anchor-label="component11" id="1414777528%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component11.html">component11</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1414777528%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component11.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component11.html">component11</a>(): <a href="component11.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1834294359%2FFunctions%2F-1922595193" anchor-label="component12" id="1834294359%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component12.html">component12</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1834294359%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component12.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component12.html">component12</a>(): <a href="component12.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1822612814%2FFunctions%2F-1922595193" anchor-label="component2" id="1822612814%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component2.html">component2</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1822612814%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component2.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component2.html">component2</a>(): <a href="component2.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-2052837651%2FFunctions%2F-1922595193" anchor-label="component3" id="-2052837651%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component3.html">component3</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052837651%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component3.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component3.html">component3</a>(): <a href="component3.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1633320820%2FFunctions%2F-1922595193" anchor-label="component4" id="-1633320820%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component4.html">component4</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1633320820%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component4.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component4.html">component4</a>(): <a href="component4.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1213803989%2FFunctions%2F-1922595193" anchor-label="component5" id="-1213803989%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component5.html">component5</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1213803989%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component5.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component5.html">component5</a>(): <a href="component5.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-794287158%2FFunctions%2F-1922595193" anchor-label="component6" id="-794287158%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component6.html">component6</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794287158%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component6.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component6.html">component6</a>(): <a href="component6.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-374770327%2FFunctions%2F-1922595193" anchor-label="component7" id="-374770327%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component7.html">component7</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-374770327%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component7.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component7.html">component7</a>(): <a href="component7.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="44746504%2FFunctions%2F-1922595193" anchor-label="component8" id="44746504%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component8.html">component8</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="44746504%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component8.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component8.html">component8</a>(): <a href="component8.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="464263335%2FFunctions%2F-1922595193" anchor-label="component9" id="464263335%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="component9.html">component9</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464263335%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline operator fun &lt;<a href="component9.html">T</a>&gt; <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span>.<a href="component9.html">component9</a>(): <a href="component9.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-478343267%2FFunctions%2F-1922595193" anchor-label="instead" id="-478343267%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="instead.html">instead</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-478343267%2FFunctions%2F-1922595193"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline fun &lt;<a href="instead.html">T</a>&gt; <a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a>.<a href="instead.html">instead</a>(vararg paramTypes: <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;*&gt;, crossinline callback: <span data-unresolved-link="com.aliucord.patcher/InsteadHookCallback///PointingToDeclaration/">InsteadHookCallback</span>&lt;<a href="instead.html">T</a>&gt;): <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-506206814%2FFunctions%2F-1922595193" anchor-label="instead" id="-506206814%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="-506206814%2FFunctions%2F-1922595193" anchor-label="instead" id="-506206814%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Replaces a constructor of a class.</div></div>
-<div class="divergent-group" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace">inline fun &lt;<a href="instead.html">T</a>&gt; <a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a>.<a href="instead.html">instead</a>(methodName: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, vararg paramTypes: <a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a>&lt;*&gt;, crossinline callback: <span data-unresolved-link="com.aliucord.patcher/InsteadHookCallback///PointingToDeclaration/">InsteadHookCallback</span>&lt;<a href="instead.html">T</a>&gt;): <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="463087239%2FFunctions%2F-1922595193" anchor-label="instead" id="463087239%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a><div class="brief "><a data-name="463087239%2FFunctions%2F-1922595193" anchor-label="instead" id="463087239%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>Replaces a method of a class.</div></div>
-</div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2087763569%2FClasslikes%2F-1922595193" anchor-label="PreHook" id="2087763569%2FClasslikes%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-pre-hook/index.html"><span>Pre</span><wbr></wbr><span><span>Hook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2087763569%2FClasslikes%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-pre-hook/index.html">PreHook</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>callback<span class="token operator">: </span><span data-unresolved-link="rx.functions/Action1///PointingToDeclaration/">Action1</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="de.robv.android.xposed/XC_MethodHook///PointingToDeclaration/">XC_MethodHook</span></div><div class="brief "><p class="paragraph">Runs the specified <a href="-pre-hook/callback.html">callback</a> <strong>before</strong> the hooked <a href="https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html">Member</a></p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1617748235%2FFunctions%2F-1922595193" anchor-label="after" id="1617748235%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="after.html"><span><span>after</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1617748235%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="after.html">T</a><span class="token operator">&gt; </span><a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a><span class="token punctuation">.</span><a href="after.html"><span class="token function">after</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>paramTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>callback<span class="token operator">: </span><span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="after.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></div><div class="brief "><p class="paragraph">Adds a <a href="-hook/index.html">Hook</a> to a constructor of a class.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="after.html">T</a><span class="token operator">&gt; </span><a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a><span class="token punctuation">.</span><a href="after.html"><span class="token function">after</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">methodName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>paramTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>callback<span class="token operator">: </span><span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="after.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></div><div class="brief "><p class="paragraph">Adds a <a href="-hook/index.html">Hook</a> to a method of a class.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-825495119%2FFunctions%2F-1922595193" anchor-label="before" id="-825495119%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="before.html"><span><span>before</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-825495119%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="before.html">T</a><span class="token operator">&gt; </span><a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a><span class="token punctuation">.</span><a href="before.html"><span class="token function">before</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>paramTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>callback<span class="token operator">: </span><span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="before.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></div><div class="brief "><p class="paragraph">Adds a <a href="-pre-hook/index.html">PreHook</a> to a constructor of a class.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="before.html">T</a><span class="token operator">&gt; </span><a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a><span class="token punctuation">.</span><a href="before.html"><span class="token function">before</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">methodName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>paramTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>callback<span class="token operator">: </span><span data-unresolved-link="com.aliucord.patcher/HookCallback///PointingToDeclaration/">HookCallback</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="before.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></div><div class="brief "><p class="paragraph">Adds a <a href="-pre-hook/index.html">PreHook</a> to a method of a class.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1403095983%2FFunctions%2F-1922595193" anchor-label="component1" id="1403095983%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component1.html"><span><span>component1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1403095983%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component1.html"><span class="token function">component1</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="995260697%2FFunctions%2F-1922595193" anchor-label="component10" id="995260697%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component10.html"><span><span>component10</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995260697%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component10.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component10.html"><span class="token function">component10</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component10.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1414777528%2FFunctions%2F-1922595193" anchor-label="component11" id="1414777528%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component11.html"><span><span>component11</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1414777528%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component11.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component11.html"><span class="token function">component11</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component11.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1834294359%2FFunctions%2F-1922595193" anchor-label="component12" id="1834294359%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component12.html"><span><span>component12</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1834294359%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component12.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component12.html"><span class="token function">component12</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component12.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1822612814%2FFunctions%2F-1922595193" anchor-label="component2" id="1822612814%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component2.html"><span><span>component2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1822612814%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component2.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component2.html"><span class="token function">component2</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component2.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2052837651%2FFunctions%2F-1922595193" anchor-label="component3" id="-2052837651%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component3.html"><span><span>component3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052837651%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component3.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component3.html"><span class="token function">component3</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component3.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1633320820%2FFunctions%2F-1922595193" anchor-label="component4" id="-1633320820%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component4.html"><span><span>component4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1633320820%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component4.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component4.html"><span class="token function">component4</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component4.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1213803989%2FFunctions%2F-1922595193" anchor-label="component5" id="-1213803989%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component5.html"><span><span>component5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1213803989%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component5.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component5.html"><span class="token function">component5</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component5.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-794287158%2FFunctions%2F-1922595193" anchor-label="component6" id="-794287158%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component6.html"><span><span>component6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794287158%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component6.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component6.html"><span class="token function">component6</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component6.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-374770327%2FFunctions%2F-1922595193" anchor-label="component7" id="-374770327%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component7.html"><span><span>component7</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-374770327%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component7.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component7.html"><span class="token function">component7</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component7.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="44746504%2FFunctions%2F-1922595193" anchor-label="component8" id="44746504%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component8.html"><span><span>component8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="44746504%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component8.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component8.html"><span class="token function">component8</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component8.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="464263335%2FFunctions%2F-1922595193" anchor-label="component9" id="464263335%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="component9.html"><span><span>component9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464263335%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="component9.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="de.robv.android.xposed/XC_MethodHook.MethodHookParam///PointingToDeclaration/">XC_MethodHook.MethodHookParam</span><span class="token punctuation">.</span><a href="component9.html"><span class="token function">component9</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="component9.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-478343267%2FFunctions%2F-1922595193" anchor-label="instead" id="-478343267%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="instead.html"><span><span>instead</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-478343267%2FFunctions%2F-1922595193"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="instead.html">T</a><span class="token operator">&gt; </span><a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a><span class="token punctuation">.</span><a href="instead.html"><span class="token function">instead</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>paramTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>callback<span class="token operator">: </span><span data-unresolved-link="com.aliucord.patcher/InsteadHookCallback///PointingToDeclaration/">InsteadHookCallback</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="instead.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></div><div class="brief "><p class="paragraph">Replaces a constructor of a class.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="instead.html">T</a><span class="token operator">&gt; </span><a href="../com.aliucord.api/-patcher-a-p-i/index.html">PatcherAPI</a><span class="token punctuation">.</span><a href="instead.html"><span class="token function">instead</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">methodName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>paramTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>callback<span class="token operator">: </span><span data-unresolved-link="com.aliucord.patcher/InsteadHookCallback///PointingToDeclaration/">InsteadHookCallback</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="instead.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></div><div class="brief "><p class="paragraph">Replaces a method of a class.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-

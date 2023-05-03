@@ -2,7 +2,6 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:com.aliucord.annotations////PointingToDeclaration/-aliucord/com.aliucord.annotations/index.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin///PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/index.html
-$dokka.location:com.aliucord.annotations/AliucordPlugin/AliucordPlugin/#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/-aliucord-plugin.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin/requiresRestart/#/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/requires-restart.html
 $dokka.location:com.aliucord.api.rn.user////PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/index.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/index.html
@@ -58,6 +57,7 @@ $dokka.location:com.aliucord.api/CommandsAPI/requiredMessageOption/#/PointingToD
 $dokka.location:com.aliucord.api/CommandsAPI/unregisterAll/#/PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/unregister-all.html
 $dokka.location:com.aliucord.api/CommandsAPI/unregisterCommand/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/unregister-command.html
 $dokka.location:com.aliucord.api/NotificationsAPI///PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/index.html
+$dokka.location:com.aliucord.api/NotificationsAPI/NotificationsAPI/#/PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/-notifications-a-p-i.html
 $dokka.location:com.aliucord.api/NotificationsAPI/display/#com.aliucord.entities.NotificationData#java.lang.Long/PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/display.html
 $dokka.location:com.aliucord.api/NotificationsAPI/display/#com.aliucord.entities.NotificationData/PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/display.html
 $dokka.location:com.aliucord.api/PatcherAPI///PointingToDeclaration/-aliucord/com.aliucord.api/-patcher-a-p-i/index.html
@@ -195,6 +195,7 @@ $dokka.location:com.aliucord.entities/MessageEmbedBuilder/setVideo/#java.lang.St
 $dokka.location:com.aliucord.entities/MessageEmbedBuilder/setVideo/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-message-embed-builder/set-video.html
 $dokka.location:com.aliucord.entities/MessageEmbedBuilder/setVideo/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-message-embed-builder/set-video.html
 $dokka.location:com.aliucord.entities/NotificationData///PointingToDeclaration/-aliucord/com.aliucord.entities/-notification-data/index.html
+$dokka.location:com.aliucord.entities/NotificationData/NotificationData/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-notification-data/-notification-data.html
 $dokka.location:com.aliucord.entities/NotificationData/attachment/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-notification-data/attachment.html
 $dokka.location:com.aliucord.entities/NotificationData/attachmentBackground/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-notification-data/attachment-background.html
 $dokka.location:com.aliucord.entities/NotificationData/attachmentUrl/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-notification-data/attachment-url.html
@@ -228,8 +229,8 @@ $dokka.location:com.aliucord.entities/Plugin.Manifest/updateUrl/#/PointingToDecl
 $dokka.location:com.aliucord.entities/Plugin.Manifest/version/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-manifest/version.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-settings-page/index.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-settings-page/on-view-bound.html
-$dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type.BOTTOM_SHEET///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/-b-o-t-t-o-m_-s-h-e-e-t/index.html
-$dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type.PAGE///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/-p-a-g-e/index.html
+$dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type.BOTTOM_SHEET///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/-b-o-t-t-o-m_-s-h-e-e-t/index.html
+$dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type.PAGE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/-p-a-g-e/index.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/index.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type/valueOf/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/value-of.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type/values/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/-type/values.html
@@ -260,21 +261,23 @@ $dokka.location:com.aliucord.entities/Plugin/stop/#android.content.Context/Point
 $dokka.location:com.aliucord.entities/Plugin/unload/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/unload.html
 $dokka.location:com.aliucord.fragments////PointingToDeclaration/-aliucord/com.aliucord.fragments/index.html
 $dokka.location:com.aliucord.fragments/AppFragmentProxy///PointingToDeclaration/-aliucord/com.aliucord.fragments/-app-fragment-proxy/index.html
+$dokka.location:com.aliucord.fragments/AppFragmentProxy/AppFragmentProxy/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-app-fragment-proxy/-app-fragment-proxy.html
 $dokka.location:com.aliucord.fragments/AppFragmentProxy/getmFragment/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-app-fragment-proxy/getm-fragment.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog///PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/index.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/ConfirmDialog/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/-confirm-dialog.html
-$dokka.location:com.aliucord.fragments/ConfirmDialog/description/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/description.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/getBody/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/get-body.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/getCancelButton/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/get-cancel-button.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/getHeader/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/get-header.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/getOKButton/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/get-o-k-button.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/getRoot/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/get-root.html
-$dokka.location:com.aliucord.fragments/ConfirmDialog/isDangerous/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/is-dangerous.html
-$dokka.location:com.aliucord.fragments/ConfirmDialog/onCancelListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/on-cancel-listener.html
-$dokka.location:com.aliucord.fragments/ConfirmDialog/onOkListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/on-ok-listener.html
 $dokka.location:com.aliucord.fragments/ConfirmDialog/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/on-view-bound.html
-$dokka.location:com.aliucord.fragments/ConfirmDialog/title/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/title.html
+$dokka.location:com.aliucord.fragments/ConfirmDialog/setDescription/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/set-description.html
+$dokka.location:com.aliucord.fragments/ConfirmDialog/setIsDangerous/#boolean/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/set-is-dangerous.html
+$dokka.location:com.aliucord.fragments/ConfirmDialog/setOnCancelListener/#android.view.View.OnClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/set-on-cancel-listener.html
+$dokka.location:com.aliucord.fragments/ConfirmDialog/setOnOkListener/#android.view.View.OnClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/set-on-ok-listener.html
+$dokka.location:com.aliucord.fragments/ConfirmDialog/setTitle/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-confirm-dialog/set-title.html
 $dokka.location:com.aliucord.fragments/FragmentProxy///PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/index.html
+$dokka.location:com.aliucord.fragments/FragmentProxy/FragmentProxy/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/-fragment-proxy.html
 $dokka.location:com.aliucord.fragments/FragmentProxy/dump/#java.lang.String#java.io.FileDescriptor#java.io.PrintWriter#java.lang.String[]/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/dump.html
 $dokka.location:com.aliucord.fragments/FragmentProxy/fragments/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/fragments.html
 $dokka.location:com.aliucord.fragments/FragmentProxy/getAllowEnterTransitionOverlap/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-fragment-proxy/get-allow-enter-transition-overlap.html
@@ -361,7 +364,6 @@ $dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener///Point
 $dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener/onDialogShown/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-dialog-shown-listener/on-dialog-shown.html
 $dokka.location:com.aliucord.fragments/InputDialog///PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/index.html
 $dokka.location:com.aliucord.fragments/InputDialog/InputDialog/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/-input-dialog.html
-$dokka.location:com.aliucord.fragments/InputDialog/description/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/description.html
 $dokka.location:com.aliucord.fragments/InputDialog/getBody/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-body.html
 $dokka.location:com.aliucord.fragments/InputDialog/getCancelButton/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-cancel-button.html
 $dokka.location:com.aliucord.fragments/InputDialog/getHeader/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-header.html
@@ -369,13 +371,14 @@ $dokka.location:com.aliucord.fragments/InputDialog/getInput/#/PointingToDeclarat
 $dokka.location:com.aliucord.fragments/InputDialog/getInputLayout/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-input-layout.html
 $dokka.location:com.aliucord.fragments/InputDialog/getOKButton/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-o-k-button.html
 $dokka.location:com.aliucord.fragments/InputDialog/getRoot/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/get-root.html
-$dokka.location:com.aliucord.fragments/InputDialog/inputType/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/input-type.html
-$dokka.location:com.aliucord.fragments/InputDialog/onCancelListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-cancel-listener.html
-$dokka.location:com.aliucord.fragments/InputDialog/onDialogShownListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-dialog-shown-listener.html
-$dokka.location:com.aliucord.fragments/InputDialog/onOkListener/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-ok-listener.html
 $dokka.location:com.aliucord.fragments/InputDialog/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/on-view-bound.html
+$dokka.location:com.aliucord.fragments/InputDialog/setDescription/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-description.html
+$dokka.location:com.aliucord.fragments/InputDialog/setInputType/#int/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-input-type.html
+$dokka.location:com.aliucord.fragments/InputDialog/setOnCancelListener/#android.view.View.OnClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-on-cancel-listener.html
+$dokka.location:com.aliucord.fragments/InputDialog/setOnDialogShownListener/#com.aliucord.fragments.InputDialog.onDialogShownListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-on-dialog-shown-listener.html
+$dokka.location:com.aliucord.fragments/InputDialog/setOnOkListener/#android.view.View.OnClickListener/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-on-ok-listener.html
 $dokka.location:com.aliucord.fragments/InputDialog/setPlaceholderText/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-placeholder-text.html
-$dokka.location:com.aliucord.fragments/InputDialog/title/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/title.html
+$dokka.location:com.aliucord.fragments/InputDialog/setTitle/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.fragments/-input-dialog/set-title.html
 $dokka.location:com.aliucord.fragments/SelectDialog///PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/index.html
 $dokka.location:com.aliucord.fragments/SelectDialog/SelectDialog/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/-select-dialog.html
 $dokka.location:com.aliucord.fragments/SelectDialog/items/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-select-dialog/items.html
@@ -433,6 +436,7 @@ $dokka.location:com.aliucord.patcher/InsteadHook///PointingToDeclaration/-aliuc
 $dokka.location:com.aliucord.patcher/InsteadHook/InsteadHook/#kotlin.Function1[de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.patcher/-instead-hook/-instead-hook.html
 $dokka.location:com.aliucord.patcher/InsteadHook/callback/#/PointingToDeclaration/-aliucord/com.aliucord.patcher/-instead-hook/callback.html
 $dokka.location:com.aliucord.patcher/Patcher///PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/index.html
+$dokka.location:com.aliucord.patcher/Patcher/Patcher/#/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/-patcher.html
 $dokka.location:com.aliucord.patcher/Patcher/addPatch/#java.lang.Class<?>#java.lang.String#java.lang.Class<?>[]#de.robv.android.xposed.XC_MethodHook/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/add-patch.html
 $dokka.location:com.aliucord.patcher/Patcher/addPatch/#java.lang.String#java.lang.String#java.lang.Class<?>[]#de.robv.android.xposed.XC_MethodHook/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/add-patch.html
 $dokka.location:com.aliucord.patcher/Patcher/addPatch/#java.lang.reflect.Member#de.robv.android.xposed.XC_MethodHook/PointingToDeclaration/-aliucord/com.aliucord.patcher/-patcher/add-patch.html
@@ -475,12 +479,14 @@ $dokka.location:com.aliucord.settings/Plugins.Adapter/onSettingsClick/#int/Point
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onToggleClick/#com.aliucord.settings.Plugins.Adapter.ViewHolder#boolean#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-toggle-click.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onUninstallClick/#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-uninstall-click.html
 $dokka.location:com.aliucord.settings/Plugins///PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/index.html
+$dokka.location:com.aliucord.settings/Plugins/Plugins/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-plugins.html
 $dokka.location:com.aliucord.settings/Plugins/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/on-view-bound.html
 $dokka.location:com.aliucord.settings/SettingsDelegate///PointingToDeclaration/-aliucord/com.aliucord.settings/-settings-delegate/index.html
 $dokka.location:com.aliucord.settings/SettingsDelegate/SettingsDelegate/#TypeParam(bounds=[kotlin.Any?])#com.aliucord.api.SettingsAPI/PointingToDeclaration/-aliucord/com.aliucord.settings/-settings-delegate/-settings-delegate.html
 $dokka.location:com.aliucord.settings/SettingsDelegate/getValue/#kotlin.Any#kotlin.reflect.KProperty[*]/PointingToDeclaration/-aliucord/com.aliucord.settings/-settings-delegate/get-value.html
 $dokka.location:com.aliucord.settings/SettingsDelegate/setValue/#kotlin.Any#kotlin.reflect.KProperty[*]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-aliucord/com.aliucord.settings/-settings-delegate/set-value.html
 $dokka.location:com.aliucord.settings/Updater///PointingToDeclaration/-aliucord/com.aliucord.settings/-updater/index.html
+$dokka.location:com.aliucord.settings/Updater/Updater/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-updater/-updater.html
 $dokka.location:com.aliucord.settings/Updater/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-updater/on-view-bound.html
 $dokka.location:com.aliucord.updater////PointingToDeclaration/-aliucord/com.aliucord.updater/index.html
 $dokka.location:com.aliucord.updater/PluginUpdater.CachedData///PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-cached-data/index.html
@@ -488,6 +494,7 @@ $dokka.location:com.aliucord.updater/PluginUpdater.CachedData/CachedData/#java.u
 $dokka.location:com.aliucord.updater/PluginUpdater.CachedData/data/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-cached-data/data.html
 $dokka.location:com.aliucord.updater/PluginUpdater.CachedData/time/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-cached-data/time.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo///PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/index.html
+$dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/UpdateInfo/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/-update-info.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/build/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/build.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/changelog/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/changelog.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/changelogMedia/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/changelog-media.html
@@ -495,6 +502,7 @@ $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/minimumDiscordVers
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/sha1sum/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/sha1sum.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo/version/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-update-info/version.html
 $dokka.location:com.aliucord.updater/PluginUpdater///PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/index.html
+$dokka.location:com.aliucord.updater/PluginUpdater/PluginUpdater/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/-plugin-updater.html
 $dokka.location:com.aliucord.updater/PluginUpdater/cache/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/cache.html
 $dokka.location:com.aliucord.updater/PluginUpdater/checkPluginUpdate/#com.aliucord.entities.Plugin/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/check-plugin-update.html
 $dokka.location:com.aliucord.updater/PluginUpdater/checkUpdates/#boolean/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/check-updates.html
@@ -505,6 +513,9 @@ $dokka.location:com.aliucord.updater/PluginUpdater/updateAll/#/PointingToDeclara
 $dokka.location:com.aliucord.updater/PluginUpdater/updated/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/updated.html
 $dokka.location:com.aliucord.updater/PluginUpdater/updates/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-plugin-updater/updates.html
 $dokka.location:com.aliucord.updater/Updater///PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/index.html
+$dokka.location:com.aliucord.updater/Updater/Updater/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/-updater.html
+$dokka.location:com.aliucord.updater/Updater/isAliucordOutdated/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/is-aliucord-outdated.html
+$dokka.location:com.aliucord.updater/Updater/isDiscordOutdated/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/is-discord-outdated.html
 $dokka.location:com.aliucord.updater/Updater/isOutdated/#java.lang.String#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/is-outdated.html
 $dokka.location:com.aliucord.updater/Updater/isUpdaterDisabled/#/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/is-updater-disabled.html
 $dokka.location:com.aliucord.updater/Updater/updateAliucord/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.updater/-updater/update-aliucord.html
@@ -522,6 +533,7 @@ $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/writeToParcel/#an
 $dokka.location:com.aliucord.utils/ChangelogUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/index.html
 $dokka.location:com.aliucord.utils/ChangelogUtils/show/#android.content.Context#kotlin.String#kotlin.String?#kotlin.String#kotlin.Array[com.aliucord.utils.ChangelogUtils.FooterAction]/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/show.html
 $dokka.location:com.aliucord.utils/ChannelUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/index.html
+$dokka.location:com.aliucord.utils/ChannelUtils/ChannelUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/-channel-utils.html
 $dokka.location:com.aliucord.utils/ChannelUtils/getDMRecipient/#com.discord.api.channel.Channel/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/get-d-m-recipient.html
 $dokka.location:com.aliucord.utils/ChannelUtils/getDisplayName/#com.discord.api.channel.Channel/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/get-display-name.html
 $dokka.location:com.aliucord.utils/ChannelUtils/getDisplayNameOrDefault/#com.discord.api.channel.Channel#android.content.Context#boolean/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/get-display-name-or-default.html
@@ -549,6 +561,7 @@ $dokka.location:com.aliucord.utils/GsonUtils/toJson/#kotlin.Any?/PointingToDecla
 $dokka.location:com.aliucord.utils/GsonUtils/toJson/com.google.gson.Gson#kotlin.Any?/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/to-json.html
 $dokka.location:com.aliucord.utils/GsonUtils/toJsonPretty/#kotlin.Any?/PointingToDeclaration/-aliucord/com.aliucord.utils/-gson-utils/to-json-pretty.html
 $dokka.location:com.aliucord.utils/IOUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/index.html
+$dokka.location:com.aliucord.utils/IOUtils/IOUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/-i-o-utils.html
 $dokka.location:com.aliucord.utils/IOUtils/pipe/#java.io.InputStream#java.io.OutputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/pipe.html
 $dokka.location:com.aliucord.utils/IOUtils/readAsText/#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/read-as-text.html
 $dokka.location:com.aliucord.utils/IOUtils/readBytes/#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/read-bytes.html
@@ -559,10 +572,12 @@ $dokka.location:com.aliucord.utils/MDUtils.RenderContext///PointingToDeclaration
 $dokka.location:com.aliucord.utils/MDUtils.RenderContext/RenderContext/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/-render-context/-render-context.html
 $dokka.location:com.aliucord.utils/MDUtils.RenderContext/context/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/-render-context/context.html
 $dokka.location:com.aliucord.utils/MDUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/index.html
+$dokka.location:com.aliucord.utils/MDUtils/MDUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/-m-d-utils.html
 $dokka.location:com.aliucord.utils/MDUtils/parser/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/parser.html
 $dokka.location:com.aliucord.utils/MDUtils/render/#java.lang.CharSequence/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/render.html
 $dokka.location:com.aliucord.utils/MDUtils/renderCodeBlock/#android.content.Context#android.text.SpannableStringBuilder#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.utils/-m-d-utils/render-code-block.html
 $dokka.location:com.aliucord.utils/MapUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/index.html
+$dokka.location:com.aliucord.utils/MapUtils/MapUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/-map-utils.html
 $dokka.location:com.aliucord.utils/MapUtils/getMapKey/#java.util.Map<K,V>#V/PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/get-map-key.html
 $dokka.location:com.aliucord.utils/RNSuperProperties///PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/index.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/superProperties/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties.html
@@ -572,6 +587,7 @@ $dokka.location:com.aliucord.utils/RNSuperProperties/vendorId/#/PointingToDeclar
 $dokka.location:com.aliucord.utils/RNSuperProperties/versionCode/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/version-code.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/versionString/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/version-string.html
 $dokka.location:com.aliucord.utils/ReflectUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/index.html
+$dokka.location:com.aliucord.utils/ReflectUtils/ReflectUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/-reflect-utils.html
 $dokka.location:com.aliucord.utils/ReflectUtils/allocateInstance/#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/allocate-instance.html
 $dokka.location:com.aliucord.utils/ReflectUtils/getConstructorByArgs/#java.lang.Class<T>#java.lang.Object.../PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/get-constructor-by-args.html
 $dokka.location:com.aliucord.utils/ReflectUtils/getField/#java.lang.Class<?>#java.lang.Object#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.utils/-reflect-utils/get-field.html
@@ -625,6 +641,7 @@ $dokka.location:com.aliucord.views/ToolbarButton/setImageDrawable/#android.graph
 $dokka.location:com.aliucord.views/ToolbarButton/setImageDrawable/#android.graphics.drawable.Drawable/PointingToDeclaration/-aliucord/com.aliucord.views/-toolbar-button/set-image-drawable.html
 $dokka.location:com.aliucord.widgets////PointingToDeclaration/-aliucord/com.aliucord.widgets/index.html
 $dokka.location:com.aliucord.widgets/BottomSheet///PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/index.html
+$dokka.location:com.aliucord.widgets/BottomSheet/BottomSheet/#/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/-bottom-sheet.html
 $dokka.location:com.aliucord.widgets/BottomSheet/addView/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/add-view.html
 $dokka.location:com.aliucord.widgets/BottomSheet/clear/#/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/clear.html
 $dokka.location:com.aliucord.widgets/BottomSheet/getContentViewResId/#/PointingToDeclaration/-aliucord/com.aliucord.widgets/-bottom-sheet/get-content-view-res-id.html
@@ -1036,6 +1053,7 @@ $dokka.location:com.aliucord.wrappers/PermissionOverwriteWrapper/raw/#/PointingT
 $dokka.location:com.aliucord.wrappers/PermissionOverwriteWrapper/type/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-permission-overwrite-wrapper/type.html
 $dokka.location:com.aliucord////PointingToDeclaration/-aliucord/com.aliucord/index.html
 $dokka.location:com.aliucord/CollectionUtils///PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/index.html
+$dokka.location:com.aliucord/CollectionUtils/CollectionUtils/#/PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/-collection-utils.html
 $dokka.location:com.aliucord/CollectionUtils/every/#java.util.Collection<E>#kotlin.jvm.functions.Function1<E,java.lang.Boolean>/PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/every.html
 $dokka.location:com.aliucord/CollectionUtils/filter/#java.util.Collection<E>#kotlin.jvm.functions.Function1<E,java.lang.Boolean>/PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/filter.html
 $dokka.location:com.aliucord/CollectionUtils/find/#java.util.Collection<E>#kotlin.jvm.functions.Function1<E,java.lang.Boolean>/PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/find.html
@@ -1049,6 +1067,7 @@ $dokka.location:com.aliucord/CollectionUtils/some/#java.util.Collection<E>#kotli
 $dokka.location:com.aliucord/CollectionUtils/splice/#java.util.List<E>#int#int#E.../PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/splice.html
 $dokka.location:com.aliucord/CollectionUtils/splice/#java.util.List<E>#int/PointingToDeclaration/-aliucord/com.aliucord/-collection-utils/splice.html
 $dokka.location:com.aliucord/Constants.Fonts///PointingToDeclaration/-aliucord/com.aliucord/-constants/-fonts/index.html
+$dokka.location:com.aliucord/Constants.Fonts/Fonts/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-fonts/-fonts.html
 $dokka.location:com.aliucord/Constants.Fonts/ginto_bold/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-fonts/ginto_bold.html
 $dokka.location:com.aliucord/Constants.Fonts/ginto_medium/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-fonts/ginto_medium.html
 $dokka.location:com.aliucord/Constants.Fonts/ginto_regular/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-fonts/ginto_regular.html
@@ -1059,6 +1078,7 @@ $dokka.location:com.aliucord/Constants.Fonts/whitney_medium/#/PointingToDeclarat
 $dokka.location:com.aliucord/Constants.Fonts/whitney_semibold/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-fonts/whitney_semibold.html
 $dokka.location:com.aliucord/Constants.Icons///PointingToDeclaration/-aliucord/com.aliucord/-constants/-icons/index.html
 $dokka.location:com.aliucord/Constants.Icons/CLYDE/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-icons/-c-l-y-d-e.html
+$dokka.location:com.aliucord/Constants.Icons/Icons/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-icons/-icons.html
 $dokka.location:com.aliucord/Constants///PointingToDeclaration/-aliucord/com.aliucord/-constants/index.html
 $dokka.location:com.aliucord/Constants/ALIUCORD_GITHUB_REPO/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-a-l-i-u-c-o-r-d_-g-i-t-h-u-b_-r-e-p-o.html
 $dokka.location:com.aliucord/Constants/ALIUCORD_GUILD_ID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-a-l-i-u-c-o-r-d_-g-u-i-l-d_-i-d.html
@@ -1066,6 +1086,7 @@ $dokka.location:com.aliucord/Constants/ALIUCORD_PATREON/#/PointingToDeclaration/
 $dokka.location:com.aliucord/Constants/ALIUCORD_SUPPORT/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-a-l-i-u-c-o-r-d_-s-u-p-p-o-r-t.html
 $dokka.location:com.aliucord/Constants/BASE_PATH/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-b-a-s-e_-p-a-t-h.html
 $dokka.location:com.aliucord/Constants/CRASHLOGS_PATH/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-c-r-a-s-h-l-o-g-s_-p-a-t-h.html
+$dokka.location:com.aliucord/Constants/Constants/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-constants.html
 $dokka.location:com.aliucord/Constants/DISCORD_VERSION/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-d-i-s-c-o-r-d_-v-e-r-s-i-o-n.html
 $dokka.location:com.aliucord/Constants/NAMESPACE_ANDROID/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-n-a-m-e-s-p-a-c-e_-a-n-d-r-o-i-d.html
 $dokka.location:com.aliucord/Constants/NAMESPACE_APP/#/PointingToDeclaration/-aliucord/com.aliucord/-constants/-n-a-m-e-s-p-a-c-e_-a-p-p.html
@@ -1110,6 +1131,7 @@ $dokka.location:com.aliucord/Http.Request/conn/#/PointingToDeclaration/-aliucor
 $dokka.location:com.aliucord/Http.Request/execute/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute.html
 $dokka.location:com.aliucord/Http.Request/executeWithBody/#byte[]/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-body.html
 $dokka.location:com.aliucord/Http.Request/executeWithBody/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-body.html
+$dokka.location:com.aliucord/Http.Request/executeWithJson/#com.google.gson.Gson#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-json.html
 $dokka.location:com.aliucord/Http.Request/executeWithJson/#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-json.html
 $dokka.location:com.aliucord/Http.Request/executeWithMultipartForm/#java.util.Map<java.lang.String,java.lang.Object>#boolean/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-multipart-form.html
 $dokka.location:com.aliucord/Http.Request/executeWithMultipartForm/#java.util.Map<java.lang.String,java.lang.Object>/PointingToDeclaration/-aliucord/com.aliucord/-http/-request/execute-with-multipart-form.html
@@ -1128,6 +1150,8 @@ $dokka.location:com.aliucord/Http.Response/Response/#com.aliucord.Http.Request/P
 $dokka.location:com.aliucord/Http.Response/assertOk/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/assert-ok.html
 $dokka.location:com.aliucord/Http.Response/close/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/close.html
 $dokka.location:com.aliucord/Http.Response/getBytes/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/get-bytes.html
+$dokka.location:com.aliucord/Http.Response/json/#com.google.gson.Gson#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
+$dokka.location:com.aliucord/Http.Response/json/#com.google.gson.Gson#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/json/#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/json/#java.lang.reflect.Type/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/json.html
 $dokka.location:com.aliucord/Http.Response/ok/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/ok.html
@@ -1139,6 +1163,7 @@ $dokka.location:com.aliucord/Http.Response/statusMessage/#/PointingToDeclaration
 $dokka.location:com.aliucord/Http.Response/stream/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/stream.html
 $dokka.location:com.aliucord/Http.Response/text/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-response/text.html
 $dokka.location:com.aliucord/Http///PointingToDeclaration/-aliucord/com.aliucord/-http/index.html
+$dokka.location:com.aliucord/Http/Http/#/PointingToDeclaration/-aliucord/com.aliucord/-http/-http.html
 $dokka.location:com.aliucord/Http/simpleDownload/#java.lang.String#java.io.File/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-download.html
 $dokka.location:com.aliucord/Http/simpleGet/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-get.html
 $dokka.location:com.aliucord/Http/simpleJsonGet/#java.lang.String#java.lang.Class<T>/PointingToDeclaration/-aliucord/com.aliucord/-http/simple-json-get.html
@@ -1164,6 +1189,7 @@ $dokka.location:com.aliucord/Logger/module/#/PointingToDeclaration/-aliucord/co
 $dokka.location:com.aliucord/Logger/verbose/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-logger/verbose.html
 $dokka.location:com.aliucord/Logger/warn/#kotlin.String#kotlin.Throwable?/PointingToDeclaration/-aliucord/com.aliucord/-logger/warn.html
 $dokka.location:com.aliucord/Main///PointingToDeclaration/-aliucord/com.aliucord/-main/index.html
+$dokka.location:com.aliucord/Main/Main/#/PointingToDeclaration/-aliucord/com.aliucord/-main/-main.html
 $dokka.location:com.aliucord/Main/init/#com.discord.app.AppActivity/PointingToDeclaration/-aliucord/com.aliucord/-main/init.html
 $dokka.location:com.aliucord/Main/initialized/#/PointingToDeclaration/-aliucord/com.aliucord/-main/initialized.html
 $dokka.location:com.aliucord/Main/logger/#/PointingToDeclaration/-aliucord/com.aliucord/-main/logger.html
@@ -1171,6 +1197,7 @@ $dokka.location:com.aliucord/Main/preInit/#com.discord.app.AppActivity/PointingT
 $dokka.location:com.aliucord/Main/preInitialized/#/PointingToDeclaration/-aliucord/com.aliucord/-main/pre-initialized.html
 $dokka.location:com.aliucord/Main/settings/#/PointingToDeclaration/-aliucord/com.aliucord/-main/settings.html
 $dokka.location:com.aliucord/PluginManager///PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/index.html
+$dokka.location:com.aliucord/PluginManager/PluginManager/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/-plugin-manager.html
 $dokka.location:com.aliucord/PluginManager/classLoaders/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/class-loaders.html
 $dokka.location:com.aliucord/PluginManager/disablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/disable-plugin.html
 $dokka.location:com.aliucord/PluginManager/enablePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/enable-plugin.html
@@ -1186,11 +1213,6 @@ $dokka.location:com.aliucord/PluginManager/startPlugin/#java.lang.String/Pointin
 $dokka.location:com.aliucord/PluginManager/stopPlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/stop-plugin.html
 $dokka.location:com.aliucord/PluginManager/togglePlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/toggle-plugin.html
 $dokka.location:com.aliucord/PluginManager/unloadPlugin/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/unload-plugin.html
-$dokka.location:com.aliucord/SettingsUtils///PointingToDeclaration/-aliucord/com.aliucord/-settings-utils/index.html
-$dokka.location:com.aliucord/SettingsUtils/getAll/#/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils/get-all.html
-$dokka.location:com.aliucord/SettingsUtils/remove/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils/remove.html
-$dokka.location:com.aliucord/SettingsUtilsJSON.Companion///PointingToDeclaration/-aliucord/com.aliucord/-settings-utils-j-s-o-n/-companion/index.html
-$dokka.location:com.aliucord/SettingsUtilsJSON.Companion/migrateAliucordSettings/#com.aliucord.SettingsUtilsJSON/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils-j-s-o-n/-companion/migrate-aliucord-settings.html
 $dokka.location:com.aliucord/SettingsUtilsJSON///PointingToDeclaration/-aliucord/com.aliucord/-settings-utils-j-s-o-n/index.html
 $dokka.location:com.aliucord/SettingsUtilsJSON/SettingsUtilsJSON/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils-j-s-o-n/-settings-utils-j-s-o-n.html
 $dokka.location:com.aliucord/SettingsUtilsJSON/exists/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-settings-utils-j-s-o-n/exists.html
@@ -1245,14 +1267,17 @@ $dokka.location:com.aliucord/Utils/tintToTheme/#android.graphics.drawable.Drawab
 $dokka.location:com.aliucord/Utils/widgetChatList/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/widget-chat-list.html
 $dokka.location:com.discord.widgets.chat.input////PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/index.html
 $dokka.location:com.discord.widgets.chat.input/WidgetChatInput$configureSendListeners$7$1///PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/-widget-chat-input$configure-send-listeners$7$1/index.html
+$dokka.location:com.discord.widgets.chat.input/WidgetChatInput$configureSendListeners$7$1/WidgetChatInput$configureSendListeners$7$1/#/PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/-widget-chat-input$configure-send-listeners$7$1/-widget-chat-input$configure-send-listeners$7$1.html
 $dokka.location:com.discord.widgets.chat.input/WidgetChatInput$configureSendListeners$7$1/this$0/#/PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/-widget-chat-input$configure-send-listeners$7$1/this$0.html
 $dokka.location:com.discord.widgets.guilds.leave////PointingToDeclaration/-aliucord/com.discord.widgets.guilds.leave/index.html
 $dokka.location:com.discord.widgets.guilds.leave/WidgetLeaveGuildDialog$binding$2///PointingToDeclaration/-aliucord/com.discord.widgets.guilds.leave/-widget-leave-guild-dialog$binding$2/index.html
 $dokka.location:com.discord.widgets.guilds.leave/WidgetLeaveGuildDialog$binding$2/INSTANCE/#/PointingToDeclaration/-aliucord/com.discord.widgets.guilds.leave/-widget-leave-guild-dialog$binding$2/-i-n-s-t-a-n-c-e.html
+$dokka.location:com.discord.widgets.guilds.leave/WidgetLeaveGuildDialog$binding$2/WidgetLeaveGuildDialog$binding$2/#/PointingToDeclaration/-aliucord/com.discord.widgets.guilds.leave/-widget-leave-guild-dialog$binding$2/-widget-leave-guild-dialog$binding$2.html
 $dokka.location:com.discord.widgets.guilds.leave/WidgetLeaveGuildDialog$binding$2/invoke/#android.view.View/PointingToDeclaration/-aliucord/com.discord.widgets.guilds.leave/-widget-leave-guild-dialog$binding$2/invoke.html
 $dokka.location:com.discord.widgets.user////PointingToDeclaration/-aliucord/com.discord.widgets.user/index.html
 $dokka.location:com.discord.widgets.user/WidgetKickUser$binding$2///PointingToDeclaration/-aliucord/com.discord.widgets.user/-widget-kick-user$binding$2/index.html
 $dokka.location:com.discord.widgets.user/WidgetKickUser$binding$2/INSTANCE/#/PointingToDeclaration/-aliucord/com.discord.widgets.user/-widget-kick-user$binding$2/-i-n-s-t-a-n-c-e.html
+$dokka.location:com.discord.widgets.user/WidgetKickUser$binding$2/WidgetKickUser$binding$2/#/PointingToDeclaration/-aliucord/com.discord.widgets.user/-widget-kick-user$binding$2/-widget-kick-user$binding$2.html
 $dokka.location:com.discord.widgets.user/WidgetKickUser$binding$2/invoke/#android.view.View/PointingToDeclaration/-aliucord/com.discord.widgets.user/-widget-kick-user$binding$2/invoke.html
 com.aliucord
 com.aliucord.annotations

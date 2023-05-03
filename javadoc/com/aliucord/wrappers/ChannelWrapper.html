@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
     <link rel="stylesheet" type="text/css" href="../../../dokka-javadoc-stylesheet.css" title="Style">
     <link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui.css" title="Style">
-    <script type="text/javascript" src="../../../jquery/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../../../jquery/jquery-migrate-3.0.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-migrate-3.4.0.min.js"></script>
     <script type="text/javascript" src="../../../jquery/jquery-ui.js"></script>
 
     <script type="text/javascript" src="../../../search.js"></script>
@@ -88,7 +88,7 @@ var pathtoroot = "../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.aliucord.wrappers</a></div>
         <h2 title="Class ChannelWrapper" class="title">Class ChannelWrapper</h2>
     </div>
     <div class="contentContainer">
@@ -103,6 +103,13 @@ var pathtoroot = "../../../";
         <div class="description">
             <ul class="blockList">
                 <li class="blockList">
+                    
+                    <dl>
+                        <dt>All Implemented Interfaces:</dt>
+                        <dd>
+                            
+                        </dd>
+                    </dl>
                     
                     <hr>
                     <pre class="wrap-overflow">
@@ -344,6 +351,12 @@ public final class <span class="typeNameLabel"><a href=ChannelWrapper.html>Chann
                                             <td class="colLast"></td>
                                         </tr>
                                         
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public final static <a href=ChannelWrapper.Companion.html>ChannelWrapper.Companion</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=ChannelWrapper.html#Companion>Companion</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
                                     </table>
                                 </div>
                             </li>
@@ -370,7 +383,7 @@ public final class <span class="typeNameLabel"><a href=ChannelWrapper.html>Chann
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#ChannelWrapper(Channel)">ChannelWrapper</a></span>(Channel channel)</code></th>
+                                                        href="#ChannelWrapper(com.discord.api.channel.Channel)">ChannelWrapper</a></span>(Channel channel)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -383,6 +396,24 @@ public final class <span class="typeNameLabel"><a href=ChannelWrapper.html>Chann
                     </section>
                     
                     <!-- =========== ENUM CONSTANT SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="enum.constant.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Enum Constant Summary</h3>
+                                <table class="memberSummary">
+                                    <caption><span>Enum Constants</span><span class="tabEnd">&nbsp;</span></caption>
+                                    <tr>
+                                        <th class="colFirst" scope="col">Enum Constant</th>
+                                        <th class="colLast" scope="col">Description</th>
+                                    </tr>
+                                    
+                                </table>
+                            </li>
+                        </ul>
+                    </section>
                     
                     <!-- ========== METHOD SUMMARY =========== -->
                     
@@ -669,6 +700,22 @@ public final class <span class="typeNameLabel"><a href=ChannelWrapper.html>Chann
                                             <td class="colLast"></td>
                                         </tr>
                                         
+                                        <tr id="i33" class="rowColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=ChannelWrapper.html#isDM(com.discord.api.channel.Channel)>isDM</a>(Channel $self) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i34" class="altColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=ChannelWrapper.html#isGuild(com.discord.api.channel.Channel)>isGuild</a>(Channel $self) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -700,7 +747,7 @@ public final class <span class="typeNameLabel"><a href=ChannelWrapper.html>Chann
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="ChannelWrapper(Channel)"></a>
+                                <a name="ChannelWrapper(com.discord.api.channel.Channel)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>ChannelWrapper</h4>
@@ -1207,11 +1254,41 @@ public final class <span class="typeNameLabel"><a href=ChannelWrapper.html>Chann
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>isGuild</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=ChannelWrapper.html#isGuild()>isGuild</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isDM(com.discord.api.channel.Channel)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isDM</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=ChannelWrapper.html#isDM(com.discord.api.channel.Channel)>isDM</a>(Channel $self)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isGuild(com.discord.api.channel.Channel)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isGuild</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=ChannelWrapper.html#isGuild(com.discord.api.channel.Channel)>isGuild</a>(Channel $self)</pre>
                                         <div class="block"></div>
                                         
                                         <!-- TODO missing return annotation -->

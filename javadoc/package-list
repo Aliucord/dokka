@@ -9,12 +9,10 @@ $dokka.location:com.aliucord.entities/Plugin.SettingsTab.SettingsPage///Pointing
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab.Type///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.Type.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab///PointingToDeclaration/com/aliucord/entities/Plugin.SettingsTab.html
 $dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener///PointingToDeclaration/com/aliucord/fragments/InputDialog.onDialogShownListener.html
-$dokka.location:com.aliucord.patcher/InsteadHook.Companion///PointingToDeclaration/com/aliucord/patcher/InsteadHook.Companion.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.ViewHolder.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.html
 $dokka.location:com.aliucord.updater/PluginUpdater.CachedData///PointingToDeclaration/com/aliucord/updater/PluginUpdater.CachedData.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo///PointingToDeclaration/com/aliucord/updater/PluginUpdater.UpdateInfo.html
-$dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction.Companion///PointingToDeclaration/com/aliucord/utils/ChangelogUtils.FooterAction.Companion.html
 $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction///PointingToDeclaration/com/aliucord/utils/ChangelogUtils.FooterAction.html
 $dokka.location:com.aliucord.utils/MDUtils.RenderContext///PointingToDeclaration/com/aliucord/utils/MDUtils.RenderContext.html
 $dokka.location:com.aliucord.wrappers.embeds/AuthorWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/embeds/AuthorWrapper.Companion.html
@@ -40,7 +38,6 @@ $dokka.location:com.aliucord/Http.MultiPartBuilder///PointingToDeclaration/com/
 $dokka.location:com.aliucord/Http.QueryBuilder///PointingToDeclaration/com/aliucord/Http.QueryBuilder.html
 $dokka.location:com.aliucord/Http.Request///PointingToDeclaration/com/aliucord/Http.Request.html
 $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord/Http.Response.html
-$dokka.location:com.aliucord/SettingsUtilsJSON.Companion///PointingToDeclaration/com/aliucord/SettingsUtilsJSON.Companion.html
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
