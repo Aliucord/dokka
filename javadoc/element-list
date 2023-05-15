@@ -2,6 +2,7 @@ $dokka.format:javadoc-v1
 $dokka.linkExtension:html
 $dokka.location:com.aliucord.api/ButtonsAPI.ButtonData///PointingToDeclaration/com/aliucord/api/ButtonsAPI.ButtonData.html
 $dokka.location:com.aliucord.api/CommandsAPI.CommandResult///PointingToDeclaration/com/aliucord/api/CommandsAPI.CommandResult.html
+$dokka.location:com.aliucord.api/GatewayAPI.EventListener///PointingToDeclaration/com/aliucord/api/GatewayAPI.EventListener.html
 $dokka.location:com.aliucord.entities/CommandContext.RequiredArgumentWasNullException///PointingToDeclaration/com/aliucord/entities/CommandContext.RequiredArgumentWasNullException.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest.Author///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.Author.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.html

@@ -56,6 +56,15 @@ $dokka.location:com.aliucord.api/CommandsAPI/registerCommand/#java.lang.String#j
 $dokka.location:com.aliucord.api/CommandsAPI/requiredMessageOption/#/PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/required-message-option.html
 $dokka.location:com.aliucord.api/CommandsAPI/unregisterAll/#/PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/unregister-all.html
 $dokka.location:com.aliucord.api/CommandsAPI/unregisterCommand/#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.api/-commands-a-p-i/unregister-command.html
+$dokka.location:com.aliucord.api/GatewayAPI.EventListener///PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/-event-listener/index.html
+$dokka.location:com.aliucord.api/GatewayAPI.EventListener/invoke/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/-event-listener/invoke.html
+$dokka.location:com.aliucord.api/GatewayAPI///PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/index.html
+$dokka.location:com.aliucord.api/GatewayAPI/eventListeners/#/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/event-listeners.html
+$dokka.location:com.aliucord.api/GatewayAPI/onEvent/#kotlin.String#java.lang.Class[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/on-event.html
+$dokka.location:com.aliucord.api/GatewayAPI/onEvent/#kotlin.String#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/on-event.html
+$dokka.location:com.aliucord.api/GatewayAPI/onRawEvent/#com.aliucord.api.GatewayAPI.EventListener[kotlin.String]/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/on-raw-event.html
+$dokka.location:com.aliucord.api/GatewayAPI/onRawEvent/#kotlin.String#kotlin.Function1[kotlin.String,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/on-raw-event.html
+$dokka.location:com.aliucord.api/GatewayAPI/onRawEvent/#kotlin.collections.List[kotlin.String]#kotlin.Function1[kotlin.String,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.api/-gateway-a-p-i/on-raw-event.html
 $dokka.location:com.aliucord.api/NotificationsAPI///PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/index.html
 $dokka.location:com.aliucord.api/NotificationsAPI/NotificationsAPI/#/PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/-notifications-a-p-i.html
 $dokka.location:com.aliucord.api/NotificationsAPI/display/#com.aliucord.entities.NotificationData#java.lang.Long/PointingToDeclaration/-aliucord/com.aliucord.api/-notifications-a-p-i/display.html
