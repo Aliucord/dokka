@@ -4,6 +4,9 @@ $dokka.location:com.aliucord.annotations////PointingToDeclaration/-aliucord/com
 $dokka.location:com.aliucord.annotations/AliucordPlugin///PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/index.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin/requiresRestart/#/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/requires-restart.html
 $dokka.location:com.aliucord.api.rn.user////PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/index.html
+$dokka.location:com.aliucord.api.rn.user/RNUser///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/index.html
+$dokka.location:com.aliucord.api.rn.user/RNUser/RNUser/#kotlin.Long#kotlin.String#com.discord.nullserializable.NullSerializable[kotlin.String]?#com.discord.nullserializable.NullSerializable[*]?#kotlin.String#kotlin.Int?#kotlin.Int?#kotlin.Boolean?#kotlin.Boolean?#kotlin.String?#kotlin.String?#kotlin.Boolean?#kotlin.String?#com.discord.api.user.NsfwAllowance?#kotlin.Boolean?#com.discord.api.user.Phone?#kotlin.String?#com.discord.api.premium.PremiumTier?#kotlin.Int?#com.discord.api.guildmember.GuildMember?#com.discord.nullserializable.NullSerializable[*]?#com.discord.nullserializable.NullSerializable[*]?#kotlin.Int#kotlin.String?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/-r-n-user.html
+$dokka.location:com.aliucord.api.rn.user/RNUser/globalName/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/global-name.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/index.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile/RNUserProfile/#com.aliucord.api.rn.user.UserProfileData?#com.aliucord.api.rn.user.UserProfileData/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/-r-n-user-profile.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile/guildMemberProfile/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/guild-member-profile.html
@@ -101,6 +104,9 @@ $dokka.location:com.aliucord.api/SettingsAPI/setString/#java.lang.String#java.la
 $dokka.location:com.aliucord.api/SettingsAPI/setUnknown/#java.lang.String#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-unknown.html
 $dokka.location:com.aliucord.api/SettingsAPI/toggleBool/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/toggle-bool.html
 $dokka.location:com.aliucord.coreplugins.rn////PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/index.html
+$dokka.location:com.aliucord.coreplugins.rn//globalNames/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/global-names.html
+$dokka.location:com.aliucord.coreplugins.rn//patchNextCallAdapter/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-next-call-adapter.html
+$dokka.location:com.aliucord.coreplugins.rn//patchUser/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
 $dokka.location:com.aliucord.coreplugins.rn/RNAPI///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/index.html
 $dokka.location:com.aliucord.coreplugins.rn/RNAPI/RNAPI/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/-r-n-a-p-i.html
