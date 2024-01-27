@@ -110,6 +110,7 @@ $dokka.location:com.aliucord.coreplugins.rn//patchDefaultAvatars/#/PointingToDec
 $dokka.location:com.aliucord.coreplugins.rn//patchNextCallAdapter/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-next-call-adapter.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUser/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
+$dokka.location:com.aliucord.coreplugins.rn//patchUsername/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-username.html
 $dokka.location:com.aliucord.coreplugins.rn/RNAPI///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/index.html
 $dokka.location:com.aliucord.coreplugins.rn/RNAPI/RNAPI/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/-r-n-a-p-i.html
 $dokka.location:com.aliucord.coreplugins.rn/RNAPI/load/#android.content.Context?/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-a-p-i/load.html
