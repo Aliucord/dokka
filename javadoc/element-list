@@ -43,6 +43,8 @@ com.aliucord
 com.aliucord.annotations
 com.aliucord.api
 com.aliucord.api.rn.channel
+com.aliucord.api.rn.guildmember
+com.aliucord.api.rn.message
 com.aliucord.api.rn.models.message
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
@@ -59,6 +61,8 @@ com.aliucord.wrappers
 com.aliucord.wrappers.embeds
 com.aliucord.wrappers.messages
 com.aliucord.wrappers.stickers
+com.discord.api.guildmember
+com.discord.api.user
 com.discord.widgets.chat.input
 com.discord.widgets.guilds.leave
 com.discord.widgets.user

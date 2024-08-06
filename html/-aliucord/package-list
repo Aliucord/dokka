@@ -7,12 +7,28 @@ $dokka.location:com.aliucord.api.rn.channel////PointingToDeclaration/-aliucord/
 $dokka.location:com.aliucord.api.rn.channel/RNChannel///PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/-r-n-channel/index.html
 $dokka.location:com.aliucord.api.rn.channel/RNChannel/RNChannel/#kotlin.String?#kotlin.Int#kotlin.Long#kotlin.String?#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.collections.List[kotlin.Long]?#kotlin.collections.List[com.aliucord.api.rn.user.RNUser]?#kotlin.Int#kotlin.collections.List[com.discord.api.permission.PermissionOverwrite]?#kotlin.Int#kotlin.Int#kotlin.String?#kotlin.Long#kotlin.Long#kotlin.collections.List[com.discord.api.channel.ChannelRecipientNick]?#kotlin.Boolean#kotlin.Long#kotlin.String?#kotlin.Int#kotlin.Int?#kotlin.String?#kotlin.Long?#com.discord.api.guildhash.GuildHashes?#kotlin.collections.List[com.discord.api.channel.ForumTag]?#kotlin.collections.List[kotlin.Long]?#com.discord.api.thread.ThreadMetadata?#kotlin.Int?#kotlin.Int?#kotlin.collections.List[kotlin.Long]?#com.discord.api.thread.ThreadMember?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/-r-n-channel/-r-n-channel.html
 $dokka.location:com.aliucord.api.rn.channel/RNChannel/recipients/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/-r-n-channel/recipients.html
+$dokka.location:com.aliucord.api.rn.guildmember////PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/index.html
+$dokka.location:com.aliucord.api.rn.guildmember/RNGuildMember///PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/-r-n-guild-member/index.html
+$dokka.location:com.aliucord.api.rn.guildmember/RNGuildMember/RNGuildMember/#kotlin.Long#com.aliucord.api.rn.user.RNUser#kotlin.collections.List[kotlin.Long]#kotlin.String?#kotlin.String?#com.discord.api.utcdatetime.UtcDateTime?#kotlin.Boolean#com.discord.api.presence.Presence?#kotlin.Long?#kotlin.String?#kotlin.String?#kotlin.String?#com.discord.api.utcdatetime.UtcDateTime?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/-r-n-guild-member/-r-n-guild-member.html
+$dokka.location:com.aliucord.api.rn.guildmember/RNGuildMember/user/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/-r-n-guild-member/user.html
+$dokka.location:com.aliucord.api.rn.guildmember/RNGuildMembersChunk///PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/-r-n-guild-members-chunk/index.html
+$dokka.location:com.aliucord.api.rn.guildmember/RNGuildMembersChunk/RNGuildMembersChunk/#kotlin.collections.List[com.aliucord.api.rn.guildmember.RNGuildMember]/PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/-r-n-guild-members-chunk/-r-n-guild-members-chunk.html
+$dokka.location:com.aliucord.api.rn.guildmember/RNGuildMembersChunk/members/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.guildmember/-r-n-guild-members-chunk/members.html
+$dokka.location:com.aliucord.api.rn.message////PointingToDeclaration/-aliucord/com.aliucord.api.rn.message/index.html
+$dokka.location:com.aliucord.api.rn.message/RNMessage///PointingToDeclaration/-aliucord/com.aliucord.api.rn.message/-r-n-message/index.html
+$dokka.location:com.aliucord.api.rn.message/RNMessage/RNMessage/#kotlin.Long#kotlin.Long#com.aliucord.api.rn.user.RNUser?#kotlin.String?#com.discord.api.utcdatetime.UtcDateTime?#com.discord.api.utcdatetime.UtcDateTime?#kotlin.Boolean?#kotlin.Boolean?#kotlin.collections.List[com.aliucord.api.rn.user.RNUser]?#kotlin.collections.List[kotlin.Long]?#kotlin.collections.List[com.discord.api.message.attachment.MessageAttachment]?#kotlin.collections.List[com.discord.api.message.embed.MessageEmbed]?#kotlin.collections.List[com.discord.api.message.reaction.MessageReaction]?#kotlin.String?#kotlin.Boolean?#kotlin.Long?#kotlin.Int?#com.discord.api.message.activity.MessageActivity?#com.discord.api.application.Application?#kotlin.Long?#com.discord.api.message.MessageReference?#kotlin.Long?#kotlin.collections.List[com.discord.api.sticker.Sticker]?#kotlin.collections.List[com.discord.api.sticker.StickerPartial]?#com.aliucord.api.rn.message.RNMessage?#com.discord.api.interaction.Interaction?#com.aliucord.api.rn.channel.RNChannel?#kotlin.collections.List[com.discord.api.botuikit.Component]?#com.discord.api.message.call.MessageCall?#kotlin.Long?#com.discord.api.guildmember.GuildMember?#kotlin.Boolean?#com.discord.api.message.role_subscription.RoleSubscriptionData?#kotlin.Int#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.api.rn.message/-r-n-message/-r-n-message.html
+$dokka.location:com.aliucord.api.rn.message/RNMessage/author/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.message/-r-n-message/author.html
+$dokka.location:com.aliucord.api.rn.message/RNMessage/mentions/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.message/-r-n-message/mentions.html
+$dokka.location:com.aliucord.api.rn.message/RNMessage/thread/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.message/-r-n-message/thread.html
 $dokka.location:com.aliucord.api.rn.models.message////PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/index.html
 $dokka.location:com.aliucord.api.rn.models.message/RNMessage///PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/index.html
 $dokka.location:com.aliucord.api.rn.models.message/RNMessage/RNMessage/#com.discord.api.message.Message#com.aliucord.api.rn.user.RNUser#kotlin.collections.List[com.aliucord.api.rn.user.RNUser]/PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/-r-n-message.html
 $dokka.location:com.aliucord.api.rn.models.message/RNMessage/author/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/author.html
 $dokka.location:com.aliucord.api.rn.models.message/RNMessage/mentions/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/mentions.html
 $dokka.location:com.aliucord.api.rn.user////PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/index.html
+$dokka.location:com.aliucord.api.rn.user/RNTypingUser///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-typing-user/index.html
+$dokka.location:com.aliucord.api.rn.user/RNTypingUser/RNTypingUser/#com.aliucord.api.rn.guildmember.RNGuildMember?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-typing-user/-r-n-typing-user.html
+$dokka.location:com.aliucord.api.rn.user/RNTypingUser/member/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-typing-user/member.html
 $dokka.location:com.aliucord.api.rn.user/RNUser///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/index.html
 $dokka.location:com.aliucord.api.rn.user/RNUser/RNUser/#kotlin.Long#kotlin.String#com.discord.nullserializable.NullSerializable[kotlin.String]?#com.discord.nullserializable.NullSerializable[*]?#kotlin.String#kotlin.Int?#kotlin.Int?#kotlin.Boolean?#kotlin.Boolean?#kotlin.String?#kotlin.String?#kotlin.Boolean?#kotlin.String?#com.discord.api.user.NsfwAllowance?#kotlin.Boolean?#com.discord.api.user.Phone?#kotlin.String?#com.discord.api.premium.PremiumTier?#kotlin.Int?#com.discord.api.guildmember.GuildMember?#com.discord.nullserializable.NullSerializable[*]?#com.discord.nullserializable.NullSerializable[*]?#kotlin.Int#kotlin.String?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/-r-n-user.html
 $dokka.location:com.aliucord.api.rn.user/RNUser/globalName/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/global-name.html
@@ -116,7 +132,7 @@ $dokka.location:com.aliucord.coreplugins.rn////PointingToDeclaration/-aliucord/
 $dokka.location:com.aliucord.coreplugins.rn//fixPersisters/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/fix-persisters.html
 $dokka.location:com.aliucord.coreplugins.rn//globalNames/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/global-names.html
 $dokka.location:com.aliucord.coreplugins.rn//patchDefaultAvatars/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-default-avatars.html
-$dokka.location:com.aliucord.coreplugins.rn//patchNextCallAdapter/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-next-call-adapter.html
+$dokka.location:com.aliucord.coreplugins.rn//patchJsonAdapters/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-json-adapters.html
 $dokka.location:com.aliucord.coreplugins.rn//patchStickers/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-stickers.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUser/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
@@ -1296,6 +1312,20 @@ $dokka.location:com.aliucord/Utils/showToast/#kotlin.String#kotlin.Boolean/Point
 $dokka.location:com.aliucord/Utils/threadPool/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/thread-pool.html
 $dokka.location:com.aliucord/Utils/tintToTheme/#android.graphics.drawable.Drawable?/PointingToDeclaration/-aliucord/com.aliucord/-utils/tint-to-theme.html
 $dokka.location:com.aliucord/Utils/widgetChatList/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/widget-chat-list.html
+$dokka.location:com.discord.api.guildmember////PointingToDeclaration/-aliucord/com.discord.api.guildmember/index.html
+$dokka.location:com.discord.api.guildmember/GuildMembersChunk///PointingToDeclaration/-aliucord/com.discord.api.guildmember/-guild-members-chunk/index.html
+$dokka.location:com.discord.api.guildmember/GuildMembersChunk/GuildMembersChunk/#/PointingToDeclaration/-aliucord/com.discord.api.guildmember/-guild-members-chunk/-guild-members-chunk.html
+$dokka.location:com.discord.api.guildmember/GuildMembersChunk/a/#/PointingToDeclaration/-aliucord/com.discord.api.guildmember/-guild-members-chunk/a.html
+$dokka.location:com.discord.api.guildmember/GuildMembersChunk/b/#/PointingToDeclaration/-aliucord/com.discord.api.guildmember/-guild-members-chunk/b.html
+$dokka.location:com.discord.api.guildmember/GuildMembersChunk/c/#/PointingToDeclaration/-aliucord/com.discord.api.guildmember/-guild-members-chunk/c.html
+$dokka.location:com.discord.api.guildmember/GuildMembersChunk/d/#/PointingToDeclaration/-aliucord/com.discord.api.guildmember/-guild-members-chunk/d.html
+$dokka.location:com.discord.api.user////PointingToDeclaration/-aliucord/com.discord.api.user/index.html
+$dokka.location:com.discord.api.user/TypingUser///PointingToDeclaration/-aliucord/com.discord.api.user/-typing-user/index.html
+$dokka.location:com.discord.api.user/TypingUser/TypingUser/#/PointingToDeclaration/-aliucord/com.discord.api.user/-typing-user/-typing-user.html
+$dokka.location:com.discord.api.user/TypingUser/a/#/PointingToDeclaration/-aliucord/com.discord.api.user/-typing-user/a.html
+$dokka.location:com.discord.api.user/TypingUser/b/#/PointingToDeclaration/-aliucord/com.discord.api.user/-typing-user/b.html
+$dokka.location:com.discord.api.user/TypingUser/c/#/PointingToDeclaration/-aliucord/com.discord.api.user/-typing-user/c.html
+$dokka.location:com.discord.api.user/TypingUser/d/#/PointingToDeclaration/-aliucord/com.discord.api.user/-typing-user/d.html
 $dokka.location:com.discord.widgets.chat.input////PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/index.html
 $dokka.location:com.discord.widgets.chat.input/WidgetChatInput$configureSendListeners$7$1///PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/-widget-chat-input$configure-send-listeners$7$1/index.html
 $dokka.location:com.discord.widgets.chat.input/WidgetChatInput$configureSendListeners$7$1/WidgetChatInput$configureSendListeners$7$1/#/PointingToDeclaration/-aliucord/com.discord.widgets.chat.input/-widget-chat-input$configure-send-listeners$7$1/-widget-chat-input$configure-send-listeners$7$1.html
@@ -1314,6 +1344,8 @@ com.aliucord
 com.aliucord.annotations
 com.aliucord.api
 com.aliucord.api.rn.channel
+com.aliucord.api.rn.guildmember
+com.aliucord.api.rn.message
 com.aliucord.api.rn.models.message
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
@@ -1330,6 +1362,8 @@ com.aliucord.wrappers
 com.aliucord.wrappers.embeds
 com.aliucord.wrappers.messages
 com.aliucord.wrappers.stickers
+com.discord.api.guildmember
+com.discord.api.user
 com.discord.widgets.chat.input
 com.discord.widgets.guilds.leave
 com.discord.widgets.user
