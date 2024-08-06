@@ -42,6 +42,8 @@ $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
+com.aliucord.api.rn.channel
+com.aliucord.api.rn.models.message
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
 com.aliucord.coreplugins.rn
