@@ -12,10 +12,12 @@ $dokka.location:com.aliucord.entities/Plugin.SettingsTab///PointingToDeclaration
 $dokka.location:com.aliucord.fragments/InputDialog.onDialogShownListener///PointingToDeclaration/com/aliucord/fragments/InputDialog.onDialogShownListener.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.ViewHolder.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter///PointingToDeclaration/com/aliucord/settings/Plugins.Adapter.html
+$dokka.location:com.aliucord.updater/ManagerBuild.InstallMetadata///PointingToDeclaration/com/aliucord/updater/ManagerBuild.InstallMetadata.html
 $dokka.location:com.aliucord.updater/PluginUpdater.CachedData///PointingToDeclaration/com/aliucord/updater/PluginUpdater.CachedData.html
 $dokka.location:com.aliucord.updater/PluginUpdater.UpdateInfo///PointingToDeclaration/com/aliucord/updater/PluginUpdater.UpdateInfo.html
 $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction///PointingToDeclaration/com/aliucord/utils/ChangelogUtils.FooterAction.html
 $dokka.location:com.aliucord.utils/MDUtils.RenderContext///PointingToDeclaration/com/aliucord/utils/MDUtils.RenderContext.html
+$dokka.location:com.aliucord.utils/SemVer.Adapter///PointingToDeclaration/com/aliucord/utils/SemVer.Adapter.html
 $dokka.location:com.aliucord.wrappers.embeds/AuthorWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/embeds/AuthorWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers.embeds/FieldWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/embeds/FieldWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers.embeds/FooterWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/embeds/FooterWrapper.Companion.html
