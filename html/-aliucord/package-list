@@ -131,7 +131,6 @@ $dokka.location:com.aliucord.coreplugins//sheetProfileHeaderViewId/#/PointingToD
 $dokka.location:com.aliucord.coreplugins//userProfileHeaderSecondaryNameViewId/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/user-profile-header-secondary-name-view-id.html
 $dokka.location:com.aliucord.coreplugins/NoTrack///PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/index.html
 $dokka.location:com.aliucord.coreplugins/NoTrack/NoTrack/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/-no-track.html
-$dokka.location:com.aliucord.coreplugins/NoTrack/isRequired/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/is-required.html
 $dokka.location:com.aliucord.coreplugins/NoTrack/load/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/load.html
 $dokka.location:com.aliucord.coreplugins/NoTrack/start/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/start.html
 $dokka.location:com.aliucord.coreplugins/NoTrack/stop/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/stop.html
