@@ -510,6 +510,7 @@ $dokka.location:com.aliucord.settings/Plugins.Adapter.ViewHolder/onUninstallClic
 $dokka.location:com.aliucord.settings/Plugins.Adapter///PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/index.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/Adapter/#com.discord.app.AppFragment#java.util.Collection<com.aliucord.entities.Plugin>/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/-adapter.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/filter/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/filter.html
+$dokka.location:com.aliucord.settings/Plugins.Adapter/filterCorePlugins/#com.aliucord.entities.Plugin/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/filter-core-plugins.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/getItemCount/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/get-item-count.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onBindViewHolder/#com.aliucord.settings.Plugins.Adapter.ViewHolder#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-bind-view-holder.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onChangeLogClick/#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-change-log-click.html
@@ -518,6 +519,7 @@ $dokka.location:com.aliucord.settings/Plugins.Adapter/onGithubClick/#int/Pointin
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onSettingsClick/#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-settings-click.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onToggleClick/#com.aliucord.settings.Plugins.Adapter.ViewHolder#boolean#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-toggle-click.html
 $dokka.location:com.aliucord.settings/Plugins.Adapter/onUninstallClick/#int/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/on-uninstall-click.html
+$dokka.location:com.aliucord.settings/Plugins.Adapter/showBuiltIn/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/show-built-in.html
 $dokka.location:com.aliucord.settings/Plugins///PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/index.html
 $dokka.location:com.aliucord.settings/Plugins/Plugins/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-plugins.html
 $dokka.location:com.aliucord.settings/Plugins/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/on-view-bound.html
