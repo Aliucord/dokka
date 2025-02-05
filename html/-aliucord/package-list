@@ -126,6 +126,13 @@ $dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor///PointingToDec
 $dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor/RNHeadersInterceptor/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/-r-n-headers-interceptor.html
 $dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor/intercept/#okhttp3.Interceptor.Chain/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/intercept.html
 $dokka.location:com.aliucord.coreplugins////PointingToDeclaration/-aliucord/com.aliucord.coreplugins/index.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages///PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/index.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages/ForwardedMessages/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/-forwarded-messages.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages/isHidden/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/is-hidden.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages/isRequired/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/is-required.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages/start/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/start.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages/stop/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/stop.html
+$dokka.location:com.aliucord.coreplugins/ForwardedMessages/writeSnapshotFields/#java.lang.Object#java.lang.Object#boolean/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/write-snapshot-fields.html
 $dokka.location:com.aliucord.coreplugins/NoTrack///PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/index.html
 $dokka.location:com.aliucord.coreplugins/NoTrack/NoTrack/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/-no-track.html
 $dokka.location:com.aliucord.coreplugins/NoTrack/isRequired/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-no-track/is-required.html
