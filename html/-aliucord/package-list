@@ -122,9 +122,6 @@ $dokka.location:com.aliucord.coreplugins.rn//patchUser/#/PointingToDeclaration/
 $dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUsername/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-username.html
 $dokka.location:com.aliucord.coreplugins.rn//patchVoice/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-voice.html
-$dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/index.html
-$dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor/RNHeadersInterceptor/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/-r-n-headers-interceptor.html
-$dokka.location:com.aliucord.coreplugins.rn/RNHeadersInterceptor/intercept/#okhttp3.Interceptor.Chain/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/-r-n-headers-interceptor/intercept.html
 $dokka.location:com.aliucord.coreplugins////PointingToDeclaration/-aliucord/com.aliucord.coreplugins/index.html
 $dokka.location:com.aliucord.coreplugins/ForwardedMessages///PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/index.html
 $dokka.location:com.aliucord.coreplugins/ForwardedMessages/ForwardedMessages/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/-forwarded-messages.html
