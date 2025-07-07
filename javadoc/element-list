@@ -45,8 +45,6 @@ $dokka.location:com.aliucord/Http.Response///PointingToDeclaration/com/aliucord
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
-com.aliucord.api.rn.channel
-com.aliucord.api.rn.models.message
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
 com.aliucord.coreplugins.rn
@@ -62,6 +60,7 @@ com.aliucord.wrappers
 com.aliucord.wrappers.embeds
 com.aliucord.wrappers.messages
 com.aliucord.wrappers.stickers
+com.aliucord.wrappers.users
 com.discord.widgets.chat.input
 com.discord.widgets.guilds.leave
 com.discord.widgets.user

@@ -3,19 +3,7 @@ $dokka.linkExtension:html
 $dokka.location:com.aliucord.annotations////PointingToDeclaration/-aliucord/com.aliucord.annotations/index.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin///PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/index.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin/requiresRestart/#/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/requires-restart.html
-$dokka.location:com.aliucord.api.rn.channel////PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/index.html
-$dokka.location:com.aliucord.api.rn.channel/RNChannel///PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/-r-n-channel/index.html
-$dokka.location:com.aliucord.api.rn.channel/RNChannel/RNChannel/#kotlin.String?#kotlin.Int#kotlin.Long#kotlin.String?#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.collections.List[kotlin.Long]?#kotlin.collections.List[com.aliucord.api.rn.user.RNUser]?#kotlin.Int#kotlin.collections.List[com.discord.api.permission.PermissionOverwrite]?#kotlin.Int#kotlin.Int#kotlin.String?#kotlin.Long#kotlin.Long#kotlin.collections.List[com.discord.api.channel.ChannelRecipientNick]?#kotlin.Boolean#kotlin.Long#kotlin.String?#kotlin.Int#kotlin.Int?#kotlin.String?#kotlin.Long?#com.discord.api.guildhash.GuildHashes?#kotlin.collections.List[com.discord.api.channel.ForumTag]?#kotlin.collections.List[kotlin.Long]?#com.discord.api.thread.ThreadMetadata?#kotlin.Int?#kotlin.Int?#kotlin.collections.List[kotlin.Long]?#com.discord.api.thread.ThreadMember?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/-r-n-channel/-r-n-channel.html
-$dokka.location:com.aliucord.api.rn.channel/RNChannel/recipients/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.channel/-r-n-channel/recipients.html
-$dokka.location:com.aliucord.api.rn.models.message////PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/index.html
-$dokka.location:com.aliucord.api.rn.models.message/RNMessage///PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/index.html
-$dokka.location:com.aliucord.api.rn.models.message/RNMessage/RNMessage/#com.discord.api.message.Message#com.aliucord.api.rn.user.RNUser#kotlin.collections.List[com.aliucord.api.rn.user.RNUser]/PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/-r-n-message.html
-$dokka.location:com.aliucord.api.rn.models.message/RNMessage/author/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/author.html
-$dokka.location:com.aliucord.api.rn.models.message/RNMessage/mentions/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.models.message/-r-n-message/mentions.html
 $dokka.location:com.aliucord.api.rn.user////PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/index.html
-$dokka.location:com.aliucord.api.rn.user/RNUser///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/index.html
-$dokka.location:com.aliucord.api.rn.user/RNUser/RNUser/#kotlin.Long#kotlin.String#com.discord.nullserializable.NullSerializable[kotlin.String]?#com.discord.nullserializable.NullSerializable[*]?#kotlin.String#kotlin.Int?#kotlin.Int?#kotlin.Boolean?#kotlin.Boolean?#kotlin.String?#kotlin.String?#kotlin.Boolean?#kotlin.String?#com.discord.api.user.NsfwAllowance?#kotlin.Boolean?#com.discord.api.user.Phone?#kotlin.String?#com.discord.api.premium.PremiumTier?#kotlin.Int?#com.discord.api.guildmember.GuildMember?#com.discord.nullserializable.NullSerializable[*]?#com.discord.nullserializable.NullSerializable[*]?#kotlin.Int#kotlin.String?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/-r-n-user.html
-$dokka.location:com.aliucord.api.rn.user/RNUser/globalName/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user/global-name.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/index.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile/RNUserProfile/#com.aliucord.api.rn.user.UserProfileData?#com.aliucord.api.rn.user.UserProfileData?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/-r-n-user-profile.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile/guildMemberProfile/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/guild-member-profile.html
@@ -113,12 +101,10 @@ $dokka.location:com.aliucord.api/SettingsAPI/setString/#java.lang.String#java.la
 $dokka.location:com.aliucord.api/SettingsAPI/setUnknown/#java.lang.String#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-unknown.html
 $dokka.location:com.aliucord.api/SettingsAPI/toggleBool/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/toggle-bool.html
 $dokka.location:com.aliucord.coreplugins.rn////PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/index.html
-$dokka.location:com.aliucord.coreplugins.rn//fixPersisters/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/fix-persisters.html
-$dokka.location:com.aliucord.coreplugins.rn//globalNames/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/global-names.html
 $dokka.location:com.aliucord.coreplugins.rn//patchDefaultAvatars/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-default-avatars.html
+$dokka.location:com.aliucord.coreplugins.rn//patchGlobalName/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-global-name.html
 $dokka.location:com.aliucord.coreplugins.rn//patchNextCallAdapter/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-next-call-adapter.html
 $dokka.location:com.aliucord.coreplugins.rn//patchStickers/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-stickers.html
-$dokka.location:com.aliucord.coreplugins.rn//patchUser/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUsername/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-username.html
 $dokka.location:com.aliucord.coreplugins.rn//patchVoice/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-voice.html
@@ -889,6 +875,11 @@ $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper/formatType/#/P
 $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper/id/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.stickers/-base-sticker-wrapper/id.html
 $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper/raw/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.stickers/-base-sticker-wrapper/raw.html
 $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper/stickerPartial/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.stickers/-base-sticker-wrapper/sticker-partial.html
+$dokka.location:com.aliucord.wrappers.users////PointingToDeclaration/-aliucord/com.aliucord.wrappers.users/index.html
+$dokka.location:com.aliucord.wrappers.users//globalName/com.discord.api.user.User#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.users/global-name.html
+$dokka.location:com.aliucord.wrappers.users//globalName/com.discord.models.user.CoreUser#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.users/global-name.html
+$dokka.location:com.aliucord.wrappers.users//globalName/com.discord.models.user.MeUser#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.users/global-name.html
+$dokka.location:com.aliucord.wrappers.users//globalName/com.discord.models.user.User#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.users/global-name.html
 $dokka.location:com.aliucord.wrappers////PointingToDeclaration/-aliucord/com.aliucord.wrappers/index.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion///PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/index.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion/applicationId/com.discord.api.channel.Channel#/PointingToDeclaration/-aliucord/com.aliucord.wrappers/-channel-wrapper/-companion/application-id.html
@@ -1352,8 +1343,6 @@ $dokka.location:com.discord.widgets.user/WidgetKickUser$binding$2/invoke/#androi
 com.aliucord
 com.aliucord.annotations
 com.aliucord.api
-com.aliucord.api.rn.channel
-com.aliucord.api.rn.models.message
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
 com.aliucord.coreplugins.rn
@@ -1369,6 +1358,7 @@ com.aliucord.wrappers
 com.aliucord.wrappers.embeds
 com.aliucord.wrappers.messages
 com.aliucord.wrappers.stickers
+com.aliucord.wrappers.users
 com.discord.widgets.chat.input
 com.discord.widgets.guilds.leave
 com.discord.widgets.user
