@@ -101,6 +101,7 @@ $dokka.location:com.aliucord.api/SettingsAPI/setString/#java.lang.String#java.la
 $dokka.location:com.aliucord.api/SettingsAPI/setUnknown/#java.lang.String#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-unknown.html
 $dokka.location:com.aliucord.api/SettingsAPI/toggleBool/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/toggle-bool.html
 $dokka.location:com.aliucord.coreplugins.rn////PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/index.html
+$dokka.location:com.aliucord.coreplugins.rn//patchAuditLog/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-audit-log.html
 $dokka.location:com.aliucord.coreplugins.rn//patchDefaultAvatars/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-default-avatars.html
 $dokka.location:com.aliucord.coreplugins.rn//patchGlobalName/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-global-name.html
 $dokka.location:com.aliucord.coreplugins.rn//patchNextCallAdapter/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-next-call-adapter.html
