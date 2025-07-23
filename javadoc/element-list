@@ -29,6 +29,8 @@ $dokka.location:com.aliucord.wrappers.embeds/ThumbnailWrapper.Companion///Pointi
 $dokka.location:com.aliucord.wrappers.embeds/VideoWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/embeds/VideoWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers.messages/AttachmentWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/messages/AttachmentWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers.stickers/BaseStickerWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/stickers/BaseStickerWrapper.Companion.html
+$dokka.location:com.aliucord.wrappers.stickers/StickerPartialWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/stickers/StickerPartialWrapper.Companion.html
+$dokka.location:com.aliucord.wrappers.stickers/StickerWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/stickers/StickerWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/ChannelWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/ChannelWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildEmojiWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildEmojiWrapper.Companion.html
 $dokka.location:com.aliucord.wrappers/GuildMemberWrapper.Companion///PointingToDeclaration/com/aliucord/wrappers/GuildMemberWrapper.Companion.html
