@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 $dokka.location:com.aliucord.api/ButtonsAPI.ButtonData///PointingToDeclaration/com/aliucord/api/ButtonsAPI.ButtonData.html
 $dokka.location:com.aliucord.api/CommandsAPI.CommandResult///PointingToDeclaration/com/aliucord/api/CommandsAPI.CommandResult.html
 $dokka.location:com.aliucord.api/GatewayAPI.EventListener///PointingToDeclaration/com/aliucord/api/GatewayAPI.EventListener.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot///PointingToDeclaration/com/aliucord/coreplugins/polls/PollsStore.VotesSnapshot.html
 $dokka.location:com.aliucord.coreplugins/TokenLogin.Page///PointingToDeclaration/com/aliucord/coreplugins/TokenLogin.Page.html
 $dokka.location:com.aliucord.entities/CommandContext.RequiredArgumentWasNullException///PointingToDeclaration/com/aliucord/entities/CommandContext.RequiredArgumentWasNullException.html
 $dokka.location:com.aliucord.entities/Plugin.Manifest.Author///PointingToDeclaration/com/aliucord/entities/Plugin.Manifest.Author.html
@@ -49,6 +50,7 @@ com.aliucord.annotations
 com.aliucord.api
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
+com.aliucord.coreplugins.polls
 com.aliucord.coreplugins.rn
 com.aliucord.entities
 com.aliucord.fragments

@@ -100,6 +100,31 @@ $dokka.location:com.aliucord.api/SettingsAPI/setObject/#java.lang.String#java.la
 $dokka.location:com.aliucord.api/SettingsAPI/setString/#java.lang.String#java.lang.String/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-string.html
 $dokka.location:com.aliucord.api/SettingsAPI/setUnknown/#java.lang.String#java.lang.Object/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/set-unknown.html
 $dokka.location:com.aliucord.api/SettingsAPI/toggleBool/#java.lang.String#boolean/PointingToDeclaration/-aliucord/com.aliucord.api/-settings-a-p-i/toggle-bool.html
+$dokka.location:com.aliucord.coreplugins.polls////PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/index.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/index.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent/MessagePollVoteEvent/#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/-message-poll-vote-event.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent/answerId/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/answer-id.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent/channelId/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/channel-id.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent/guildId/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/guild-id.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent/messageId/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/message-id.html
+$dokka.location:com.aliucord.coreplugins.polls/MessagePollVoteEvent/userId/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-message-poll-vote-event/user-id.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/index.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/VotesSnapshot/#kotlin.Int#java.util.SortedSet[kotlin.Long]#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/-votes-snapshot.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/count/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/count.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/hasFailed/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/has-failed.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/isIncomplete/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/is-incomplete.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/isLoading/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/is-loading.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/meVoted/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/me-voted.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore.VotesSnapshot/voters/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/-votes-snapshot/voters.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore///PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/index.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/dispatchGatewayEvent/#com.aliucord.coreplugins.polls.MessagePollVoteEvent#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/dispatch-gateway-event.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/fetchDetails/#kotlin.Long#kotlin.Long#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/fetch-details.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/getResultFor/#kotlin.Long#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/get-result-for.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/handleMessageDelete/#kotlin.Long#kotlin.Long/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/handle-message-delete.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/handleMessageUpdate/#com.discord.api.message.Message/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/handle-message-update.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/handleMessageUpdate/#com.discord.models.message.Message/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/handle-message-update.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/subscribe/#kotlin.Long#kotlin.Long#kotlin.Function1[java.util.HashMap[kotlin.Int,com.aliucord.coreplugins.polls.PollsStore.VotesSnapshot]?,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/subscribe.html
+$dokka.location:com.aliucord.coreplugins.polls/PollsStore/subscribeOnMain/#kotlin.Long#kotlin.Long#kotlin.Function1[java.util.HashMap[kotlin.Int,com.aliucord.coreplugins.polls.PollsStore.VotesSnapshot]?,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.polls/-polls-store/subscribe-on-main.html
 $dokka.location:com.aliucord.coreplugins.rn////PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/index.html
 $dokka.location:com.aliucord.coreplugins.rn//patchAuditLog/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-audit-log.html
 $dokka.location:com.aliucord.coreplugins.rn//patchDefaultAvatars/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-default-avatars.html
@@ -287,6 +312,8 @@ $dokka.location:com.aliucord.entities/Plugin/settingsTab/#/PointingToDeclaration
 $dokka.location:com.aliucord.entities/Plugin/start/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/start.html
 $dokka.location:com.aliucord.entities/Plugin/stop/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/stop.html
 $dokka.location:com.aliucord.entities/Plugin/unload/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/unload.html
+$dokka.location:com.aliucord.entities/RNMessage///PointingToDeclaration/-aliucord/com.aliucord.entities/-r-n-message/index.html
+$dokka.location:com.aliucord.entities/RNMessage/RNMessage/#kotlin.String#kotlin.Int#kotlin.Boolean#kotlin.String#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.entities/-r-n-message/-r-n-message.html
 $dokka.location:com.aliucord.fragments////PointingToDeclaration/-aliucord/com.aliucord.fragments/index.html
 $dokka.location:com.aliucord.fragments/AppFragmentProxy///PointingToDeclaration/-aliucord/com.aliucord.fragments/-app-fragment-proxy/index.html
 $dokka.location:com.aliucord.fragments/AppFragmentProxy/AppFragmentProxy/#/PointingToDeclaration/-aliucord/com.aliucord.fragments/-app-fragment-proxy/-app-fragment-proxy.html
@@ -621,6 +648,9 @@ $dokka.location:com.aliucord.utils/MapUtils///PointingToDeclaration/-aliucord/c
 $dokka.location:com.aliucord.utils/MapUtils/MapUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/-map-utils.html
 $dokka.location:com.aliucord.utils/MapUtils/getMapKey/#java.util.Map<K,V>#V/PointingToDeclaration/-aliucord/com.aliucord.utils/-map-utils/get-map-key.html
 $dokka.location:com.aliucord.utils/RNSuperProperties///PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/index.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/buildNumber/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/build-number.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/heartbeatSessionId/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/heartbeat-session-id.html
+$dokka.location:com.aliucord.utils/RNSuperProperties/launchId/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/launch-id.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/superProperties/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/superPropertiesBase64/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/super-properties-base64.html
 $dokka.location:com.aliucord.utils/RNSuperProperties/userAgent/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-r-n-super-properties/user-agent.html
@@ -670,6 +700,14 @@ $dokka.location:com.aliucord.utils/SemVer/major/#/PointingToDeclaration/-aliuco
 $dokka.location:com.aliucord.utils/SemVer/minor/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-sem-ver/minor.html
 $dokka.location:com.aliucord.utils/SemVer/patch/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-sem-ver/patch.html
 $dokka.location:com.aliucord.utils/SemVer/toString/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-sem-ver/to-string.html
+$dokka.location:com.aliucord.utils/ViewUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/index.html
+$dokka.location:com.aliucord.utils/ViewUtils/addTo/TypeParam(bounds=[android.view.View])#android.view.ViewGroup#kotlin.Function1[TypeParam(bounds=[android.view.View]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/add-to.html
+$dokka.location:com.aliucord.utils/ViewUtils/addTo/TypeParam(bounds=[android.view.View])#android.view.ViewGroup#kotlin.Int#kotlin.Function1[TypeParam(bounds=[android.view.View]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/add-to.html
+$dokka.location:com.aliucord.utils/ViewUtils/checkbox/com.discord.views.CheckedSetting#/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/checkbox.html
+$dokka.location:com.aliucord.utils/ViewUtils/label/com.discord.views.CheckedSetting#/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/label.html
+$dokka.location:com.aliucord.utils/ViewUtils/layout/com.discord.views.CheckedSetting#/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/layout.html
+$dokka.location:com.aliucord.utils/ViewUtils/setDefaultMargins/TypeParam(bounds=[android.view.View])#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/set-default-margins.html
+$dokka.location:com.aliucord.utils/ViewUtils/subtext/com.discord.views.CheckedSetting#/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/subtext.html
 $dokka.location:com.aliucord.views////PointingToDeclaration/-aliucord/com.aliucord.views/index.html
 $dokka.location:com.aliucord.views/Button///PointingToDeclaration/-aliucord/com.aliucord.views/-button/index.html
 $dokka.location:com.aliucord.views/Button/Button/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord.views/-button/-button.html
@@ -845,6 +883,8 @@ $dokka.location:com.aliucord.wrappers.embeds/VideoWrapper/raw/#/PointingToDeclar
 $dokka.location:com.aliucord.wrappers.embeds/VideoWrapper/url/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.embeds/-video-wrapper/url.html
 $dokka.location:com.aliucord.wrappers.embeds/VideoWrapper/width/#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.embeds/-video-wrapper/width.html
 $dokka.location:com.aliucord.wrappers.messages////PointingToDeclaration/-aliucord/com.aliucord.wrappers.messages/index.html
+$dokka.location:com.aliucord.wrappers.messages//poll/com.discord.api.message.Message#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.messages/poll.html
+$dokka.location:com.aliucord.wrappers.messages//poll/com.discord.models.message.Message#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.messages/poll.html
 $dokka.location:com.aliucord.wrappers.messages/AttachmentWrapper.Companion///PointingToDeclaration/-aliucord/com.aliucord.wrappers.messages/-attachment-wrapper/-companion/index.html
 $dokka.location:com.aliucord.wrappers.messages/AttachmentWrapper.Companion/filename/com.discord.api.message.attachment.MessageAttachment#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.messages/-attachment-wrapper/-companion/filename.html
 $dokka.location:com.aliucord.wrappers.messages/AttachmentWrapper.Companion/height/com.discord.api.message.attachment.MessageAttachment#/PointingToDeclaration/-aliucord/com.aliucord.wrappers.messages/-attachment-wrapper/-companion/height.html
@@ -1351,6 +1391,7 @@ $dokka.location:com.aliucord/Utils/createCheckedSetting/#android.content.Context
 $dokka.location:com.aliucord/Utils/createCommandChoice/#kotlin.String#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/create-command-choice.html
 $dokka.location:com.aliucord/Utils/createCommandOption/#com.discord.api.commands.ApplicationCommandType#kotlin.String#kotlin.String?#kotlin.Int?#kotlin.Boolean#kotlin.Boolean#kotlin.collections.List[kotlin.Int?]#kotlin.collections.List[com.discord.api.commands.CommandChoice]#kotlin.collections.List[com.discord.models.commands.ApplicationCommandOption]#kotlin.Boolean#kotlin.Number?#kotlin.Number?/PointingToDeclaration/-aliucord/com.aliucord/-utils/create-command-option.html
 $dokka.location:com.aliucord/Utils/createCommandOption/#com.discord.api.commands.ApplicationCommandType#kotlin.String#kotlin.String?#kotlin.Int?#kotlin.Boolean#kotlin.Boolean#kotlin.collections.List[kotlin.Int?]#kotlin.collections.List[com.discord.api.commands.CommandChoice]#kotlin.collections.List[com.discord.models.commands.ApplicationCommandOption]#kotlin.Boolean/PointingToDeclaration/-aliucord/com.aliucord/-utils/create-command-option.html
+$dokka.location:com.aliucord/Utils/generateRNNonce/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/generate-r-n-nonce.html
 $dokka.location:com.aliucord/Utils/getDrawableByAttr/#android.content.Context#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord/-utils/get-drawable-by-attr.html
 $dokka.location:com.aliucord/Utils/getResId/#kotlin.String#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/get-res-id.html
 $dokka.location:com.aliucord/Utils/isDebuggable/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/is-debuggable.html
@@ -1392,6 +1433,7 @@ com.aliucord.annotations
 com.aliucord.api
 com.aliucord.api.rn.user
 com.aliucord.coreplugins
+com.aliucord.coreplugins.polls
 com.aliucord.coreplugins.rn
 com.aliucord.entities
 com.aliucord.fragments
