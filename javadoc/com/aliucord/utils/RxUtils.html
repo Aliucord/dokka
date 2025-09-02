@@ -346,6 +346,14 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                         </tr>
                                         
                                         <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>T</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>create</a>(Function1&lt;Subscriber&lt;in <a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>T</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onSubscribe) </code>
+                                            </th>
+                                            <td class="colLast">Creates a new cold Observable.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>final static Observable&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=RxUtils.html#getEmpty()>getEmpty</a>() </code>
@@ -695,6 +703,30 @@ public class <span class="typeNameLabel"><a href=RxUtils.html>RxUtils</a></span>
                                             
                                             
                                             <dd><code>func</code> - a function that, when applied to an item emitted by the source Observable, returns an Observable</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="create(kotlin.jvm.functions.Function1)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>create</h4>
+                                        <pre class="methodSignature"> final static &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html>Any</a>&gt; Observable&lt;<a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>T</a>&gt; <a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>create</a>(Function1&lt;Subscriber&lt;in <a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>T</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onSubscribe)</pre>
+                                        <div class="block"><p>Creates a new cold Observable. When the observable is subscribed to, <a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>onSubscribe</a> is called with the subscriber as a parameter, and should start emitting to the subscriber using Subscriber.onNext.</p><p><a href=RxUtils.html#create(kotlin.jvm.functions.Function1)>onSubscribe</a> should always end with either Subscriber.onError or Subscriber.onCompleted.</p><p>Note that the resulting Observable is <i>not</i> backpressure-aware.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>onSubscribe</code> - a function that is called when the observable is subscribed to</dd>
                                             
                                             
                                         </dl>

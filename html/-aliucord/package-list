@@ -674,6 +674,7 @@ $dokka.location:com.aliucord.utils/ReflectUtils/setFinalField/#java.lang.Object#
 $dokka.location:com.aliucord.utils/RxUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/index.html
 $dokka.location:com.aliucord.utils/RxUtils/await/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/await.html
 $dokka.location:com.aliucord.utils/RxUtils/combineLatest/#kotlin.collections.List[rx.Observable[TypeParam(bounds=[kotlin.Any?])]]#rx.functions.FuncN[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/combine-latest.html
+$dokka.location:com.aliucord.utils/RxUtils/create/#kotlin.Function1[rx.Subscriber[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/create.html
 $dokka.location:com.aliucord.utils/RxUtils/createActionSubscriber/#rx.functions.Action1[TypeParam(bounds=[kotlin.Any?])]#rx.functions.Action1[kotlin.Throwable]#rx.functions.Action0/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/create-action-subscriber.html
 $dokka.location:com.aliucord.utils/RxUtils/empty/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/empty.html
 $dokka.location:com.aliucord.utils/RxUtils/map/rx.Observable[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/-aliucord/com.aliucord.utils/-rx-utils/map.html
