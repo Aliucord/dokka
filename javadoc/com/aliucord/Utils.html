@@ -362,7 +362,7 @@ public class <span class="typeNameLabel"><a href=Utils.html>Utils</a></span>
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> showLonger) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> _ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> showLonger) </code>
                                             </th>
                                             <td class="colLast">Send a toast from any <a href=https://developer.android.com/reference/kotlin/java/lang/Thread.html>Thread</a></td>
                                         </tr>
@@ -370,7 +370,7 @@ public class <span class="typeNameLabel"><a href=Utils.html>Utils</a></span>
                                         <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> _ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message) </code>
                                             </th>
                                             <td class="colLast">Send a toast from any <a href=https://developer.android.com/reference/kotlin/java/lang/Thread.html>Thread</a></td>
                                         </tr>
@@ -903,14 +903,12 @@ public class <span class="typeNameLabel"><a href=Utils.html>Utils</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>showToast</h4>
-                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = &quot;Use {@link #showToast(String, boolean)}&quot;, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = &quot;showToast(message, showLonger)&quot;))@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> showLonger)</pre>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = &quot;Use {@link #showToast(String, boolean)}&quot;, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = &quot;showToast(message, showLonger)&quot;))@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> _ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> showLonger)</pre>
                                         <div class="block"><p>Send a toast from any <a href=https://developer.android.com/reference/kotlin/java/lang/Thread.html>Thread</a></p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
-                                            
-                                            <dd><code>ctx</code> - <a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a></dd>
                                             
                                             
                                             
@@ -935,14 +933,12 @@ public class <span class="typeNameLabel"><a href=Utils.html>Utils</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>showToast</h4>
-                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = &quot;Use {@link #showToast(String, boolean)}&quot;, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = &quot;showToast(message, showLonger)&quot;))@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message)</pre>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = &quot;Use {@link #showToast(String, boolean)}&quot;, replaceWith = @<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-replace-with/index.html>ReplaceWith</a>(imports = {}, expression = &quot;showToast(message, showLonger)&quot;))@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Utils.html#showToast(android.content.Context,java.lang.String,java.lang.Boolean)>showToast</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> _ctx, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> message)</pre>
                                         <div class="block"><p>Send a toast from any <a href=https://developer.android.com/reference/kotlin/java/lang/Thread.html>Thread</a></p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
-                                            
-                                            <dd><code>ctx</code> - <a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a></dd>
                                             
                                             
                                             
