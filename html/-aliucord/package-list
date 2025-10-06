@@ -134,7 +134,6 @@ $dokka.location:com.aliucord.coreplugins.rn//patchNextCallAdapter/#/PointingToDe
 $dokka.location:com.aliucord.coreplugins.rn//patchStickers/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-stickers.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUserProfile/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-user-profile.html
 $dokka.location:com.aliucord.coreplugins.rn//patchUsername/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-username.html
-$dokka.location:com.aliucord.coreplugins.rn//patchVoice/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins.rn/patch-voice.html
 $dokka.location:com.aliucord.coreplugins////PointingToDeclaration/-aliucord/com.aliucord.coreplugins/index.html
 $dokka.location:com.aliucord.coreplugins/ForwardedMessages///PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/index.html
 $dokka.location:com.aliucord.coreplugins/ForwardedMessages/ForwardedMessages/#/PointingToDeclaration/-aliucord/com.aliucord.coreplugins/-forwarded-messages/-forwarded-messages.html
