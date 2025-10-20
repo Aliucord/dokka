@@ -4,8 +4,15 @@ $dokka.location:com.aliucord.annotations////PointingToDeclaration/-aliucord/com
 $dokka.location:com.aliucord.annotations/AliucordPlugin///PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/index.html
 $dokka.location:com.aliucord.annotations/AliucordPlugin/requiresRestart/#/PointingToDeclaration/-aliucord/com.aliucord.annotations/-aliucord-plugin/requires-restart.html
 $dokka.location:com.aliucord.api.rn.user////PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/index.html
+$dokka.location:com.aliucord.api.rn.user/ProfileBadge///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-profile-badge/index.html
+$dokka.location:com.aliucord.api.rn.user/ProfileBadge/ProfileBadge/#kotlin.String#kotlin.String#kotlin.String#kotlin.String?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-profile-badge/-profile-badge.html
+$dokka.location:com.aliucord.api.rn.user/ProfileBadge/description/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-profile-badge/description.html
+$dokka.location:com.aliucord.api.rn.user/ProfileBadge/icon/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-profile-badge/icon.html
+$dokka.location:com.aliucord.api.rn.user/ProfileBadge/id/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-profile-badge/id.html
+$dokka.location:com.aliucord.api.rn.user/ProfileBadge/link/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-profile-badge/link.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/index.html
-$dokka.location:com.aliucord.api.rn.user/RNUserProfile/RNUserProfile/#com.aliucord.api.rn.user.UserProfileData?#com.aliucord.api.rn.user.UserProfileData?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/-r-n-user-profile.html
+$dokka.location:com.aliucord.api.rn.user/RNUserProfile/RNUserProfile/#com.aliucord.api.rn.user.UserProfileData?#com.aliucord.api.rn.user.UserProfileData?#kotlin.collections.List[com.aliucord.api.rn.user.ProfileBadge]?/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/-r-n-user-profile.html
+$dokka.location:com.aliucord.api.rn.user/RNUserProfile/badges/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/badges.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile/guildMemberProfile/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/guild-member-profile.html
 $dokka.location:com.aliucord.api.rn.user/RNUserProfile/userProfile/#/PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-r-n-user-profile/user-profile.html
 $dokka.location:com.aliucord.api.rn.user/UserProfileData///PointingToDeclaration/-aliucord/com.aliucord.api.rn.user/-user-profile-data/index.html
