@@ -118,6 +118,14 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
 
                     </pre>
                     <div class="block"><p>The base class that all plugins must extend from for their entrypoint.</p></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -344,7 +352,7 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Plugin.html#load(android.content.Context)>load</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context) </code>
                                             </th>
@@ -352,7 +360,7 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Plugin.html#unload(android.content.Context)>unload</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context) </code>
                                             </th>
@@ -360,7 +368,7 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Plugin.html#start(android.content.Context)>start</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context) </code>
                                             </th>
@@ -368,7 +376,7 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Plugin.html#stop(android.content.Context)>stop</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context) </code>
                                             </th>
@@ -439,8 +447,16 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         <h4>getManifest</h4>
                                         <pre class="methodSignature"> final <a href=Plugin.Manifest.html>Plugin.Manifest</a> <a href=../coreplugins/ForwardedMessages.html#getManifest()>getManifest</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -454,8 +470,16 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         <h4>getAnnotation</h4>
                                         <pre class="methodSignature"> final <a href=../annotations/AliucordPlugin.html>AliucordPlugin</a> <a href=../coreplugins/ForwardedMessages.html#getAnnotation()>getAnnotation</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -469,8 +493,16 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         <h4>getName</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=../coreplugins/ForwardedMessages.html#getName()>getName</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -484,8 +516,19 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                         <h4>requiresRestart</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=../coreplugins/ForwardedMessages.html#requiresRestart()>requiresRestart</a>()</pre>
                                         <div class="block"><p>Returns whether the user will be prompted to restart after enabling/disabling. This is toggleable through the <code>@AliucordPlugin</code> annotation. You should not override this method yourself.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p><a href=../annotations/AliucordPlugin.html#requiresRestart>AliucordPlugin.requiresRestart</a></p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -497,19 +540,25 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                           >
                                     <li class="blockList">
                                         <h4>load</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#load(android.content.Context)>load</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#load(android.content.Context)>load</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
                                         <div class="block"><p>Called when your Plugin is loaded</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>context</code> - An activity Android context.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -521,19 +570,25 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                           >
                                     <li class="blockList">
                                         <h4>unload</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#unload(android.content.Context)>unload</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#unload(android.content.Context)>unload</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
                                         <div class="block"><p>Called when your Plugin is unloaded</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>context</code> - An activity Android context</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -545,19 +600,25 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                           >
                                     <li class="blockList">
                                         <h4>start</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#start(android.content.Context)>start</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#start(android.content.Context)>start</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
                                         <div class="block"><p>Called when your Plugin is started</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>context</code> - An activity Android context</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -569,19 +630,25 @@ public abstract class <span class="typeNameLabel"><a href=Plugin.html>Plugin</a>
                                           >
                                     <li class="blockList">
                                         <h4>stop</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#stop(android.content.Context)>stop</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=Plugin.html#stop(android.content.Context)>stop</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context)</pre>
                                         <div class="block"><p>Called when your Plugin is stopped</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>context</code> - An activity Android context</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

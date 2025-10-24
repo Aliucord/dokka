@@ -118,6 +118,14 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
 
                     </pre>
                     <div class="block"></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -439,7 +447,7 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                     <li class="blockList">
                                         <h4>SettingsAPI</h4>
                                         <pre>SettingsAPI(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> plugin)</pre>
-                                        <div class="block">Creates a SettingsAPI for the specified plugin</div>
+                                        <div class="block"><p>Creates a SettingsAPI for the specified plugin</p></div>
                                         
                                     </li>
                                 </ul>
@@ -467,8 +475,19 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>resetSettings</h4>
                                         <pre class="methodSignature"> boolean <a href=SettingsAPI.html#resetSettings()>resetSettings</a>()</pre>
                                         <div class="block"><p>Resets All Settings</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>true if successful, else false</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -482,17 +501,26 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>remove</h4>
                                         <pre class="methodSignature"> boolean <a href=SettingsAPI.html#remove(java.lang.String)>remove</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key)</pre>
                                         <div class="block"><p>Removes Item from settings</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>key</code> - Key of the value</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>True if removed, else false</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -506,8 +534,19 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getAllKeys</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=SettingsAPI.html#getAllKeys()>getAllKeys</a>()</pre>
                                         <div class="block"><p>Gets All Keys from settings</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>List of all keys</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -521,8 +560,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>toggleBool</h4>
                                         <pre class="methodSignature"> boolean <a href=SettingsAPI.html#toggleBool(java.lang.String,boolean)>toggleBool</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, boolean defValue)</pre>
                                         <div class="block"><p>Toggles Boolean and returns it</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -533,9 +574,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default Value if setting doesn't exist</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Toggled boolean</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -549,17 +597,26 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>exists</h4>
                                         <pre class="methodSignature"> boolean <a href=SettingsAPI.html#exists(java.lang.String)>exists</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key)</pre>
                                         <div class="block"><p>Check if Key exists in settings</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>key</code> - Key of the value</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>True if found, else false</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -573,8 +630,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getBool</h4>
                                         <pre class="methodSignature"> boolean <a href=SettingsAPI.html#getBool(java.lang.String,boolean)>getBool</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, boolean defValue)</pre>
                                         <div class="block"><p>Reads a from the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -585,9 +644,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -601,8 +667,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setBool</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setBool(java.lang.String,boolean)>setBool</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, boolean val)</pre>
                                         <div class="block"><p>Writes a to the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -613,9 +681,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>val</code> - Value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -629,8 +701,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getInt</h4>
                                         <pre class="methodSignature"> int <a href=SettingsAPI.html#getInt(java.lang.String,int)>getInt</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, int defValue)</pre>
                                         <div class="block"><p>Gets an stored in the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -641,9 +715,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -657,8 +738,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setInt</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setInt(java.lang.String,int)>setInt</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, int val)</pre>
                                         <div class="block"><p>Writes an to the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -669,9 +752,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>val</code> - Value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -685,8 +772,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getFloat</h4>
                                         <pre class="methodSignature"> float <a href=SettingsAPI.html#getFloat(java.lang.String,float)>getFloat</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, float defValue)</pre>
                                         <div class="block"><p>Gets a stored in the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -697,9 +786,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -713,8 +809,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setFloat</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setFloat(java.lang.String,float)>setFloat</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, float val)</pre>
                                         <div class="block"><p>Writes a to the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -725,9 +823,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>val</code> - Value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -741,8 +843,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getLong</h4>
                                         <pre class="methodSignature"> long <a href=SettingsAPI.html#getLong(java.lang.String,long)>getLong</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, long defValue)</pre>
                                         <div class="block"><p>Gets a stored in the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -753,9 +857,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -769,8 +880,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setLong</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setLong(java.lang.String,long)>setLong</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, long val)</pre>
                                         <div class="block"><p>Writes a to the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -781,9 +894,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>val</code> - Value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -797,8 +914,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getString</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=SettingsAPI.html#getString(java.lang.String,java.lang.String)>getString</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> defValue)</pre>
                                         <div class="block"><p>Gets a <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> stored in the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -809,9 +928,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -825,8 +951,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setString</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setString(java.lang.String,java.lang.String)>setString</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> val)</pre>
                                         <div class="block"><p>Writes a <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> to the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -837,9 +965,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>val</code> - Value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -853,8 +985,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getObject</h4>
                                         <pre class="methodSignature"> &lt;T&gt; <a href=SettingsAPI.html#getObject(java.lang.String,T)>T</a> <a href=SettingsAPI.html#getObject(java.lang.String,T)>getObject</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=SettingsAPI.html#getObject(java.lang.String,T)>T</a> defValue)</pre>
                                         <div class="block"><p>Gets an <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> stored in the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -865,9 +999,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>defValue</code> - Default value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -881,8 +1022,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getObject</h4>
                                         <pre class="methodSignature"> &lt;T&gt; <a href=SettingsAPI.html#getObject(java.lang.String,T,java.lang.reflect.Type)>T</a> <a href=SettingsAPI.html#getObject(java.lang.String,T,java.lang.reflect.Type)>getObject</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=SettingsAPI.html#getObject(java.lang.String,T,java.lang.reflect.Type)>T</a> defValue, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> type)</pre>
                                         <div class="block"><p>Gets an <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> stored in the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -897,9 +1040,16 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>type</code> - <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> representing the data type.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Stored value, or default value if it doesn't exist.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -913,8 +1063,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setObject</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setObject(java.lang.String,Object)>setObject</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> val)</pre>
                                         <div class="block"><p>Writes an <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> to the settings.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -925,9 +1077,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>val</code> - Value of the setting.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -941,8 +1097,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>getUnknown</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> <a href=SettingsAPI.html#getUnknown(java.lang.String,Object)>getUnknown</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> defValue)</pre>
                                         <div class="block"><p>Get a value of an unknown type</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -951,9 +1109,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -967,8 +1129,10 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                         <h4>setUnknown</h4>
                                         <pre class="methodSignature"> void <a href=SettingsAPI.html#setUnknown(java.lang.String,Object)>setUnknown</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> key, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> value)</pre>
                                         <div class="block"><p>Set a value of an unknown type</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -979,9 +1143,13 @@ public class <span class="typeNameLabel"><a href=SettingsAPI.html>SettingsAPI</a
                                             <dd><code>value</code> - Value of the item</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

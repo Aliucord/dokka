@@ -296,7 +296,7 @@ $dokka.location:com.aliucord.entities/Plugin.SettingsTab/args/#/PointingToDeclar
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab/bottomSheet/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/bottom-sheet.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab/page/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/page.html
 $dokka.location:com.aliucord.entities/Plugin.SettingsTab/type/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/type.html
-$dokka.location:com.aliucord.entities/Plugin.SettingsTab/withArgs/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/with-args.html
+$dokka.location:com.aliucord.entities/Plugin.SettingsTab/withArgs/#kotlin.Any?/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-settings-tab/with-args.html
 $dokka.location:com.aliucord.entities/Plugin///PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/index.html
 $dokka.location:com.aliucord.entities/Plugin/Plugin/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/-plugin.html
 $dokka.location:com.aliucord.entities/Plugin/__filename/#/PointingToDeclaration/-aliucord/com.aliucord.entities/-plugin/__filename.html
@@ -464,10 +464,10 @@ $dokka.location:com.aliucord.fragments/SettingsPage/removeScrollView/#/PointingT
 $dokka.location:com.aliucord.fragments/SettingsPage/removeView/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/remove-view.html
 $dokka.location:com.aliucord.fragments/SettingsPage/setPadding/#int/PointingToDeclaration/-aliucord/com.aliucord.fragments/-settings-page/set-padding.html
 $dokka.location:com.aliucord.patcher////PointingToDeclaration/-aliucord/com.aliucord.patcher/index.html
-$dokka.location:com.aliucord.patcher//after/com.aliucord.api.PatcherAPI#kotlin.Array[java.lang.Class[*]]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/after.html
-$dokka.location:com.aliucord.patcher//after/com.aliucord.api.PatcherAPI#kotlin.String#kotlin.Array[java.lang.Class[*]]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/after.html
-$dokka.location:com.aliucord.patcher//before/com.aliucord.api.PatcherAPI#kotlin.Array[java.lang.Class[*]]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/before.html
-$dokka.location:com.aliucord.patcher//before/com.aliucord.api.PatcherAPI#kotlin.String#kotlin.Array[java.lang.Class[*]]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/before.html
+$dokka.location:com.aliucord.patcher//after/com.aliucord.api.PatcherAPI#java.lang.Class[*]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/after.html
+$dokka.location:com.aliucord.patcher//after/com.aliucord.api.PatcherAPI#kotlin.String#java.lang.Class[*]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/after.html
+$dokka.location:com.aliucord.patcher//before/com.aliucord.api.PatcherAPI#java.lang.Class[*]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/before.html
+$dokka.location:com.aliucord.patcher//before/com.aliucord.api.PatcherAPI#kotlin.String#java.lang.Class[*]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.patcher/before.html
 $dokka.location:com.aliucord.patcher//component1/de.robv.android.xposed.XC_MethodHook.MethodHookParam#/PointingToDeclaration/-aliucord/com.aliucord.patcher/component1.html
 $dokka.location:com.aliucord.patcher//component10/de.robv.android.xposed.XC_MethodHook.MethodHookParam#/PointingToDeclaration/-aliucord/com.aliucord.patcher/component10.html
 $dokka.location:com.aliucord.patcher//component11/de.robv.android.xposed.XC_MethodHook.MethodHookParam#/PointingToDeclaration/-aliucord/com.aliucord.patcher/component11.html
@@ -480,8 +480,8 @@ $dokka.location:com.aliucord.patcher//component6/de.robv.android.xposed.XC_Metho
 $dokka.location:com.aliucord.patcher//component7/de.robv.android.xposed.XC_MethodHook.MethodHookParam#/PointingToDeclaration/-aliucord/com.aliucord.patcher/component7.html
 $dokka.location:com.aliucord.patcher//component8/de.robv.android.xposed.XC_MethodHook.MethodHookParam#/PointingToDeclaration/-aliucord/com.aliucord.patcher/component8.html
 $dokka.location:com.aliucord.patcher//component9/de.robv.android.xposed.XC_MethodHook.MethodHookParam#/PointingToDeclaration/-aliucord/com.aliucord.patcher/component9.html
-$dokka.location:com.aliucord.patcher//instead/com.aliucord.api.PatcherAPI#kotlin.Array[java.lang.Class[*]]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.patcher/instead.html
-$dokka.location:com.aliucord.patcher//instead/com.aliucord.api.PatcherAPI#kotlin.String#kotlin.Array[java.lang.Class[*]]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.patcher/instead.html
+$dokka.location:com.aliucord.patcher//instead/com.aliucord.api.PatcherAPI#java.lang.Class[*]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.patcher/instead.html
+$dokka.location:com.aliucord.patcher//instead/com.aliucord.api.PatcherAPI#kotlin.String#java.lang.Class[*]#kotlin.Function2[TypeParam(bounds=[kotlin.Any?]),de.robv.android.xposed.XC_MethodHook.MethodHookParam,kotlin.Any?]/PointingToDeclaration/-aliucord/com.aliucord.patcher/instead.html
 $dokka.location:com.aliucord.patcher/Hook///PointingToDeclaration/-aliucord/com.aliucord.patcher/-hook/index.html
 $dokka.location:com.aliucord.patcher/Hook/Hook/#rx.functions.Action1[de.robv.android.xposed.XC_MethodHook.MethodHookParam]/PointingToDeclaration/-aliucord/com.aliucord.patcher/-hook/-hook.html
 $dokka.location:com.aliucord.patcher/Hook/callback/#/PointingToDeclaration/-aliucord/com.aliucord.patcher/-hook/callback.html
@@ -604,7 +604,7 @@ $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/drawableResourceI
 $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/url/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/url.html
 $dokka.location:com.aliucord.utils/ChangelogUtils.FooterAction/writeToParcel/#android.os.Parcel#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/-footer-action/write-to-parcel.html
 $dokka.location:com.aliucord.utils/ChangelogUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/index.html
-$dokka.location:com.aliucord.utils/ChangelogUtils/show/#android.content.Context#kotlin.String#kotlin.String?#kotlin.String#kotlin.Array[com.aliucord.utils.ChangelogUtils.FooterAction]/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/show.html
+$dokka.location:com.aliucord.utils/ChangelogUtils/show/#android.content.Context#kotlin.String#kotlin.String?#kotlin.String#com.aliucord.utils.ChangelogUtils.FooterAction/PointingToDeclaration/-aliucord/com.aliucord.utils/-changelog-utils/show.html
 $dokka.location:com.aliucord.utils/ChannelUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/index.html
 $dokka.location:com.aliucord.utils/ChannelUtils/ChannelUtils/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/-channel-utils.html
 $dokka.location:com.aliucord.utils/ChannelUtils/getDMRecipient/#com.discord.api.channel.Channel/PointingToDeclaration/-aliucord/com.aliucord.utils/-channel-utils/get-d-m-recipient.html
@@ -646,6 +646,7 @@ $dokka.location:com.aliucord.utils/IOUtils/IOUtils/#/PointingToDeclaration/-ali
 $dokka.location:com.aliucord.utils/IOUtils/pipe/#java.io.InputStream#java.io.OutputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/pipe.html
 $dokka.location:com.aliucord.utils/IOUtils/readAsText/#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/read-as-text.html
 $dokka.location:com.aliucord.utils/IOUtils/readBytes/#java.io.InputStream/PointingToDeclaration/-aliucord/com.aliucord.utils/-i-o-utils/read-bytes.html
+$dokka.location:com.aliucord.utils/JsonAdapter///PointingToDeclaration/-aliucord/com.aliucord.utils/-json-adapter/index.html
 $dokka.location:com.aliucord.utils/LazyField///PointingToDeclaration/-aliucord/com.aliucord.utils/-lazy-field/index.html
 $dokka.location:com.aliucord.utils/LazyField/LazyField/#java.lang.Class[*]#kotlin.String?/PointingToDeclaration/-aliucord/com.aliucord.utils/-lazy-field/-lazy-field.html
 $dokka.location:com.aliucord.utils/LazyField/getValue/#TypeParam(bounds=[kotlin.Any?])#kotlin.reflect.KProperty[*]/PointingToDeclaration/-aliucord/com.aliucord.utils/-lazy-field/get-value.html
@@ -717,6 +718,7 @@ $dokka.location:com.aliucord.utils/SemVer/major/#/PointingToDeclaration/-aliuco
 $dokka.location:com.aliucord.utils/SemVer/minor/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-sem-ver/minor.html
 $dokka.location:com.aliucord.utils/SemVer/patch/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-sem-ver/patch.html
 $dokka.location:com.aliucord.utils/SemVer/toString/#/PointingToDeclaration/-aliucord/com.aliucord.utils/-sem-ver/to-string.html
+$dokka.location:com.aliucord.utils/SerializedName///PointingToDeclaration/-aliucord/com.aliucord.utils/-serialized-name/index.html
 $dokka.location:com.aliucord.utils/ViewUtils///PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/index.html
 $dokka.location:com.aliucord.utils/ViewUtils/addTo/TypeParam(bounds=[android.view.View])#android.view.ViewGroup#kotlin.Function1[TypeParam(bounds=[android.view.View]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/add-to.html
 $dokka.location:com.aliucord.utils/ViewUtils/addTo/TypeParam(bounds=[android.view.View])#android.view.ViewGroup#kotlin.Int#kotlin.Function1[TypeParam(bounds=[android.view.View]),kotlin.Unit]/PointingToDeclaration/-aliucord/com.aliucord.utils/-view-utils/add-to.html
@@ -1439,7 +1441,7 @@ $dokka.location:com.aliucord/Utils/launchUrl/#android.net.Uri/PointingToDeclarat
 $dokka.location:com.aliucord/Utils/launchUrl/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/launch-url.html
 $dokka.location:com.aliucord/Utils/log/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/log.html
 $dokka.location:com.aliucord/Utils/mainThread/#/PointingToDeclaration/-aliucord/com.aliucord/-utils/main-thread.html
-$dokka.location:com.aliucord/Utils/nestedChildAt/#android.view.ViewGroup#kotlin.IntArray/PointingToDeclaration/-aliucord/com.aliucord/-utils/nested-child-at.html
+$dokka.location:com.aliucord/Utils/nestedChildAt/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/-aliucord/com.aliucord/-utils/nested-child-at.html
 $dokka.location:com.aliucord/Utils/openMediaViewer/#kotlin.String#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-media-viewer.html
 $dokka.location:com.aliucord/Utils/openPage/#android.content.Context#java.lang.Class[com.discord.app.AppComponent]#android.content.Intent?/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page.html
 $dokka.location:com.aliucord/Utils/openPage/#android.content.Context#java.lang.Class[com.discord.app.AppComponent]/PointingToDeclaration/-aliucord/com.aliucord/-utils/open-page.html
@@ -1489,4 +1491,3 @@ com.aliucord.wrappers.users
 com.discord.widgets.chat.input
 com.discord.widgets.guilds.leave
 com.discord.widgets.user
-

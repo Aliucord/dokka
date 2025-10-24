@@ -1,460 +1,510 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Utils</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
-    <script>var pathToRoot = "../../../";</script>
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
+      if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    } else {
+      } else {
         const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    }
+      }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../../index.html">
-                    <span>Aliucord</span>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    Aliucord
             </a>
-    </div>
-    <div>
-2.5.0    </div>
-    <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Aliucord:dokkaHtml/release">androidJvm</button>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+2.5.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":Aliucord/main">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":Aliucord/main"
+                                       data-filter=":Aliucord/main"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
         </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageIds="Aliucord::com.aliucord/Utils///PointingToDeclaration//-1922595193">
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Aliucord
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Aliucord::com.aliucord/Utils///PointingToDeclaration//226084788">
   <div class="breadcrumbs"><a href="../../../index.html">Aliucord</a><span class="delimiter">/</span><a href="../index.html">com.aliucord</a><span class="delimiter">/</span><span class="current">Utils</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Utils</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Utils</a></div><p class="paragraph">Utility class that holds miscellaneous Utilities</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Utils</a></div><p class="paragraph">Utility class that holds miscellaneous Utilities</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
-      <div data-togglable="FUNCTION">
-        <h2 class="">Functions</h2>
-        <div class="table"><a data-name="1518770000%2FFunctions%2F-1922595193" anchor-label="buildClyde" id="1518770000%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1680021544%2FProperties%2F226084788" anchor-label="appActivity" id="-1680021544%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="build-clyde.html"><span>build</span><wbr></wbr><span><span>Clyde</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1518770000%2FFunctions%2F-1922595193"></span>
+                  <div><a href="app-activity.html"><span>app</span><wbr></wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1680021544%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="build-clyde.html"><span class="token function">buildClyde</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">avatarUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.api.user/User///PointingToDeclaration/">User</span></div><div class="brief "><p class="paragraph">Builds Clyde User</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="app-activity.html">appActivity</a><span class="token operator">: </span><span data-unresolved-link="com.discord.app/AppActivity///PointingToDeclaration/">AppActivity</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-973534168%2FFunctions%2F-1922595193" anchor-label="createCheckedSetting" id="-973534168%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1458391196%2FProperties%2F226084788" anchor-label="appContext" id="-1458391196%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="create-checked-setting.html"><span>create</span><wbr></wbr><span>Checked</span><wbr></wbr><span><span>Setting</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-973534168%2FFunctions%2F-1922595193"></span>
+                  <div><a href="app-context.html"><span>app</span><wbr></wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1458391196%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-checked-setting.html"><span class="token function">createCheckedSetting</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="com.discord.views/CheckedSetting.ViewType///PointingToDeclaration/">CheckedSetting.ViewType</span><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">subtext<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.views/CheckedSetting///PointingToDeclaration/">CheckedSetting</span></div><div class="brief "><p class="paragraph">Creates a checkable <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">val </span><a href="app-context.html">appContext</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-632011791%2FFunctions%2F-1922595193" anchor-label="createCommandChoice" id="-632011791%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1132137190%2FProperties%2F226084788" anchor-label="isDebuggable" id="-1132137190%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="create-command-choice.html"><span>create</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Choice</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-632011791%2FFunctions%2F-1922595193"></span>
+                  <div><a href="is-debuggable.html"><span>is</span><wbr></wbr><span><span>Debuggable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1132137190%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-command-choice.html"><span class="token function">createCommandChoice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.api.commands/CommandChoice///PointingToDeclaration/">CommandChoice</span></div><div class="brief "><p class="paragraph">Creates a CommandChoice that can be used inside Command args</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">val </span><a href="is-debuggable.html">isDebuggable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether Aliucord is debuggable</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="885019564%2FFunctions%2F-1922595193" anchor-label="createCommandOption" id="885019564%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-2038617041%2FProperties%2F226084788" anchor-label="mainThread" id="-2038617041%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="create-command-option.html"><span>create</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Option</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="885019564%2FFunctions%2F-1922595193"></span>
+                  <div><a href="main-thread.html"><span>main</span><wbr></wbr><span><span>Thread</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2038617041%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-command-option.html"><span class="token function">createCommandOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="com.discord.api.commands/ApplicationCommandType///PointingToDeclaration/">ApplicationCommandType</span><span class="token operator"> = </span>ApplicationCommandType.STRING<span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">descriptionRes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">required<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">default<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">channelTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">choices<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.discord.api.commands/CommandChoice///PointingToDeclaration/">CommandChoice</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">subCommandOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">autocomplete<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-command-option.html"><span class="token function">createCommandOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="com.discord.api.commands/ApplicationCommandType///PointingToDeclaration/">ApplicationCommandType</span><span class="token operator"> = </span>ApplicationCommandType.STRING<span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">descriptionRes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">required<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">default<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">channelTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">choices<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.discord.api.commands/CommandChoice///PointingToDeclaration/">CommandChoice</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">subCommandOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">autocomplete<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">minValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-number/index.html">Number</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">maxValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-number/index.html">Number</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span></div><div class="brief "><p class="paragraph">Creates a CommandOption that can be used for commands</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword">val </span><a href="main-thread.html">mainThread</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Handler.html">Handler</a></div><div class="brief "><p class="paragraph">The main (UI) thread</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-2130367894%2FFunctions%2F-1922595193" anchor-label="generateRNNonce" id="-2130367894%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-820832916%2FProperties%2F226084788" anchor-label="threadPool" id="-820832916%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="generate-r-n-nonce.html"><span>generate</span><wbr></wbr><span><span>RNNonce</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2130367894%2FFunctions%2F-1922595193"></span>
+                  <div><a href="thread-pool.html"><span>thread</span><wbr></wbr><span><span>Pool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-820832916%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-r-n-nonce.html"><span class="token function">generateRNNonce</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Generates a current snowflake nonce similar to RN or Desktop. The default NonceGenerator uses time in the future, which RN and Desktop do not do.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword">val </span><a href="thread-pool.html">threadPool</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html">ExecutorService</a></div><div class="brief "><p class="paragraph">ThreadPool. Please use this for asynchronous Tasks instead of creating Threads manually as spinning up new Threads everytime is heavy on the CPU</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1020012030%2FFunctions%2F-1922595193" anchor-label="getDrawableByAttr" id="-1020012030%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="1565946936%2FProperties%2F226084788" anchor-label="widgetChatList" id="1565946936%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="get-drawable-by-attr.html"><span>get</span><wbr></wbr><span>Drawable</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Attr</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1020012030%2FFunctions%2F-1922595193"></span>
+                  <div><a href="widget-chat-list.html"><span>widget</span><wbr></wbr><span>Chat</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1565946936%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-drawable-by-attr.html"><span class="token function">getDrawableByAttr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/AttrRes.html"><span class="token annotation builtin">AttrRes</span></a> </span>attr<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a></div><div class="brief "><p class="paragraph">Get a drawable by attribute</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="924011036%2FFunctions%2F-1922595193" anchor-label="getResId" id="924011036%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-res-id.html"><span>get</span><wbr></wbr><span>Res</span><wbr></wbr><span><span>Id</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="924011036%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-res-id.html"><span class="token function">getResId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Get resource id from discord package.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2112251577%2FFunctions%2F-1922595193" anchor-label="joinSupportServer" id="-2112251577%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="join-support-server.html"><span>join</span><wbr></wbr><span>Support</span><wbr></wbr><span><span>Server</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2112251577%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="join-support-server.html"><span class="token function">joinSupportServer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Prompt to join the Aliucord support server</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1513677716%2FFunctions%2F-1922595193" anchor-label="launchFileExplorer" id="-1513677716%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="launch-file-explorer.html"><span>launch</span><wbr></wbr><span>File</span><wbr></wbr><span><span>Explorer</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1513677716%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="launch-file-explorer.html"><span class="token function">launchFileExplorer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">folder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Launches the file explorer in the specified folder. May not work on all Roms, will show an error with advice in that case.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="502714086%2FFunctions%2F-1922595193" anchor-label="launchUrl" id="502714086%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="launch-url.html"><span>launch</span><wbr></wbr><span><span>Url</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="502714086%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="launch-url.html"><span class="token function">launchUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="launch-url.html"><span class="token function">launchUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Launches an URL in the user's preferred Browser</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1329227488%2FFunctions%2F-1922595193" anchor-label="log" id="-1329227488%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="log.html"><span><span>log</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1329227488%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="log.html"><span class="token function"><strike>log</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">msg<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Logs a message on debug level.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="658220428%2FFunctions%2F-1922595193" anchor-label="nestedChildAt" id="658220428%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="nested-child-at.html"><span>nested</span><wbr></wbr><span>Child</span><wbr></wbr><span><span>At</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="658220428%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="nested-child-at.html">R</a><span class="token operator">&gt; </span><a href="nested-child-at.html"><span class="token function">nestedChildAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">root<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>indices<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="nested-child-at.html">R</a></div><div class="brief "><p class="paragraph">Nested childAt. Used to turn nightmares like</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1484182957%2FFunctions%2F-1922595193" anchor-label="openMediaViewer" id="1484182957%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="open-media-viewer.html"><span>open</span><wbr></wbr><span>Media</span><wbr></wbr><span><span>Viewer</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1484182957%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="open-media-viewer.html"><span class="token function">openMediaViewer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">filename<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="16190904%2FFunctions%2F-1922595193" anchor-label="openPage" id="16190904%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="open-page.html"><span>open</span><wbr></wbr><span><span>Page</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="16190904%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="open-page.html"><span class="token function">openPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">clazz<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="com.discord.app/AppComponent///PointingToDeclaration/">AppComponent</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="open-page.html"><span class="token function">openPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">clazz<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="com.discord.app/AppComponent///PointingToDeclaration/">AppComponent</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">intent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1921582181%2FFunctions%2F-1922595193" anchor-label="openPageWithProxy" id="-1921582181%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="open-page-with-proxy.html"><span>open</span><wbr></wbr><span>Page</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Proxy</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1921582181%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="open-page-with-proxy.html"><span class="token function">openPageWithProxy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">fragment<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1190168236%2FFunctions%2F-1922595193" anchor-label="pluralise" id="-1190168236%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="pluralise.html"><span><span>pluralise</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1190168236%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="pluralise.html"><span class="token function">pluralise</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">amount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">noun<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Converts the singular term of the <code class="lang-kotlin">noun</code> into plural.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="243550358%2FFunctions%2F-1922595193" anchor-label="promptRestart" id="243550358%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="prompt-restart.html"><span>prompt</span><wbr></wbr><span><span>Restart</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="243550358%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="prompt-restart.html"><span class="token function">promptRestart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">msg<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;Restart required. Restart now?&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Gravity.TOP</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Prompts the user to restart Aliucord</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-249179969%2FFunctions%2F-1922595193" anchor-label="setClipboard" id="-249179969%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="set-clipboard.html"><span>set</span><wbr></wbr><span><span>Clipboard</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-249179969%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-clipboard.html"><span class="token function">setClipboard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">label<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the clipboard content</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="244158772%2FFunctions%2F-1922595193" anchor-label="showToast" id="244158772%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="show-toast.html"><span>show</span><wbr></wbr><span><span>Toast</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="244158772%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-toast.html"><span class="token function">showToast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">showLonger<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-toast.html"><span class="token function"><strike>showToast</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">_ctx<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">showLonger<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Send a toast from any <a href="https://developer.android.com/reference/kotlin/java/lang/Thread.html">Thread</a></p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1786011096%2FFunctions%2F-1922595193" anchor-label="tintToTheme" id="1786011096%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="tint-to-theme.html"><span>tint</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Theme</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1786011096%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="tint-to-theme.html"><span class="token function">tintToTheme</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">drawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Tints a <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a> to match the user's current theme. More specifically, tints the drawable to <span data-unresolved-link="com.lytefast.flexinput/R.c/primary_light_600/#/PointingToDeclaration/">R.c.primary_light_600</span> if the user is using light theme, <span data-unresolved-link="com.lytefast.flexinput/R.c/primary_dark_300/#/PointingToDeclaration/">R.c.primary_dark_300</span> otherwise</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword">var </span><a href="widget-chat-list.html">widgetChatList</a><span class="token operator">: </span><span data-unresolved-link="com.discord.widgets.chat.list/WidgetChatList///PointingToDeclaration/">WidgetChatList</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Instance of WidgetChatList. Use this instead of patching it's constructor and storing it.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1680021544%2FProperties%2F-1922595193" anchor-label="appActivity" id="-1680021544%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="1518770000%2FFunctions%2F226084788" anchor-label="buildClyde" id="1518770000%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="app-activity.html"><span>app</span><wbr></wbr><span><span>Activity</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1680021544%2FProperties%2F-1922595193"></span>
+                  <div><a href="build-clyde.html"><span>build</span><wbr></wbr><span><span>Clyde</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1518770000%2FFunctions%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="app-activity.html">appActivity</a><span class="token operator">: </span><span data-unresolved-link="com.discord.app/AppActivity///PointingToDeclaration/">AppActivity</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="build-clyde.html"><span class="token function">buildClyde</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">avatarUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.api.user/User///PointingToDeclaration/">User</span></div><div class="brief "><p class="paragraph">Builds Clyde User</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1458391196%2FProperties%2F-1922595193" anchor-label="appContext" id="-1458391196%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-973534168%2FFunctions%2F226084788" anchor-label="createCheckedSetting" id="-973534168%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="app-context.html"><span>app</span><wbr></wbr><span><span>Context</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1458391196%2FProperties%2F-1922595193"></span>
+                  <div><a href="create-checked-setting.html"><span>create</span><wbr></wbr><span>Checked</span><wbr></wbr><span><span>Setting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-973534168%2FFunctions%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="app-context.html">appContext</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="create-checked-setting.html"><span class="token function">createCheckedSetting</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="com.discord.views/CheckedSetting.ViewType///PointingToDeclaration/">CheckedSetting.ViewType</span><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">subtext<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.views/CheckedSetting///PointingToDeclaration/">CheckedSetting</span></div><div class="brief "><p class="paragraph">Creates a checkable <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1132137190%2FProperties%2F-1922595193" anchor-label="isDebuggable" id="-1132137190%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-632011791%2FFunctions%2F226084788" anchor-label="createCommandChoice" id="-632011791%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="is-debuggable.html"><span>is</span><wbr></wbr><span><span>Debuggable</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1132137190%2FProperties%2F-1922595193"></span>
+                  <div><a href="create-command-choice.html"><span>create</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Choice</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-632011791%2FFunctions%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="is-debuggable.html">isDebuggable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether Aliucord is debuggable</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="create-command-choice.html"><span class="token function">createCommandChoice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.api.commands/CommandChoice///PointingToDeclaration/">CommandChoice</span></div><div class="brief "><p class="paragraph">Creates a CommandChoice that can be used inside Command args</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-2038617041%2FProperties%2F-1922595193" anchor-label="mainThread" id="-2038617041%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="885019564%2FFunctions%2F226084788" anchor-label="createCommandOption" id="885019564%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="main-thread.html"><span>main</span><wbr></wbr><span><span>Thread</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2038617041%2FProperties%2F-1922595193"></span>
+                  <div><a href="create-command-option.html"><span>create</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="885019564%2FFunctions%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="main-thread.html">mainThread</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Handler.html">Handler</a></div><div class="brief "><p class="paragraph">The main (UI) thread</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="create-command-option.html"><span class="token function">createCommandOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="com.discord.api.commands/ApplicationCommandType///PointingToDeclaration/">ApplicationCommandType</span><span class="token operator"> = </span>ApplicationCommandType.STRING<span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">descriptionRes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">required<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">default<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">channelTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">choices<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.discord.api.commands/CommandChoice///PointingToDeclaration/">CommandChoice</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">subCommandOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">autocomplete<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="create-command-option.html"><span class="token function">createCommandOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="com.discord.api.commands/ApplicationCommandType///PointingToDeclaration/">ApplicationCommandType</span><span class="token operator"> = </span>ApplicationCommandType.STRING<span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">descriptionRes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">required<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">default<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">channelTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">choices<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.discord.api.commands/CommandChoice///PointingToDeclaration/">CommandChoice</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">subCommandOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">autocomplete<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">minValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-number/index.html">Number</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">maxValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-number/index.html">Number</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.discord.models.commands/ApplicationCommandOption///PointingToDeclaration/">ApplicationCommandOption</span></div><div class="brief "><p class="paragraph">Creates a CommandOption that can be used for commands</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-820832916%2FProperties%2F-1922595193" anchor-label="threadPool" id="-820832916%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-2130367894%2FFunctions%2F226084788" anchor-label="generateRNNonce" id="-2130367894%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="thread-pool.html"><span>thread</span><wbr></wbr><span><span>Pool</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-820832916%2FProperties%2F-1922595193"></span>
+                  <div><a href="generate-r-n-nonce.html"><span>generate</span><wbr></wbr><span><span>RNNonce</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2130367894%2FFunctions%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="thread-pool.html">threadPool</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html">ExecutorService</a></div><div class="brief "><p class="paragraph">ThreadPool. Please use this for asynchronous Tasks instead of creating Threads manually as spinning up new Threads everytime is heavy on the CPU</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="generate-r-n-nonce.html"><span class="token function">generateRNNonce</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Generates a current snowflake nonce similar to RN or Desktop. The default NonceGenerator uses time in the future, which RN and Desktop do not do.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1565946936%2FProperties%2F-1922595193" anchor-label="widgetChatList" id="1565946936%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1020012030%2FFunctions%2F226084788" anchor-label="getDrawableByAttr" id="-1020012030%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="widget-chat-list.html"><span>widget</span><wbr></wbr><span>Chat</span><wbr></wbr><span><span>List</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1565946936%2FProperties%2F-1922595193"></span>
+                  <div><a href="get-drawable-by-attr.html"><span>get</span><wbr></wbr><span>Drawable</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Attr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1020012030%2FFunctions%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="widget-chat-list.html">widgetChatList</a><span class="token operator">: </span><span data-unresolved-link="com.discord.widgets.chat.list/WidgetChatList///PointingToDeclaration/">WidgetChatList</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Instance of WidgetChatList. Use this instead of patching it's constructor and storing it.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="get-drawable-by-attr.html"><span class="token function">getDrawableByAttr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/AttrRes.html"><span class="token annotation builtin">AttrRes</span></a> </span>attr<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a></div><div class="brief "><p class="paragraph">Get a drawable by attribute</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="924011036%2FFunctions%2F226084788" anchor-label="getResId" id="924011036%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-res-id.html"><span>get</span><wbr></wbr><span>Res</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="924011036%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="get-res-id.html"><span class="token function">getResId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Get resource id from discord package.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2112251577%2FFunctions%2F226084788" anchor-label="joinSupportServer" id="-2112251577%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="join-support-server.html"><span>join</span><wbr></wbr><span>Support</span><wbr></wbr><span><span>Server</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2112251577%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="join-support-server.html"><span class="token function">joinSupportServer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ctx<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Prompt to join the Aliucord support server</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1513677716%2FFunctions%2F226084788" anchor-label="launchFileExplorer" id="-1513677716%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="launch-file-explorer.html"><span>launch</span><wbr></wbr><span>File</span><wbr></wbr><span><span>Explorer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1513677716%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="launch-file-explorer.html"><span class="token function">launchFileExplorer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">folder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Launches the file explorer in the specified folder. May not work on all Roms, will show an error with advice in that case.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="502714086%2FFunctions%2F226084788" anchor-label="launchUrl" id="502714086%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="launch-url.html"><span>launch</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="502714086%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="launch-url.html"><span class="token function">launchUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="launch-url.html"><span class="token function">launchUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Launches an URL in the user's preferred Browser</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1329227488%2FFunctions%2F226084788" anchor-label="log" id="-1329227488%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="log.html"><span><span>log</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1329227488%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="log.html"><span class="token function"><strike>log</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">msg<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Logs a message on debug level.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="403686333%2FFunctions%2F226084788" anchor-label="nestedChildAt" id="403686333%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="nested-child-at.html"><span>nested</span><wbr></wbr><span>Child</span><wbr></wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="403686333%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="nested-child-at.html">R</a><span class="token operator">&gt; </span><a href="nested-child-at.html"><span class="token function">nestedChildAt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">root<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>indices<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="nested-child-at.html">R</a></div><div class="brief "><p class="paragraph">Nested childAt. Used to turn nightmares like</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1484182957%2FFunctions%2F226084788" anchor-label="openMediaViewer" id="1484182957%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-media-viewer.html"><span>open</span><wbr></wbr><span>Media</span><wbr></wbr><span><span>Viewer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1484182957%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="open-media-viewer.html"><span class="token function">openMediaViewer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">filename<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="16190904%2FFunctions%2F226084788" anchor-label="openPage" id="16190904%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-page.html"><span>open</span><wbr></wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="16190904%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="open-page.html"><span class="token function">openPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">clazz<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="com.discord.app/AppComponent///PointingToDeclaration/">AppComponent</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="open-page.html"><span class="token function">openPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">clazz<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="com.discord.app/AppComponent///PointingToDeclaration/">AppComponent</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">intent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1921582181%2FFunctions%2F226084788" anchor-label="openPageWithProxy" id="-1921582181%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-page-with-proxy.html"><span>open</span><wbr></wbr><span>Page</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Proxy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1921582181%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="open-page-with-proxy.html"><span class="token function">openPageWithProxy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">fragment<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1190168236%2FFunctions%2F226084788" anchor-label="pluralise" id="-1190168236%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pluralise.html"><span><span>pluralise</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1190168236%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="pluralise.html"><span class="token function">pluralise</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">amount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">noun<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Converts the singular term of the <code class="lang-kotlin">noun</code> into plural.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="243550358%2FFunctions%2F226084788" anchor-label="promptRestart" id="243550358%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="prompt-restart.html"><span>prompt</span><wbr></wbr><span><span>Restart</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="243550358%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="prompt-restart.html"><span class="token function">promptRestart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">msg<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;Restart required. Restart now?&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Gravity.TOP</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Prompts the user to restart Aliucord</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-249179969%2FFunctions%2F226084788" anchor-label="setClipboard" id="-249179969%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-clipboard.html"><span>set</span><wbr></wbr><span><span>Clipboard</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-249179969%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="set-clipboard.html"><span class="token function">setClipboard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">label<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the clipboard content</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="244158772%2FFunctions%2F226084788" anchor-label="showToast" id="244158772%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-toast.html"><span>show</span><wbr></wbr><span><span>Toast</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="244158772%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="show-toast.html"><span class="token function">showToast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">showLonger<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="show-toast.html"><span class="token function"><strike>showToast</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">_ctx<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">showLonger<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Send a toast from any <a href="https://developer.android.com/reference/kotlin/java/lang/Thread.html">Thread</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1786011096%2FFunctions%2F226084788" anchor-label="tintToTheme" id="1786011096%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tint-to-theme.html"><span>tint</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1786011096%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="tint-to-theme.html"><span class="token function">tintToTheme</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">drawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Tints a <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a> to match the user's current theme. More specifically, tints the drawable to <span data-unresolved-link="com.lytefast.flexinput/R.c/primary_light_600/#/PointingToDeclaration/">R.c.primary_light_600</span> if the user is using light theme, <span data-unresolved-link="com.lytefast.flexinput/R.c/primary_dark_300/#/PointingToDeclaration/">R.c.primary_dark_300</span> otherwise</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -464,11 +514,21 @@
     </div>
   </div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
-                class="pull-right"><span>Generated by </span><a
-                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2025 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
     </div>
 </div>
 </body>

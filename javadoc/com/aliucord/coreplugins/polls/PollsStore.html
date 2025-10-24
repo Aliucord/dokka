@@ -118,6 +118,14 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
 
                     </pre>
                     <div class="block"><p>A non-persistent store singleton that handles polls and changes to their votes.</p></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -251,7 +259,7 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.html#dispatchGatewayEvent(com.aliucord.coreplugins.polls.MessagePollVoteEvent,java.lang.Boolean)>dispatchGatewayEvent</a>(<a href=MessagePollVoteEvent.html>MessagePollVoteEvent</a> event, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> isAdd) </code>
                                             </th>
@@ -259,7 +267,7 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.html#handleMessageUpdate(com.discord.api.message.Message)>handleMessageUpdate</a>(Message message) </code>
                                             </th>
@@ -267,7 +275,7 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.html#handleMessageUpdate(com.discord.models.message.Message)>handleMessageUpdate</a>(Message message) </code>
                                             </th>
@@ -275,7 +283,7 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.html#handleMessageDelete(java.lang.Long,java.lang.Long)>handleMessageDelete</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId) </code>
                                             </th>
@@ -285,7 +293,7 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>final Subscription</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.html#subscribeOnMain(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribeOnMain</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext) </code>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.html#subscribeOnMain(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribeOnMain</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext) </code>
                                             </th>
                                             <td class="colLast">Subscribes to poll changes, and run the handler on the main UI thread.</td>
                                         </tr>
@@ -293,13 +301,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final Subscription</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.html#subscribe(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribe</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext) </code>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.html#subscribe(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribe</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext) </code>
                                             </th>
                                             <td class="colLast">Subscribes to poll changes.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.html#fetchDetails(java.lang.Long,java.lang.Long,java.lang.Integer)>fetchDetails</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> answerId) </code>
                                             </th>
@@ -366,10 +374,12 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>dispatchGatewayEvent</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#dispatchGatewayEvent(com.aliucord.coreplugins.polls.MessagePollVoteEvent,java.lang.Boolean)>dispatchGatewayEvent</a>(<a href=MessagePollVoteEvent.html>MessagePollVoteEvent</a> event, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> isAdd)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#dispatchGatewayEvent(com.aliucord.coreplugins.polls.MessagePollVoteEvent,java.lang.Boolean)>dispatchGatewayEvent</a>(<a href=MessagePollVoteEvent.html>MessagePollVoteEvent</a> event, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> isAdd)</pre>
                                         <div class="block"><p>Handles a gateway event by also dispatching it to the store thread</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -380,9 +390,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                             <dd><code>isAdd</code> - Whether the event is VOTE_ADD (true) or VOTE_REMOVE (false)</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -394,19 +408,25 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>handleMessageUpdate</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#handleMessageUpdate(com.discord.api.message.Message)>handleMessageUpdate</a>(Message message)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#handleMessageUpdate(com.discord.api.message.Message)>handleMessageUpdate</a>(Message message)</pre>
                                         <div class="block"><p>Handles a message create/update event, should only be called from StoreStream methods.</p><p>Must be run on the store thread.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>message</code> - New message object</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -418,19 +438,25 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>handleMessageUpdate</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#handleMessageUpdate(com.discord.models.message.Message)>handleMessageUpdate</a>(Message message)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#handleMessageUpdate(com.discord.models.message.Message)>handleMessageUpdate</a>(Message message)</pre>
                                         <div class="block"><p>Handles a message create/update event, should only be called from StoreStream methods.</p><p>Must be run on the store thread.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>message</code> - New message object</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -442,10 +468,12 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>handleMessageDelete</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#handleMessageDelete(java.lang.Long,java.lang.Long)>handleMessageDelete</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#handleMessageDelete(java.lang.Long,java.lang.Long)>handleMessageDelete</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId)</pre>
                                         <div class="block"><p>Handles a message delete event, should only be called from StoreStream methods.</p><p>Must be run on the store thread.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -456,9 +484,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                             <dd><code>messageId</code> - Message ID</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -470,10 +502,12 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>subscribeOnMain</h4>
-                                        <pre class="methodSignature"> final Subscription <a href=PollsStore.html#subscribeOnMain(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribeOnMain</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext)</pre>
+                                        <pre class="methodSignature"> final Subscription <a href=PollsStore.html#subscribeOnMain(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribeOnMain</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext)</pre>
                                         <div class="block"><p>Subscribes to poll changes, and run the handler on the main UI thread.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -488,9 +522,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                             <dd><code>onNext</code> - Event handler, will run on the main thread</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -502,10 +540,12 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>subscribe</h4>
-                                        <pre class="methodSignature"> final Subscription <a href=PollsStore.html#subscribe(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribe</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext)</pre>
+                                        <pre class="methodSignature"> final Subscription <a href=PollsStore.html#subscribe(java.lang.Long,java.lang.Long,kotlin.jvm.functions.Function1)>subscribe</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, Function1&lt;<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a>, <a href=PollsStore.VotesSnapshot.html>PollsStore.VotesSnapshot</a>&gt;, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a>&gt; onNext)</pre>
                                         <div class="block"><p>Subscribes to poll changes.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -520,9 +560,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                             <dd><code>onNext</code> - Event handler</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -534,10 +578,12 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                           >
                                     <li class="blockList">
                                         <h4>fetchDetails</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#fetchDetails(java.lang.Long,java.lang.Long,java.lang.Integer)>fetchDetails</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> answerId)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PollsStore.html#fetchDetails(java.lang.Long,java.lang.Long,java.lang.Integer)>fetchDetails</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> channelId, <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> messageId, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> answerId)</pre>
                                         <div class="block"><p>Fetches detailed votes for a poll.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -552,9 +598,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                             <dd><code>answerId</code> - Answer ID to fetch detailed votes for</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -568,8 +618,10 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                         <h4>getResultFor</h4>
                                         <pre class="methodSignature"> final MessagePollResult <a href=PollsStore.html#getResultFor(java.lang.Long,java.lang.Boolean)>getResultFor</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> id, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> finalised)</pre>
                                         <div class="block"><p>Gets the stored votes for a message as MessagePollResult form.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -580,9 +632,13 @@ public class <span class="typeNameLabel"><a href=PollsStore.html>PollsStore</a><
                                             <dd><code>finalised</code> - Whether or not the poll is finalised</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

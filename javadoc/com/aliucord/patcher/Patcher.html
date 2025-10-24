@@ -118,6 +118,14 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
 
                     </pre>
                     <div class="block"></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -260,7 +268,7 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>static XC_MethodHook.Unhook</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook) </code>
                                             </th>
                                             <td class="colLast">Add a patch</td>
                                         </tr>
@@ -268,7 +276,7 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>static XC_MethodHook.Unhook</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=Patcher.html#addPatch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook) </code>
                                             </th>
                                             <td class="colLast">Add a patch</td>
                                         </tr>
@@ -337,8 +345,10 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                         <h4>addPatch</h4>
                                         <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(java.lang.reflect.Member,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> member, XC_MethodHook hook)</pre>
                                         <div class="block"><p>Add a patch</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -349,9 +359,16 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                             <dd><code>hook</code> - MethodHook</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Unhook</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -363,10 +380,12 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>addPatch</h4>
-                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
+                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
                                         <div class="block"><p>Add a patch</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -385,9 +404,16 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                             <dd><code>hook</code> - MethodHook</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Unhook</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -399,10 +425,12 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                           >
                                     <li class="blockList">
                                         <h4>addPatch</h4>
-                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
+                                        <pre class="methodSignature"> static XC_MethodHook.Unhook <a href=Patcher.html#addPatch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>addPatch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> methodName, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
                                         <div class="block"><p>Add a patch</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -421,9 +449,16 @@ public class <span class="typeNameLabel"><a href=Patcher.html>Patcher</a></span>
                                             <dd><code>hook</code> - MethodHook</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Unhook</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

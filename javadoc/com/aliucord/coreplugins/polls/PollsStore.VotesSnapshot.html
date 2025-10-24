@@ -118,6 +118,14 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
 
                     </pre>
                     <div class="block"><p>A snapshot of vote details for an answer.</p></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -165,18 +173,6 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#meVoted>meVoted</a></code></th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
-                                        <tr class="rowColor">
-                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isIncomplete()>isIncomplete</a></code></th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
-                                        <tr class="altColor">
                                             <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#count>count</a></code></th>
                                             <td class="colLast"></td>
@@ -197,6 +193,18 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                         <tr class="rowColor">
                                             <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isLoading()>isLoading</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#meVoted>meVoted</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isIncomplete()>isIncomplete</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
@@ -280,51 +288,51 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#getMeVoted()>getMeVoted</a>() </code>
-                                            </th>
-                                            <td class="colLast">Whether or not the current user has voted on this answer.</td>
-                                        </tr>
-                                        
-                                        <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isIncomplete()>isIncomplete</a>() </code>
-                                            </th>
-                                            <td class="colLast">Whether or not <a href=PollsStore.VotesSnapshot.html#voters>voters</a> is incomplete.</td>
-                                        </tr>
-                                        
-                                        <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#getCount()>getCount</a>() </code>
                                             </th>
-                                            <td class="colLast">Total vote count.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
+                                        <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/util/SortedSet.html>SortedSet</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#getVoters()>getVoters</a>() </code>
                                             </th>
-                                            <td class="colLast">A (lazy) set of voter user IDs.</td>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#getHasFailed()>getHasFailed</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isLoading()>isLoading</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#getHasFailed()>getHasFailed</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#getMeVoted()>getMeVoted</a>() </code>
                                             </th>
-                                            <td class="colLast">If the previous fetch request has failed.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isLoading()>isLoading</a>() </code>
+                                            <th class="colSecond" scope="row"><code><a href=PollsStore.VotesSnapshot.html#isIncomplete()>isIncomplete</a>() </code>
                                             </th>
-                                            <td class="colLast">Whether or not there is an ongoing fetch request.</td>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                         </tbody>
@@ -381,36 +389,6 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="getMeVoted()">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>getMeVoted</h4>
-                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=PollsStore.VotesSnapshot.html#getMeVoted()>getMeVoted</a>()</pre>
-                                        <div class="block"><p>Whether or not the current user has voted on this answer.</p></div>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
-                                <a id="isIncomplete()">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>isIncomplete</h4>
-                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=PollsStore.VotesSnapshot.html#isIncomplete()>isIncomplete</a>()</pre>
-                                        <div class="block"><p>Whether or not <a href=PollsStore.VotesSnapshot.html#voters>voters</a> is incomplete.</p></div>
-                                        
-                                        <!-- TODO missing return annotation -->
-                                    </li>
-                                </ul>
-                                
                                 <a id="getCount()">
                                     <!--   -->
                                 </a>
@@ -420,9 +398,17 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                     <li class="blockList">
                                         <h4>getCount</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=PollsStore.VotesSnapshot.html#getCount()>getCount</a>()</pre>
-                                        <div class="block"><p>Total vote count.</p></div>
+                                        <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -435,9 +421,17 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                     <li class="blockList">
                                         <h4>getVoters</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/SortedSet.html>SortedSet</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a>&gt; <a href=PollsStore.VotesSnapshot.html#getVoters()>getVoters</a>()</pre>
-                                        <div class="block"><p>A (lazy) set of voter user IDs. Count may be different from <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/index.html>count</a>, call <a href=PollsStore.html#fetchDetails(java.lang.Long,java.lang.Long,java.lang.Integer)>fetchDetails</a> to fetch more.</p></div>
+                                        <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -450,9 +444,17 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                     <li class="blockList">
                                         <h4>getHasFailed</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=PollsStore.VotesSnapshot.html#getHasFailed()>getHasFailed</a>()</pre>
-                                        <div class="block"><p>If the previous fetch request has failed.</p></div>
+                                        <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -460,14 +462,68 @@ public final class <span class="typeNameLabel"><a href=PollsStore.VotesSnapshot.
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>isLoading</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=PollsStore.VotesSnapshot.html#isLoading()>isLoading</a>()</pre>
-                                        <div class="block"><p>Whether or not there is an ongoing fetch request.</p></div>
+                                        <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="getMeVoted()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getMeVoted</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=PollsStore.VotesSnapshot.html#getMeVoted()>getMeVoted</a>()</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="isIncomplete()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isIncomplete</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=PollsStore.VotesSnapshot.html#isIncomplete()>isIncomplete</a>()</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

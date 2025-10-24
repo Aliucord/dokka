@@ -1,220 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>NoTrack</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
-    <script>var pathToRoot = "../../../";</script>
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
+      if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    } else {
+      } else {
         const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    }
+      }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../../index.html">
-                    <span>Aliucord</span>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    Aliucord
             </a>
-    </div>
-    <div>
-2.5.0    </div>
-    <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Aliucord:dokkaHtml/release">androidJvm</button>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+2.5.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":Aliucord/main">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":Aliucord/main"
+                                       data-filter=":Aliucord/main"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
         </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageIds="Aliucord::com.aliucord.coreplugins/NoTrack///PointingToDeclaration//-1922595193">
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Aliucord
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Aliucord::com.aliucord.coreplugins/NoTrack///PointingToDeclaration//226084788">
   <div class="breadcrumbs"><a href="../../../index.html">Aliucord</a><span class="delimiter">/</span><a href="../index.html">com.aliucord.coreplugins</a><span class="delimiter">/</span><span class="current">NoTrack</span></div>
   <div class="cover ">
     <h1 class="cover"><span>No</span><wbr></wbr><span><span>Track</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">NoTrack</a> : <span data-unresolved-link="com.aliucord.entities/CorePlugin///PointingToDeclaration/">CorePlugin</span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">NoTrack</a> : <span data-unresolved-link="com.aliucord.entities/CorePlugin///PointingToDeclaration/">CorePlugin</span></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
-        <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="699425202%2FConstructors%2F-1922595193" anchor-label="NoTrack" id="699425202%2FConstructors%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="699425202%2FConstructors%2F226084788" anchor-label="NoTrack" id="699425202%2FConstructors%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-no-track.html"><span>No</span><wbr></wbr><span><span>Track</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="699425202%2FConstructors%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="699425202%2FConstructors%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="FUNCTION">
-        <h2 class="">Functions</h2>
-        <div class="table"><a data-name="650810258%2FFunctions%2F-1922595193" anchor-label="getAnnotation" id="650810258%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../-forwarded-messages/index.html#650810258%2FFunctions%2F-1922595193"><span>get</span><wbr></wbr><span><span>Annotation</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="650810258%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#650810258%2FFunctions%2F-1922595193"><span class="token function">getAnnotation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.aliucord.annotations/-aliucord-plugin/index.html">AliucordPlugin</a></div><div class="brief "><p class="paragraph">Returns the <code class="lang-kotlin">@AliucordPlugin</code> on this class annotation if it exists.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="250243474%2FFunctions%2F-1922595193" anchor-label="getManifest" id="250243474%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../-forwarded-messages/index.html#250243474%2FFunctions%2F-1922595193"><span>get</span><wbr></wbr><span><span>Manifest</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="250243474%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#250243474%2FFunctions%2F-1922595193"><span class="token function">getManifest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.aliucord.entities/-plugin/-manifest/index.html">Plugin.Manifest</a></div><div class="brief "><p class="paragraph">Method returning the <a href="../../com.aliucord.entities/-plugin/-manifest/index.html">Manifest</a> of your Plugin</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1152012618%2FFunctions%2F-1922595193" anchor-label="getName" id="-1152012618%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../-forwarded-messages/index.html#-1152012618%2FFunctions%2F-1922595193"><span>get</span><wbr></wbr><span><span>Name</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1152012618%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#-1152012618%2FFunctions%2F-1922595193"><span class="token function">getName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">The name of this plugin as known by the updater. The name of this class does not necessarily have to match.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1134027253%2FFunctions%2F-1922595193" anchor-label="isRequired" id="1134027253%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="is-required.html"><span>is</span><wbr></wbr><span><span>Required</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1134027253%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-required.html"><span class="token function">isRequired</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Whether this core plugin cannot be disabled at all.</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1399695087%2FFunctions%2F-1922595193" anchor-label="load" id="1399695087%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="load.html"><span><span>load</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1399695087%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load.html"><span class="token function">load</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Called when your Plugin is loaded</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2045485770%2FFunctions%2F-1922595193" anchor-label="requiresRestart" id="-2045485770%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../com.aliucord.entities/-plugin/requires-restart.html"><span>requires</span><wbr></wbr><span><span>Restart</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2045485770%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.aliucord.entities/-plugin/requires-restart.html"><span class="token function">requiresRestart</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns whether the user will be prompted to restart after enabling/disabling. This is toggleable through the <code class="lang-kotlin">@AliucordPlugin</code> annotation. You should not override this method yourself.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-504123379%2FFunctions%2F-1922595193" anchor-label="start" id="-504123379%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="start.html"><span><span>start</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-504123379%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start.html"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Called when your Plugin is started</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="399229451%2FFunctions%2F-1922595193" anchor-label="stop" id="399229451%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="stop.html"><span><span>stop</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399229451%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="stop.html"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Called when your Plugin is stopped</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="480324931%2FFunctions%2F-1922595193" anchor-label="unload" id="480324931%2FFunctions%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../-forwarded-messages/index.html#480324931%2FFunctions%2F-1922595193"><span><span>unload</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="480324931%2FFunctions%2F-1922595193"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#480324931%2FFunctions%2F-1922595193"><span class="token function">unload</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when your Plugin is unloaded</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -222,123 +133,262 @@
         </div>
       </div>
       <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="1077700252%2FProperties%2F-1922595193" anchor-label="__filename" id="1077700252%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1077700252%2FProperties%2F226084788" anchor-label="__filename" id="1077700252%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../../com.aliucord.entities/-plugin/__filename.html"><span><span>__filename</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1077700252%2FProperties%2F-1922595193"></span>
+                  <div><a href="../../com.aliucord.entities/-plugin/__filename.html"><span>_</span><wbr></wbr><span>_</span><wbr></wbr><span>filename</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1077700252%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/__filename.html">__filename</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">The filename of the zip this plugin was loaded from</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/__filename.html">__filename</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">The filename of the zip this plugin was loaded from</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-905046290%2FProperties%2F-1922595193" anchor-label="isHidden" id="-905046290%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-905046290%2FProperties%2F226084788" anchor-label="isHidden" id="-905046290%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-forwarded-messages/index.html#-905046290%2FProperties%2F-1922595193"><span>is</span><wbr></wbr><span><span>Hidden</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-905046290%2FProperties%2F-1922595193"></span>
+                  <div><a href="../-forwarded-messages/index.html#-905046290%2FProperties%2F226084788"><span>is</span><wbr></wbr><span><span>Hidden</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-905046290%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-forwarded-messages/index.html#-905046290%2FProperties%2F-1922595193">isHidden</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Hides this core plugin from the plugins page. This should generally be used for coreplugins that are fixing existing functionality.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-forwarded-messages/index.html#-905046290%2FProperties%2F226084788">isHidden</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Hides this core plugin from the plugins page. This should generally be used for coreplugins that are fixing existing functionality.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="966245337%2FProperties%2F-1922595193" anchor-label="isRequired" id="966245337%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="966245337%2FProperties%2F226084788" anchor-label="isRequired" id="966245337%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-forwarded-messages/index.html#966245337%2FProperties%2F-1922595193"><span>is</span><wbr></wbr><span><span>Required</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="966245337%2FProperties%2F-1922595193"></span>
+                  <div><a href="../-forwarded-messages/index.html#966245337%2FProperties%2F226084788"><span>is</span><wbr></wbr><span><span>Required</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="966245337%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-forwarded-messages/index.html#966245337%2FProperties%2F-1922595193">isRequired</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether this core plugin cannot be disabled at all.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-forwarded-messages/index.html#966245337%2FProperties%2F226084788">isRequired</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether this core plugin cannot be disabled at all.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1686498797%2FProperties%2F-1922595193" anchor-label="logger" id="-1686498797%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1686498797%2FProperties%2F226084788" anchor-label="logger" id="-1686498797%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="../../com.aliucord.entities/-plugin/logger.html"><span><span>logger</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1686498797%2FProperties%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1686498797%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.aliucord.entities/-plugin/logger.html">logger</a><span class="token operator">: </span><a href="../../com.aliucord/-logger/index.html">Logger</a></div><div class="brief "><p class="paragraph">The <a href="../../com.aliucord/-logger/index.html">Logger</a> of your plugin. Use this to log information</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../com.aliucord.entities/-plugin/logger.html">logger</a><span class="token operator">: </span><a href="../../com.aliucord/-logger/index.html">Logger</a></div><div class="brief "><p class="paragraph">The <a href="../../com.aliucord/-logger/index.html">Logger</a> of your plugin. Use this to log information</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="2020508827%2FProperties%2F-1922595193" anchor-label="needsResources" id="2020508827%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="2020508827%2FProperties%2F226084788" anchor-label="needsResources" id="2020508827%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="../../com.aliucord.entities/-plugin/needs-resources.html"><span>needs</span><wbr></wbr><span><span>Resources</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2020508827%2FProperties%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2020508827%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/needs-resources.html">needsResources</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether your plugin has resources that need to be loaded</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/needs-resources.html">needsResources</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether your plugin has resources that need to be loaded</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1976265326%2FProperties%2F-1922595193" anchor-label="resources" id="-1976265326%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1976265326%2FProperties%2F226084788" anchor-label="resources" id="-1976265326%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="../../com.aliucord.entities/-plugin/resources.html"><span><span>resources</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976265326%2FProperties%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976265326%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/resources.html">resources</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/res/Resources.html">Resources</a></div><div class="brief "><p class="paragraph">The resources of your plugin.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/resources.html">resources</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/res/Resources.html">Resources</a></div><div class="brief "><p class="paragraph">The resources of your plugin.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1167334048%2FProperties%2F-1922595193" anchor-label="settings" id="-1167334048%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1167334048%2FProperties%2F226084788" anchor-label="settings" id="-1167334048%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="../../com.aliucord.entities/-plugin/settings.html"><span><span>settings</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1167334048%2FProperties%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1167334048%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.aliucord.entities/-plugin/settings.html">settings</a><span class="token operator">: </span><a href="../../com.aliucord.api/-settings-a-p-i/index.html">SettingsAPI</a></div><div class="brief "><p class="paragraph">The <a href="../../com.aliucord.api/-settings-a-p-i/index.html">SettingsAPI</a> of your plugin. Use this to store persistent data</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../com.aliucord.entities/-plugin/settings.html">settings</a><span class="token operator">: </span><a href="../../com.aliucord.api/-settings-a-p-i/index.html">SettingsAPI</a></div><div class="brief "><p class="paragraph">The <a href="../../com.aliucord.api/-settings-a-p-i/index.html">SettingsAPI</a> of your plugin. Use this to store persistent data</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-535203483%2FProperties%2F-1922595193" anchor-label="settingsTab" id="-535203483%2FProperties%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-          <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-535203483%2FProperties%2F226084788" anchor-label="settingsTab" id="-535203483%2FProperties%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="../../com.aliucord.entities/-plugin/settings-tab.html"><span>settings</span><wbr></wbr><span><span>Tab</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-535203483%2FProperties%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-535203483%2FProperties%2F226084788"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/settings-tab.html">settingsTab</a><span class="token operator">: </span><a href="../../com.aliucord.entities/-plugin/-settings-tab/index.html">Plugin.SettingsTab</a></div><div class="brief "><p class="paragraph">SettingsTab associated with this plugin. Set this to register a settings page</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../../com.aliucord.entities/-plugin/settings-tab.html">settingsTab</a><span class="token operator">: </span><a href="../../com.aliucord.entities/-plugin/-settings-tab/index.html">Plugin.SettingsTab</a></div><div class="brief "><p class="paragraph">SettingsTab associated with this plugin. Set this to register a settings page</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="650810258%2FFunctions%2F226084788" anchor-label="getAnnotation" id="650810258%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-forwarded-messages/index.html#650810258%2FFunctions%2F226084788"><span>get</span><wbr></wbr><span><span>Annotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="650810258%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#650810258%2FFunctions%2F226084788"><span class="token function">getAnnotation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.aliucord.annotations/-aliucord-plugin/index.html">AliucordPlugin</a></div><div class="brief "><p class="paragraph">Returns the <code class="lang-kotlin">@AliucordPlugin</code> on this class annotation if it exists.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="250243474%2FFunctions%2F226084788" anchor-label="getManifest" id="250243474%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-forwarded-messages/index.html#250243474%2FFunctions%2F226084788"><span>get</span><wbr></wbr><span><span>Manifest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="250243474%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#250243474%2FFunctions%2F226084788"><span class="token function">getManifest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.aliucord.entities/-plugin/-manifest/index.html">Plugin.Manifest</a></div><div class="brief "><p class="paragraph">Method returning the <a href="../../com.aliucord.entities/-plugin/-manifest/index.html">Manifest</a> of your Plugin</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1152012618%2FFunctions%2F226084788" anchor-label="getName" id="-1152012618%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-forwarded-messages/index.html#-1152012618%2FFunctions%2F226084788"><span>get</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1152012618%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#-1152012618%2FFunctions%2F226084788"><span class="token function">getName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">The name of this plugin as known by the updater. The name of this class does not necessarily have to match.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1134027253%2FFunctions%2F226084788" anchor-label="isRequired" id="1134027253%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-required.html"><span>is</span><wbr></wbr><span><span>Required</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1134027253%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-required.html"><span class="token function">isRequired</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Whether this core plugin cannot be disabled at all.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1399695087%2FFunctions%2F226084788" anchor-label="load" id="1399695087%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load.html"><span><span>load</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1399695087%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="load.html"><span class="token function">load</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Called when your Plugin is loaded</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2045485770%2FFunctions%2F226084788" anchor-label="requiresRestart" id="-2045485770%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.aliucord.entities/-plugin/requires-restart.html"><span>requires</span><wbr></wbr><span><span>Restart</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2045485770%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../../com.aliucord.entities/-plugin/requires-restart.html"><span class="token function">requiresRestart</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns whether the user will be prompted to restart after enabling/disabling. This is toggleable through the <code class="lang-kotlin">@AliucordPlugin</code> annotation. You should not override this method yourself.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-504123379%2FFunctions%2F226084788" anchor-label="start" id="-504123379%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-504123379%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="start.html"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Called when your Plugin is started</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="399229451%2FFunctions%2F226084788" anchor-label="stop" id="399229451%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop.html"><span><span>stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399229451%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="stop.html"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Called when your Plugin is stopped</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="480324931%2FFunctions%2F226084788" anchor-label="unload" id="480324931%2FFunctions%2F226084788" data-filterable-set=":Aliucord/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-forwarded-messages/index.html#480324931%2FFunctions%2F226084788"><span><span>unload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="480324931%2FFunctions%2F226084788"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":Aliucord/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-forwarded-messages/index.html#480324931%2FFunctions%2F226084788"><span class="token function">unload</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when your Plugin is unloaded</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -348,11 +398,21 @@
     </div>
   </div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
-                class="pull-right"><span>Generated by </span><a
-                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2025 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
     </div>
 </div>
 </body>

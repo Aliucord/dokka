@@ -1,75 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Aliucord</title>
     <link href="images/logo-icon.svg" rel="icon" type="image/svg">
-    <script>var pathToRoot = "";</script>
+        <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
+      if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    } else {
+      } else {
         const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    }
+      }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
 <link href="styles/style.css" rel="Stylesheet">
-<link href="styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="styles/main.css" rel="Stylesheet">
 <link href="styles/prism.css" rel="Stylesheet">
 <link href="styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<link href="ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/safe-local-storage_blocking.js"></script>
 <script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<script type="text/javascript" src="ui-kit/ui-kit.min.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="index.html">
-                    <span>Aliucord</span>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="index.html" tabindex="1">
+                    Aliucord
             </a>
-    </div>
-    <div>
-2.5.0    </div>
-    <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":Aliucord:dokkaHtml/release">androidJvm</button>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+2.5.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":Aliucord/main">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":Aliucord/main"
+                                       data-filter=":Aliucord/main"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
         </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageIds="Aliucord::////PointingToDeclaration//-1922595193">
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Aliucord
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content" pageIds="Aliucord::////PointingToDeclaration//226084788">
   <div class="breadcrumbs"></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Aliucord</span></span></h1>
   </div>
   <h2 class="">Packages</h2>
-  <div class="table"><a data-name="583660260%2FPackages%2F-1922595193" anchor-label="com.aliucord" id="583660260%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+  <div class="table"><a data-name="583660260%2FPackages%2F226084788" anchor-label="com.aliucord" id="583660260%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord/index.html">com.aliucord</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="583660260%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="583660260%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -78,16 +128,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-95339878%2FPackages%2F-1922595193" anchor-label="com.aliucord.annotations" id="-95339878%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-95339878%2FPackages%2F226084788" anchor-label="com.aliucord.annotations" id="-95339878%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.annotations/index.html">com.aliucord.annotations</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95339878%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95339878%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -96,16 +146,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="380151312%2FPackages%2F-1922595193" anchor-label="com.aliucord.api" id="380151312%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="380151312%2FPackages%2F226084788" anchor-label="com.aliucord.api" id="380151312%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.api/index.html">com.aliucord.api</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="380151312%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="380151312%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -114,16 +164,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1890750561%2FPackages%2F-1922595193" anchor-label="com.aliucord.api.rn.user" id="-1890750561%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1890750561%2FPackages%2F226084788" anchor-label="com.aliucord.api.rn.user" id="-1890750561%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.api.rn.user/index.html">com.aliucord.api.rn.user</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1890750561%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1890750561%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -132,16 +182,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-865512361%2FPackages%2F-1922595193" anchor-label="com.aliucord.coreplugins" id="-865512361%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-865512361%2FPackages%2F226084788" anchor-label="com.aliucord.coreplugins" id="-865512361%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.coreplugins/index.html">com.aliucord.coreplugins</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-865512361%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-865512361%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -150,16 +200,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1013337539%2FPackages%2F-1922595193" anchor-label="com.aliucord.coreplugins.polls" id="-1013337539%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1013337539%2FPackages%2F226084788" anchor-label="com.aliucord.coreplugins.polls" id="-1013337539%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.coreplugins.polls/index.html">com.aliucord.coreplugins.polls</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1013337539%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1013337539%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -168,16 +218,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="498382775%2FPackages%2F-1922595193" anchor-label="com.aliucord.coreplugins.rn" id="498382775%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="498382775%2FPackages%2F226084788" anchor-label="com.aliucord.coreplugins.rn" id="498382775%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.coreplugins.rn/index.html">com.aliucord.coreplugins.rn</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="498382775%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="498382775%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -186,16 +236,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-944177585%2FPackages%2F-1922595193" anchor-label="com.aliucord.entities" id="-944177585%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-944177585%2FPackages%2F226084788" anchor-label="com.aliucord.entities" id="-944177585%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.entities/index.html">com.aliucord.entities</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-944177585%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-944177585%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -204,16 +254,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1444697127%2FPackages%2F-1922595193" anchor-label="com.aliucord.fragments" id="-1444697127%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1444697127%2FPackages%2F226084788" anchor-label="com.aliucord.fragments" id="-1444697127%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.fragments/index.html">com.aliucord.fragments</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1444697127%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1444697127%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -222,16 +272,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="50319659%2FPackages%2F-1922595193" anchor-label="com.aliucord.patcher" id="50319659%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="50319659%2FPackages%2F226084788" anchor-label="com.aliucord.patcher" id="50319659%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.patcher/index.html">com.aliucord.patcher</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="50319659%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="50319659%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -240,16 +290,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="1101454385%2FPackages%2F-1922595193" anchor-label="com.aliucord.settings" id="1101454385%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="1101454385%2FPackages%2F226084788" anchor-label="com.aliucord.settings" id="1101454385%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.settings/index.html">com.aliucord.settings</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1101454385%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1101454385%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -258,16 +308,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="316872191%2FPackages%2F-1922595193" anchor-label="com.aliucord.updater" id="316872191%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="316872191%2FPackages%2F226084788" anchor-label="com.aliucord.updater" id="316872191%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.updater/index.html">com.aliucord.updater</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="316872191%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="316872191%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -276,16 +326,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-44693273%2FPackages%2F-1922595193" anchor-label="com.aliucord.utils" id="-44693273%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-44693273%2FPackages%2F226084788" anchor-label="com.aliucord.utils" id="-44693273%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.utils/index.html">com.aliucord.utils</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-44693273%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-44693273%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -294,16 +344,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1097912220%2FPackages%2F-1922595193" anchor-label="com.aliucord.views" id="-1097912220%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1097912220%2FPackages%2F226084788" anchor-label="com.aliucord.views" id="-1097912220%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.views/index.html">com.aliucord.views</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1097912220%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1097912220%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -312,16 +362,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="1127149669%2FPackages%2F-1922595193" anchor-label="com.aliucord.widgets" id="1127149669%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="1127149669%2FPackages%2F226084788" anchor-label="com.aliucord.widgets" id="1127149669%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.widgets/index.html">com.aliucord.widgets</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1127149669%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1127149669%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -330,16 +380,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="348623886%2FPackages%2F-1922595193" anchor-label="com.aliucord.wrappers" id="348623886%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="348623886%2FPackages%2F226084788" anchor-label="com.aliucord.wrappers" id="348623886%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.wrappers/index.html">com.aliucord.wrappers</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="348623886%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="348623886%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -348,16 +398,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-60328802%2FPackages%2F-1922595193" anchor-label="com.aliucord.wrappers.embeds" id="-60328802%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-60328802%2FPackages%2F226084788" anchor-label="com.aliucord.wrappers.embeds" id="-60328802%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.wrappers.embeds/index.html">com.aliucord.wrappers.embeds</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-60328802%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-60328802%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -366,16 +416,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="1819057712%2FPackages%2F-1922595193" anchor-label="com.aliucord.wrappers.messages" id="1819057712%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="1819057712%2FPackages%2F226084788" anchor-label="com.aliucord.wrappers.messages" id="1819057712%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.wrappers.messages/index.html">com.aliucord.wrappers.messages</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1819057712%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1819057712%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -384,16 +434,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1994620102%2FPackages%2F-1922595193" anchor-label="com.aliucord.wrappers.stickers" id="-1994620102%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1994620102%2FPackages%2F226084788" anchor-label="com.aliucord.wrappers.stickers" id="-1994620102%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.wrappers.stickers/index.html">com.aliucord.wrappers.stickers</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1994620102%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1994620102%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -402,16 +452,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="899060008%2FPackages%2F-1922595193" anchor-label="com.aliucord.wrappers.users" id="899060008%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="899060008%2FPackages%2F226084788" anchor-label="com.aliucord.wrappers.users" id="899060008%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.aliucord.wrappers.users/index.html">com.aliucord.wrappers.users</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="899060008%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="899060008%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -420,16 +470,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="799537476%2FPackages%2F-1922595193" anchor-label="com.discord.widgets.chat.input" id="799537476%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="799537476%2FPackages%2F226084788" anchor-label="com.discord.widgets.chat.input" id="799537476%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.discord.widgets.chat.input/index.html">com.discord.widgets.chat.input</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="799537476%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="799537476%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -438,16 +488,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="-1201713671%2FPackages%2F-1922595193" anchor-label="com.discord.widgets.guilds.leave" id="-1201713671%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="-1201713671%2FPackages%2F226084788" anchor-label="com.discord.widgets.guilds.leave" id="-1201713671%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.discord.widgets.guilds.leave/index.html">com.discord.widgets.guilds.leave</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1201713671%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1201713671%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -456,16 +506,16 @@
         <div></div>
       </div>
     </div>
-<a data-name="584370971%2FPackages%2F-1922595193" anchor-label="com.discord.widgets.user" id="584370971%2FPackages%2F-1922595193" data-filterable-set=":Aliucord:dokkaHtml/release"></a>
-    <div class="table-row" data-filterable-current=":Aliucord:dokkaHtml/release" data-filterable-set=":Aliucord:dokkaHtml/release">
+<a data-name="584370971%2FPackages%2F226084788" anchor-label="com.discord.widgets.user" id="584370971%2FPackages%2F226084788" data-filterable-set=":Aliucord/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":Aliucord/main" data-filterable-set=":Aliucord/main">
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
               <div><a href="-aliucord/com.discord.widgets.user/index.html">com.discord.widgets.user</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="584370971%2FPackages%2F-1922595193"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="584370971%2FPackages%2F226084788"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right">
+          <div class="pull-right platform-tags--wrapper">
             <div class="platform-tags no-gutters">
               <div class="platform-tag jvm-like">androidJvm</div>
             </div>
@@ -476,11 +526,21 @@
     </div>
   </div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
-                class="pull-right"><span>Generated by </span><a
-                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2025 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
     </div>
 </div>
 </body>

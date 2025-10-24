@@ -126,6 +126,14 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
  implements <a href=https://developer.android.com/reference/kotlin/java/io/Closeable.html>Closeable</a>
                     </pre>
                     <div class="block"><p>Utility to build MultiPart requests</p></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -282,7 +290,7 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;byte&gt;</code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;byte&gt;</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=Http.MultiPartBuilder.html#getBytes()>getBytes</a>() </code>
                                             </th>
@@ -351,7 +359,7 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                     <li class="blockList">
                                         <h4>Http.MultiPartBuilder</h4>
                                         <pre>Http.MultiPartBuilder(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> boundary, <a href=https://developer.android.com/reference/kotlin/java/io/OutputStream.html>OutputStream</a> os)</pre>
-                                        <div class="block">Construct a new MultiPartBuilder writing to the provided OutputStream</div>
+                                        <div class="block"><p>Construct a new MultiPartBuilder writing to the provided OutputStream</p></div>
                                         
                                         <dl>
                                             <dt><span class="paramLabel">Parameters:</span></dt>
@@ -392,8 +400,10 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <h4>appendFile</h4>
                                         <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=Http.MultiPartBuilder.html>Http.MultiPartBuilder</a> <a href=Http.MultiPartBuilder.html#appendFile(java.lang.String,java.io.File)>appendFile</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fieldName, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/io/File.html>File</a> uploadFile)</pre>
                                         <div class="block"><p>Append file. Will automatically be encoded for you</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -404,9 +414,16 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                             <dd><code>uploadFile</code> - The parameter file</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>self</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -420,8 +437,10 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <h4>appendStream</h4>
                                         <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=Http.MultiPartBuilder.html>Http.MultiPartBuilder</a> <a href=Http.MultiPartBuilder.html#appendStream(java.lang.String,java.io.InputStream)>appendStream</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fieldName, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/io/InputStream.html>InputStream</a> is)</pre>
                                         <div class="block"><p>Append InputStream. Will automatically be encoded for you</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -432,9 +451,16 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                             <dd><code>is</code> - The parameter stream</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>self</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -448,8 +474,10 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <h4>appendField</h4>
                                         <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=Http.MultiPartBuilder.html>Http.MultiPartBuilder</a> <a href=Http.MultiPartBuilder.html#appendField(java.lang.String,java.lang.String)>appendField</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fieldName, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> value)</pre>
                                         <div class="block"><p>Append field. Will automatically be encoded for you</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -460,9 +488,16 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                             <dd><code>value</code> - The parameter value</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>self</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -474,10 +509,18 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                           >
                                     <li class="blockList">
                                         <h4>getBytes</h4>
-                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>()@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;byte&gt; <a href=Http.MultiPartBuilder.html#getBytes()>getBytes</a>()</pre>
+                                        <pre class="methodSignature">@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>()@<a href=https://developer.android.com/reference/kotlin/java/lang/Deprecated.html>Deprecated</a>() <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;byte&gt; <a href=Http.MultiPartBuilder.html#getBytes()>getBytes</a>()</pre>
                                         <div class="block"><p>Build the finished byte array</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -491,8 +534,16 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <h4>finish</h4>
                                         <pre class="methodSignature"> void <a href=Http.MultiPartBuilder.html#finish()>finish</a>()</pre>
                                         <div class="block"><p>Finishes this MultiPartForm. This should be called last. Calling any other methods on this Builder after calling this will lead to undefined behaviour.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -506,8 +557,16 @@ public class <span class="typeNameLabel"><a href=Http.MultiPartBuilder.html>Http
                                         <h4>close</h4>
                                         <pre class="methodSignature"> void <a href=Http.MultiPartBuilder.html#close()>close</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

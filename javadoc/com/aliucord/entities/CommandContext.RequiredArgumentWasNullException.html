@@ -121,6 +121,14 @@ public class <span class="typeNameLabel"><a href=CommandContext.RequiredArgument
 extends <a href=https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html>RuntimeException</a>
                     </pre>
                     <div class="block"><p>Looks like Discord's required args are unreliable and are sometimes accepted even if empty. Or a plugin dev may just forget to mark an argument as required which leads to ugly NPEs. Thus, throw a custom exception and handle it in the command handler to present the user a simple message, not a scary stacktrace.</p></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -165,6 +173,18 @@ extends <a href=https://developer.android.com/reference/kotlin/java/lang/Runtime
                                             <th class="colFirst" scope="col">Modifier and Type</th>
                                             <th class="colSecond" scope="col">Field</th>
                                             <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public  <a href=https://developer.android.com/reference/kotlin/java/lang/Throwable.html>Throwable</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=CommandContext.RequiredArgumentWasNullException.html#cause>cause</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public  <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/StackTraceElement.html>StackTraceElement</a>&gt;</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=CommandContext.RequiredArgumentWasNullException.html#stackTrace>stackTrace</a></code></th>
+                                            <td class="colLast"></td>
                                         </tr>
                                         
                                     </table>

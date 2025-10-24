@@ -118,6 +118,14 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
 
                     </pre>
                     <div class="block"><p>Http Utilities</p></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -414,17 +422,26 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleGet</h4>
                                         <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=Http.html#simpleGet(java.lang.String)>simpleGet</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url)</pre>
                                         <div class="block"><p>Send a simple GET request</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>url</code> - The url to fetch</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Raw response (String). If you want Json, use simpleJsonGet</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -438,8 +455,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleDownload</h4>
                                         <pre class="methodSignature"> static void <a href=Http.html#simpleDownload(java.lang.String,java.io.File)>simpleDownload</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/io/File.html>File</a> outputFile)</pre>
                                         <div class="block"><p>Download content from the specified url to the specified <a href=https://developer.android.com/reference/kotlin/java/io/File.html>File</a></p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -450,9 +469,13 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>outputFile</code> - The file to save to</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -466,8 +489,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleJsonGet</h4>
                                         <pre class="methodSignature"> static &lt;T&gt; <a href=Http.html#simpleJsonGet(java.lang.String,java.lang.reflect.Type)>T</a> <a href=Http.html#simpleJsonGet(java.lang.String,java.lang.reflect.Type)>simpleJsonGet</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> schema)</pre>
                                         <div class="block"><p>Send a simple GET request</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -478,9 +503,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>schema</code> - Class to <a href=https://en.wikipedia.org/wiki/Serialization.html>deserialize</a> the response into</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Response Object</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -494,8 +526,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleJsonGet</h4>
                                         <pre class="methodSignature"> static &lt;T&gt; <a href=Http.html#simpleJsonGet(java.lang.String,java.lang.Class)>T</a> <a href=Http.html#simpleJsonGet(java.lang.String,java.lang.Class)>simpleJsonGet</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=Http.html#simpleJsonGet(java.lang.String,java.lang.Class)>T</a>&gt; schema)</pre>
                                         <div class="block"><p>Send a simple GET request</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -506,9 +540,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>schema</code> - Class to <a href=https://en.wikipedia.org/wiki/Serialization.html>deserialize</a> the response into</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Response Object</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -522,8 +563,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simplePost</h4>
                                         <pre class="methodSignature"> static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=Http.html#simplePost(java.lang.String,java.lang.String)>simplePost</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> body)</pre>
                                         <div class="block"><p>Send a simple POST request</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -534,9 +577,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>body</code> - The request body</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Raw response (String). If you want Json, use simpleJsonPost</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -550,8 +600,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleJsonPost</h4>
                                         <pre class="methodSignature"> static &lt;T&gt; <a href=Http.html#simpleJsonPost(java.lang.String,java.lang.String,java.lang.reflect.Type)>T</a> <a href=Http.html#simpleJsonPost(java.lang.String,java.lang.String,java.lang.reflect.Type)>simpleJsonPost</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> body, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> schema)</pre>
                                         <div class="block"><p>Send a simple POST request and parse the JSON response</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -566,9 +618,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>schema</code> - Class to <a href=https://en.wikipedia.org/wiki/Serialization.html>deserialize</a> the response into</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Response deserialized into the provided Class</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -582,8 +641,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleJsonPost</h4>
                                         <pre class="methodSignature"> static &lt;T&gt; <a href=Http.html#simpleJsonPost(java.lang.String,java.lang.String,java.lang.Class)>T</a> <a href=Http.html#simpleJsonPost(java.lang.String,java.lang.String,java.lang.Class)>simpleJsonPost</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> body, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=Http.html#simpleJsonPost(java.lang.String,java.lang.String,java.lang.Class)>T</a>&gt; schema)</pre>
                                         <div class="block"><p>Send a simple POST request and parse the JSON response</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -598,9 +659,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>schema</code> - Class to <a href=https://en.wikipedia.org/wiki/Serialization.html>deserialize</a> the response into</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Response deserialized into the provided Class</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -614,8 +682,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleJsonPost</h4>
                                         <pre class="methodSignature"> static &lt;T&gt; <a href=Http.html#simpleJsonPost(java.lang.String,Object,java.lang.reflect.Type)>T</a> <a href=Http.html#simpleJsonPost(java.lang.String,Object,java.lang.reflect.Type)>simpleJsonPost</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> body, <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Type.html>Type</a> schema)</pre>
                                         <div class="block"><p>Send a simple POST request with JSON body</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -630,9 +700,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>schema</code> - Class to <a href=https://en.wikipedia.org/wiki/Serialization.html>deserialize</a> the response into</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Response deserialized into the provided Class</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -646,8 +723,10 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                         <h4>simpleJsonPost</h4>
                                         <pre class="methodSignature"> static &lt;T&gt; <a href=Http.html#simpleJsonPost(java.lang.String,Object,java.lang.Class)>T</a> <a href=Http.html#simpleJsonPost(java.lang.String,Object,java.lang.Class)>simpleJsonPost</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> body, <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;<a href=Http.html#simpleJsonPost(java.lang.String,Object,java.lang.Class)>T</a>&gt; schema)</pre>
                                         <div class="block"><p>Send a simple POST request with JSON body</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -662,9 +741,16 @@ public class <span class="typeNameLabel"><a href=Http.html>Http</a></span>
                                             <dd><code>schema</code> - Class to <a href=https://en.wikipedia.org/wiki/Serialization.html>deserialize</a> the response into</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Response deserialized into the provided Class</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
