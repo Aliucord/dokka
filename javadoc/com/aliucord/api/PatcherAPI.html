@@ -114,10 +114,10 @@ var pathtoroot = "../../../";
                     <hr>
                     <pre class="wrap-overflow">
 
-public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a></span>
+public final class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>Runtime patching helper that wraps Xposed hooks and tracks created unpatch actions.</p><p>Use instances to apply hooks via the <code>patch</code> methods. Each patch returns an Unpatch callback that will remove the applied hook when invoked. Call <a href=PatcherAPI.html#unpatchAll()>unpatchAll</a> to run all registered unpatch actions and clear the internal registry.</p></div>
 
                     <dl>
 
@@ -172,18 +172,6 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                             <th class="colLast" scope="col">Description</th>
                                         </tr>
                                         
-                                        <tr class="altColor">
-                                            <td class="colFirst"><code>public final <a href=../Logger.html>Logger</a></code></td>
-                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#logger>logger</a></code></th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
-                                        <tr class="rowColor">
-                                            <td class="colFirst"><code>public  <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a>&gt;</code></td>
-                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#unpatches>unpatches</a></code></th>
-                                            <td class="colLast"></td>
-                                        </tr>
-                                        
                                     </table>
                                 </div>
                             </li>
@@ -207,12 +195,6 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                             <th class="colLast" scope="col">Description</th>
                                         </tr>
 
-                                        
-                                            <tr class="altColor">
-                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#PatcherAPI(com.aliucord.Logger)">PatcherAPI</a></span>(<a href=../Logger.html>Logger</a> logger)</code></th>
-                                                <td class="colLast"></td>
-                                            </tr>
                                         
 
                                         </tbody>
@@ -264,43 +246,59 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() XC_MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt;&gt; paramTypes, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast">Patches a method.</td>
+                                            <td class="colLast">Patch a method by class name.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() XC_MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast">Patches a method.</td>
+                                            <td class="colLast">Patch a method by class name.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
-                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.reflect.Member,de.robv.android.xposed.XC_MethodHook)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() XC_MethodHook hook) </code>
+                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt;&gt; paramTypes, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast">Patches a method or constructor.</td>
+                                            <td class="colLast">Patch a method by <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.reflect.Member,rx.functions.Action1)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() Action1&lt;XC_MethodHook.MethodHookParam&gt; callback) </code>
+                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, XC_MethodHook hook) </code>
                                             </th>
-                                            <td class="colLast">Patches a method or constructor.</td>
+                                            <td class="colLast">Patch a method by <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
-                                            <td class="colFirst"><code>void</code>
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.reflect.Member,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, XC_MethodHook hook) </code>
+                                            </th>
+                                            <td class="colLast">Patch a specific method or constructor.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#patch(java.lang.reflect.Member,com.aliucord.patcher.MethodHookCallback)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, Action1&lt;XC_MethodHook.MethodHookParam&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Patch a specific method or constructor using a MethodHookCallback.</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=PatcherAPI.html#unpatchAll()>unpatchAll</a>() </code>
                                             </th>
-                                            <td class="colLast">Removes all patches.</td>
+                                            <td class="colLast">Invoke all registered unpatch actions and clear the registry.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -334,16 +332,6 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="PatcherAPI(com.aliucord.Logger)"></a>
-                                <ul class="blockList">
-                                    <li class="blockList">
-                                        <h4>PatcherAPI</h4>
-                                        <pre>PatcherAPI(<a href=../Logger.html>Logger</a> logger)</pre>
-                                        <div class="block"></div>
-                                        
-                                    </li>
-                                </ul>
-                                
                             </li>
                         </ul>
                     </section>
@@ -365,8 +353,8 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                           >
                                     <li class="blockList">
                                         <h4>patch</h4>
-                                        <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() XC_MethodHook hook)</pre>
-                                        <div class="block"><p>Patches a method.</p></div>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Patch a method by class name.</p></div>
 
                                         <dl>
 
@@ -374,26 +362,67 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>forClass</code> - Class to patch.</dd>
+                                            <dd><code>forClass</code> - full name of the class containing the method</dd>
                                             
                                             
                                             
-                                            <dd><code>fn</code> - Method to patch.</dd>
+                                            <dd><code>fn</code> - method name to patch</dd>
                                             
                                             
                                             
-                                            <dd><code>paramTypes</code> - Parameters of the <code>fn</code>.</dd>
+                                            <dd><code>paramTypes</code> - parameter types to select an overload</dd>
                                             
                                             
                                             
-                                            <dd><code>hook</code> - Callback for the patch.</dd>
+                                            <dd><code>hook</code> - the XC_MethodHook callback to apply</dd>
                                             
                                             
                                         
 
                                         
                                             <dt><span class="returnLabel">Returns:</span></dt>
-                                            <dd><p>A <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> object.</p></dd>
+                                            <dd><p>an Unpatch that will remove the applied hook</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="patch(java.lang.String,java.lang.String,de.robv.android.xposed.XC_MethodHook)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>patch</h4>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> forClass, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Patch a method by class name.</p></div>
+
+                                        <dl>
+
+                                        
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>forClass</code> - full name of the class containing the method</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>fn</code> - method name to patch</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - the XC_MethodHook callback to apply</dd>
+                                            
+                                            
+                                        
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>an Unpatch that will remove the applied hook</p></dd>
                                         
 
                                         
@@ -410,8 +439,8 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                           >
                                     <li class="blockList">
                                         <h4>patch</h4>
-                                        <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; clazz, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;out <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;&gt; paramTypes, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() XC_MethodHook hook)</pre>
-                                        <div class="block"><p>Patches a method.</p></div>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt;&gt; paramTypes, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Patch a method by <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>.</p></div>
 
                                         <dl>
 
@@ -419,26 +448,67 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>clazz</code> - Class to patch.</dd>
+                                            <dd><code>clazz</code> - the class containing the method</dd>
                                             
                                             
                                             
-                                            <dd><code>fn</code> - Method to patch.</dd>
+                                            <dd><code>fn</code> - method name to patch</dd>
                                             
                                             
                                             
-                                            <dd><code>paramTypes</code> - Parameters of the <code>fn</code>.</dd>
+                                            <dd><code>paramTypes</code> - parameter types to select an overload</dd>
                                             
                                             
                                             
-                                            <dd><code>hook</code> - Callback for the patch.</dd>
+                                            <dd><code>hook</code> - the XC_MethodHook callback to apply</dd>
                                             
                                             
                                         
 
                                         
                                             <dt><span class="returnLabel">Returns:</span></dt>
-                                            <dd><p>Method that will remove the patch when invoked</p></dd>
+                                            <dd><p>an Unpatch that will remove the applied hook</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="patch(java.lang.Class,java.lang.String,de.robv.android.xposed.XC_MethodHook)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>patch</h4>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html>JvmOverloads</a>() final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>&lt;?&gt; clazz, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> fn, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Patch a method by <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>.</p></div>
+
+                                        <dl>
+
+                                        
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>clazz</code> - the class containing the method</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>fn</code> - method name to patch</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>hook</code> - the XC_MethodHook callback to apply</dd>
+                                            
+                                            
+                                        
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>an Unpatch that will remove the applied hook</p></dd>
                                         
 
                                         
@@ -455,8 +525,8 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                           >
                                     <li class="blockList">
                                         <h4>patch</h4>
-                                        <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.reflect.Member,de.robv.android.xposed.XC_MethodHook)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() XC_MethodHook hook)</pre>
-                                        <div class="block"><p>Patches a method or constructor.</p></div>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.reflect.Member,de.robv.android.xposed.XC_MethodHook)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, XC_MethodHook hook)</pre>
+                                        <div class="block"><p>Patch a specific method or constructor.</p></div>
 
                                         <dl>
 
@@ -464,18 +534,18 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>m</code> - Method or constructor to patch.</dd>
+                                            <dd><code>m</code> - the reflective <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> (method or constructor) to hook</dd>
                                             
                                             
                                             
-                                            <dd><code>hook</code> - Callback for the patch.</dd>
+                                            <dd><code>hook</code> - the XC_MethodHook callback to apply</dd>
                                             
                                             
                                         
 
                                         
                                             <dt><span class="returnLabel">Returns:</span></dt>
-                                            <dd><p>Method that will remove the patch when invoked</p></dd>
+                                            <dd><p>an Unpatch that will remove the applied hook</p></dd>
                                         
 
                                         
@@ -484,7 +554,7 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                     </li>
                                 </ul>
                                 
-                                <a id="patch(java.lang.reflect.Member,rx.functions.Action1)">
+                                <a id="patch(java.lang.reflect.Member,com.aliucord.patcher.MethodHookCallback)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -492,8 +562,8 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                           >
                                     <li class="blockList">
                                         <h4>patch</h4>
-                                        <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.reflect.Member,rx.functions.Action1)>patch</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() Action1&lt;XC_MethodHook.MethodHookParam&gt; callback)</pre>
-                                        <div class="block"><p>Patches a method or constructor.</p></div>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Runnable.html>Runnable</a> <a href=PatcherAPI.html#patch(java.lang.reflect.Member,com.aliucord.patcher.MethodHookCallback)>patch</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> m, Action1&lt;XC_MethodHook.MethodHookParam&gt; callback)</pre>
+                                        <div class="block"><p>Patch a specific method or constructor using a MethodHookCallback.</p></div>
 
                                         <dl>
 
@@ -501,18 +571,18 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>m</code> - Method or constructor to patch.</dd>
+                                            <dd><code>m</code> - the reflective <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> (method or constructor) to hook</dd>
                                             
                                             
                                             
-                                            <dd><code>callback</code> - Callback for the patch.</dd>
+                                            <dd><code>callback</code> - the callback wrapper to apply</dd>
                                             
                                             
                                         
 
                                         
                                             <dt><span class="returnLabel">Returns:</span></dt>
-                                            <dd><p>Method that will remove the patch when invoked</p></dd>
+                                            <dd><p>an Unpatch that will remove the applied hook</p></dd>
                                         
 
                                         
@@ -529,8 +599,8 @@ public class <span class="typeNameLabel"><a href=PatcherAPI.html>PatcherAPI</a><
                                           >
                                     <li class="blockList">
                                         <h4>unpatchAll</h4>
-                                        <pre class="methodSignature"> void <a href=PatcherAPI.html#unpatchAll()>unpatchAll</a>()</pre>
-                                        <div class="block"><p>Removes all patches.</p></div>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=PatcherAPI.html#unpatchAll()>unpatchAll</a>()</pre>
+                                        <div class="block"><p>Invoke all registered unpatch actions and clear the registry.</p><p>This will remove all applied hooks that were created through this <a href=PatcherAPI.html>PatcherAPI</a> instance.</p></div>
 
                                         <dl>
 

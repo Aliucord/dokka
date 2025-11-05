@@ -120,7 +120,7 @@ var pathtoroot = "../../../";
 public final class <span class="typeNameLabel"><a href=PreHook.html>PreHook</a></span>
 extends XC_MethodHook
                     </pre>
-                    <div class="block"><p>Runs the specified callback before the hooked <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a></p></div>
+                    <div class="block"><p>Invokes the provided MethodHookCallback before the hooked method or constructor runs.</p><p>This small XC_MethodHook forwards the beforeHookedMethod event to the given callback. Any exceptions thrown by the callback are caught and logged via Patcher.logger.</p></div>
 
                     <dl>
 
@@ -213,7 +213,7 @@ extends XC_MethodHook
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#PreHook(rx.functions.Action1)">PreHook</a></span>(Action1&lt;XC_MethodHook.MethodHookParam&gt; callback)</code></th>
+                                                        href="#PreHook(com.aliucord.patcher.MethodHookCallback)">PreHook</a></span>(Action1&lt;XC_MethodHook.MethodHookParam&gt; callback)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -311,7 +311,7 @@ extends XC_MethodHook
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="PreHook(rx.functions.Action1)"></a>
+                                <a name="PreHook(com.aliucord.patcher.MethodHookCallback)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>PreHook</h4>

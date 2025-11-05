@@ -120,7 +120,7 @@ var pathtoroot = "../../../";
 public final class <span class="typeNameLabel"><a href=Hook.html>Hook</a></span>
 extends XC_MethodHook
                     </pre>
-                    <div class="block"><p>Runs the specified callback after the hooked <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a></p></div>
+                    <div class="block"><p>Runs the provided callback after the hooked <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a> executes.</p><p>This is a small XC_MethodHook implementation that forwards the afterHookedMethod event to a higher-level MethodHookCallback. Exceptions thrown by the callback are caught and logged via Patcher.logger.</p></div>
 
                     <dl>
 
@@ -213,7 +213,7 @@ extends XC_MethodHook
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#Hook(rx.functions.Action1)">Hook</a></span>(Action1&lt;XC_MethodHook.MethodHookParam&gt; callback)</code></th>
+                                                        href="#Hook(com.aliucord.patcher.MethodHookCallback)">Hook</a></span>(Action1&lt;XC_MethodHook.MethodHookParam&gt; callback)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -311,7 +311,7 @@ extends XC_MethodHook
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="Hook(rx.functions.Action1)"></a>
+                                <a name="Hook(com.aliucord.patcher.MethodHookCallback)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>Hook</h4>

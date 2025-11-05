@@ -204,20 +204,20 @@ var pathtoroot = "../";
                 
 
             </dt>
-            <dd>Patches a method.</dd>
+            <dd>Patch a method by <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>.</dd>
 
         
             <dt>
                 
                 <span class="memberNameLink">
                 
-                    <a href="../com/aliucord/api/PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)">patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)</a>
+                    <a href="../com/aliucord/api/PatcherAPI.html#patch(java.lang.Class,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)">patch(java.lang.Class,java.lang.String,de.robv.android.xposed.XC_MethodHook)</a>
                 
                 </span> - function in com.aliucord.api.<a href=../com/aliucord/api/PatcherAPI.html>PatcherAPI</a>
                 
 
             </dt>
-            <dd>Patches a method.</dd>
+            <dd>Patch a method by <a href=https://developer.android.com/reference/kotlin/java/lang/Class.html>Class</a>.</dd>
 
         
             <dt>
@@ -230,20 +230,46 @@ var pathtoroot = "../";
                 
 
             </dt>
-            <dd>Patches a method or constructor.</dd>
+            <dd>Patch a specific method or constructor.</dd>
 
         
             <dt>
                 
                 <span class="memberNameLink">
                 
-                    <a href="../com/aliucord/api/PatcherAPI.html#patch(java.lang.reflect.Member,rx.functions.Action1)">patch(java.lang.reflect.Member,rx.functions.Action1)</a>
+                    <a href="../com/aliucord/api/PatcherAPI.html#patch(java.lang.reflect.Member,com.aliucord.patcher.MethodHookCallback)">patch(java.lang.reflect.Member,com.aliucord.patcher.MethodHookCallback)</a>
                 
                 </span> - function in com.aliucord.api.<a href=../com/aliucord/api/PatcherAPI.html>PatcherAPI</a>
                 
 
             </dt>
-            <dd>Patches a method or constructor.</dd>
+            <dd>Patch a specific method or constructor using a MethodHookCallback.</dd>
+
+        
+            <dt>
+                
+                <span class="memberNameLink">
+                
+                    <a href="../com/aliucord/api/PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)">patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)</a>
+                
+                </span> - function in com.aliucord.api.<a href=../com/aliucord/api/PatcherAPI.html>PatcherAPI</a>
+                
+
+            </dt>
+            <dd>Patch a method by class name.</dd>
+
+        
+            <dt>
+                
+                <span class="memberNameLink">
+                
+                    <a href="../com/aliucord/api/PatcherAPI.html#patch(java.lang.String,java.lang.String,kotlin.Array,de.robv.android.xposed.XC_MethodHook)">patch(java.lang.String,java.lang.String,de.robv.android.xposed.XC_MethodHook)</a>
+                
+                </span> - function in com.aliucord.api.<a href=../com/aliucord/api/PatcherAPI.html>PatcherAPI</a>
+                
+
+            </dt>
+            <dd>Patch a method by class name.</dd>
 
         
             <dt>
@@ -282,7 +308,7 @@ var pathtoroot = "../";
                 
 
             </dt>
-            <dd>&nbsp;</dd>
+            <dd>Helper for applying Xposed method hooks.</dd>
 
         
             <dt>
@@ -295,7 +321,7 @@ var pathtoroot = "../";
                 
 
             </dt>
-            <dd>&nbsp;</dd>
+            <dd>Runtime patching helper that wraps Xposed hooks and tracks created unpatch actions.</dd>
 
         
             <dt>
@@ -1855,7 +1881,7 @@ var pathtoroot = "../";
                 
 
             </dt>
-            <dd>Runs the specified callback before the hooked <a href=https://developer.android.com/reference/kotlin/java/lang/reflect/Member.html>Member</a></dd>
+            <dd>Invokes the provided MethodHookCallback before the hooked method or constructor runs.</dd>
 
         
             <dt>
