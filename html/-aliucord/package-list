@@ -499,6 +499,7 @@ $dokka.location:com.aliucord.patcher/PreHook/PreHook/#rx.functions.Action1[de.ro
 $dokka.location:com.aliucord.patcher/PreHook/callback/#/PointingToDeclaration/-aliucord/com.aliucord.patcher/-pre-hook/callback.html
 $dokka.location:com.aliucord.settings////PointingToDeclaration/-aliucord/com.aliucord.settings/index.html
 $dokka.location:com.aliucord.settings//ALIUCORD_FROM_STORAGE_KEY/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-a-l-i-u-c-o-r-d_-f-r-o-m_-s-t-o-r-a-g-e_-k-e-y.html
+$dokka.location:com.aliucord.settings//ALIUCORD_SAFE_MODE_KEY/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-a-l-i-u-c-o-r-d_-s-a-f-e_-m-o-d-e_-k-e-y.html
 $dokka.location:com.aliucord.settings//AUTO_DISABLE_ON_CRASH_KEY/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-a-u-t-o_-d-i-s-a-b-l-e_-o-n_-c-r-a-s-h_-k-e-y.html
 $dokka.location:com.aliucord.settings//AUTO_UPDATE_ALIUCORD_KEY/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-a-u-t-o_-u-p-d-a-t-e_-a-l-i-u-c-o-r-d_-k-e-y.html
 $dokka.location:com.aliucord.settings//AUTO_UPDATE_PLUGINS_KEY/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-a-u-t-o_-u-p-d-a-t-e_-p-l-u-g-i-n-s_-k-e-y.html
@@ -536,6 +537,8 @@ $dokka.location:com.aliucord.settings/Plugins.Adapter/onUninstallClick/#int/Poin
 $dokka.location:com.aliucord.settings/Plugins.Adapter/showBuiltIn/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-adapter/show-built-in.html
 $dokka.location:com.aliucord.settings/Plugins///PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/index.html
 $dokka.location:com.aliucord.settings/Plugins/Plugins/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/-plugins.html
+$dokka.location:com.aliucord.settings/Plugins/noManagerDialog/#/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/no-manager-dialog.html
+$dokka.location:com.aliucord.settings/Plugins/onOpenManagerClick/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/on-open-manager-click.html
 $dokka.location:com.aliucord.settings/Plugins/onViewBound/#android.view.View/PointingToDeclaration/-aliucord/com.aliucord.settings/-plugins/on-view-bound.html
 $dokka.location:com.aliucord.settings/SettingsDelegate///PointingToDeclaration/-aliucord/com.aliucord.settings/-settings-delegate/index.html
 $dokka.location:com.aliucord.settings/SettingsDelegate/SettingsDelegate/#TypeParam(bounds=[kotlin.Any?])#kotlin.String?#com.aliucord.api.SettingsAPI/PointingToDeclaration/-aliucord/com.aliucord.settings/-settings-delegate/-settings-delegate.html
@@ -1388,6 +1391,7 @@ $dokka.location:com.aliucord/PluginManager/getPluginsInfo/#/PointingToDeclaratio
 $dokka.location:com.aliucord/PluginManager/getVisiblePlugins/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/get-visible-plugins.html
 $dokka.location:com.aliucord/PluginManager/isPluginEnabled/#com.aliucord.entities.Plugin/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/is-plugin-enabled.html
 $dokka.location:com.aliucord/PluginManager/isPluginEnabled/#kotlin.String/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/is-plugin-enabled.html
+$dokka.location:com.aliucord/PluginManager/isSafeModeEnabled/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/is-safe-mode-enabled.html
 $dokka.location:com.aliucord/PluginManager/loadCorePlugins/#android.content.Context/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/load-core-plugins.html
 $dokka.location:com.aliucord/PluginManager/loadPlugin/#android.content.Context#java.io.File/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/load-plugin.html
 $dokka.location:com.aliucord/PluginManager/logger/#/PointingToDeclaration/-aliucord/com.aliucord/-plugin-manager/logger.html
